@@ -7,14 +7,6 @@
  * @author   Taylor Otwell <taylor@laravel.com>
  */
 
-use JakubOnderka\PhpConsoleColor\ConsoleColor;
-use JakubOnderka\PhpConsoleHighlighter\Highlighter;
-
-
-$highlighter = new Highlighter(new ConsoleColor());
-
-$fileContent = file_get_contents(__FILE__);
-echo $highlighter->getWholeFile($fileContent);
 
 
 /*
