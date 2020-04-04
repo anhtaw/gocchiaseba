@@ -1,5 +1,4 @@
 
-php_value display_errors On
 
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
