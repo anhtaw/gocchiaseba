@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Auth;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index.index');
 });
 Route::get('profile', function () {
     // Chỉ những người dùng xác nhận email rồi mới được vào
