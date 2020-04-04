@@ -417,7 +417,7 @@
                                                         rel="tag">antique</a>, <a
                                                         href="http://mendel-antiques.ancorathemes.com/product-tag/armchair/"
                                                         rel="tag">armchair</a></div>
-                            
+
                                                         <h2 class="woocommerce-loop-product__title"><a
                                                         href="http://mendel-antiques.ancorathemes.com/product/vintage-red-armchair/">{{ $blogs ->name }}</a></h2>
                                                 <div class="star-rating" role="img" aria-label="Rated 1.00 out of 5">
@@ -462,7 +462,7 @@
                                                 aria-hidden="true" class="shop_link button icon-link"></a>
                                         </div>
                                     </div><!-- /.post_featured -->
-                                    
+
 @foreach($blog as $blogs)
                                     <div class="post_data">
                                         <div class="post_data_inner">

@@ -37,7 +37,7 @@ class AdController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store()
     {
         //
     }
@@ -48,7 +48,7 @@ class AdController extends Controller
      * @param  \App\index\Review  $review
      * @return \Illuminate\Http\Response
      */
-    public function show(Review $review)
+    public function show( )
     {
         //
     }
@@ -59,7 +59,7 @@ class AdController extends Controller
      * @param  \App\index\Review  $review
      * @return \Illuminate\Http\Response
      */
-    public function edit(Review $review)
+    public function edit()
     {
         //
     }
@@ -71,7 +71,7 @@ class AdController extends Controller
      * @param  \App\index\Review  $review
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Review $review)
+    public function update()
     {
         //
     }
@@ -82,7 +82,7 @@ class AdController extends Controller
      * @param  \App\index\Review  $review
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Review $review)
+    public function destroy()
     {
         //
     }
