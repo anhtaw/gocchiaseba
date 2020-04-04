@@ -13,20 +13,11 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::group(['prefix' => '/'], function () {
-    // Route::resource('raovat', 'index\RaovatController');
-    Route::resource('index', 'index\IndexController');
-    Route::resource('admin', 'index\UserController');
-    Route::get('admin.reset', ['as' => 'admin.reset', 'uses' => 'index\UserController@Reset']);
-    Route::get('admin.register', ['as' => 'admin.register', 'uses' => 'index\UserController@Register']);
-    Route::resource('review', 'index\ReviewController');
-    Route::resource('ad', 'index\AdController');
-    Route::resource('document', 'index\DocumentController');
-    Route::resource('teacher', 'index\TeacherController');
 
-    //Route::resource('review.edit', ['as' => 'review.edit', 'uses' => 'index\ReviewController@edit']);
+Route::get('/', function () {
+
+    return redirect()->route('index.index');
 });
-
 Route::get('profile', function () {
     // Chỉ những người dùng xác nhận email rồi mới được vào
 })->middleware('verified');
@@ -48,5 +39,17 @@ Route::group(['prefix' => 'admin'], function () {
 
 });
 Route::get('user/activation/{token}', 'Auth\RegisterController@activateUser')->name('user.activate');
+Route::group(['prefix' => 'index'], function () {
+    // Route::resource('raovat', 'index\RaovatController');
+    Route::resource('index', 'index\IndexController');
+    Route::resource('admin', 'index\UserController');
+    Route::get('admin.reset', ['as' => 'admin.reset', 'uses' => 'index\UserController@Reset']);
+    Route::get('admin.register', ['as' => 'admin.register', 'uses' => 'index\UserController@Register']);
+    Route::resource('review', 'index\ReviewController');
+    Route::resource('ad', 'index\AdController');
+    Route::resource('document', 'index\DocumentController');
+    Route::resource('teacher', 'index\TeacherController');
 
+    //Route::resource('review.edit', ['as' => 'review.edit', 'uses' => 'index\ReviewController@edit']);
+});
 
