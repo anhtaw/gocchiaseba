@@ -19,14 +19,14 @@
         }
 
         .vc_custom_1500878214299 {
-            background-image: url(http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/04/bg-4.jpg?id=293) !important;
+            background-image: url({{ asset('img/bia2.jpg') }}) !important;
             background-position: center !important;
             background-repeat: no-repeat !important;
             background-size: cover !important;
         }
 
         .vc_custom_1500879459658 {
-            background-image: url(http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/bg-2.jpg?id=283) !important;
+            background-image: url({{ asset('img/bia1.jpg') }}) !important;
             background-position: center !important;
             background-repeat: no-repeat !important;
             background-size: cover !important;
@@ -42,7 +42,7 @@
         }
 
         .vc_custom_1500882372635 {
-            background-image: url(http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-29.jpg?id=234) !important;
+            background-image: url({{ asset('img/bia.jpg') }}) !important;
             background-position: center !important;
             background-repeat: no-repeat !important;
             background-size: cover !important;

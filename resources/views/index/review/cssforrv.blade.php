@@ -12,7 +12,7 @@
 }
 
         .vc_custom_1500711617511 {
-            background-image: url({{ asset('img/10.png') }}) !important;
+            background-image: url({{ asset('img/bia.jpg') }}) !important;
             background-position: center !important;
             background-repeat: no-repeat !important;
             background-size: cover !important;
@@ -134,7 +134,7 @@
     }
 
     .vc_custom_1500902865228 {
-        background: #757575 url({{ asset('img/11.png') }}) !important;
+        background: #757575 url({{ asset('img/bia.jpg') }}) !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;

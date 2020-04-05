@@ -235,7 +235,7 @@ var _zxcvbnSettings = {"src":"http:\/\/mendel-antiques.ancorathemes.com\/wp-incl
 <div class="menu_mobile menu_mobile_fullscreen scheme_dark">
 	<div class="menu_mobile_inner">
         <a class="menu_mobile_close icon-cancel"></a>
-        <a class="sc_layouts_logo" href="http://mendel-antiques.ancorathemes.com/">
+        <a class="sc_layouts_logo" href="#">
             <img src="{{ asset('img/img/logoheader.png') }}"  width="240" height="42"></a>
             <nav class="menu_mobile_nav_area">
                 <ul id="menu_mobile-main-menu" class="">
