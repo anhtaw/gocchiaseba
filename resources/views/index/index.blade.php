@@ -185,7 +185,7 @@
                             <div class="search_wrap search_style_normal search_mobile">
                                 <div class="search_form_wrap">
                                     <form role="search" method="get" class="search_form"
-                                          action="http://mendel-antiques.ancorathemes.com/">
+                                          action="#">
                                         <input type="text" class="search_field" placeholder="Search" value=""
                                                name="s">
                                         <button type="submit" class="search_submit trx_addons_icon-search"></button>
