@@ -3,7 +3,7 @@
     use Illuminate\Http\Request;
     use App\Http\Controllers\Controller;
     use App\model\admin\Product;
-
+    use Illuminate\Support\Facades\DB;
 class ProductController extends Controller
 {
     /**
@@ -17,9 +17,8 @@ class ProductController extends Controller
     }
     public function index()
     {
-        $product = Product::latest()->paginate(5);
-        return view('admin.products.index', compact('product'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+        $product = DB::table('products')->get();
+        return view('admin.products.index', ['products' => $product]);
     }
 
     /**
@@ -46,9 +45,9 @@ class ProductController extends Controller
            $fileName = $file->getClientOriginalName();
            $file->move('img/', $fileName);
        }
-       
-       
-   
+
+
+
 
        $product = new Product();
         $product->insert([
