@@ -46,7 +46,7 @@
     </style>
 
     <li class="nav-item has-treeview">
-        <a href="#" class="nav-link active">
+        <a href="#" class="nav-link ">
             <i class="nav-icon fa fa-fw fa-user"></i>
             <p>Tài khoản<i class="right fas fa-angle-left"></i></p>
         </a>
@@ -58,7 +58,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a  href="{{ route('user.create')}}" class="nav-link active">
+                <a  href="{{ route('user.create')}}" class="nav-link ">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Thêm tài khoản</p>
                 </a>
@@ -71,6 +71,7 @@
             </li> --}}
         </ul>
     </li>
+    @include('admin.user.leftforuserbyblog')
 @endsection
 @section('content')
     <div class="card card-primary">
@@ -102,7 +103,6 @@
                     <label >Mật khẩu</label>
                     <input type="password" class="form-control form-control-lg"   name ="password" value="{{$user->password }}"   placeholder="Nhập Mật khẩu" required>
                 </div>
-
                 <div class="form-group">
                     <label >Email</label>
                     <input type="text" class="form-control form-control-lg"   name ="email" value="{{$user->email }}"   placeholder="Nhập email" >

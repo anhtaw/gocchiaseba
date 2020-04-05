@@ -66,6 +66,7 @@
 
         </ul>
     </li>
+    @include('admin.user.leftforuserbyblog')
 @endsection
 @section('content')
     <div class="card card-primary">

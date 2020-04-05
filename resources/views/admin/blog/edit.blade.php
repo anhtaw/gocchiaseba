@@ -46,7 +46,7 @@
     </style>
 
     <li class="nav-item has-treeview">
-        <a href="#" class="nav-link active">
+        <a href="#" class="nav-link ">
             <i class="nav-icon fas fa-edit"></i>
             <p>Blog<i class="right fas fa-angle-left"></i></p>
         </a>
@@ -58,17 +58,11 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a  href="{{ route('blog.create')}}" class="nav-link active">
+                <a  href="{{ route('blog.create')}}" class="nav-link ">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Thêm Blog</p>
                 </a>
             </li>
-            {{-- <li class="nav-item">
-                <a href="{{ route('blog.create')}}" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Sửa Blog</p>
-                </a>
-            </li> --}}
         </ul>
     </li>
 @endsection

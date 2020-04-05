@@ -1,6 +1,6 @@
 <style type="text/css" id="trx_addons-inline-styles-inline-css">
     .mendel_inline_713640390 {
-        background-image: url(http://mendel-antiques.ancorathemes.com/wp-content/uploads/2018/06/cropped-demoimage3.jpg);
+        background-image: url({{ asset('img/10.png') }});
     }
 
     .vc_custom_1500893297996 {
@@ -11,7 +11,7 @@
     }
 
     .vc_custom_1500902865228 {
-        background: #757575 url(http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/bread.png?id=479) !important;
+        background: #757575 url({{ asset('img/10.png') }}) !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;

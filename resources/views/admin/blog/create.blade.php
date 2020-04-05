@@ -65,6 +65,7 @@
             </li>
         </ul>
     </li>
+    @include('admin.blog.leftdown')
 @endsection
 @section('content')
     <div class="card card-primary">

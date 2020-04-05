@@ -18,5 +18,10 @@
             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-104">
             <a href="./tim_do.html"><span>TÌM ĐỒ</span></a>
         </li>
+        <li id="menu-item-87"
+            class="menu-item menu-item-type-post_type menu-item-object-page  page_item page-item-75  menu-item-87">
+            <a href="{{ route('contact.index')}}"
+               aria-current="page"><span>Liên Lạc</span></a>
+        </li>
     </ul>
 </nav>

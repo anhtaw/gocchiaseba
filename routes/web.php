@@ -12,18 +12,11 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-
+    Route::post('testEmail', 'Controller@testEmail');
+    Route::get('testEmail', 'Controller@testEmail');
 Route::get('/', function () {
-
-    return redirect()->route('index.index');
+    return view('welcome');
 });
-Route::get('profile', function () {
-    // Chỉ những người dùng xác nhận email rồi mới được vào
-})->middleware('verified');
-Route::get('info', function () {
-    //
-})->middleware('email_verified');
 Auth::routes(['verify' => true]);
 Route::get('logout',[ 'as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
 // Auth::routes();
@@ -35,12 +28,11 @@ Route::group(['prefix' => 'admin'], function () {
     Route::resource('blog', 'admin\BlogController');
     Route::resource('user', 'admin\UserController');
     Route::resource('products', 'admin\ProductController');
-
+    Route::resource('giaovien', 'admin\TeacherController');
 
 });
 Route::get('user/activation/{token}', 'Auth\RegisterController@activateUser')->name('user.activate');
 Route::group(['prefix' => 'index'], function () {
-    // Route::resource('raovat', 'index\RaovatController');
     Route::resource('index', 'index\IndexController');
     Route::resource('admin', 'index\UserController');
     Route::get('admin.reset', ['as' => 'admin.reset', 'uses' => 'index\UserController@Reset']);
@@ -49,7 +41,8 @@ Route::group(['prefix' => 'index'], function () {
     Route::resource('ad', 'index\AdController');
     Route::resource('document', 'index\DocumentController');
     Route::resource('teacher', 'index\TeacherController');
-
+    Route::resource('contact', 'index\ContactController');
+    Route::post('contact.testEmail', ['as' => 'contact.testEmail', 'uses' => 'index\ContactController@testEmail']);
     //Route::resource('review.edit', ['as' => 'review.edit', 'uses' => 'index\ReviewController@edit']);
 });
 

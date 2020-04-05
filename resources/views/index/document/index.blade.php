@@ -1,6 +1,5 @@
 @include('index.css')
 @include('index.document.css')
-{{-- @include('index.document.header') --}}
 <body class="page-template-default page page-id-33 theme-mendel woocommerce-no-js body_tag scheme_default blog_mode_page body_style_wide is_single sidebar_hide expand_content remove_margins header_style_header-custom-21 header_position_default menu_style_top no_layout wpb-js-composer js-comp-ver-6.0.5 vc_responsive">
 <div class="body_wrap">
     <div class="page_wrap">
@@ -9,12 +8,14 @@
                 <div class="wpb_column vc_column_container vc_col-sm-3 sc_layouts_column sc_layouts_column_align_left sc_layouts_column_icons_position_left">
                     <div class="vc_column-inner">
                         <div class="wpb_wrapper">
-                            <div class="vc_empty_space  vc_custom_1500975516958" style="height: 0px"><span
-                                    class="vc_empty_space_inner"></span></div>
+                            <div class="vc_empty_space  vc_custom_1500975516958" style="height: 0px">
+                                <span class="vc_empty_space_inner"></span>
+                            </div>
                             <div class="sc_layouts_item">
                                 <a href="index.html" id="sc_layouts_logo_530504277" class="sc_layouts_logo sc_layouts_logo_default">
                                     <img class="logo_image" src="{{ asset('img/img/logoheader.png') }}" alt="" width="240" height="42">
-                                </a><!-- /.sc_layouts_logo --></div>
+                                </a><!-- /.sc_layouts_logo -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -22,7 +23,7 @@
                     <div class="vc_column-inner">
                         <div class="wpb_wrapper">
                             <div class="sc_layouts_item">
-								@include('index.header')
+                                @include('index.header')
                                 <div class="sc_layouts_iconed_text sc_layouts_menu_mobile_button">
                                     <a class="sc_layouts_item_link sc_layouts_iconed_text_link" href="#">
                                         <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon trx_addons_icon-menu"></span>
@@ -40,50 +41,34 @@
                             </div>
                             <div class="sc_layouts_item">
                                 <div id="sc_layouts_iconed_text_873591328" class="sc_layouts_iconed_text">
-                                    <a href="{{route('admin.index')}}"class="sc_layouts_item_link sc_layouts_iconed_text_link">
+                                    <a href="{{route('admin.index')}}" class="sc_layouts_item_link sc_layouts_iconed_text_link">
                                         <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-user"></span>
                                     </a>
                                 </div><!-- /.sc_layouts_iconed_text -->
                             </div>
                             <div class="sc_layouts_item">
-                                <div id="sc_layouts_cart_1194727504" class="sc_layouts_cart">
-                                    <span class="sc_layouts_item_icon sc_layouts_cart_icon trx_addons_icon-basket"></span>
-                                    <span class="sc_layouts_item_details sc_layouts_cart_details">
-                                        <span class="sc_layouts_item_details_line2 sc_layouts_cart_totals">
-                                            <span class="sc_layouts_cart_items">0 items</span>-
-                                            <span class="sc_layouts_cart_summa">&#36;0.00</span>
-                                        </span>
-                                    </span><!-- /.sc_layouts_cart_details -->
-                                    <span class="sc_layouts_cart_items_short">0</span>
-                                    <div class="sc_layouts_cart_widget widget_area">
-                                        <span class="sc_layouts_cart_widget_close trx_addons_icon-cancel"></span>
-                                        <div class="widget woocommerce widget_shopping_cart">
-                                            <div class="widget_shopping_cart_content"></div>
-                                        </div>
-                                    </div><!-- /.sc_layouts_cart_widget -->
-                                </div><!-- /.sc_layouts_cart --></div>
-                            <div class="sc_layouts_item">
-                                <div id="sc_layouts_iconed_text_500624530" class="sc_layouts_iconed_text"><a
-                                        href="/cdn-cgi/l/email-protection#cbaeb3aaa6bba7ae8bbfaeb8bfe5a8a4a6"
-                                        class="sc_layouts_item_link sc_layouts_iconed_text_link"><span
-                                        class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-mail-1"></span></a>
-                                </div><!-- /.sc_layouts_iconed_text --></div>
+                                <div id="sc_layouts_iconed_text_500624530" class="sc_layouts_iconed_text">
+                                    <a href="/cdn-cgi/l/email-protection#cbaeb3aaa6bba7ae8bbfaeb8bfe5a8a4a6" class="sc_layouts_item_link sc_layouts_iconed_text_link">
+                                        <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-mail-1"></span>
+                                    </a>
+                                </div><!-- /.sc_layouts_iconed_text -->
+                            </div>
                             <div class="sc_layouts_item">
                                 <div id="sc_layouts_search_1756010979" class="sc_layouts_search">
                                     <div class="search_wrap search_style_fullscreen search_ajax layouts_search">
                                         <div class="search_form_wrap">
-                                            <form role="search" method="get" class="search_form"action="http://mendel-antiques.ancorathemes.com/">
-                                                <input type="text" class="search_field" placeholder="Search" value=""name="s">
-                                                <button type="submit"
-                                                        class="search_submit trx_addons_icon-search"></button>
+                                            <form role="search" method="get" class="search_form" action="#">
+                                                <input type="text" class="search_field" placeholder="Search" value="" name="s">
+                                                <button type="submit" class="search_submit trx_addons_icon-search"></button>
                                                 <a class="search_close trx_addons_icon-delete"></a>
                                             </form>
                                         </div>
-                                        <div class="search_results widget_area"><a href="#"class="search_results_close trx_addons_icon-cancel"></a>
+                                        <div class="search_results widget_area"><a href="#" class="search_results_close trx_addons_icon-cancel"></a>
                                             <div class="search_results_content"></div>
                                         </div>
                                     </div>
-                                </div><!-- /.sc_layouts_search --></div>
+                                </div><!-- /.sc_layouts_search -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -92,9 +77,11 @@
                 <div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column sc_layouts_column_align_center sc_layouts_column_icons_position_left">
                     <div class="vc_column-inner">
                         <div class="wpb_wrapper">
-                            <div id="sc_content_631574940"class="sc_content color_style_default sc_content_default sc_content_width_1_1 sc_float_center">
+                            <div id="sc_content_631574940" class="sc_content color_style_default sc_content_default sc_content_width_1_1 sc_float_center">
                                 <div class="sc_content_container">
-                                    <div class="vc_empty_space  em_sp_top vc_custom_1568806866743 height_large"style="height: 32px"><span class="vc_empty_space_inner"></span></div>
+                                    <div class="vc_empty_space  em_sp_top vc_custom_1568806866743 height_large" style="height: 32px">
+                                        <span class="vc_empty_space_inner"></span>
+                                    </div>
                                     <div class="sc_layouts_item">
                                         <div id="sc_layouts_title_68417949" class="sc_layouts_title with_content">
                                             <div class="sc_layouts_title_content">
@@ -103,7 +90,7 @@
                                                 </div>
                                                 <div class="sc_layouts_title_breadcrumbs">
                                                     <div class="breadcrumbs">
-                                                        <a class="breadcrumbs_item home"href="{{route('index.index')}}">Trang Chủ</a>
+                                                        <a class="breadcrumbs_item home" href="{{route('index.index')}}">Trang Chủ</a>
                                                         <span class="breadcrumbs_delimiter"></span>
                                                         <span class="breadcrumbs_item current">Tài liệu</span>
                                                     </div>
@@ -111,7 +98,7 @@
                                             </div><!-- .sc_layouts_title_content -->
                                         </div><!-- /.sc_layouts_title -->
                                     </div>
-                                    <div class="vc_empty_space  em_sp_b vc_custom_1568806854216 height_large"style="height: 32px">
+                                    <div class="vc_empty_space  em_sp_b vc_custom_1568806854216 height_large" style="height: 32px">
                                         <span class="vc_empty_space_inner"></span>
                                     </div>
                                 </div>
@@ -122,43 +109,45 @@
             </div>
         </header>
         <div class="menu_mobile_overlay"></div>
+        <div class="menu_mobile menu_mobile_fullscreen scheme_dark">
+            <div class="menu_mobile_inner">
+                @include('index.document.headermobile')
+            </div>
+        </div>
         <div class="page_content_wrap scheme_default">
             <div class="content_wrap">
                 <div class="content">
-                    <article id="post-33"class="post_item_single post_type_page post-33 page type-page status-publish hentry">
+                    <article id="post-33" class="post_item_single post_type_page post-33 page type-page status-publish hentry">
                         <div class="post_content entry-content">
                             <div class="vc_row wpb_row vc_row-fluid">
                                 <div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
                                     <div class="vc_column-inner">
                                         <div class="wpb_wrapper">
-                                            <div class="vc_empty_space  vc_custom_1500471063032 height_large"style="height: 32px"><span class="vc_empty_space_inner"></span></div>
-                                            <div id="sc_services_898808862"class="sc_services color_style_default sc_services_chess sc_services_featured_top">
+                                            <div class="vc_empty_space  vc_custom_1500471063032 height_large" style="height: 32px">
+                                                <span class="vc_empty_space_inner"></span>
+                                            </div>
+                                            <div id="sc_services_898808862" class="sc_services color_style_default sc_services_chess sc_services_featured_top">
                                                 <h6 class="sc_item_subtitle sc_services_subtitle sc_align_center sc_item_title_style_Alternative">Tài Liệu</h6>
                                                 <h2 class="sc_item_title sc_services_title sc_align_center sc_item_title_style_Alternative sc_item_title_tag">Học Viên Ngân Hàng</h2>
-                                                <div class="sc_item_descr sc_services_descr sc_align_center"><p></p>
-                                                </div>
+                                                <div class="sc_item_descr sc_services_descr sc_align_center"><p></p></div>
                                                 <div class="sc_services_columns_wrap sc_item_columns sc_item_columns_2 trx_addons_columns_wrap columns_padding_bottom no_margin">
                                                     <div class="trx_addons_column-1_2 ">
                                                         <div class="sc_services_item with_content">
                                                             <div class="post_featured with_thumb hover_icon sc_services_item_header post_featured_bg mendel_inline_957708294">
                                                                 <div class="mask"></div>
-                                                                <div class="icons"><a href="http://mendel-antiques.ancorathemes.com/services/antique-collection-and-delivery/"aria-hidden="true" class="icon-search-alt"></a>
+                                                                <div class="icons">
+                                                                    <a href="#" aria-hidden="true" class="icon-search-alt"></a>
                                                                 </div>
                                                             </div>
                                                             <div class="sc_services_item_content">
                                                                 <h5 class="sc_services_item_title">
-                                                                    <a href="http://mendel-antiques.ancorathemes.com/services/antique-collection-and-delivery/">Khoa Quản trị kinh doanh</a></h5>
-                                                                <div class="sc_services_item_subtitle"><a
-                                                                        href="http://mendel-antiques.ancorathemes.com/services_group/services/"
-                                                                        title="View all posts in Services">Services</a>
-                                                                </div>
-                                                                <div class="sc_services_item_text"><p></p>
-                                                                </div>
+                                                                    <a href="http://mendel-antiques.ancorathemes.com/services/antique-collection-and-delivery/">Khoa Quản trị kinh doanh</a>
+                                                                </h5>
+                                                                <div class="sc_services_item_subtitle"><a href="#" title="View all posts in Services">Services</a></div>
+                                                                <div class="sc_services_item_text"><p></p></div>
                                                                 <div class="sc_services_item_info">
                                                                     <div class="sc_services_item_button sc_item_button">
-                                                                        <a href="http://mendel-antiques.ancorathemes.com/services/antique-collection-and-delivery/"
-                                                                           class="sc_button sc_button_simple">Xem
-                                                                            thêm</a></div>
+                                                                        <a href="#" class="sc_button sc_button_simple">Xem thêm</a></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -167,55 +156,33 @@
                                                         <div class="sc_services_item with_content">
                                                             <div class="post_featured with_thumb hover_icon sc_services_item_header post_featured_bg mendel_inline_1053337459">
                                                                 <div class="mask"></div>
-                                                                <div class="icons"><a
-                                                                        href="http://mendel-antiques.ancorathemes.com/services/furniture-restoration/"
-                                                                        aria-hidden="true" class="icon-search-alt"></a>
+                                                                <div class="icons"><a href="#" aria-hidden="true" class="icon-search-alt"></a>
                                                                 </div>
                                                             </div>
                                                             <div class="sc_services_item_content">
-                                                                <h5 class="sc_services_item_title"><a
-                                                                        href="http://mendel-antiques.ancorathemes.com/services/furniture-restoration/">Khoa
-                                                                    Tài Chính Ngân Hàng</a></h5>
-                                                                <div class="sc_services_item_subtitle"><a
-                                                                        href="http://mendel-antiques.ancorathemes.com/services_group/services/"
-                                                                        title="View all posts in Services">Services</a>
-                                                                </div>
-                                                                <div class="sc_services_item_text"><p></p>
-                                                                </div>
+                                                                <h5 class="sc_services_item_title"><a href="#">Khoa Tài Chính Ngân Hàng</a></h5>
+                                                                <div class="sc_services_item_subtitle"><a href="#" title="View all posts in Services">Services</a></div>
+                                                                <div class="sc_services_item_text"><p></p></div>
                                                                 <div class="sc_services_item_info">
                                                                     <div class="sc_services_item_button sc_item_button">
-                                                                        <a href="http://mendel-antiques.ancorathemes.com/services/furniture-restoration/"
-                                                                           class="sc_button sc_button_simple">Xem
-                                                                            thêm</a></div>
+                                                                        <a href="#" class="sc_button sc_button_simple">Xem thêm</a></div>
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                     </div>
                                                     <div class="trx_addons_column-1_2 ">
                                                         <div class="sc_services_item with_content">
                                                             <div class="post_featured with_thumb hover_icon sc_services_item_header post_featured_bg mendel_inline_1030833210">
                                                                 <div class="mask"></div>
-                                                                <div class="icons"><a
-                                                                        href="http://mendel-antiques.ancorathemes.com/services/upholstery-and-polish-service/"
-                                                                        aria-hidden="true" class="icon-search-alt"></a>
-                                                                </div>
+                                                                <div class="icons"><a href="#" aria-hidden="true" class="icon-search-alt"></a></div>
                                                             </div>
                                                             <div class="sc_services_item_content">
-                                                                <h5 class="sc_services_item_title"><a
-                                                                        href="http://mendel-antiques.ancorathemes.com/services/upholstery-and-polish-service/">Khoa
-                                                                    Kế Toán</a></h5>
-                                                                <div class="sc_services_item_subtitle"><a
-                                                                        href="http://mendel-antiques.ancorathemes.com/services_group/services/"
-                                                                        title="View all posts in Services">Services</a>
-                                                                </div>
-                                                                <div class="sc_services_item_text"><p></p>
-                                                                </div>
+                                                                <h5 class="sc_services_item_title"><a href="#">Khoa Kế Toán</a></h5>
+                                                                <div class="sc_services_item_subtitle"><a href="#" title="View all posts in Services">Services</a></div>
+                                                                <div class="sc_services_item_text"><p></p></div>
                                                                 <div class="sc_services_item_info">
-                                                                    <div class="sc_services_item_button sc_item_button">
-                                                                        <a href="http://mendel-antiques.ancorathemes.com/services/upholstery-and-polish-service/"
-                                                                           class="sc_button sc_button_simple">Xem
-                                                                            thêm</a></div>
+                                                                    <div class="sc_services_item_button sc_item_button"><a href="#" class="sc_button sc_button_simple">Xem thêm</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -225,17 +192,19 @@
                                                             <div class="post_featured with_thumb hover_icon sc_services_item_header post_featured_bg mendel_inline_329904820">
                                                                 <div class="mask"></div>
                                                                 <div class="icons">
-                                                                    <a href="http://mis.hvnh.edu.vn/"aria-hidden="true" class="icon-search-alt"></a>
+                                                                    <a href="http://mis.hvnh.edu.vn/" aria-hidden="true" class="icon-search-alt"></a>
                                                                 </div>
                                                             </div>
                                                             <div class="sc_services_item_content">
                                                                 <h5 class="sc_services_item_title"><a href="http://mis.hvnh.edu.vn/">Khoa Hệ Thống Thông Tin Quản Lý </a></h5>
-                                                                <div class="sc_services_item_subtitle"><a href="http://mis.hvnh.edu.vn/" title="View all posts in Services">Services</a>
+                                                                <div class="sc_services_item_subtitle">
+                                                                    <a href="http://mis.hvnh.edu.vn/" title="View all posts in Services">Services</a>
                                                                 </div>
                                                                 <div class="sc_services_item_text"><p></p></div>
                                                                 <div class="sc_services_item_info">
                                                                     <div class="sc_services_item_button sc_item_button">
-                                                                        <a href="http://mis.hvnh.edu.vn/" class="sc_button sc_button_simple">Xem thêm</a></div>
+                                                                        <a href="http://mis.hvnh.edu.vn/" class="sc_button sc_button_simple">Xem thêm</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -244,26 +213,19 @@
                                                         <div class="sc_services_item with_content">
                                                             <div class="post_featured with_thumb hover_icon sc_services_item_header post_featured_bg mendel_inline_3299048232">
                                                                 <div class="mask"></div>
-                                                                <div class="icons"><a
-                                                                        href="http://khoaktqt.buh.edu.vn/"
-                                                                        aria-hidden="true" class="icon-search-alt"></a>
+                                                                <div class="icons"><a href="http://khoaktqt.buh.edu.vn/" aria-hidden="true" class="icon-search-alt"></a>
                                                                 </div>
                                                             </div>
                                                             <div class="sc_services_item_content">
-                                                                <h5 class="sc_services_item_title"><a
-                                                                        href="http://khoaktqt.buh.edu.vn/">Khoa
-                                                                    Kinh Doanh Quốc Tế</a></h5>
-                                                                <div class="sc_services_item_subtitle"><a
-                                                                        href="hhttp://khoaktqt.buh.edu.vn/"
-                                                                        title="View all posts in Services">Services</a>
+                                                                <h5 class="sc_services_item_title"><a href="http://khoaktqt.buh.edu.vn/">Khoa Kinh Doanh Quốc Tế</a></h5>
+                                                                <div class="sc_services_item_subtitle"><a href="hhttp://khoaktqt.buh.edu.vn/" title="View all posts in Services">Services</a>
                                                                 </div>
                                                                 <div class="sc_services_item_text"><p></p>
                                                                 </div>
                                                                 <div class="sc_services_item_info">
                                                                     <div class="sc_services_item_button sc_item_button">
-                                                                        <a href="http://khoaktqt.buh.edu.vn/"
-                                                                           class="sc_button sc_button_simple">Xem
-                                                                            thêm</a></div>
+                                                                        <a href="http://khoaktqt.buh.edu.vn/" class="sc_button sc_button_simple">Xem thêm</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -276,84 +238,62 @@
                                                                 </div>
                                                             </div>
                                                             <div class="sc_services_item_content">
-                                                                <h5 class="sc_services_item_title"><a
-                                                                        href="http://hvnh.edu.vn/law/vi/home.html">Khoa
-                                                                    Luật </a></h5>
-                                                                <div class="sc_services_item_subtitle"><a
-                                                                        href="http://hvnh.edu.vn/law/vi/home.html"
-                                                                        title="View all posts in Services">Services</a>
-                                                                </div>
-                                                                <div class="sc_services_item_text"><p></p>
-                                                                </div>
+                                                                <h5 class="sc_services_item_title"><a href="http://hvnh.edu.vn/law/vi/home.html">Khoa Luật </a></h5>
+                                                                <div class="sc_services_item_subtitle"><a href="http://hvnh.edu.vn/law/vi/home.html" title="View all posts in Services">Services</a></div>
+                                                                <div class="sc_services_item_text"><p></p></div>
                                                                 <div class="sc_services_item_info">
                                                                     <div class="sc_services_item_button sc_item_button">
-                                                                        <a href="http://hvnh.edu.vn/law/vi/home.html"
-                                                                           class="sc_button sc_button_simple">Xem
-                                                                            thêm</a></div>
+                                                                        <a href="http://hvnh.edu.vn/law/vi/home.html" class="sc_button sc_button_simple">Xem thêm</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-
-                                                        </ul>
                                                     </div>
                                                     <div class="trx_addons_column-1_2 ">
                                                         <div class="sc_services_item with_content">
                                                             <div class="post_featured with_thumb hover_icon sc_services_item_header post_featured_bg mendel_inline_1030833215">
                                                                 <div class="mask"></div>
-                                                                <div class="icons"><a
-                                                                        href="http://hvnh.edu.vn/atc/vi/home.html"
-                                                                        aria-hidden="true" class="icon-search-alt"></a>
+                                                                <div class="icons"><a href="http://hvnh.edu.vn/atc/vi/home.html" aria-hidden="true" class="icon-search-alt"></a></div>
+                                                            </div>
+                                                            <div class="sc_services_item_content">
+                                                                <h5 class="sc_services_item_title"><a href="http://hvnh.edu.vn/atc/vi/home.html">Khoa Ngôn Ngữ Anh</a></h5>
+                                                                <div class="sc_services_item_subtitle"><a href="http://hvnh.edu.vn/atc/vi/home.html" title="View all posts in Services">Services</a>
+                                                                </div>
+                                                                <div class="sc_services_item_text"><p></p></div>
+                                                                <div class="sc_services_item_info">
+                                                                    <div class="sc_services_item_button sc_item_button">
+                                                                        <a href="http://hvnh.edu.vn/atc/vi/home.html" class="sc_button sc_button_simple">Xem thêm</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="trx_addons_column-1_2 ">
+                                                        <div class="sc_services_item with_content">
+                                                            <div class="post_featured with_thumb hover_icon sc_services_item_header post_featured_bg mendel_inline_329904822">
+                                                                <div class="mask"></div>
+                                                                <div class="icons"><a href="http://hvnh.edu.vn/bank/vi/home.html" aria-hidden="true" class="icon-search-alt"></a>
                                                                 </div>
                                                             </div>
                                                             <div class="sc_services_item_content">
-                                                                <h5 class="sc_services_item_title"><a
-                                                                        href="http://hvnh.edu.vn/atc/vi/home.html">Khoa
-                                                                    Ngôn Ngữ Anh</a></h5>
-                                                                <div class="sc_services_item_subtitle"><a
-                                                                        href="http://hvnh.edu.vn/atc/vi/home.html"
-                                                                        title="View all posts in Services">Services</a>
+                                                                <h5 class="sc_services_item_title"><a href="http://hvnh.edu.vn/bank/vi/home.html">Khoa ngân hàng </a></h5>
+                                                                <div class="sc_services_item_subtitle">
+                                                                    <a href="http://hvnh.edu.vn/bank/vi/home.html" title="View all posts in Services">Services</a>
                                                                 </div>
-                                                                <div class="sc_services_item_text"><p></p>
-                                                                </div>
+                                                                <div class="sc_services_item_text"><p></p></div>
                                                                 <div class="sc_services_item_info">
                                                                     <div class="sc_services_item_button sc_item_button">
-                                                                        <a href="http://hvnh.edu.vn/atc/vi/home.html"
-                                                                           class="sc_button sc_button_simple">Xem
-                                                                            thêm</a></div>
+                                                                        <a href="http://hvnh.edu.vn/bank/vi/home.html" class="sc_button sc_button_simple">Xem thêm</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                <div class="trx_addons_column-1_2 ">
-                                                    <div class="sc_services_item with_content">
-                                                        <div class="post_featured with_thumb hover_icon sc_services_item_header post_featured_bg mendel_inline_329904822">
-                                                            <div class="mask"></div>
-                                                            <div class="icons"><a
-                                                                    href="http://hvnh.edu.vn/bank/vi/home.html"
-                                                                    aria-hidden="true" class="icon-search-alt"></a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="sc_services_item_content">
-                                                            <h5 class="sc_services_item_title"><a href="http://hvnh.edu.vn/bank/vi/home.html">Khoa ngân hàng </a></h5>
-                                                            <div class="sc_services_item_subtitle">
-                                                                <a href="http://hvnh.edu.vn/bank/vi/home.html" title="View all posts in Services">Services</a>
-                                                            </div>
-                                                            <div class="sc_services_item_text"><p></p></div>
-                                                            <div class="sc_services_item_info">
-                                                                <div class="sc_services_item_button sc_item_button">
-                                                                    <a href="http://hvnh.edu.vn/bank/vi/home.html" class="sc_button sc_button_simple">Xem thêm</a></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                                     <div class="trx_addons_column-1_2 ">
                                                         <div class="sc_services_item with_content">
                                                             <div class="post_featured with_thumb hover_icon sc_services_item_header post_featured_bg mendel_inline_329904822s">
                                                                 <div class="mask"></div>
-                                                                <div class="icons"><a
-                                                                        href="http://hvnh.edu.vn/bank/vi/home.html"
-                                                                        aria-hidden="true" class="icon-search-alt"></a>
-                                                                </div>
+                                                                <div class="icons"><a href="http://hvnh.edu.vn/bank/vi/home.html" aria-hidden="true" class="icon-search-alt"></a></div>
                                                             </div>
                                                             <div class="sc_services_item_content">
                                                                 <h5 class="sc_services_item_title"><a href="http://hvnh.edu.vn/bank/vi/home.html">Khoa kinh tế </a></h5>
@@ -363,49 +303,40 @@
                                                                 <div class="sc_services_item_text"><p></p></div>
                                                                 <div class="sc_services_item_info">
                                                                     <div class="sc_services_item_button sc_item_button">
-                                                                        <a href="http://hvnh.edu.vn/bank/vi/home.html" class="sc_button sc_button_simple">Xem thêm</a></div>
+                                                                        <a href="http://hvnh.edu.vn/bank/vi/home.html" class="sc_button sc_button_simple">Xem thêm</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="vc_empty_space  vc_custom_1500477613879 height_large"
-                                                         style="height: 32px"><span class="vc_empty_space_inner"></span>
+                                                    <div class="vc_empty_space  vc_custom_1500477613879 height_large" style="height: 32px">
+                                                        <span class="vc_empty_space_inner"></span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="vc_row-full-width vc_clearfix"></div>
-                                </div><!-- .entry-content -->
-
-
+                                </div>
+                            </div>
+                        </div><!-- .entry-content -->
                     </article>
-
                 </div><!-- </.content> -->
-
-            </div><!-- </.content_wrap> -->            </div><!-- </.page_content_wrap> -->
-
-       @include('index.footer')
+            </div><!-- </.content_wrap> -->
+        </div><!-- </.page_content_wrap> -->
+        @include('index.footer')
     </div><!-- /.page_wrap -->
-
 </div><!-- /.body_wrap -->
-
-
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 <script type="text/javascript">
     var ajaxRevslider;
-
     jQuery(document).ready(function () {
-
-
         // CUSTOM AJAX CONTENT LOADING FUNCTION
         ajaxRevslider = function (obj) {
-
             // obj.type : Post Type
             // obj.id : ID of Content to Load
             // obj.aspectratio : The Aspect Ratio of the Container / Media
             // obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
-
             var content = '';
             var data = {
                 action: 'revslider_ajax_call_front',
@@ -415,7 +346,6 @@
                 id: obj.id,
                 aspectratio: obj.aspectratio
             };
-
             // SYNC AJAX REQUEST
             jQuery.ajax({
                 type: 'post',
@@ -431,17 +361,13 @@
                     console.log(e);
                 }
             });
-
             // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
             return content;
         };
-
         // CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
         var ajaxRemoveRevslider = function (obj) {
             return jQuery(obj.selector + ' .rev_slider').revkill();
         };
-
-
         // EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
         if (jQuery.fn.tpessential !== undefined)
             if (typeof (jQuery.fn.tpessential.defaults) !== 'undefined')
@@ -455,8 +381,6 @@
         // func: the Function Name which is Called once the Item with the Post Type has been clicked
         // killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
         // openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
-
-
     });
 </script>
 <!-- Instagram Feed JS -->
@@ -752,9 +676,6 @@
 <script type='text/javascript'
         src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.0.5'></script>
 <a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up" title="Scroll to top"></a>
-<script>
-    TRX_DEMO_STORAGE['tabs_layout'] = "		<div class=\"trx_demo_panels trx_demo_tabs_position_rc\" style=\"width:320px;\">    			<div class=\"trx_demo_tabs\">  				<a class=\"hint_left hint_big hint_slide\" href=\"https://themeforest.net/checkout/from_item/20831042?license=regular&#038;size=source\"  						 target=\"_blank\"						aria-label=\"Buy theme\"  						data-type=\"link\"  						style=\"color:#ffffff;background-color:#838a40;\"  					><i class=\"trx_demo_icon-shopping-cart\"></i></a><a class=\"hint_left hint_big hint_slide\" href=\"#panel_related-themes\"  												aria-label=\"Related themes\"  						data-type=\"products\"  						style=\"color:#ffffff;background-color:#838a40;\"  					><i class=\"trx_demo_icon-gallery\"></i></a><a class=\"hint_left hint_big hint_slide\" href=\"http://mendel-antiques.ancorathemes.com?notabs=1\"  												aria-label=\"Hide panel\"  						data-type=\"link\"  						style=\"color:#ffffff;background-color:#838a40;\"  					><i class=\"trx_demo_icon-browser\"></i></a>			</div>    			<div class=\"trx_demo_panels_wrap\">  				<div id=\"panel_related-themes\"  							class=\"trx_demo_panel  									trx_demo_panel_products									trx_demo_panel_thumbs_animation_off									trx_demo_panel_layout_1col									trx_demo_panel_style_plain\"  							style=\"\"  					><div class=\"trx_demo_panel_header\"><h5 class=\"trx_demo_panel_title\" style=\"\">Related Themes</h5></div><div class=\"trx_demo_panel_list\"><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2019/07/Geometry.jpg);\">  												<a href=\"http://demo.themerex.net/?theme=geometry\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=geometry\" target=\"_blank\">Geometry &#8211; Interior Design &amp; Furniture Shop WordPress Theme</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">Business</span></div>									</div>  								</div><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2018/08/ozisti-1.png);\">  												<a href=\"http://demo.themerex.net/?theme=ozisti\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=ozisti\" target=\"_blank\">Ozisti &#8211; Augmented Reality, AR WooCommerce WordPress Theme</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">WooCommerce</span></div>									</div>  								</div><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2018/04/palladio-1.png);\">  												<a href=\"http://demo.themerex.net/?theme=palladio\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=palladio\" target=\"_blank\">Palladio &#8211; Interior Design &amp; Architecture Theme</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">Business</span></div>									</div>  								</div><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2017/09/1-51.png);\">  												<a href=\"http://demo.themerex.net/?theme=astudio\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=astudio\" target=\"_blank\">A.Studio &#8211; Interior Design and Architecture Theme</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">Business</span></div>									</div>  								</div><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2018/03/gravity-1.png);\">  												<a href=\"http://demo.themerex.net/?theme=gravity\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=gravity\" target=\"_blank\">Gravity &#8211; Interior Design &amp; Furniture Store</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">Retail</span></div>									</div>  								</div><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2017/11/1-4.png);\">  												<a href=\"http://demo.themerex.net/?theme=green-thumb\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=green-thumb\" target=\"_blank\">Green Thumb &#8211; Gardening &amp; Landscaping Theme</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">Retail</span></div>									</div>  								</div><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2019/07/Rhodos-1.jpg);\">  												<a href=\"http://demo.themerex.net/?theme=rhodos\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=rhodos\" target=\"_blank\">Rhodos &#8211; A Colossal Multipurpose WordPress Theme for Business &amp; Portfolio</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">Business</span></div>									</div>  								</div><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2019/09/Piqes_image.jpg);\">  												<a href=\"http://demo.themerex.net/?theme=piqes\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=piqes\" target=\"_blank\">Piqes &#8211; Creative Startup &#038; Agency WordPress Theme</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">Business</span></div>									</div>  								</div><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2019/07/yungen-preview.jpg);\">  												<a href=\"http://demo.themerex.net/?theme=yungen\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=yungen\" target=\"_blank\">Yungen &#8211; Modern Digital Agency Business WordPress Theme</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">Business</span></div>									</div>  								</div></div><div class=\"trx_demo_panel_footer\"><a class=\"trx_demo_panel_button sc_button theme_button\" href=\"https://themerex.net/premium/?utm_source=demowidget&#038;utm_medium=demowidget&#038;utm_campaign=demowidget\" target=\"_blank\">View All Themes</a></div></div></div>  			<span class=\"trx_demo_button_close\"><span class=\"trx_demo_button_close_icon\"></span></span>    		</div>  		<div class=\"trx_demo_panels_mask\"></div>  		";
-</script>
-
 </body>
+
 </html>

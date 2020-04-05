@@ -62,12 +62,6 @@
                 <p>Thêm sản phẩm</p>
             </a>
         </li>
-        {{-- <li class="nav-item">
-            <a href="../../index3.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Sửa sản phẩm</p>
-            </a>
-        </li> --}}
     </ul>
 </li>
 @include('admin.products.leftforproduct')
@@ -86,29 +80,28 @@
             <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Tên sản phẩm</th>
-                    <th>Loại sản phẩm</th>
-                    <th> Giá </th>
-                    <th>Ảnh</th>
-                    <th>Tùy chọn</th>
+                    <th style="width:5%;">ID</th>
+                    <th style="width:15%;">Tên sản phẩm</th>
+                    <th style="width:15%;">Loại sản phẩm</th>
+                    <th style="width:15%;"> Giá </th>
+                    <th style="width:15%;">Ảnh</th>
+                    <th style="width:15%;">Tùy chọn</th>
                 </tr>
             </thead>
-            @foreach ($product as $products)
+            @foreach ($products as $product)
             <tbody>
                 <tr>
-                    <td>{{ ++$i }}</td>
-                    <td>{{ $products ->name }}</td>
-                    <td>{{ $products ->loaisp }}</td>
-                    <td>{{ $products ->gia }}</td>
+                    <td>{{$product -> id }}</td>
+                    <td>{{ $product ->name }}</td>
+                    <td>{{ $product ->loaisp }}</td>
+                    <td>{{ $product ->gia }}</td>
                     {{-- @foreach($products->productsimage as $image) --}}
-                    <td> <img src="{{asset('img/'.$products->image)}}"  style="width: 50px; height: auto"  /> </td>
+                    <td> <img src="{{asset('img/'.$product->image)}}"  style="width: 100px; height: 100px"  /> </td>
 {{-- @endforeach --}}
-
                     <td>
-                        <form action="{{ route('products.destroy',$products->id) }}" method="POST">
+                        <form action="{{ route('products.destroy',$product->id) }}" method="POST">
                             {{-- <a class="btn btn-info" href="{{ route('products.show',$products->id) }}"></a> --}}
-                            <a class="btnindex  glyphicon glyphicon-edit" id="hover"  href="{{ route('products.edit',$products->id) }}"><span>Sửa</span></a>
+                            <a class="btnindex  glyphicon glyphicon-edit" id="hover"  href="{{ route('products.edit',$product->id) }}"><span>Sửa</span></a>
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btnindex fa fa-trash"id="hover"><span>Xóa</span> </button>
@@ -118,22 +111,12 @@
             </tbody>
             @endforeach
             </table>
-            {!! $product->links() !!}
+
+{{--            {!! $product->links() !!}--}}
         </div>
+
         <!-- /.card-body -->
     </div>
+
 @endsection
 
-<script>
-    $(function() {
-        $('#example1').DataTable()
-        $('#example2').DataTable({
-            'paging': true,
-            'lengthChange': false,
-            'searching': false,
-            'ordering': true,
-            'info': true,
-            'autoWidth': false
-        })
-    })
-</script>

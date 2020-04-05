@@ -28,6 +28,7 @@
 <body>
 <div class="hold-transition sidebar-mini">
     <div class="wrapper">
+        @if (Auth::check())
 @include('admin.header')
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -99,30 +100,7 @@
         </aside>
         <!-- /.control-sidebar -->
     </div>
-            <!-- jQuery -->
-    <!-- Bootstrap 4 -->
-{{--    <script type="text/javascript" src="<?php echo asset('css/jquery/jquery.min.js'); ?>"></script>--}}
-{{--    <script type="text/javascript" src="<?php echo asset('css/jquery-ui/jquery-ui.js'); ?>"></script>--}}
-{{--    <script type="text/javascript" src="<?php echo asset('css/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>--}}
-{{--    <!-- jsGrid -->  <script type="text/javascript" src="<?php echo asset('css/jsgrid/jsgrid.js'); ?>"></script>--}}
 
-{{--    <script type="text/javascript" src="<?php echo asset('css/jsgrid/jsgrid.min.js'); ?>"></script>--}}
-{{--    <script type="text/javascript" src="<?php echo asset('css/dist/js/adminlte.min.js'); ?>"></script>--}}
-{{--    <script type="text/javascript" src="<?php echo asset('css/dist/js/demo.js'); ?>"></script>--}}
-{{--    <script type="text/javascript" src="<?php echo asset('css/datatables/jquery.dataTables.js'); ?>"></script>--}}
-{{--    <script>--}}
-{{--        $(function () {--}}
-{{--            $("#example1").DataTable();--}}
-{{--            $('#example2').DataTable({--}}
-{{--                "paging": true,--}}
-{{--                "lengthChange": false,--}}
-{{--                "searching": false,--}}
-{{--                "ordering": true,--}}
-{{--                "info": true,--}}
-{{--                "autoWidth": false,--}}
-{{--            });--}}
-{{--        });--}}
-{{--    </script>--}}
         <script type="text/javascript" src="<?php echo asset('css/jsgrid/demos/db.js'); ?>"></script>
     <script type="text/javascript" src="<?php echo asset('css/jquery/jquery.min.js'); ?>"></script>
     <!-- Bootstrap 4 -->
@@ -135,23 +113,21 @@
     <!-- AdminLTE for demo purposes -->
     <script type="text/javascript" src="<?php echo asset('css/dist/js/demo.js'); ?>"></script>
     <!-- page script -->
-{{--    <script>--}}
-{{--        $(function () {--}}
-{{--            $("#example1").DataTable();--}}
-{{--            $('#example2').DataTable({--}}
-{{--                "paging": true,--}}
-{{--                "lengthChange": false,--}}
-{{--                "searching": false,--}}
-{{--                "ordering": true,--}}
-{{--                "info": true,--}}
-{{--                "autoWidth": false,--}}
-{{--            });--}}
-{{--        });--}}
-{{--        </script>--}}
-    <!-- page script -->
-</div>
-
+    <script>
+        $(function () {
+            $("#example1").DataTable();
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+            });
+        });
+    </script>
 
 </body>
 </html>
 
+@endif
