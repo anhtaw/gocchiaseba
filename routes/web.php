@@ -12,7 +12,11 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::group(['prefix' => '/'], function () {
+Route::get('/', function () {
+
+    return redirect()->route('index.index');
+});
+Route::group(['prefix' => 'admin'], function () {
     // Route::resource('raovat', 'index\RaovatController');
     Route::resource('index', 'index\IndexController');
     Route::resource('admin', 'index\UserController');
