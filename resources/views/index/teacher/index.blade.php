@@ -75,7 +75,7 @@
 
 	<div class="search_form_wrap">
 
-        <form role="search" method="get" class="search_form" action="http://mendel-antiques.ancorathemes.com/">
+        <form role="search" method="get" class="search_form" action="#">
 
             <input type="text" class="search_field" placeholder="Search" value="" name="s">
 
@@ -91,7 +91,7 @@
 
         class="sc_content color_style_default sc_content_default sc_content_width_1_1 sc_float_center"><div class="sc_content_container"><div class="vc_empty_space  em_sp_top vc_custom_1568806866743 height_large"   style="height: 36px"><span class="vc_empty_space_inner"></span></div><div class="sc_layouts_item"><div id="sc_layouts_title_670912576" class="sc_layouts_title with_content"><div class="sc_layouts_title_content"><div class="sc_layouts_title_title">							<h1 class="sc_layouts_title_caption">KHOA HỆ THỐNG THÔNG TIN QUẢN LÝ</h1>
 
-                            </div><div class="sc_layouts_title_breadcrumbs"><div class="breadcrumbs"><a class="breadcrumbs_item home" href="http://mendel-antiques.ancorathemes.com/">Trang chủ</a><span class="breadcrumbs_delimiter"></span><span class="breadcrumbs_item current">KHOA HỆ THỐNG THÔNG TIN QUẢN LÝ</span></div></div></div><!-- .sc_layouts_title_content --></div><!-- /.sc_layouts_title --></div><div class="vc_empty_space  em_sp_b vc_custom_1568806854216 height_large"   style="height: 36px"><span class="vc_empty_space_inner"></span></div></div></div><!-- /.sc_content --></div></div></div></div>
+                            </div><div class="sc_layouts_title_breadcrumbs"><div class="breadcrumbs"><a class="breadcrumbs_item home" href="#">Trang chủ</a><span class="breadcrumbs_delimiter"></span><span class="breadcrumbs_item current">KHOA HỆ THỐNG THÔNG TIN QUẢN LÝ</span></div></div></div><!-- .sc_layouts_title_content --></div><!-- /.sc_layouts_title --></div><div class="vc_empty_space  em_sp_b vc_custom_1568806854216 height_large"   style="height: 36px"><span class="vc_empty_space_inner"></span></div></div></div><!-- /.sc_content --></div></div></div></div>
 
 </header>
 
@@ -104,15 +104,15 @@
 
 <div class="page_content_wrap scheme_default">
 	<div class="content_wrap">
-		<div class="content">									
+		<div class="content">
 			<div class="sc_team sc_team_default">
-				
+
 				@foreach ($teacher as $a)
         				<table>
         					<tr>
 								<td width="30%" text-align="center">
 								<div class="post_featured with_thumb hover_icon sc_team_item_thumb">
-									<img width="540" height="540" src="{{asset('img/'.$a->image)}}" class="attachment-mendel-thumb-team size-mendel-thumb-team wp-post-image" alt="Richard Mendel"  />
+									<img width="540" height="540" src="{{asset('img/'.$a->image)}}" class="attachment-mendel-thumb-team size-mendel-thumb-team wp-post-image" alt=""  />
 									<div class="mask">
 									</div>
 									<div class="icons">
@@ -133,27 +133,27 @@
 												<p>{{ $a ->mon }}.</p>
 											</div>
 										<div class="sc_team_item_socials socials_wrap" align="left">
-												<a target="_blank" href="https://www.facebook.com/AncoraThemes/" class="social_item social_item_style_icons social_item_type_icons">
+												<a target="_blank" href="#" class="social_item social_item_style_icons social_item_type_icons">
 													<span class="social_icon social_facebook">
 														<span class="icon-facebook">
 														</span>
 													</span>
 												</a>
-											<a target="_blank" href="https://twitter.com/ancora_themes" class="social_item social_item_style_icons social_item_type_icons">
+											<a target="_blank" href="#" class="social_item social_item_style_icons social_item_type_icons">
 												<span class="social_icon social_twitter">
 													<span class="icon-twitter">
 													</span>
 												</span>
 											</a>
-											<a target="_blank" href="https://www.pinterest.com/themerex0063" class="social_item social_item_style_icons social_item_type_icons">
+											<a target="_blank" href="#" class="social_item social_item_style_icons social_item_type_icons">
 												<span class="social_icon social_pinterest-circled">
 													<span class="icon-pinterest-circled">
 													</span>
 												</span>
 											</a>
-										</div>		
+										</div>
 										<div class="sc_team_item_button">
-											<a href="http://mendel-antiques.ancorathemes.com/team/richard-mendel/" class="sc_button sc_button_simple">Learn more
+											<a href="#" class="sc_button sc_button_simple">Learn more
 											</a>
 										</div>
 									</div>
@@ -161,18 +161,18 @@
        						</tr>
        					</table>
 				@endforeach
-				
+
 			</div>
 		</div>
-		
+
 	</div>
-</div><!-- .trx_addons_team_columns_wrap --></div><!-- .sc_team -->				
+</div><!-- .trx_addons_team_columns_wrap --></div><!-- .sc_team -->
 					</div><!-- </.content> -->
 
 					</div><!-- </.content_wrap> -->			</div><!-- </.page_content_wrap> -->
 
-			
-		
+
+
 		@include('index.footer')
 </body>
 </html>
