@@ -341,19 +341,19 @@
     <link property="stylesheet" rel='stylesheet' id='mediaelement-css' href="<?php echo asset('index/mediaelementplayer-legacy.min.css')?>"  media='all'/>
     <link property="stylesheet" rel='stylesheet' id='wp-mediaelement-css' href="<?php echo asset('index/wp-mediaelement.min.css')?>"  media='all'/>
     <link property="stylesheet" rel='stylesheet' id='mendel-responsive-css' href="<?php echo asset('index/responsive.css')?>"  media='all'/>
-    <script type='text/javascript' src='{{asset('css/jquery/jqueryver1.12.4.js')}}'></script>
-    <script type='text/javascript' src='{{asset('css/jquery/jquery-migrate.minver1.4.1.js')}}'></script>
-    <script type='text/javascript' src='{{asset('css/jquery/jquery.easing.1.3ver5.3.2.js')}}'></script>
-    <script type='text/javascript' src='{{asset('css/jquery/query.timelinever=5.3.2.js')}}'></script>
-    <script type='text/javascript' src='{{asset('css/jquery/jquery.mousewheel.minver=5.3.2.js')}}'></script>
-    <script type='text/javascript' src='{{asset('css/jquery/jquery.mCustomScrollbar.minver=5.3.2.js')}}'></script>
-    <script type='text/javascript' src='{{asset('css/jquery/rolloverver=5.3.2.js')}}'></script>
-    <script type='text/javascript' src='{{asset('css/jquery/jquery.prettyPhotover=5.3.2.js')}}'></script>
-    <script type='text/javascript' src='{{asset('css/jquery/jquery.my_add_functionver=5.3.2.js')}}'></script>
-    <script type='text/javascript' src='{{asset('css/jquery/revolution.tools.minver=6.0.js')}}'></script>
-    <script type='text/javascript' src='{{asset('css/jquery/rs6.minver=6.1.3.js')}}'></script>
-    <script type='text/javascript' src='{{asset('css/jquery/jquery.blockUI.minver=2.70.js')}}'></script>
-    <script type='text/javascript'>
+    <script  src='{{asset('css/jquery/jqueryver1.12.4.js')}}'></script>
+    <script src='{{asset('css/jquery/jquery-migrate.minver1.4.1.js')}}'></script>
+    <script src='{{asset('css/jquery/jquery.easing.1.3ver5.3.2.js')}}'></script>
+    <script  src='{{asset('css/jquery/query.timelinever=5.3.2.js')}}'></script>
+    <script  src='{{asset('css/jquery/jquery.mousewheel.minver=5.3.2.js')}}'></script>
+    <script  src='{{asset('css/jquery/jquery.mCustomScrollbar.minver=5.3.2.js')}}'></script>
+    <script  src='{{asset('css/jquery/rolloverver=5.3.2.js')}}'></script>
+    <script  src='{{asset('css/jquery/jquery.prettyPhotover=5.3.2.js')}}'></script>
+    <script  src='{{asset('css/jquery/jquery.my_add_functionver=5.3.2.js')}}'></script>
+    <script  src='{{asset('css/jquery/revolution.tools.minver=6.0.js')}}'></script>
+    <script  src='{{asset('css/jquery/rs6.minver=6.1.3.js')}}'></script>
+    <script  src='{{asset('css/jquery/jquery.blockUI.minver=2.70.js')}}'></script>
+    <script >
         /* <![CDATA[ */
         var wc_add_to_cart_params = {
             "ajax_url": "\/wp-admin\/admin-ajax.php",
@@ -365,8 +365,8 @@
         };
         /* ]]> */
     </script>
-    <script type='text/javascript' src='{{asset('css/jquery/add-to-cart.minver=4.0.1.js')}}'></script>
-    <script type='text/javascript' src='{{asset('css/jquery/woocommerce-add-to-cartver=6.0.5.js')}}'></script>
+    <script  src='{{asset('css/jquery/add-to-cart.minver=4.0.1.js')}}'></script>
+    <script  src='{{asset('css/jquery/woocommerce-add-to-cartver=6.0.5.js')}}'></script>
     {{-- <link rel='https://api.w.org/' href='http://mendel-antiques.ancorathemes.com/wp-json/'/> --}}
     {{-- <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://mendel-antiques.ancorathemes.com/xmlrpc.php?rsd"/> --}}
     <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="<?php echo asset('css/wlwmanifest.xml')?>"/>
