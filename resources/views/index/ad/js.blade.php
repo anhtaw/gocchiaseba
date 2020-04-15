@@ -142,11 +142,11 @@ jQuery(sliderID).show().html(err);
 }
 </script>
 <link property="stylesheet" rel='stylesheet' id='vc_tta_style-css' href="<?php echo asset('index/index7.css')?>" type='text/css' media='all'/>
-<script type='text/javascript' src="{{asset('index/js/code.min,js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/widget.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/mouse.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/draggable.min.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/code.min,js')}}"></script>
+<script  src="{{asset('index/js/widget.min.js')}}"></script>
+<script  src="{{asset('index/js/mouse.min.js')}}"></script>
+<script  src="{{asset('index/js/draggable.min.js')}}"></script>
+<script >
 /* <![CDATA[ */
 var wpcf7 = {
 "apiSettings": {
@@ -156,9 +156,9 @@ var wpcf7 = {
 };
 /* ]]> */
 </script>
-<script type='text/javascript' src="{{asset('index/js/scripts.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/datepicker.min.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/scripts.js')}}"></script>
+<script  src="{{asset('index/js/datepicker.min.js')}}"></script>
+<script >
 jQuery(document).ready(function (jQuery) {
 jQuery.datepicker.setDefaults({
 "closeText": "Close",
@@ -176,13 +176,13 @@ jQuery.datepicker.setDefaults({
 });
 });
 </script>
-<script type='text/javascript' src="{{asset('index/js/jquery-ui-timepicker-addon.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/slider.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/button.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/jquery-ui-sliderAccess.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/swiper.jquery.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/jquery.magnific-popup.min.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/jquery-ui-timepicker-addon.min.js')}}"></script>
+<script  src="{{asset('index/js/slider.min.js')}}"></script>
+<script  src="{{asset('index/js/button.min.js')}}"></script>
+<script  src="{{asset('index/js/jquery-ui-sliderAccess.js')}}"></script>
+<script  src="{{asset('index/js/swiper.jquery.min.js')}}"></script>
+<script  src="{{asset('index/js/jquery.magnific-popup.min.js')}}"></script>
+<script >
 /* <![CDATA[ */
 var TRX_ADDONS_STORAGE = {
 "ajax_url": "http:\/\/mendel-antiques.ancorathemes.com\/wp-admin\/admin-ajax.php",
@@ -227,8 +227,8 @@ var TRX_ADDONS_STORAGE = {
 };
 /* ]]> */
 </script>
-<script type='text/javascript' src="{{asset('index/js/trx_addons.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/trx_addons.js')}}"></script>
+<script >
 /* <![CDATA[ */
 var TRX_DEMO_STORAGE = {
 "ajax_url": "http:\/\/mendel-antiques.ancorathemes.com\/wp-admin\/admin-ajax.php",
@@ -240,9 +240,9 @@ var TRX_DEMO_STORAGE = {
 };
 /* ]]> */
 </script>
-<script type='text/javascript' src="{{asset('index/js/trx_demo_panels.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/js.cookie.min.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/trx_demo_panels.js')}}"></script>
+<script  src="{{asset('index/js/js.cookie.min.js')}}"></script>
+<script >
 /* <![CDATA[ */
 var woocommerce_params = {
 "ajax_url": "\/wp-admin\/admin-ajax.php",
@@ -250,8 +250,8 @@ var woocommerce_params = {
 };
 /* ]]> */
 </script>
-<script type='text/javascript' src="{{asset('index/js/woocommerce.min.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/woocommerce.min.js')}}"></script>
+<script >
 /* <![CDATA[ */
 var wc_cart_fragments_params = {
 "ajax_url": "\/wp-admin\/admin-ajax.php",
@@ -262,9 +262,9 @@ var wc_cart_fragments_params = {
 };
 /* ]]> */
 </script>
-<script type='text/javascript' src="{{asset('index/js/cart-fragments.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/superfish.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/cart-fragments.min.js')}}"></script>
+<script  src="{{asset('index/js/superfish.js')}}"></script>
+<script >
 /* <![CDATA[ */
 var MENDEL_STORAGE = {
 "ajax_url": "http:\/\/mendel-antiques.ancorathemes.com\/wp-admin\/admin-ajax.php",
@@ -299,8 +299,8 @@ var MENDEL_STORAGE = {
 };
 /* ]]> */
 </script>
-<script type='text/javascript' src="{{asset('index/js/__scripts.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/__scripts.js')}}"></script>
+<script >
 var mejsL10n = {
 "language": "en", "strings": {
 "mejs.install-flash": "You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/",
@@ -390,9 +390,9 @@ var mejsL10n = {
 }
 };
 </script>
-<script type='text/javascript' src="{{asset('index/js/mediaelement-and-player.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/mediaelement-migrate.min.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/mediaelement-and-player.min.js')}}"></script>
+<script  src="{{asset('index/js/mediaelement-migrate.min.js')}}"></script>
+<script >
 /* <![CDATA[ */
 var _wpmejsSettings = {
 "pluginPath": "\/wp-includes\/js\/mediaelement\/",
@@ -401,12 +401,12 @@ var _wpmejsSettings = {
 };
 /* ]]> */
 </script>
-<script type='text/javascript' src="{{asset('index/js/wp-mediaelement.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/wp-embed.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/js_composer_front.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/jquery-ui-touch-punch.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/accounting.min.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/wp-mediaelement.min.js')}}"></script>
+<script  src="{{asset('index/js/wp-embed.min.js')}}"></script>
+<script  src="{{asset('index/js/js_composer_front.min.js')}}"></script>
+<script  src="{{asset('index/js/jquery-ui-touch-punch.min.js')}}"></script>
+<script  src="{{asset('index/js/accounting.min.js')}}"></script>
+<script >
     /* <![CDATA[ */
     var woocommerce_price_slider_params = {
         "currency_format_num_decimals": "0",
@@ -417,7 +417,7 @@ var _wpmejsSettings = {
     };
     /* ]]> */
 </script>
-<script type='text/javascript' src="{{asset('index/js/price-slide.min.js')}}"></script>
+<script  src="{{asset('index/js/price-slide.min.js')}}"></script>
 <a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up"title="Scroll to top"></a>
 
  <!-- /.body_wrap -->
@@ -520,11 +520,11 @@ var _wpmejsSettings = {
      document.body.className = c;
  </script>
  <link property="stylesheet" rel='stylesheet' id='js_composer_front-css' href='http://mendel-antiques.ancorathemes.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.0.5' type='text/css' media='all' />
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
- <script type='text/javascript'>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+ <script >
      /* <![CDATA[ */
      var wpcf7 = {
          "apiSettings": {
@@ -534,9 +534,9 @@ var _wpmejsSettings = {
      };
      /* ]]> */
  </script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.7'></script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
- <script type='text/javascript'>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.7'></script>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
+ <script >
      jQuery(document).ready(function(jQuery) {
          jQuery.datepicker.setDefaults({
              "closeText": "Close",
@@ -554,13 +554,13 @@ var _wpmejsSettings = {
          });
      });
  </script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/contact-form-7-datepicker/js/jquery-ui-timepicker/jquery-ui-timepicker-addon.min.js?ver=5.3.2'></script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-includes/js/jquery/ui/slider.min.js?ver=1.11.4'></script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/contact-form-7-datepicker/js/jquery-ui-sliderAccess.js?ver=5.3.2'></script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/trx_addons/js/swiper/swiper.jquery.min.js'></script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/trx_addons/js/magnific/jquery.magnific-popup.min.js'></script>
- <script type='text/javascript'>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/contact-form-7-datepicker/js/jquery-ui-timepicker/jquery-ui-timepicker-addon.min.js?ver=5.3.2'></script>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-includes/js/jquery/ui/slider.min.js?ver=1.11.4'></script>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/contact-form-7-datepicker/js/jquery-ui-sliderAccess.js?ver=5.3.2'></script>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/trx_addons/js/swiper/swiper.jquery.min.js'></script>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/trx_addons/js/magnific/jquery.magnific-popup.min.js'></script>
+ <script >
      /* <![CDATA[ */
      var TRX_ADDONS_STORAGE = {
          "ajax_url": "http:\/\/mendel-antiques.ancorathemes.com\/wp-admin\/admin-ajax.php",
@@ -605,8 +605,8 @@ var _wpmejsSettings = {
      };
      /* ]]> */
  </script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/trx_addons/js/trx_addons.js'></script>
- <script type='text/javascript'>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/trx_addons/js/trx_addons.js'></script>
+ <script >
      /* <![CDATA[ */
      var TRX_DEMO_STORAGE = {
          "ajax_url": "http:\/\/mendel-antiques.ancorathemes.com\/wp-admin\/admin-ajax.php",
@@ -618,9 +618,9 @@ var _wpmejsSettings = {
      };
      /* ]]> */
  </script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/trx_demo/js/trx_demo_panels.js'></script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
- <script type='text/javascript'>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/trx_demo/js/trx_demo_panels.js'></script>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
+ <script >
      /* <![CDATA[ */
      var woocommerce_params = {
          "ajax_url": "\/wp-admin\/admin-ajax.php",
@@ -628,8 +628,8 @@ var _wpmejsSettings = {
      };
      /* ]]> */
  </script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=4.0.1'></script>
- <script type='text/javascript'>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=4.0.1'></script>
+ <script >
      /* <![CDATA[ */
      var wc_cart_fragments_params = {
          "ajax_url": "\/wp-admin\/admin-ajax.php",
@@ -640,9 +640,9 @@ var _wpmejsSettings = {
      };
      /* ]]> */
  </script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=4.0.1'></script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/trx_addons/components/cpt/layouts/shortcodes/menu/superfish.js'></script>
- <script type='text/javascript'>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=4.0.1'></script>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/trx_addons/components/cpt/layouts/shortcodes/menu/superfish.js'></script>
+ <script >
      /* <![CDATA[ */
      var MENDEL_STORAGE = {
          "ajax_url": "http:\/\/mendel-antiques.ancorathemes.com\/wp-admin\/admin-ajax.php",
@@ -677,8 +677,8 @@ var _wpmejsSettings = {
      };
      /* ]]> */
  </script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/themes/mendel/js/__scripts.js'></script>
- <script type='text/javascript'>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-content/themes/mendel/js/__scripts.js'></script>
+ <script >
      var mejsL10n = {
          "language": "en",
          "strings": {
@@ -769,9 +769,9 @@ var _wpmejsSettings = {
          }
      };
  </script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.13-9993131'></script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.3.2'></script>
- <script type='text/javascript'>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.13-9993131'></script>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.3.2'></script>
+ <script >
      /* <![CDATA[ */
      var _wpmejsSettings = {
          "pluginPath": "\/wp-includes\/js\/mediaelement\/",
@@ -780,12 +780,12 @@ var _wpmejsSettings = {
      };
      /* ]]> */
  </script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.3.2'></script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.0.5'></script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/woocommerce/assets/js/jquery-ui-touch-punch/jquery-ui-touch-punch.min.js?ver=4.0.1'></script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/woocommerce/assets/js/accounting/accounting.min.js?ver=0.4.2'></script>
- <script type='text/javascript'>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.3.2'></script>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.0.5'></script>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/woocommerce/assets/js/jquery-ui-touch-punch/jquery-ui-touch-punch.min.js?ver=4.0.1'></script>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/woocommerce/assets/js/accounting/accounting.min.js?ver=0.4.2'></script>
+ <script >
      /* <![CDATA[ */
      var woocommerce_price_slider_params = {
          "currency_format_num_decimals": "0",
@@ -796,7 +796,7 @@ var _wpmejsSettings = {
      };
      /* ]]> */
  </script>
- <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/woocommerce/assets/js/frontend/price-slider.min.js?ver=4.0.1'></script>
+ <script  src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/woocommerce/assets/js/frontend/price-slider.min.js?ver=4.0.1'></script>
  <a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up" title="Scroll to top"></a>
 {{-- <script>--}}
 {{--     TRX_DEMO_STORAGE['tabs_layout'] = "		" +--}}
