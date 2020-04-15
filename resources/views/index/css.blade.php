@@ -299,7 +299,7 @@
     <link property="stylesheet" rel='stylesheet' id='timeline-css-css' href="<?php echo asset('index/timeline.css')?>" type='text/css' media='all'/>
     <link property="stylesheet" rel='stylesheet' id='customScroll-css-css' href="<?php echo asset('index/jquery.mCustomScrollbar.css')?>" type='text/css' media='all'/>
     <link property="stylesheet" rel='stylesheet' id='prettyPhoto-css-css' href="<?php echo asset('index/prettyPhoto.css')?>" type='text/css' media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='my_timeline_font_awesome-css' href="<?php echo asset('index/prettyPhoto.css')?>" css/font-awesome.css' type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='my_timeline_font_awesome-css' href="<?php echo asset('index/prettyPhoto.css')?>"  type='text/css' media='all'/>
     <link property="stylesheet" rel='stylesheet' id='my_timeline_lineicons_css-css' href="<?php echo asset('index/themify-icons.css')?>" type='text/css' media='all'/>
     <link property="stylesheet" rel='stylesheet' id='sb_instagram_styles-css' href="<?php echo asset('index/sb-instagram-2-2.min.css')?>" type='text/css' media='all'/>
     <link property="stylesheet" rel='stylesheet' id='wp-block-library-css' href="<?php echo asset('index/style.min.css')?>"  type='text/css' media='all'/>
