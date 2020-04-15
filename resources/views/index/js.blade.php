@@ -118,11 +118,11 @@ jQuery(sliderID).show().html(err);
 }
 </script>
 <link property="stylesheet" rel='stylesheet' id='vc_tta_style-css' href="<?php echo asset('index/index7.css')?>" type='text/css' media='all'/>
-<script type='text/javascript' src="{{asset('index/js/code.min,js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/widget.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/mouse.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/draggable.min.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/code.min,js')}}"></script>
+<script  src="{{asset('index/js/widget.min.js')}}"></script>
+<script  src="{{asset('index/js/mouse.min.js')}}"></script>
+<script  src="{{asset('index/js/draggable.min.js')}}"></script>
+<script >
 /* <![CDATA[ */
 var wpcf7 = {
 "apiSettings": {
@@ -132,9 +132,9 @@ var wpcf7 = {
 };
 /* ]]> */
 </script>
-<script type='text/javascript' src="{{asset('index/js/scripts.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/datepicker.min.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/scripts.js')}}"></script>
+<script  src="{{asset('index/js/datepicker.min.js')}}"></script>
+<script >
 jQuery(document).ready(function (jQuery) {
 jQuery.datepicker.setDefaults({
 "closeText": "Close",
@@ -152,13 +152,13 @@ jQuery.datepicker.setDefaults({
 });
 });
 </script>
-<script type='text/javascript' src="{{asset('index/js/jquery-ui-timepicker-addon.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/slider.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/button.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/jquery-ui-sliderAccess.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/swiper.jquery.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/jquery.magnific-popup.min.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/jquery-ui-timepicker-addon.min.js')}}"></script>
+<script  src="{{asset('index/js/slider.min.js')}}"></script>
+<script  src="{{asset('index/js/button.min.js')}}"></script>
+<script  src="{{asset('index/js/jquery-ui-sliderAccess.js')}}"></script>
+<script  src="{{asset('index/js/swiper.jquery.min.js')}}"></script>
+<script  src="{{asset('index/js/jquery.magnific-popup.min.js')}}"></script>
+<script >
 /* <![CDATA[ */
 var TRX_ADDONS_STORAGE = {
 "ajax_url": "http:\/\/mendel-antiques.ancorathemes.com\/wp-admin\/admin-ajax.php",
@@ -203,8 +203,8 @@ var TRX_ADDONS_STORAGE = {
 };
 /* ]]> */
 </script>
-<script type='text/javascript' src="{{asset('index/js/trx_addons.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/trx_addons.js')}}"></script>
+<script >
 /* <![CDATA[ */
 var TRX_DEMO_STORAGE = {
 "ajax_url": "http:\/\/mendel-antiques.ancorathemes.com\/wp-admin\/admin-ajax.php",
@@ -216,9 +216,9 @@ var TRX_DEMO_STORAGE = {
 };
 /* ]]> */
 </script>
-<script type='text/javascript' src="{{asset('index/js/trx_demo_panels.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/js.cookie.min.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/trx_demo_panels.js')}}"></script>
+<script  src="{{asset('index/js/js.cookie.min.js')}}"></script>
+<script >
 /* <![CDATA[ */
 var woocommerce_params = {
 "ajax_url": "\/wp-admin\/admin-ajax.php",
@@ -226,8 +226,8 @@ var woocommerce_params = {
 };
 /* ]]> */
 </script>
-<script type='text/javascript' src="{{asset('index/js/woocommerce.min.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/woocommerce.min.js')}}"></script>
+<script >
 /* <![CDATA[ */
 var wc_cart_fragments_params = {
 "ajax_url": "\/wp-admin\/admin-ajax.php",
@@ -238,9 +238,9 @@ var wc_cart_fragments_params = {
 };
 /* ]]> */
 </script>
-<script type='text/javascript' src="{{asset('index/js/cart-fragments.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/superfish.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/cart-fragments.min.js')}}"></script>
+<script  src="{{asset('index/js/superfish.js')}}"></script>
+<script >
 /* <![CDATA[ */
 var MENDEL_STORAGE = {
 "ajax_url": "http:\/\/mendel-antiques.ancorathemes.com\/wp-admin\/admin-ajax.php",
@@ -275,8 +275,8 @@ var MENDEL_STORAGE = {
 };
 /* ]]> */
 </script>
-<script type='text/javascript' src="{{asset('index/js/__scripts.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/__scripts.js')}}"></script>
+<script >
 var mejsL10n = {
 "language": "en", "strings": {
 "mejs.install-flash": "You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/",
@@ -366,9 +366,9 @@ var mejsL10n = {
 }
 };
 </script>
-<script type='text/javascript' src="{{asset('index/js/mediaelement-and-player.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/mediaelement-migrate.min.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/mediaelement-and-player.min.js')}}"></script>
+<script  src="{{asset('index/js/mediaelement-migrate.min.js')}}"></script>
+<script >
 /* <![CDATA[ */
 var _wpmejsSettings = {
 "pluginPath": "\/wp-includes\/js\/mediaelement\/",
@@ -377,13 +377,13 @@ var _wpmejsSettings = {
 };
 /* ]]> */
 </script>
-<script type='text/javascript' src="{{asset('index/js/wp-mediaelement.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/wp-embed.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/js_composer_front.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/vc-accordion.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/vc-tta-autoplay.min.js')}}"></script>
-<script type='text/javascript' src="{{asset('index/js/vc-tabs.min.js')}}"></script>
-<script type='text/javascript'>
+<script  src="{{asset('index/js/wp-mediaelement.min.js')}}"></script>
+<script  src="{{asset('index/js/wp-embed.min.js')}}"></script>
+<script  src="{{asset('index/js/js_composer_front.min.js')}}"></script>
+<script  src="{{asset('index/js/vc-accordion.min.js')}}"></script>
+<script  src="{{asset('index/js/vc-tta-autoplay.min.js')}}"></script>
+<script  src="{{asset('index/js/vc-tabs.min.js')}}"></script>
+<script >
 /* <![CDATA[ */
 var sb_instagram_js_options = {
 "font_method": "svg",
@@ -392,7 +392,7 @@ var sb_instagram_js_options = {
 };
 /* ]]> */
 </script>
-<script type='text/javascript'
+<script
 src="{{asset('index/js/sb-instagram-2-2.min.js')}}"></script>
 <a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up"
 title="Scroll to top"></a>
