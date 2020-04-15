@@ -7,7 +7,7 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
     {{-- <link rel="pingback" href="http://mendel-antiques.ancorathemes.com/xmlrpc.php"> --}}
     <title>Góc chia sẻ BA</title>
-    <style type="text/css" data-type="vc_shortcodes-custom-css">
+    <style  data-type="vc_shortcodes-custom-css">
         .vc_custom_1500877443899 {
             margin-right: -4.5rem !important;
             margin-left: -4.5rem !important;
@@ -282,7 +282,7 @@
             })), (r = t.source || {}).concatemoji ? d(r.concatemoji) : r.wpemoji && r.twemoji && (d(r.twemoji), d(r.wpemoji)))
         }(window, document, window._wpemojiSettings);
     </script>
-    <style type="text/css">
+    <style >
         img.wp-smiley,
         img.emoji {
             display: inline !important;
@@ -299,7 +299,7 @@
     <link property="stylesheet" rel='stylesheet' id='timeline-css-css' href="<?php echo asset('index/timeline.css')?>" type='text/css' media='all'/>
     <link property="stylesheet" rel='stylesheet' id='customScroll-css-css' href="<?php echo asset('index/jquery.mCustomScrollbar.css')?>" type='text/css' media='all'/>
     <link property="stylesheet" rel='stylesheet' id='prettyPhoto-css-css' href="<?php echo asset('index/prettyPhoto.css')?>" type='text/css' media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='my_timeline_font_awesome-css' href="<?php echo asset('index/prettyPhoto.css')?>"  type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='my_timeline_font_awesome-css' href="<?php echo asset('index/prettyPhoto.css')?>" css/font-awesome.css' type='text/css' media='all'/>
     <link property="stylesheet" rel='stylesheet' id='my_timeline_lineicons_css-css' href="<?php echo asset('index/themify-icons.css')?>" type='text/css' media='all'/>
     <link property="stylesheet" rel='stylesheet' id='sb_instagram_styles-css' href="<?php echo asset('index/sb-instagram-2-2.min.css')?>" type='text/css' media='all'/>
     <link property="stylesheet" rel='stylesheet' id='wp-block-library-css' href="<?php echo asset('index/style.min.css')?>"  type='text/css' media='all'/>
@@ -309,7 +309,7 @@
     <link property="stylesheet" rel='stylesheet' id='essential-grid-plugin-settings-css' href="<?php echo asset('index/settings.css')?>" type='text/css' media='all'/>
     <link property="stylesheet" rel='stylesheet' id='tp-fontello-css' href="<?php echo asset('index/fontello.css')?>" type='text/css' media='all'/>
     <link property="stylesheet" rel='stylesheet' id='rs-plugin-settings-css' href="<?php echo asset('index/rs6.css')?>"  type='text/css' media='all'/>
-    <style id='rs-plugin-settings-inline-css'>
+    <style id='rs-plugin-settings-inline-css' type='text/css'>
         #rs-demo-id {
         }
     </style>
@@ -324,7 +324,7 @@
     <link property="stylesheet" rel='stylesheet' id='woocommerce-layout-css' href="<?php echo asset('index/woocommerce-layout.css')?>" type='text/css' media='all'/>
     <link property="stylesheet" rel='stylesheet' id='woocommerce-smallscreen-css' href="<?php echo asset('index/woocommerce-smallscreen.css')?>" type='text/css' media='only screen and (max-width: 768px)'/>
     <link property="stylesheet" rel='stylesheet' id='woocommerce-general-css' href="<?php echo asset('index/woocommerce.css')?>" type='text/css' media='all'/>
-    <style id='woocommerce-inline-inline-css' >
+    <style id='woocommerce-inline-inline-css' type='text/css'>
         .woocommerce form .form-row .required {
             visibility: visible;
         }
@@ -341,19 +341,19 @@
     <link property="stylesheet" rel='stylesheet' id='mediaelement-css' href="<?php echo asset('index/mediaelementplayer-legacy.min.css')?>" type='text/css' media='all'/>
     <link property="stylesheet" rel='stylesheet' id='wp-mediaelement-css' href="<?php echo asset('index/wp-mediaelement.min.css')?>" type='text/css' media='all'/>
     <link property="stylesheet" rel='stylesheet' id='mendel-responsive-css' href="<?php echo asset('index/responsive.css')?>" type='text/css' media='all'/>
-    <script  src='{{asset('css/jquery/jqueryver1.12.4.js')}}'></script>
-    <script  src='{{asset('css/jquery/jquery-migrate.minver1.4.1.js')}}'></script>
-    <script  src='{{asset('css/jquery/jquery.easing.1.3ver5.3.2.js')}}'></script>
-    <script  src='{{asset('css/jquery/query.timelinever=5.3.2.js')}}'></script>
-    <script  src='{{asset('css/jquery/jquery.mousewheel.minver=5.3.2.js')}}'></script>
-    <script  src='{{asset('css/jquery/jquery.mCustomScrollbar.minver=5.3.2.js')}}'></script>
-    <script  src='{{asset('css/jquery/rolloverver=5.3.2.js')}}'></script>
-    <script  src='{{asset('css/jquery/jquery.prettyPhotover=5.3.2.js')}}'></script>
-    <script  src='{{asset('css/jquery/jquery.my_add_functionver=5.3.2.js')}}'></script>
-    <script  src='{{asset('css/jquery/revolution.tools.minver=6.0.js')}}'></script>
-    <script  src='{{asset('css/jquery/rs6.minver=6.1.3.js')}}'></script>
-    <script  src='{{asset('css/jquery/jquery.blockUI.minver=2.70.js')}}'></script>
-    <script >
+    <script type='text/javascript' src='{{asset('css/jquery/jqueryver1.12.4.js')}}'></script>
+    <script type='text/javascript' src='{{asset('css/jquery/jquery-migrate.minver1.4.1.js')}}'></script>
+    <script type='text/javascript' src='{{asset('css/jquery/jquery.easing.1.3ver5.3.2.js')}}'></script>
+    <script type='text/javascript' src='{{asset('css/jquery/query.timelinever=5.3.2.js')}}'></script>
+    <script type='text/javascript' src='{{asset('css/jquery/jquery.mousewheel.minver=5.3.2.js')}}'></script>
+    <script type='text/javascript' src='{{asset('css/jquery/jquery.mCustomScrollbar.minver=5.3.2.js')}}'></script>
+    <script type='text/javascript' src='{{asset('css/jquery/rolloverver=5.3.2.js')}}'></script>
+    <script type='text/javascript' src='{{asset('css/jquery/jquery.prettyPhotover=5.3.2.js')}}'></script>
+    <script type='text/javascript' src='{{asset('css/jquery/jquery.my_add_functionver=5.3.2.js')}}'></script>
+    <script type='text/javascript' src='{{asset('css/jquery/revolution.tools.minver=6.0.js')}}'></script>
+    <script type='text/javascript' src='{{asset('css/jquery/rs6.minver=6.1.3.js')}}'></script>
+    <script type='text/javascript' src='{{asset('css/jquery/jquery.blockUI.minver=2.70.js')}}'></script>
+    <script type='text/javascript'>
         /* <![CDATA[ */
         var wc_add_to_cart_params = {
             "ajax_url": "\/wp-admin\/admin-ajax.php",
@@ -365,8 +365,8 @@
         };
         /* ]]> */
     </script>
-    <script  src='{{asset('css/jquery/add-to-cart.minver=4.0.1.js')}}'></script>
-    <script  src='{{asset('css/jquery/woocommerce-add-to-cartver=6.0.5.js')}}'></script>
+    <script type='text/javascript' src='{{asset('css/jquery/add-to-cart.minver=4.0.1.js')}}'></script>
+    <script type='text/javascript' src='{{asset('css/jquery/woocommerce-add-to-cartver=6.0.5.js')}}'></script>
     {{-- <link rel='https://api.w.org/' href='http://mendel-antiques.ancorathemes.com/wp-json/'/> --}}
     {{-- <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://mendel-antiques.ancorathemes.com/xmlrpc.php?rsd"/> --}}
     <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="<?php echo asset('css/wlwmanifest.xml')?>"/>
@@ -380,13 +380,13 @@
         my_timeline_front_ajax_nonce = "14646cc4c8";
         my_timeline_front_ajax_url = "http://mendel-antiques.ancorathemes.com/wp-admin/admin-ajax.php";
     </script>
-    <link href="<?php echo asset('index/index5.css')?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo asset('index/index5.css')?>" rel="stylesheet" >
     <noscript>
         <style>.woocommerce-product-gallery {
                 opacity: 1 !important;
             }</style>
     </noscript>
-    <style type="text/css">.recentcomments a {
+    <style >.recentcomments a {
             display: inline !important;
             padding: 0 !important;
             margin: 0 !important;
@@ -419,7 +419,7 @@
                 opacity: 1;
             }</style>
     </noscript>
-    <style type="text/css" id="trx_addons-inline-styles-inline-css">
+    <style  id="trx_addons-inline-styles-inline-css">
 
         .vc_custom_1500901278952 {
             padding-top: 1.8em !important;
