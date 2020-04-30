@@ -86,7 +86,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Tên blog</th>
-                    <th>Nội dung blog</th>
+                    <th style="width:50%;">Nội dung blog</th>
                     <th>Tùy chọn</th>
                 </tr>
                 </thead>
@@ -94,7 +94,7 @@
                 <tbody>
                 <tr>
                     <td>{{ ++$i }}</td>
-                    <td>{{ $a ->name }}</td>
+                    <td style="width:20%;">{{ $a ->name }}</td>
                     <td>{{ $a ->detail }}</td>
                     <td>
                         <form action="{{ route('blog.destroy',$a->id) }}" method="POST">

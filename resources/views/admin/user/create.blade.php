@@ -110,9 +110,31 @@
                     <label >Email</label>
                     <input type="text" class="form-control form-control-lg"   name ="email"  placeholder="Nhập email" required>
                 </div>
+                <div class="form-group">
+                    <label >Level</label>
+                    <input type="text" class="form-control form-control-lg"   name ="level"  placeholder="Nhập level" >
+                </div>
+                <div class="form-group">
+                    <label >Active</label>
+                    <input type="text" class="form-control form-control-lg"   name ="active"   placeholder="Nhập active" >
+                </div>
+                <div class="form-group">
+                    <strong>Ảnh :</strong>
+                    <input type="file"  id="inputFile" cept="image/*" onchange="preview_image(event) "   class="form-control box-image" name="image">
+                </div>
             </div>
-            <!-- /.card-body -->
+            </div>
 
+        <!-- /.card-body -->
+
+        <div class="card-footer">
+            <button type="submit" class="btn btn-danger">Sửa</button>
+            <span class="focus-input100"></span>
+            <div class=" float-md-right col-md-3">
+                <img id="output_image" alt="" class="img-circle" src=""
+                     style="width: 300px; height: 300px"/>
+            </div>
+        </div>
             <div class="card-footer">
                 <button type="submit" class="btn btn-primary">
                     Gửi đi</button>
@@ -122,5 +144,14 @@
 
 @endsection
 
-
+<script type='text/javascript'>
+    function preview_image(event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var output = document.getElementById('output_image');
+            output.src = reader.result;
+        }
+        reader.readAsDataURL(event.target.files[0]);
+    }
+</script>
 

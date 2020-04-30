@@ -6,6 +6,7 @@ use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Auth\Authenticatable as AuthenticableTrait;
+use Illuminate\Support\Facades\DB;
 class Product extends Model implements Authenticatable
 {
     use AuthenticableTrait;
@@ -15,6 +16,7 @@ class Product extends Model implements Authenticatable
         'loaisp',
         'slug',
         'image',
+        'status',
 
     ];
     public $timestamps = true;
@@ -23,6 +25,17 @@ class Product extends Model implements Authenticatable
         'build_from' => 'name', //Xây dựng đường dẫn từ trường 'name'
         'save_to'   => 'slug'   //Lưu tên đường dẫn vào trường 'slug'
     );
+
+    public static function table(string $string)
+    {
+
+    }
+public static function join()
+{
+    return DB::table('products')->join('products_category', 'products.loaisp', '=', 'products_category.id')
+    ->select('products.*', 'products_category.name_category');
+
+}
     public function sluggable()
     {
         return [
@@ -31,8 +44,8 @@ class Product extends Model implements Authenticatable
             ]
         ];
     }
-    public function productsimage()
+    public function products_category()
     {
-        return $this->hasMany('App\model\admin\Productsimage');
+        return $this->hasMany('App\model\admin\Products_category');
     }
 }

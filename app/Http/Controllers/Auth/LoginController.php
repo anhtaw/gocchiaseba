@@ -29,8 +29,11 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
 
+    protected function guard()
+    {
+        return Auth::guard('guard-email');
+    }
     /**
      * Create a new controller instance.
      *
@@ -69,7 +72,7 @@ class LoginController extends Controller
 
             if( Auth::attempt(['email' => $email, 'password' =>$password])) {
                 // Kiểm tra đúng email và mật khẩu sẽ chuyển trang
-                return redirect('admin/products');
+                return redirect('admin/products')->with('thongbao','Đăng nhập thành công ');
             } else {
 
                     return redirect('login')->with('thongbao','Đăng nhập không thành công ');

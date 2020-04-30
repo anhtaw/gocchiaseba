@@ -10,12 +10,13 @@
                 <p>Danh sách tài khoản</p>
             </a>
         </li>
+        @if(Auth::user()-> level==1)
         <li class="nav-item">
             <a href="{{ route('user.create')}}"class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Thêm tài khoản</p>
             </a>
         </li>
-
+@endif
     </ul>
 </li>

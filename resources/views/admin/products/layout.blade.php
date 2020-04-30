@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="Content-Language" content="en">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"/>
-<title>Đỗ Quang Đức</title>
+<title>Trang Quản trị</title>
 <meta charset="utf-8">
 <!-- Tell the browser to be responsive to screen width -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,10 +19,12 @@
 <!-- Google Font: Source Sans Pro -->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
+
 </head>
 <body>
 <div class="hold-transition sidebar-mini">
     <div class="wrapper">
+        @if (Auth::check())
 @include('admin.header')
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -123,51 +125,8 @@
     <!-- page script -->
 
 </div>
-{{-- <script>
-    $(function() {
-            // Replace the <textarea id="editor1"> with a CKEditor
-            // instance, using default configuration.
-            CKEDITOR.replace('editor1')
-            CKEDITOR.replace('editor2');
-            // CKEDITOR.replace('editor3',{
-            //     removePlugins: 'a11yhelp,basicstyles,blockquote,button,clipboard,colorbutton,colordialog,contextmenu,div,elementspath,enterkey,entities,find,font,format,horizontalrule,htmldataprocessor,indent,justify,keystrokes,list,liststyle,maximize,newpage,pagebreak,pastefromword,pastetext,popup,preview,removeformat,resize,save,showblocks,showborders,sourcearea,stylescombo,table,tabletools,specialchar,tab,toolbar,undo,table'
-            // });
-            //bootstrap WYSIHTML5 - text editor
-            $('.select2').select2()
-
-            $('#description-ui').on('click', function(e){
-                e.preventDefault();
-                $('#box-description').show();
-                $(this).hide();
-            });
-            var arFiles = [];
-            var myDropzone = new Dropzone("div#myDropzone", {
-                url: 'http://lap-trinh-web.com/admin.php?p=product&act=uploadFiles',
-            // The setting up of the dropzone
-            init: function () {
-            },
-            accept: function(file, done)
-            {
-                var re = /(?:\.([^.]+))?$/;
-                var ext = re.exec(file.name)[1];
-                ext = ext.toUpperCase();
-                if ( ext == "JPG" || ext == "JPEG" || ext == "PNG" ||  ext == "GIF" ||  ext == "BMP")
-                {
-                    done();
-                }else {
-                    done("Please select only supported picture files.");
-                }
-            },
-            success: function( file, response ){
-
-            obj = JSON.parse(response);
-            arFiles.push(obj.filename);
-            $('input[name="images"').val(arFiles);
-            }
-        })
-        })
-    </script> --}}
-
+<script></script>
 </body>
+@endif
 </html>
 

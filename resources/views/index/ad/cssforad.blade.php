@@ -1,6 +1,6 @@
 <style type="text/css" id="trx_addons-inline-styles-inline-css">
     .mendel_inline_713640390 {
-        background-image: url({{ asset('img/10.png') }});
+        background-image: url({{ asset('img/bia.jpg') }});
     }
 
     .vc_custom_1500893297996 {
@@ -11,7 +11,8 @@
     }
 
     .vc_custom_1500902865228 {
-        background: #757575 url({{ asset('img/10.png') }}) !important;
+
+        background: #757575 url({{ asset('img/bia.jpg') }}) !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;

@@ -47,7 +47,11 @@ class UserController extends Controller
         return view('admin.user.index', compact('user'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
+    public function indexdetail(User  $user)
+    {
+        return view('admin.user.indexdetail',compact('user'));
 
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -97,16 +101,44 @@ class UserController extends Controller
      */
     public function update(Request $request, User  $user)
     {
+        $image = '';
+        if($request->hasFile('image')){
+            $file = $request->file('image');
+            $image = $file->getClientOriginalName();
+            $file->move('img/', $image);
+        }
         $request->validate([
             'name' => 'required',
             'password' => 'required',
             'email' => 'required',
+            'image' => 'required',
+            'level' => 'required',
+            'active' => 'required',
         ]);
+
         $user->update($request->all());
         return redirect()->route('user.index')
                         ->with('success','user updated successfully');
     }
+    public function updatedetail(Request $request, User  $user)
+    {
+        $image = '';
+        if($request->hasFile('image')){
+            $file = $request->file('image');
+            $image = $file->getClientOriginalName();
+            $file->move('img/', $image);
+        }
+        $request->validate([
+            'name' => 'required',
+            'password' => 'required',
+            'email' => 'required',
+            'image' => 'required',
+        ]);
 
+        $user->update($request->all());
+        return redirect()->route('user.index')
+                        ->with('success','user updated successfully');
+    }
     /**
      * Remove the specified resource from storage.
      *

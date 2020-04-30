@@ -16,6 +16,12 @@
                 <p>Thêm sản phẩm</p>
             </a>
         </li>
+        <li class="nav-item">
+            <a href="{{ route('products_category.index')}}" class="nav-link ">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Thêm loại sản phẩm</p>
+            </a>
+        </li>
         {{-- <li class="nav-item">
             <a href="{{ route('products.create')}}" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
@@ -37,12 +43,14 @@
                 <p>Danh sách tài khoản</p>
             </a>
         </li>
+        @if(Auth::user()-> level==1)
         <li class="nav-item">
-            <a href="{{ route('user.create')}}" class="nav-link">
+            <a href="{{ route('user.create')}}"class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Thêm tài khoản</p>
             </a>
         </li>
+@endif
         {{-- <li class="nav-item">
             <a href="../../index3.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>

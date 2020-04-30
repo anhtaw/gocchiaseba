@@ -22,7 +22,7 @@ class User  extends Model implements Authenticatable
      */
     use AuthenticableTrait;
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','image','level','active'
     ];
 
     /**

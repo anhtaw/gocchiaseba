@@ -53,7 +53,9 @@
             <a class="nav-link" data-toggle="dropdown" >
                 <i class="far fa-bell"></i>
 
-
+                @if(session('thongbao'))
+                {{session('thongbao')}}
+            @endif
 <a href="{{ route('logout')}}"> <span class="badge badge-warning navbar-badge">đăng xuất</span></a>
 
             </a>

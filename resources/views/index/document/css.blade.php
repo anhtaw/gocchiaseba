@@ -37,7 +37,10 @@
     }
 
     .vc_custom_1500902865228 {
+
+
         background: #757575 url({{ asset('img/bia.jpg') }}) !important;
+
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;

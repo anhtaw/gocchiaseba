@@ -29,7 +29,7 @@ class RegisterController extends Controller
     */    use RegistersUsers;
 
     use RegistersUsers;
-    protected $redirectTo = '/login';
+    protected $redirectTo = '/user';
 
     protected $activationService;
     /**
@@ -37,17 +37,17 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+
 
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct(ActivationService $activationService)
+    public function __construct()
     {
         $this->middleware('guest');
-        $this->middleware('guest');   $this->activationService = $activationService;
+
     }
 
     /**

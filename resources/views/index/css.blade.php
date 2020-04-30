@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="profile" href="http://gmpg.org/xfn/11">
-    {{-- <link rel="pingback" href="http://mendel-antiques.ancorathemes.com/xmlrpc.php"> --}}
+    <link rel="pingback" href="http://mendel-antiques.ancorathemes.com/xmlrpc.php">
     <title>Góc chia sẻ BA</title>
-    <style  data-type="vc_shortcodes-custom-css">
+    <style type="text/css" data-type="vc_shortcodes-custom-css">
         .vc_custom_1500877443899 {
             margin-right: -4.5rem !important;
             margin-left: -4.5rem !important;
@@ -282,7 +282,7 @@
             })), (r = t.source || {}).concatemoji ? d(r.concatemoji) : r.wpemoji && r.twemoji && (d(r.twemoji), d(r.wpemoji)))
         }(window, document, window._wpemojiSettings);
     </script>
-    <style >
+    <style type="text/css">
         img.wp-smiley,
         img.emoji {
             display: inline !important;
@@ -296,64 +296,64 @@
             padding: 0 !important;
         }
     </style>
-    <link property="stylesheet" rel='stylesheet' id='timeline-css-css' href="<?php echo asset('index/timeline.css')?>"  media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='customScroll-css-css' href="<?php echo asset('index/jquery.mCustomScrollbar.css')?>"  media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='prettyPhoto-css-css' href="<?php echo asset('index/prettyPhoto.css')?>"  media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='my_timeline_font_awesome-css' href="<?php echo asset('index/prettyPhoto.css')?>"   media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='my_timeline_lineicons_css-css' href="<?php echo asset('index/themify-icons.css')?>"  media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='sb_instagram_styles-css' href="<?php echo asset('index/sb-instagram-2-2.min.css')?>"  media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='wp-block-library-css' href="<?php echo asset('index/style.min.css')?>"   media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='wc-block-style-css' href="<?php echo asset('index/style.css')?>"   media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='jquery-ui-theme-css' href="<?php echo asset('index/jquery-ui.min.css')?>"   media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='jquery-ui-timepicker-css' href="<?php echo asset('index/jquery-ui-timepicker-addon.min.css')?>"   media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='essential-grid-plugin-settings-css' href="<?php echo asset('index/settings.css')?>"  media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='tp-fontello-css' href="<?php echo asset('index/fontello.css')?>"  media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='rs-plugin-settings-css' href="<?php echo asset('index/rs6.css')?>"   media='all'/>
-    <style id='rs-plugin-settings-inline-css' >
+    <link property="stylesheet" rel='stylesheet' id='timeline-css-css' href="<?php echo asset('index/timeline.css')?>" type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='customScroll-css-css' href="<?php echo asset('index/jquery.mCustomScrollbar.css')?>" type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='prettyPhoto-css-css' href="<?php echo asset('index/prettyPhoto.css')?>" type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='my_timeline_font_awesome-css' href="<?php echo asset('index/prettyPhoto.css')?>" css/font-awesome.css' type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='my_timeline_lineicons_css-css' href="<?php echo asset('index/themify-icons.css')?>" type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='sb_instagram_styles-css' href="<?php echo asset('index/sb-instagram-2-2.min.css')?>" type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='wp-block-library-css' href="<?php echo asset('index/style.min.css')?>"  type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='wc-block-style-css' href="<?php echo asset('index/style.css')?>"  type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='jquery-ui-theme-css' href="<?php echo asset('index/jquery-ui.min.css')?>"  type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='jquery-ui-timepicker-css' href="<?php echo asset('index/jquery-ui-timepicker-addon.min.css')?>"  type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='essential-grid-plugin-settings-css' href="<?php echo asset('index/settings.css')?>" type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='tp-fontello-css' href="<?php echo asset('index/fontello.css')?>" type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='rs-plugin-settings-css' href="<?php echo asset('index/rs6.css')?>"  type='text/css' media='all'/>
+    <style id='rs-plugin-settings-inline-css' type='text/css'>
         #rs-demo-id {
         }
     </style>
-    <link property="stylesheet" rel='stylesheet' id='trx_addons-icons-css' href="<?php echo asset('index/trx_addons_icons-embedded.css')?>"  media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='swiperslider-css' href="<?php echo asset('index/swiper.min.css')?>"   media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='magnific-popup-css' href="<?php echo asset('index/magnific-popup.min.cs')?>"   media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='trx_addons-css' href="<?php echo asset('index/trx_addons.css')?>"   media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='trx_addons-animation-css' href="<?php echo asset('index/trx_addons.animation.css')?>"   media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='trx_demo_icons-css' href="<?php echo asset('index/trx_demo_icons.css')?>"   media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='trx_demo_icons_animation-css' href="<?php echo asset('index/animation.css')?>"  media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='trx_demo_panels-css' href="<?php echo asset('index/trx_demo_panels.css')?>"   media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='woocommerce-layout-css' href="<?php echo asset('index/woocommerce-layout.css')?>"  media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='woocommerce-smallscreen-css' href="<?php echo asset('index/woocommerce-smallscreen.css')?>"  media='only screen and (max-width: 768px)'/>
-    <link property="stylesheet" rel='stylesheet' id='woocommerce-general-css' href="<?php echo asset('index/woocommerce.css')?>"  media='all'/>
-    <style id='woocommerce-inline-inline-css' >
+    <link property="stylesheet" rel='stylesheet' id='trx_addons-icons-css' href="<?php echo asset('index/trx_addons_icons-embedded.css')?>" type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='swiperslider-css' href="<?php echo asset('index/swiper.min.css')?>"  type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='magnific-popup-css' href="<?php echo asset('index/magnific-popup.min.cs')?>"  type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='trx_addons-css' href="<?php echo asset('index/trx_addons.css')?>"  type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='trx_addons-animation-css' href="<?php echo asset('index/trx_addons.animation.css')?>"  type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='trx_demo_icons-css' href="<?php echo asset('index/trx_demo_icons.css')?>"  type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='trx_demo_icons_animation-css' href="<?php echo asset('index/animation.css')?>" type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='trx_demo_panels-css' href="<?php echo asset('index/trx_demo_panels.css')?>"  type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='woocommerce-layout-css' href="<?php echo asset('index/woocommerce-layout.css')?>" type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='woocommerce-smallscreen-css' href="<?php echo asset('index/woocommerce-smallscreen.css')?>" type='text/css' media='only screen and (max-width: 768px)'/>
+    <link property="stylesheet" rel='stylesheet' id='woocommerce-general-css' href="<?php echo asset('index/woocommerce.css')?>" type='text/css' media='all'/>
+    <style id='woocommerce-inline-inline-css' type='text/css'>
         .woocommerce form .form-row .required {
             visibility: visible;
         }
     </style>
     <!--[if lt IE 9]>
-    <link property="stylesheet" rel='stylesheet' id='vc_lte_ie9-css' href="<?php echo asset('index/index4.css')?>"  media='screen'/>
+    <link property="stylesheet" rel='stylesheet' id='vc_lte_ie9-css' href="<?php echo asset('index/index4.css')?>" type='text/css' media='screen'/>
     <![endif]-->
-    <link property="stylesheet" rel='stylesheet' id='js_composer_front-css' href="<?php echo asset('index/js_composer.min.css')?>"  media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='mendel-font-google_fonts-css' href="<?php echo asset('index/font.css')?>"   media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='fontello-icons-css' href="<?php echo asset('index/fontello-embedded.css')?>"  media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='mendel-main-css' href="<?php echo asset('index/style.css')?>"   media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='mendel-styles-css' href="<?php echo asset('index/__styles.css')?>"   media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='mendel-colors-css' href="<?php echo asset('index/__colors.css')?>"   media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='mediaelement-css' href="<?php echo asset('index/mediaelementplayer-legacy.min.css')?>"  media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='wp-mediaelement-css' href="<?php echo asset('index/wp-mediaelement.min.css')?>"  media='all'/>
-    <link property="stylesheet" rel='stylesheet' id='mendel-responsive-css' href="<?php echo asset('index/responsive.css')?>"  media='all'/>
-    <script  src='{{asset('css/jquery/jqueryver1.12.4.js')}}'></script>
-    <script src='{{asset('css/jquery/jquery-migrate.minver1.4.1.js')}}'></script>
-    <script src='{{asset('css/jquery/jquery.easing.1.3ver5.3.2.js')}}'></script>
-    <script  src='{{asset('css/jquery/query.timelinever=5.3.2.js')}}'></script>
-    <script  src='{{asset('css/jquery/jquery.mousewheel.minver=5.3.2.js')}}'></script>
-    <script  src='{{asset('css/jquery/jquery.mCustomScrollbar.minver=5.3.2.js')}}'></script>
-    <script  src='{{asset('css/jquery/rolloverver=5.3.2.js')}}'></script>
-    <script  src='{{asset('css/jquery/jquery.prettyPhotover=5.3.2.js')}}'></script>
-    <script  src='{{asset('css/jquery/jquery.my_add_functionver=5.3.2.js')}}'></script>
-    <script  src='{{asset('css/jquery/revolution.tools.minver=6.0.js')}}'></script>
-    <script  src='{{asset('css/jquery/rs6.minver=6.1.3.js')}}'></script>
-    <script  src='{{asset('css/jquery/jquery.blockUI.minver=2.70.js')}}'></script>
-    <script >
+    <link property="stylesheet" rel='stylesheet' id='js_composer_front-css' href="<?php echo asset('index/js_composer.min.css')?>" type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='mendel-font-google_fonts-css' href="<?php echo asset('index/font.css')?>"  type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='fontello-icons-css' href="<?php echo asset('index/fontello-embedded.css')?>" type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='mendel-main-css' href="<?php echo asset('index/style.css')?>"  type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='mendel-styles-css' href="<?php echo asset('index/__styles.css')?>"  type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='mendel-colors-css' href="<?php echo asset('index/__colors.css')?>"  type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='mediaelement-css' href="<?php echo asset('index/mediaelementplayer-legacy.min.css')?>" type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='wp-mediaelement-css' href="<?php echo asset('index/wp-mediaelement.min.css')?>" type='text/css' media='all'/>
+    <link property="stylesheet" rel='stylesheet' id='mendel-responsive-css' href="<?php echo asset('index/responsive.css')?>" type='text/css' media='all'/>
+    <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+    <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+    <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/content_timeline/js/frontend/jquery.easing.1.3.js?ver=5.3.2'></script>
+    <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/content_timeline/js/frontend/jquery.timeline.js?ver=5.3.2'></script>
+    <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/content_timeline/js/frontend/jquery.mousewheel.min.js?ver=5.3.2'></script>
+    <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/content_timeline/js/frontend/jquery.mCustomScrollbar.min.js?ver=5.3.2'></script>
+    <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/content_timeline/js/frontend/rollover.js?ver=5.3.2'></script>
+    <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/content_timeline/js/frontend/jquery.prettyPhoto.js?ver=5.3.2'></script>
+    <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/content_timeline//js/frontend/jquery.my_add_function.js?ver=5.3.2'></script>
+    <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/revslider/public/assets/js/revolution.tools.min.js?ver=6.0'></script>
+    <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.1.3'></script>
+    <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+    <script type='text/javascript'>
         /* <![CDATA[ */
         var wc_add_to_cart_params = {
             "ajax_url": "\/wp-admin\/admin-ajax.php",
@@ -365,28 +365,28 @@
         };
         /* ]]> */
     </script>
-    <script  src='{{asset('css/jquery/add-to-cart.minver=4.0.1.js')}}'></script>
-    <script  src='{{asset('css/jquery/woocommerce-add-to-cartver=6.0.5.js')}}'></script>
-    {{-- <link rel='https://api.w.org/' href='http://mendel-antiques.ancorathemes.com/wp-json/'/> --}}
-    {{-- <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://mendel-antiques.ancorathemes.com/xmlrpc.php?rsd"/> --}}
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="<?php echo asset('css/wlwmanifest.xml')?>"/>
+    <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=4.0.1'></script>
+    <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=6.0.5'></script>
+    <link rel='https://api.w.org/' href='http://mendel-antiques.ancorathemes.com/wp-json/'/>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://mendel-antiques.ancorathemes.com/xmlrpc.php?rsd"/>
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://mendel-antiques.ancorathemes.com/wp-includes/wlwmanifest.xml"/>
     <meta name="generator" content="WordPress 5.3.2"/>
     <meta name="generator" content="WooCommerce 4.0.1"/>
-    {{-- <link rel="canonical" href="http://mendel-antiques.ancorathemes.com/home-2/"/> --}}
-    {{-- <link rel='shortlink' href='http://mendel-antiques.ancorathemes.com/?p=471'/> --}}
-    {{-- <link rel="alternate" type="application/json+oembed" href="http://mendel-antiques.ancorathemes.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmendel-antiques.ancorathemes.com%2Fhome-2%2F"/> --}}
+    <link rel="canonical" href="http://mendel-antiques.ancorathemes.com/home-2/"/>
+    <link rel='shortlink' href='http://mendel-antiques.ancorathemes.com/?p=471'/>
+    <link rel="alternate" type="application/json+oembed" href="http://mendel-antiques.ancorathemes.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmendel-antiques.ancorathemes.com%2Fhome-2%2F"/>
     <link rel="alternate" type="text/xml+oembed" href="http://mendel-antiques.ancorathemes.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmendel-antiques.ancorathemes.com%2Fhome-2%2F&#038;format=xml"/>
     <script type="text/javascript">
         my_timeline_front_ajax_nonce = "14646cc4c8";
         my_timeline_front_ajax_url = "http://mendel-antiques.ancorathemes.com/wp-admin/admin-ajax.php";
     </script>
-    <link href="<?php echo asset('index/index5.css')?>" rel="stylesheet" >
+    <link href="<?php echo asset('index/index5.css')?>" rel="stylesheet" type="text/css">
     <noscript>
         <style>.woocommerce-product-gallery {
                 opacity: 1 !important;
             }</style>
     </noscript>
-    <style >.recentcomments a {
+    <style type="text/css">.recentcomments a {
             display: inline !important;
             padding: 0 !important;
             margin: 0 !important;
@@ -419,7 +419,7 @@
                 opacity: 1;
             }</style>
     </noscript>
-    <style  id="trx_addons-inline-styles-inline-css">
+    <style type="text/css" id="trx_addons-inline-styles-inline-css">
 
         .vc_custom_1500901278952 {
             padding-top: 1.8em !important;

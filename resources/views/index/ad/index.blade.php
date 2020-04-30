@@ -118,7 +118,7 @@
         <div class="page_content_wrap scheme_default">
             <div class="content_wrap">
                 <div class="content">
-                    <div class="list_products shop_mode_thumbs">
+                    <div class="list_products shop_mode_list">
                         <div class="list_products_header">
                             <nav class="woocommerce-breadcrumb"><a href="{{ route('index.index')}}">Trang Chủ</a>&nbsp;&#47;&nbsp;Rao Vặt</nav>
                             <header class="woocommerce-products-header">
@@ -133,7 +133,7 @@
                                 <a href="#" class="woocommerce_list icon-th-list" title="Show products as list"></a>
                             </form>
                         </div><!-- /.mendel_shop_mode_buttons -->
-                        <p class="woocommerce-result-count">Xem 6 kết quả</p>
+                        <p class="woocommerce-result-count">Xem {{count ($product)}} kết quả</p>
                         <form class="woocommerce-ordering" method="get">
                             <select name="orderby" class="orderby" aria-label="Shop order">
                                 <option value="popularity">Phổ biến</option>
@@ -146,199 +146,12 @@
                             <input type="hidden" name="q" value="/shop/"/>
                         </form>
                         <ul class="products columns-2">
-                            <li class=" column-1_2 product type-product post-265 status-publish first instock product_cat-chairs product_tag-antique product_tag-chair has-post-thumbnail shipping-taxable purchasable product-type-variable">
-                                <div class="post_item post_layout_thumbs">
-                                    <div class="post_featured hover_shop">
-                                        <a href="http://mendel-antiques.ancorathemes.com/product/antique-chair-1734/">
-                                            <img width="300" height="300" src="./img/anh3300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail">
-                                        </a>
-                                        <div class="mask"></div>
-                                        <div class="icons">
-                                            <a rel="nofollow" href="http://mendel-antiques.ancorathemes.com/product/antique-chair-1734/" aria-hidden="true" data-quantity="1" data-product_id="265" data-product_sku="" class="shop_cart icon-cart-2 button add_to_cart_button product_type_variable"></a>
-                                            <a href="#" aria-hidden="true" class="shop_link button icon-link"></a>
-                                        </div>
-                                    </div><!-- /.post_featured -->
-                                    <div class="post_data">
-                                        <div class="post_data_inner">
-                                            <div class="post_header entry-header">
-                                                <div class="post_tags product_tags">
-                                                    <a href="#" rel="tag">antique</a>,
-                                                    <a href="#" rel="tag">chair</a>
-                                                </div>
-                                                <h2 class="woocommerce-loop-product__title">
-                                                    <a href="http://mendel-antiques.ancorathemes.com/product/antique-chair-1734/">trung123</a>
-                                                </h2>
-                                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                                    <span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span>
-                                                </div>
-                                            </div><!-- /.post_header -->
-                                            <span class="price"><span class="woocommerce-Price-amount amount">
-                                                    <span class="woocommerce-Price-currencySymbol">&#36;</span>550
-                                                    <span class="decimals">00</span></span> &ndash;
-                                                <span class="woocommerce-Price-amount amount">
-                                                    <span class="woocommerce-Price-currencySymbol">&#36;</span>600
-                                                    <span class="decimals">00</span>
-                                                </span>
-                                            </span>
-                                            <a href="#" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="265" data-product_sku="" aria-label="Select options for &ldquo;Antique Chair 1734&rdquo;" rel="nofollow">add to cart</a>
-                                        </div><!-- /.post_data_inner -->
-                                    </div><!-- /.post_data -->
-                                </div><!-- /.post_item -->
-                            </li>
-                            <li class=" column-1_2 product type-product post-259 status-publish last instock product_cat-chairs product_tag-antique product_tag-armchair has-post-thumbnail shipping-taxable purchasable product-type-variable">
-                                <div class="post_item post_layout_thumbs">
-                                    <div class="post_featured hover_shop">
-                                        <a href="http://mendel-antiques.ancorathemes.com/product/vintage-red-armchair/">
-                                            <img width="300" height="300" src="./img/anh3300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"  alt=""-->
-                                        </a>
-                                        <div class="mask"></div>
-                                        <div class="icons">
-                                            <a rel="nofollow" href="#" aria-hidden="true" data-quantity="1" data-product_id="259" data-product_sku="" class="shop_cart icon-cart-2 button add_to_cart_button product_type_variable"></a>
-                                            <a href="#" aria-hidden="true" class="shop_link button icon-link"></a>
-                                        </div>
-                                    </div><!-- /.post_featured -->
-                                    <div class="post_data">
-                                        <div class="post_data_inner">
-                                            <div class="post_header entry-header">
-                                                <div class="post_tags product_tags"><a href="#" rel="tag">antique</a>,
-                                                    <a href="#" rel="tag">armchair</a>
-                                                </div>
-                                                <h2 class="woocommerce-loop-product__title">
-                                                    <a href="#"></a></h2>
-                                                <div class="star-rating" role="img" aria-label="Rated 1.00 out of 5">
-                                                    <span style="width:20%">Rated <strong class="rating">1.00</strong> out of 5</span>
-                                                </div>
-                                            </div><!-- /.post_header -->
-                                            <span class="price"><span class="woocommerce-Price-amount amount">
-                                                    <span class="woocommerce-Price-currencySymbol">&#36;</span>700
-                                                    <span class="decimals">00</span></span> &ndash;
-                                                <span class="woocommerce-Price-amount amount">
-                                                    <span class="woocommerce-Price-currencySymbol">&#36;</span>900
-                                                    <span class="decimals">00</span>
-                                                </span>
-                                            </span>
-                                            <a href="#" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="259" data-product_sku="" aria-label="Select options for &ldquo;Vintage Red Armchair&rdquo;" rel="nofollow">add to cart</a>
-                                        </div><!-- /.post_data_inner -->
-                                    </div><!-- /.post_data -->
-                                </div><!-- /.post_item -->
-                            </li>
-                            <li class=" column-1_2 product type-product post-253 status-publish first instock product_cat-drawers product_tag-dresser product_tag-gold product_tag-silver product_tag-wooden has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                                <div class="post_item post_layout_thumbs">
+                            @foreach ($product as $a)
+                            <li class="  column-1_2 product type-product post-243 status-publish first instock product_cat-chairs product_cat-leather-furniture product_tag-armchair product_tag-leather has-post-thumbnail shipping-taxable purchasable product-type-variable">
+                                <div class="post_item post_layout_list">
                                     <div class="post_featured hover_shop">
                                         <a href="#">
-                                            <img width="300" height="300" src="{{ asset('img/img/anh3300x300.png') }}" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"></a>
-                                        <div class="mask"></div>
-                                        <div class="icons">
-                                            <a rel="nofollow" href="#" aria-hidden="true" data-quantity="1" data-product_id="253" data-product_sku="" class="shop_cart icon-cart-2 button add_to_cart_button product_type_simple ajax_add_to_cart"></a>
-                                            <a href="#" aria-hidden="true" class="shop_link button icon-link"></a>
-                                        </div>
-                                    </div>
-                                    <div class="post_data">
-                                        <div class="post_data_inner">
-                                            <div class="post_header entry-header">
-                                                <div class="post_tags product_tags">
-                                                    <a href="#" rel="tag">dresser</a>,
-                                                    <a href="#" rel="tag">gold</a>,
-                                                    <a href="#" rel="tag"></a>,
-                                                    <a href="#" rel="tag">wooden</a>
-                                                </div>
-                                                <h2 class="woocommerce-loop-product__title">
-                                                    <a href="#"></a>
-                                                </h2>
-                                                <div class="star-rating" role="img" aria-label="Rated 1.00 out of 5">
-                                                    <span style="width:20%">Rated
-                                                        <strong class="rating"></strong>
-                                                    </span>
-                                                </div>
-                                            </div><!-- /.post_header -->
-                                            <span class="price"><span class="woocommerce-Price-amount amount">
-                                                    <span class="woocommerce-Price-currencySymbol">&#36;</span>100<span
-                                                    class="decimals">00</span>
-                                                </span>
-                                            </span>
-                                            <a href="?add-to-cart=253" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="253" data-product_sku="" aria-label="Add &ldquo;Antique Dresser&rdquo; to your cart" rel="nofollow">add to cart</a>
-                                        </div><!-- /.post_data_inner -->
-                                    </div>
-                                </div>
-                            </li>
-                            <li class=" column-1_2 product type-product post-249 status-publish last instock product_cat-tables product_tag-antique product_tag-table product_tag-wooden has-post-thumbnail shipping-taxable purchasable product-type-variable">
-                                <div class="post_item post_layout_thumbs">
-                                    <div class="post_featured hover_shop">
-                                        <a href="http://mendel-antiques.ancorathemes.com/product/antique-table-1874/"></a>
-                                        <div class="mask"></div>
-                                        <div class="icons">
-                                            <a rel="nofollow"href="$"aria-hidden="true"data-quantity="1"data-product_id="249"data-product_sku=""class="shop_cart icon-cart-2 button add_to_cart_button product_type_variable"></a>
-                                            <a href="$"aria-hidden="true" class="shop_link button icon-link"></a>
-                                        </div>
-                                    </div><!-- /.post_featured -->
-                                    <div class="post_data">
-                                        <div class="post_data_inner">
-                                            <div class="post_header entry-header">
-                                                <div class="post_tags product_tags">
-                                                    <a href="#" rel="tag">antique</a>,
-                                                    <a href="#" rel="tag">table</a>,
-                                                    <a href="#" rel="tag">wooden</a>
-                                                </div>
-                                                <h2 class="woocommerce-loop-product__title">
-                                                    <a href="#">Antique Table 1874</a>
-                                                </h2>
-                                                <div class="star-rating" role="img" aria-label="Rated 2.00 out of 5">
-                                                    <span style="width:40%">Rated <strong class="rating">2.00</strong> out of 5</span>
-                                                </div>
-                                            </div><!-- /.post_header -->
-                                            <span class="price">
-                                                <span class="woocommerce-Price-amount amount">
-                                                    <span class="woocommerce-Price-currencySymbol">&#36;</span>2,600
-                                                    <span class="decimals">00</span></span> &ndash;
-                                                <span  class="woocommerce-Price-amount amount">
-                                                    <span class="woocommerce-Price-currencySymbol">&#36;</span>3,000
-                                                    <span class="decimals">00</span></span></span>
-                                            <a href="#"data-quantity="1" class="button product_type_variable add_to_cart_button"data-product_id="249" data-product_sku=""aria-label="Select options for &ldquo;Antique Table 1874&rdquo;"rel="nofollow">add to cart</a></div><!-- /.post_data_inner -->
-                                    </div><!-- /.post_data -->
-                                </div><!-- /.post_item -->
-                            </li>
-                            <li class=" column-1_2 product type-product post-243 status-publish first instock product_cat-chairs product_cat-leather-furniture product_tag-armchair product_tag-leather has-post-thumbnail shipping-taxable purchasable product-type-variable">
-                                <div class="post_item post_layout_thumbs">
-                                    <div class="post_featured hover_shop">
-                                        <a href="http://mendel-antiques.ancorathemes.com/product/vintage-leather-chair/">
-                                            <img width="300" height="300"  src="{{ asset('img/img/anh3300x300.png') }}"class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"/>
-                                        </a>
-                                        <div class="mask"></div>
-                                        <div class="icons">
-                                            <a rel="#" aria-hidden="true" data-quantity="1" data-product_id="243"data-product_sku=""class="shop_cart icon-cart-2 button add_to_cart_button product_type_variable"></a>
-                                        </div>
-                                    </div><!-- /.post_featured -->
-                                    <div class="post_data">
-                                        <div class="post_data_inner">
-                                            <div class="post_header entry-header">
-                                                <div class="post_tags product_tags">
-                                                    <a href="#"rel="tag">armchair</a>,
-                                                        <a href="#"rel="tag">leather</a></div>
-                                                <h2 class="woocommerce-loop-product__title">
-                                                    <a href="#">Vintage leather chair</a>
-                                                </h2>
-                                                <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
-                                                    <span style="width:80%">Rated <strong class="rating">4.00</strong> out of 5</span>
-                                                </div>
-                                            </div><!-- /.post_header -->
-                                            <span class="price"><span class="woocommerce-Price-amount amount">
-                                                <span class="woocommerce-Price-currencySymbol">&#36;</span>700
-                                                <span class="decimals">00</span></span> &ndash;
-                                                <span class="woocommerce-Price-amount amount">
-                                                <span class="woocommerce-Price-currencySymbol">&#36;</span>900
-                                                <span class="decimals">00</span>
-                                            </span>
-                                        </span>
-                                            <a href="#"data-quantity="1" class="button product_type_variable add_to_cart_button"ata-product_id="243" data-product_sku=""aria-label="Select options for &ldquo;Vintage leather chair&rdquo;"rel="nofollow">add to cart</a>
-                                        </div><!-- /.post_data_inner -->
-                                    </div><!-- /.post_data -->
-                                </div><!-- /.post_item -->
-                            </li>
-                            <li class=" column-1_2 product type-product post-238 status-publish last instock product_cat-dressers product_tag-antique product_tag-drawer product_tag-french product_tag-gold product_tag-silver has-post-thumbnail shipping-taxable purchasable product-type-variable">
-                                <div class="post_item post_layout_thumbs">
-                                    <div class="post_featured hover_shop">
-                                        <a href="#">
-                                            <img width="300" height="300"  src="{{ asset('img/img/anh3300x300.png') }}"class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"alt="" sizes="(max-width: 300px) 100vw, 300px"/></a>
+                                            <img width="300" height="300"  src="{{asset('img/'.$a->image)}}"class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"alt="" sizes="(max-width: 300px) 100vw, 300px"/></a>
                                         <div class="mask"></div>
                                         <div class="icons">
                                             <a rel="nofollow"href="#"aria-hidden="true" data-quantity="1" data-product_id="238"data-product_sku="" class="shop_cart icon-cart-2 button add_to_cart_button product_type_variable"></a>
@@ -356,26 +169,27 @@
                                                     <a href="#"rel="tag">silver</a>
                                                 </div>
                                                 <h2 class="woocommerce-loop-product__title">
-                                                    <a href="#">Tiếng Anh 3</a></h2>
-                                                <div class="star-rating" role="img" aria-label="Rated 3.00 out of 5">
-                                                    <span style="width:60%">Rated <strong class="rating">3.00</strong> out of 5</span>
+                                                    <a href="#">{{ $a ->name }}</a></h2>
+                                                <div >
+                                                    <p>{{ $a ->detail }}</p>
                                                 </div>
+                                                <br>
                                             </div><!-- /.post_header -->
                                             <span class="price">
                                                 <span class="woocommerce-Price-amount amount">
                                                 <span class="woocommerce-Price-currencySymbol">&#36;
-                                                </span>1,500<span class="decimals">00</span>
-                                                </span> &ndash;
-                                                <span class="woocommerce-Price-amount amount">
-                                                    <span class="woocommerce-Price-currencySymbol"></span>2,000
-                                                    <span class="decimals">00</span>
-                                                </span>
+                                                </span>{{ $a ->gia }}<span class="decimals">00</span>
+                                                
+                                                
                                             </span>
                                             <a href="#"data-quantity="1" class="button product_type_variable add_to_cart_button"data-product_id="238" data-product_sku=""aria-label="Select options for &ldquo;Antique French Drawer&rdquo;"rel="nofollow">Liên Hệ</a>
                                             </div><!-- /.post_data_inner -->
+                                            
                                     </div><!-- /.post_data -->
+                                    
                                 </div><!-- /.post_item -->
-                            </li>
+                                
+                            </li> @endforeach
                         </ul>
                     </div><!-- /.list_products -->
                 </div><!-- </.content> -->
@@ -403,15 +217,15 @@
                         <aside id="woocommerce_product_categories-2"class="widget woocommerce widget_product_categories">
                             <h5 class="widget_title">Loại hàng</h5>
                             <ul class="product-categories">
-                                <li class="cat-item cat-item-53"><a href="#">Giáo trình</a></li>
+                                <li class="cat-item cat-item-53"><a href="{{ route('giaotrinh') }}">Giáo trình</a></li>
                                 <li class="cat-item cat-item-54">
-                                    <a href="#">Đồ dùng học tập</a></li>
+                                    <a href="{{ route('dodung') }}">Đồ dùng học tập</a></li>
                                 <li class="cat-item cat-item-55">
-                                    <a href="#">Đồ ăn</a></li>
+                                    <a href="{{ route('doan') }}">Đồ ăn</a></li>
                                 <li class="cat-item cat-item-56"><a
-                                        href="#">Đồ dùng cá nhân</a></li>
+                                        href="{{ route('dodungcanhan') }}">Đồ dùng cá nhân</a></li>
                                 <li class="cat-item cat-item-57">
-                                    <a href="#">Quần áo</a>
+                                    <a href="{{ route('quanao') }}">Quần áo</a>
                                 </li>
                             </ul>
                         </aside>

@@ -19,16 +19,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/daterangepicker/daterangepicker.css') }}" >
     <link rel="stylesheet" type="text/css" href="{{ asset('css/util.css') }}" >
 <link rel="stylesheet"  href="<?php echo asset('css/mainlogin.css')?>">
-@if ($errors->any())
-<div class="alert alert-danger">
-    <strong>Whoops!</strong> There were some problems with your input.<br><br>
-    <ul>
-        @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-        @endforeach
-    </ul>
-</div>
-@endif
+<script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 <body>
     <div class="pull-right">
@@ -58,15 +49,26 @@
 <span class="focus-input100"></span>
 </div>
 <div class="wrap-input100 validate-input m-b-20" data-validate="Nhập email">
-    <input class="input100" type="gmail" name="email" placeholder="Nhập tên email">
+    <input class="input100 @error('email') is-invalid @enderror" name="email" type="gmail" name="email" placeholder="Nhập tên email"  required autocomplete="email" value="{{ old('email') }}">
     <span class="focus-input100"></span>
+    @error('email')
+    <span class="invalid-feedback" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+@enderror
     </div>
+
 <div class="wrap-input100 validate-input m-b-25" data-validate="Nhập mật khẩu">
-<input class="input100" type="password" name="password" placeholder="Mật khẩu">
+<input id="password" class="input100 @error('password') is-invalid @enderror" type="password" name="password" placeholder="Mật khẩu" required autocomplete="new-password">
+@error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
 <span class="focus-input100"></span>
 </div>
 <div class="wrap-input100 validate-input m-b-25" data-validate="Nhập mật khẩu">
-    <input id="" class="input100" type="password1" name="password1" placeholder="Mật khẩu">
+    <input id="" class="input100" type="password" name="password_confirmation" placeholder="Nhập Lại Mật khẩu" required autocomplete="new-password">
     <span class="focus-input100"></span>
     </div>
 <div class="container-login100-form-btn">
@@ -76,39 +78,6 @@
 </div>
 
 </form>
-{{-- <form action="{{ route('store') }}" method="POST" >
-    @csrf
-    @method('Post')
-    {{ method_field("POST") }}
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Name:</strong>
-                <input type="text" name="name" class="form-control" placeholder="Name">
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Password:</strong>
-                <input type="password" name="password" class="form-control" placeholder="password">
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>email</strong>
-                <input type="email" class="form-control"  name="email" placeholder="email">
-
-            </div>
-        </div>
-        <div class="col-md-3">
-            <img id="output_image"alt="" class="img-circle" src="#"  style="width: 200px; height: 200px"/>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-            <button type="submit" name = "update" class="btn btn-primary">Đồng ý đăng ký </button>
-
-        </div>
-    </div>
-</form> --}}
 </div>
 </div>
 <div id="dropDownSelect1"></div>

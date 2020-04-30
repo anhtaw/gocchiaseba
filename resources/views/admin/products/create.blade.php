@@ -40,6 +40,7 @@
         font-size: .8em;
         color: #ff6666;
     }
+
 </style>
 @extends('admin.products.layout')
 @section('active')
@@ -59,6 +60,12 @@
                 <a href="{{ route('products.create')}}" class="nav-link active">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Thêm sản phẩm</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('products_category.index')}}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Thêm loại sản phẩm</p>
                 </a>
             </li>
         </ul>
@@ -103,10 +110,13 @@
                         <div class="form-group">
                             <label for="inputStatus">Loại sản phẩm</label>
                             <select name="loaisp" class="form-control custom-select">
+
                                 <option selected disabled>Select one</option>
-                                <option value="0">Giáo trình</option>
-                                <option value="1">Đồ Cá Nhân</option>
-                                <option value="1">Đồ Ăn</option>
+                                @foreach ($productcategory as $item)
+                                <option value="{{ $item ->id }}" >{{ $item ->name_category }}</option>
+                                @endforeach
+
+
                             </select>
                         </div>
                         <div class="form-group">
@@ -114,13 +124,17 @@
                             <input name="gia" type="number" id="inputClientCompany" class="form-control">
                         </div>
                         <div class="form-group">
+                            <label for="inputDescription">Status</label>
+                            <textarea name="status" id="inputDescription" class="form-control" ></textarea>
+                    </div>
+                        <div class="form-group">
                             <strong>Ảnh :</strong>
                             <input type="file" id="inputFile" cept="image/*" onchange="preview_image(event) "
                                        class="form-control box-image" name="image">
                          </div>
                     </div>
                      <div class=" float-md-right col-md-3">
-                         <img id="output_image" alt="" class="img-circle" src="#"
+                         <img id="output_image" alt="" class="img-circle" src="{{asset('img/demo.jpg')}}"
                                  style="width: 300px; height: 300px"/>
                       </div>
                   </div>

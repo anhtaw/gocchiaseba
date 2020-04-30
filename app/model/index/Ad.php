@@ -7,9 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 class Ad extends Model
 {
     protected $fillable = [
-        'name', 'detail',
+        'name',
+        'gia',
+        'loaisp',
+        'slug',
+        'image',
     ];
-    protected $table = 'blog';
+    protected $table = 'products';
 }
 
 

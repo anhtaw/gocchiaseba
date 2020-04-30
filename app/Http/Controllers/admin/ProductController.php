@@ -17,8 +17,8 @@ class ProductController extends Controller
     }
     public function index()
     {
-        $product = DB::table('products')->get();
-        return view('admin.products.index', ['products' => $product]);
+        $products = Product::join()->paginate(5);
+        return view('admin.products.index',compact('products'));
     }
 
     /**
@@ -28,7 +28,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.products.create');
+        $productcategory = DB::table('products_category')->get();
+        return view('admin.products.create',compact('productcategory'));
     }
 
     /**
@@ -56,7 +57,7 @@ class ProductController extends Controller
             'image' => $fileName,
             'loaisp' => $request->input('loaisp'),
             'gia' => $request->input('gia'),
-
+            'status' => $request->input('status'),
         ]);
         return redirect()->route('products.index')
             ->with('success', 'Product created successfully.');
@@ -94,14 +95,23 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
+        $image = '';
+        if($request->hasFile('image')){
+            $file = $request->file('image');
+            $image = $file->getClientOriginalName();
+            $file->move('img/', $image);
+        }
         $request->validate([
             'name' => 'required',
             'loaisp' => 'required',
         ]);
         $product->update([
             'name' => $request->input('name'),
+            'detail' => $request->input('detail'),
             'loaisp' => $request->input('loaisp'),
             'gia' => $request->input('gia'),
+            'image' => $image,
+            'status' => $request->input('status'),
         ]);
         return redirect()->route('products.index')
             ->with('success', 'Product updated successfully');

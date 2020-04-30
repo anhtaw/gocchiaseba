@@ -62,6 +62,12 @@
                 <p>Thêm sản phẩm</p>
             </a>
         </li>
+        <li class="nav-item">
+            <a href="{{ route('products_category.index')}}" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Thêm loại sản phẩm</p>
+            </a>
+        </li>
     </ul>
 </li>
 @include('admin.products.leftforproduct')
@@ -77,24 +83,27 @@
         </div>
         <!-- /.card-header -->
         <div class="card-body">
-            <table id="example1" class="table table-bordered table-striped">
+            <table id="example" class="table table-bordered table-striped">
                 <thead>
                 <tr>
                     <th style="width:5%;">ID</th>
                     <th style="width:15%;">Tên sản phẩm</th>
                     <th style="width:15%;">Loại sản phẩm</th>
                     <th style="width:15%;"> Giá </th>
+                    <th style="width:15%;">Status</th>
                     <th style="width:15%;">Ảnh</th>
                     <th style="width:15%;">Tùy chọn</th>
+
                 </tr>
             </thead>
             @foreach ($products as $product)
             <tbody>
                 <tr>
-                    <td>{{$product -> id }}</td>
+                    <td>{{$product ->id }}</td>
                     <td>{{ $product ->name }}</td>
-                    <td>{{ $product ->loaisp }}</td>
+                    <td>{{ $product ->name_category }}</td>
                     <td>{{ $product ->gia }}</td>
+                    <td>{{ $product ->status }}</td>
                     {{-- @foreach($products->productsimage as $image) --}}
                     <td> <img src="{{asset('img/'.$product->image)}}"  style="width: 100px; height: 100px"  /> </td>
 {{-- @endforeach --}}
@@ -107,16 +116,33 @@
                             <button type="submit" class="btnindex fa fa-trash"id="hover"><span>Xóa</span> </button>
                         </form>
                     </td>
+
                 </tr>
             </tbody>
             @endforeach
             </table>
 
-{{--            {!! $product->links() !!}--}}
+           {!! $products->links() !!}
         </div>
-
+        <script>
+            var product =dd($product);
+        $(document).ready(function() {
+            $('#example').DataTable( {
+                data: product,
+                columns: [
+                    { title: "ID" },
+                    { title: "Tên sản phẩm" },
+                    { title: "Loại sản phẩm" },
+                    { title: "Giá" },
+                    { title: "Ảnh" },
+                    { title: "Tùy chọn" }
+                ]
+            } );
+        } );
+</script>
         <!-- /.card-body -->
     </div>
 
 @endsection
+
 

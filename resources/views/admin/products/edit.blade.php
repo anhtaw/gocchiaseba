@@ -112,6 +112,10 @@
                                 <input name="gia" type="number" id="inputClientCompany" class="form-control"  value="{{ $product->gia}}">
                             </div>
                             <div class="form-group">
+                                <label for="inputStatus">Status</label>
+                                <input type="text" id="inputName" name="status" class="form-control" value="{{ $product->status}}">
+                            </div>
+                            <div class="form-group">
                                 <strong>Ảnh :</strong>
                                 <input type="file" id="inputFile" cept="image/*" onchange="preview_image(event) "
                                        class="form-control box-image" name="image">

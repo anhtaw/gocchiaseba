@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
+    Route::post('testEmail', 'Controller@testEmail');
+    Route::get('testEmail', 'Controller@testEmail');
 Route::get('/', function () {
 
     return redirect()->route('index.index');
@@ -25,8 +27,11 @@ Route::get('/', function () {
     Route::group(['prefix' => 'admin'], function () {
         Route::resource('blog', 'admin\BlogController');
         Route::resource('user', 'admin\UserController');
+    Route::get('detail', ['as' => 'detail', 'uses' => 'admin\UserController@indexdetail']);
+    Route::put('updatedetail', ['as' => 'updatedetail', 'uses' => 'admin\UserController@updatedetail']);
         Route::resource('products', 'admin\ProductController');
         Route::resource('giaovien', 'admin\TeacherController');
+    Route::resource('products_category', 'admin\Products_categoryController');
 
     });
     Route::get('user/activation/{token}', 'Auth\RegisterController@activateUser')->name('user.activate');
@@ -41,6 +46,11 @@ Route::get('/', function () {
         Route::resource('teacher', 'index\TeacherController');
         Route::resource('contact', 'index\ContactController');
         Route::post('contact.testEmail', ['as' => 'contact.testEmail', 'uses' => 'index\ContactController@testEmail']);
+    Route::get('giaotrinh', ['as' => 'giaotrinh', 'uses' => 'index\AdController@getgiaotrinh']);
+    Route::get('dodung', ['as' => 'dodung', 'uses' => 'index\AdController@getdodung']);
+    Route::get('doan', ['as' => 'doan', 'uses' => 'index\AdController@getdoan']);
+    Route::get('dodungcanhan', ['as' => 'dodungcanhan', 'uses' => 'index\AdController@getdodungcanhan']);
+    Route::get('quanao', ['as' => 'quanao', 'uses' => 'index\AdController@getquanao']);
         //Route::resource('review.edit', ['as' => 'review.edit', 'uses' => 'index\ReviewController@edit']);
     });
 

@@ -69,28 +69,35 @@
 @endsection
 @section('content')
     <div class="card">
-        <div class="card-header">
-            <h3 class="card-title"></h3>
+        <div class="card-header " >
+            <a href="{{route('products_category.create')}}"> <h3 class="card-title btn btn-block btn-success alignRight" >Tạo Mới</h3></a>
         </div>
-        <!-- /.card-header -->
+        <div class="card-header">
+            <h3 class="card-title">Danh Sách Sản Phẩm</h3>
+        </div>
         <div class="card-body">
             <table id="example1" class="table table-bordered table-striped">
              <thead>
                  <tr>
                     <th>ID</th>
                     <th>Tên tài khoản</th>
-                    <th>Mật khẩu</th>
                     <th>Email</th>
+                    <th>Ảnh</th>
+                    <th>Level</th>
+                    <th>Trạng Thái</th>
                     <th>Tùy chọn</th>
                   </tr>
               </thead>
+              @if(Auth::user()-> level ==1)
                     @foreach ($user as $users)
                 <tbody>
                     <tr>
                         <td>{{ ++$i }}</td>
                         <td>{{ $users ->name }}</td>
-                        <td>{{ $users ->password }}</td>
-                        <td>{{ $users ->email}}</td>
+                        <td>{{ $users ->email }}</td>
+                        <td> <img src="{{asset('img/'.$users->image)}}"  style="width: 100px; height: 100px"  /> </td>
+                        <td>{{ $users ->level}}</td>
+                        <td>{{ $users ->active}}</td>
                         <td>
                             <form action="{{ route('user.destroy',$users->id) }}" method="POST">
                                 {{-- <a class="btn btn-info" href="{{ route('users.show',$user->id) }}"></a> --}}
@@ -108,9 +115,56 @@
         </div>
         <!-- /.card-body -->
     </div>
+    @else
+    @foreach ($user as $users)
+    <tbody>
+        @if(Auth::user()-> name ==  $users ->name)
+        <tr>
+            <td>{{ ++$i }}</td>
+            <td>{{ $users ->name }}</td>
+            <td>{{ $users ->email }}</td>
+            <td> <img src="{{asset('img/'.$users->image)}}"  style="width: 100px; height: 100px"  /> </td>
+            <td>{{ $users ->level}}</td>
+            <td>{{ $users ->active}}</td>
+            <td>
+                <form action="{{ route('user.destroy',$users->id) }}" method="POST">
+                    {{-- <a class="btn btn-info" href="{{ route('users.show',$user->id) }}"></a> --}}
+                    <a class="btnindex  glyphicon glyphicon-edit" id="hover"  href="{{ route('user.edit',$users->id) }}"><span>Sửa</span></a>
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btnindex fa fa-trash"id="hover"><span>Xóa</span> </button>
+                </form>
+            </td>
+        </tr>
+        @endif
+    </tbody>
+    @endforeach
+</table>
+</div>
+
+    @endif
 @endsection
 
-
+</div>
+<script>
+    var product =dd($user);
+$(document).ready(function() {
+    $('#example').DataTable( {
+        data: product,
+        columns: [
+            { title: "ID" },
+            { title: "Tên tài khoản" },
+            { title: "Email" },
+            { title: "Ảnh" },
+            { title: "Level" },
+            { title: "Trạng Thái" },
+            { title: "Tùy chọn" }
+        ]
+    } );
+} );
+</script>
+<!-- /.card-body -->
+</div>
 
 
 

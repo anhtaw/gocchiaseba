@@ -24,7 +24,9 @@
             margin-left: 2rem !important;
             padding-right: 3rem !important;
             padding-left: 6rem !important;
+
             background-image: url({{ asset('img/bia.jpg') }}) !important;
+
             background-position: center !important;
             background-repeat: no-repeat !important;
             background-size: cover !important;
@@ -147,7 +149,9 @@
         }
 
         .vc_custom_1500902865228 {
+
             background: #757575 url({{ asset('img/bia.jpg') }}) !important;
+
             background-position: center !important;
             background-repeat: no-repeat !important;
             background-size: cover !important;

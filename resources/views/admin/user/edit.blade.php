@@ -107,15 +107,50 @@
                     <label >Email</label>
                     <input type="text" class="form-control form-control-lg"   name ="email" value="{{$user->email }}"   placeholder="Nhập email" >
                 </div>
+                @if(Auth::user()-> level !=1)
+                <div class="form-group">
+                    <label >Level</label>
+                    <p  disable="true" class="form-control form-control-lg"   name ="level" value=""   placeholder="Nhập level" > {{$user->level }}</p>
+                </div>
+                @else
+                <div class="form-group">
+                    <label >Level</label>
+                    <input type="text" class="form-control form-control-lg"   name ="level" value="{{$user->level }}"   placeholder="Nhập level" >
+                </div>
+                @endif
+                <div class="form-group">
+                    <label >Active</label>
+                    <input type="text" class="form-control form-control-lg"   name ="active" value="{{$user->active }}"   placeholder="Nhập active" >
+                </div>
+                <div class="form-group">
+                    <strong>Ảnh :</strong>
+                    <input type="file" value="{{asset('img/'.$user->image)}}" id="inputFile" cept="image/*" onchange="preview_image(event) "
+                           class="form-control box-image" name="image">
+                </div>
             </div>
             <!-- /.card-body -->
 
             <div class="card-footer">
-                <button type="submit" class="btn btn-primary">Sửa</button>
+                <button type="submit" class="btn btn-danger">Sửa</button>
+                <span class="focus-input100"></span>
+                <div class=" float-md-right col-md-3">
+                    <img id="output_image" alt="" class="img-circle" src="{{asset('img/'.$user->image)}}"
+                         style="width: 300px; height: 300px"/>
+                </div>
             </div>
         </form>
     </div>
 
 @endsection
+<script type='text/javascript'>
+    function preview_image(event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var output = document.getElementById('output_image');
+            output.src = reader.result;
+        }
+        reader.readAsDataURL(event.target.files[0]);
+    }
+</script>
 
 
