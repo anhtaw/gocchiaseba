@@ -70,10 +70,10 @@
 @section('content')
     <div class="card">
         <div class="card-header " >
-            <a href="{{route('products_category.create')}}"> <h3 class="card-title btn btn-block btn-success alignRight" >Tạo Mới</h3></a>
+            <a href="{{ route('user.create')}}"> <h3 class="card-title btn btn-block btn-success alignRight" >Tạo Mới</h3></a>
         </div>
         <div class="card-header">
-            <h3 class="card-title">Danh Sách Sản Phẩm</h3>
+            <h3 class="card-title">Danh Sách User</h3>
         </div>
         <div class="card-body">
             <table id="example1" class="table table-bordered table-striped">
