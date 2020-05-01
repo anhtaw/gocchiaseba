@@ -345,7 +345,8 @@
                                         <div class="wpb_wrapper">
                                             <div id="sc_googlemap_2119885848_wrap" class="sc_googlemap_wrap">
                                                 <div id="sc_googlemap_2119885848" class="sc_googlemap sc_googlemap_default" style="width:100%;height:420px;" data-zoom="14" data-style="dark" data-cluster-icon="">
-                                                    <iframe src="https://maps.google.com/maps?t=m&output=embed&iwloc=near&z=14&q=40.693159,-73.905676" scrolling="no" marginheight="0" marginwidth="0" frameborder="0" aria-label="One"></iframe>
+                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5977088313466!2d105.82639645133784!3d21.00875719376635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac800f450807%3A0x419a49bcd94b693a!2zSOG7jWMgdmnhu4duIE5nw6JuIGjDoG5n!5e0!3m2!1svi!2s!4v1588335155723!5m2!1svi!2s" scrolling="no" marginheight="0" marginwidth="0" frameborder="0"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" aria-label="One"></iframe>
+
                                                 </div>
                                             </div><!-- /.sc_googlemap_wrap -->
                                         </div>
