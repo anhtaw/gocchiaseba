@@ -121,8 +121,7 @@ class UserController extends Controller
                         ->with('success','user updated successfully');
     }
     public function updatedetail(Request $request, User  $user)
-    {
-        $image = '';
+    {  $image = '';
         if($request->hasFile('image')){
             $file = $request->file('image');
             $image = $file->getClientOriginalName();
@@ -132,7 +131,6 @@ class UserController extends Controller
             'name' => 'required',
             'password' => 'required',
             'email' => 'required',
-            'image' => 'required',
         ]);
 
         $user->update($request->all());

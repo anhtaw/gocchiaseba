@@ -34,6 +34,8 @@ Route::get('/', function () {
     Route::resource('products_category', 'admin\Products_categoryController');
 
     });
+Route::get('contact-us', 'ContactUSController@contactUS');
+Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUSController@contactUSPost']);
     Route::get('user/activation/{token}', 'Auth\RegisterController@activateUser')->name('user.activate');
     Route::group(['prefix' => 'index'], function () {
         Route::resource('index', 'index\IndexController');

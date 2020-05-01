@@ -48,7 +48,7 @@
                         <img src="{!! asset('css/dist/img/user2-160x160.jpg') !!}" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block"><?php echo $user = Auth::user()-> name; ?></a>
+                        <a href="{{ route('detail',$user->id) }}" class="d-block"><?php echo $user = Auth::user()-> name; ?></a>
                     </div>
                 </div>
                 <!-- Sidebar Menu -->
@@ -68,12 +68,11 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Sản Phẩm</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-                                <li class="breadcrumb-item active">Sản Phẩm</li>
+                                {{-- <li class="breadcrumb-item active">Sản Phẩm</li> --}}
                             </ol>
                         </div>
                     </div>
@@ -113,7 +112,7 @@
     <!-- AdminLTE for demo purposes -->
     <script type="text/javascript" src="<?php echo asset('css/dist/js/demo.js'); ?>"></script>
     <!-- page script -->
-    <script>
+    {{-- <script>
         $(function () {
             $("#example1").DataTable();
             $('#example2').DataTable({
@@ -125,7 +124,7 @@
                 "autoWidth": false,
             });
         });
-    </script>
+    </script> --}}
 
 </body>
 </html>

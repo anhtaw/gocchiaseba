@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th4 30, 2020 lúc 06:34 PM
+-- Thời gian đã tạo: Th5 01, 2020 lúc 01:14 PM
 -- Phiên bản máy phục vụ: 10.3.16-MariaDB
 -- Phiên bản PHP: 7.3.6
 
@@ -62,6 +62,56 @@ INSERT INTO `blog` (`id`, `name`, `detail`, `created_at`, `updated_at`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Cấu trúc bảng cho bảng `comments`
+--
+
+CREATE TABLE `comments` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `user_id` int(10) UNSIGNED NOT NULL,
+  `post_id` int(10) UNSIGNED NOT NULL,
+  `parent_id` int(10) UNSIGNED DEFAULT NULL,
+  `body` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `contactus`
+--
+
+CREATE TABLE `contactus` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `message` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `contactus`
+--
+
+INSERT INTO `contactus` (`id`, `name`, `email`, `message`, `created_at`, `updated_at`) VALUES
+(1, 'do', 'ducgets@gmail.com', 'áqsq', '2020-04-30 22:03:51', '2020-04-30 22:03:51'),
+(2, 'do', 'ducgets@gmail.com', 'hg', '2020-04-30 22:05:02', '2020-04-30 22:05:02'),
+(3, 'do', 'ducgets@gmail.com', 'á', '2020-04-30 22:06:28', '2020-04-30 22:06:28'),
+(4, 'ása', 'admin@gmail.com', 'a', '2020-04-30 22:08:15', '2020-04-30 22:08:15'),
+(5, 'do', 'ducgets@gmail.com', 'ádsad', '2020-05-01 02:51:40', '2020-05-01 02:51:40'),
+(6, 'do', 'ducgets@gmail.com', 'ádsad', '2020-05-01 02:58:09', '2020-05-01 02:58:09'),
+(7, 'do', 'ducgets@gmail.com', 'ád', NULL, NULL),
+(8, 'do', 'ducgets@gmail.com', 'ádas', NULL, NULL),
+(9, 'do', 'ducgets@gmail.com', 'ádas', NULL, NULL),
+(10, 'do', 'ducgets@gmail.com', 'ád', NULL, NULL),
+(11, 'do', 'ducgets@gmail.com', 'ád', NULL, NULL),
+(12, 'ads', 'ducgets@gmail.com', 'ád', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Cấu trúc bảng cho bảng `failed_jobs`
 --
 
@@ -101,7 +151,10 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (8, '2020_04_01_132434_create_user_activations_', 5),
 (9, '2020_04_01_132609_alter_users_table', 5),
 (10, '2020_04_02_014845_add_image_at_to_users', 6),
-(11, '2020_04_02_043948_add_price_at_to_products', 7);
+(11, '2020_04_02_043948_add_price_at_to_products', 7),
+(12, '2020_03_31_161723_create_teacher_table', 8),
+(13, '2020_04_07_144705_create_posts_comments_table', 9),
+(14, '2020_05_01_045428_create_contact_us_table', 9);
 
 -- --------------------------------------------------------
 
@@ -113,6 +166,21 @@ CREATE TABLE `password_resets` (
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `posts`
+--
+
+CREATE TABLE `posts` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `title` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `body` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -164,7 +232,7 @@ INSERT INTO `products` (`id`, `name`, `slug`, `detail`, `loaisp`, `gia`, `giakm`
 (33, 'Giầy đá bóng', NULL, '.', '4', 500000, NULL, NULL, '2020-04-26 07:12:15', '', 'a'),
 (34, 'abccd', NULL, '', NULL, NULL, NULL, NULL, NULL, NULL, 'a'),
 (35, 'trung12333', NULL, 'aaa', NULL, NULL, NULL, NULL, NULL, '', 'a'),
-(36, 'duc', NULL, 'a', '1', 30000, NULL, NULL, NULL, 'z1789261051546_f9ac45b9566fa3652614667df59194bb.jpg', 'a');
+(36, 'duc', NULL, 'a', '1', 30000, NULL, NULL, '2020-04-30 10:55:12', '', 'a');
 
 -- --------------------------------------------------------
 
@@ -270,12 +338,12 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `active`, `level`, `image`) VALUES
 (1, 'duc', 'lxc150896@gmail.com', NULL, '$2y$10$RRvFDkgxcQBrXZnq7RBGSeKJDlI1Wk229gmnaDBBKdVyOzRT7QxcO', NULL, NULL, NULL, 0, NULL, NULL),
-(2, 'lxc150896@gmail.com', 'lxc@gmail.com', NULL, '$2y$10$beaVXOTjK5eAHXTdpA9O1OaoU6vZ7ZapME0AqQfCUE09uNVE/d5LW', NULL, NULL, NULL, 0, NULL, NULL),
+(2, 'lxc150896@gmail.com', 'lxc@gmail.com', NULL, '$2y$10$6rDjMPLmzqxv5IZHfCmgwOzlzQv/y/4mB2CXg4z7F62.1wcigpWG.', NULL, NULL, '2020-04-30 11:02:34', 0, '0', 'z1789261051546_f9ac45b9566fa3652614667df59194bb.jpg'),
 (3, 'admin', 'admin@gmail.com', NULL, '$2y$10$4Vc8.JRsWb3Lap2N0gwNW.6WlRPgHZWnXRjKf0PEuMmcmZx0yaFx.', NULL, NULL, '2020-04-30 03:32:30', 1, '1', 'z1789261051546_f9ac45b9566fa3652614667df59194bb.jpg'),
 (4, 'ducgets', 'ducgets@gmail.com', NULL, '$2y$10$CGDqItuvzlMlASmBMBy39.rWUF1xy3otBh/HNZYziMe2uPpFPRcue', NULL, '2020-03-31 21:36:26', '2020-03-31 21:36:26', 0, NULL, NULL),
 (5, 'doquangduc', 'doquangduc@gmail.com', NULL, '$2y$10$ukD13WFXn/MCBdyjxn/y..kBAuQyPzsr0lUBtn7Xugfg2KuLmbNDa', NULL, '2020-03-31 21:39:23', '2020-03-31 21:39:23', 0, NULL, NULL),
 (6, 'quangduc', 'quangduc@gmail.com', NULL, '$2y$10$M2gou8VJYT0ceADRvnYUqOvGZPdiQSkdZRp1w54AljVuhOmLBHkDS', NULL, '2020-03-31 21:41:46', '2020-03-31 21:41:46', 0, NULL, NULL),
-(7, 'saaaaaaa', 'aaaaa@gmail.com', NULL, '$2y$10$QUHYZwgKNPByER4PgS042.T5J62LdrJhC58lTUsLTb7Qr2mjjHr9W', NULL, '2020-03-31 21:47:03', '2020-03-31 21:47:03', 0, NULL, NULL),
+(7, 'saaaaaaa', 'ducgg1@gmail.com', NULL, '$2y$10$0EP2U9o1mpntA5gQeyAjo.rUVP2Nh6q8FnGAVdvjxXSvgdIEA3gxa', NULL, '2020-03-31 21:47:03', '2020-04-30 09:55:37', 0, '0', 'z1789261051546_f9ac45b9566fa3652614667df59194bb.jpg'),
 (8, 'ducgg', 'admin1@gmail.com', NULL, '$2y$10$9k3BnjE8GFRuGmbGKH569ey8b1uBZ6r3zzr.yfrsbmYz6.vdsIttu', NULL, '2020-04-01 06:50:06', '2020-04-30 04:31:33', 0, '1', 'z1789261051546_f9ac45b9566fa3652614667df59194bb.jpg');
 
 -- --------------------------------------------------------
@@ -302,6 +370,18 @@ ALTER TABLE `blog`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Chỉ mục cho bảng `comments`
+--
+ALTER TABLE `comments`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Chỉ mục cho bảng `contactus`
+--
+ALTER TABLE `contactus`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Chỉ mục cho bảng `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
@@ -318,6 +398,12 @@ ALTER TABLE `migrations`
 --
 ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
+
+--
+-- Chỉ mục cho bảng `posts`
+--
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Chỉ mục cho bảng `products`
@@ -374,6 +460,18 @@ ALTER TABLE `blog`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
+-- AUTO_INCREMENT cho bảng `comments`
+--
+ALTER TABLE `comments`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT cho bảng `contactus`
+--
+ALTER TABLE `contactus`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
 -- AUTO_INCREMENT cho bảng `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
@@ -383,7 +481,13 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT cho bảng `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT cho bảng `posts`
+--
+ALTER TABLE `posts`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT cho bảng `products`
@@ -413,7 +517,7 @@ ALTER TABLE `teacher`
 -- AUTO_INCREMENT cho bảng `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

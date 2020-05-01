@@ -59,6 +59,13 @@
         .vc_custom_1568871680200 {
             margin-bottom: 5.1rem !important;
         }</style>
+             <style>
+                .required:after {
+                  content:" *";
+                  color: red;
+                }
+              </style>
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <meta name='robots' content='noindex,nofollow'/>
     <link rel='dns-prefetch' href='//ajax.googleapis.com'/>
     <link rel='dns-prefetch' href='//fonts.googleapis.com'/>
@@ -345,6 +352,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="vc_row-full-width vc_clearfix"></div>
                             <div class="vc_row wpb_row vc_row-fluid">
                                 <div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column_icons_position_left">
@@ -363,6 +371,11 @@
                                     </div>
                                 </div>
                             </div>
+                            @if(Session::has('success'))
+<div class="alert alert-success">
+  {{ Session::get('success') }}
+</div>
+@endif
                             <div class="vc_row wpb_row vc_row-fluid vc_custom_1500449199955">
                                 <div class="contact-info wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill sc_layouts_column_icons_position_left scheme_dark">
                                     <div class="vc_column-inner vc_custom_1500448329834">
@@ -372,78 +385,86 @@
                                             <div id="sc_icons_1549801093" class="sc_icons sc_icons_default sc_icons_size_small sc_align_left">
                                                 <h3 class="sc_item_title sc_icons_title sc_align_left sc_item_title_style_default sc_item_title_tag">Thông Tin</h3>
                                                 <div class="sc_icons_item">
-                                                    <div id="sc_icons_1549801093_icon-location"
-                                                         class="sc_icons_icon sc_icon_type_ icon-location"
+                                                    <div id="sc_icons_1549801093_icon-location"class="sc_icons_icon sc_icon_type_ icon-location"
                                                     ><span class="sc_icon_type_ icon-location"></span></div>
                                                     <h4 class="sc_icons_item_title"><span>Địa Chỉ</span></h4>
                                                     <div class="sc_icons_item_description"><span>Số 12,chùa bộc</span><span>Quận Đống Đa,Thành phố Hà Nội, Việt Nam</span>
                                                     </div>
                                                 </div>
                                                 <div class="sc_icons_item sc_icons_item_linked">
-                                                    <div id="sc_icons_1549801093_icon-phone-1"
-                                                         class="sc_icons_icon sc_icon_type_ icon-phone-1"
+                                                    <div id="sc_icons_1549801093_icon-phone-1"class="sc_icons_icon sc_icon_type_ icon-phone-1"
                                                     ><span class="sc_icon_type_ icon-phone-1"></span></div>
                                                     <h4 class="sc_icons_item_title"><span>Điện Thoại</span></h4>
                                                     <div class="sc_icons_item_description"><span>....</span>
                                                     </div>
                                                     <a href="tel:0328770772" class="sc_icons_item_link"></a></div>
                                                 <div class="sc_icons_item sc_icons_item_linked">
-                                                    <div id="sc_icons_1549801093_icon-mail"
-                                                         class="sc_icons_icon sc_icon_type_ icon-mail"
+                                                    <div id="sc_icons_1549801093_icon-mail" class="sc_icons_icon sc_icon_type_ icon-mail"
                                                     ><span class="sc_icon_type_ icon-mail"></span></div>
                                                     <h4 class="sc_icons_item_title"><span>Gmail</span></h4>
-                                                    <div class="sc_icons_item_description"><span><a
-                                                                href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                                                data-cfemail="026b6c646d427b6d7770716b76672c616d6f">[ducgets@gmail.com]</a></span>
+                                                    <div class="sc_icons_item_description">
+                                                        <span>
+                                                        <a href="/cdn-cgi/l/email-protection" class="__cf_email__"data-cfemail="026b6c646d427b6d7770716b76672c616d6f">ducgets@gmail.com</a></span>
                                                     </div>
-                                                    <a href="/cdn-cgi/l/email-protection#ec85828a83ac9583999e9f859889c28f8381"
-                                                       class="sc_icons_item_link"></a></div>
+                                                    <a href="/cdn-cgi/l/email-protection#ec85828a83ac9583999e9f859889c28f8381"class="sc_icons_item_link"></a></div>
                                                 <div class="sc_icons_item">
-                                                    <div id="sc_icons_1549801093_icon-clock-empty"
-                                                         class="sc_icons_icon sc_icon_type_ icon-clock-empty"
+                                                    <div id="sc_icons_1549801093_icon-clock-empty"class="sc_icons_icon sc_icon_type_ icon-clock-empty"
                                                     ><span class="sc_icon_type_ icon-clock-empty"></span></div>
                                                     <h4 class="sc_icons_item_title"><span>Giờ làm việc</span></h4>
                                                     <div class="sc_icons_item_description"><span>Thứ Hai  - Thứ Sáu: 10AM - 5PM</span>
                                                     </div>
                                                 </div>
                                             </div><!-- /.sc_icons -->
-                                            <div class="vc_empty_space  vc_custom_1500448661813 height_medium"
-                                                 style="height: 32px"><span class="vc_empty_space_inner"></span></div>
+                                            <div class="vc_empty_space  vc_custom_1500448661813 height_medium"style="height: 32px"><span class="vc_empty_space_inner"></span></div>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill sc_layouts_column_icons_position_left">
                                     <div class="vc_column-inner vc_custom_1500448736746">
                                         <div class="wpb_wrapper">
                                             <div class="vc_empty_space  vc_custom_1500448828454 height_medium" style="height: 32px"><span class="vc_empty_space_inner"></span></div>
                                             <div role="form" class="wpcf7" id="wpcf7-f526-p75-o1" lang="en-US" dir="ltr">
                                                 <div class="screen-reader-response"></div>
-                                                <form action="{{ route('contact.testEmail')}}" method="post" class="wpcf7-form" novalidate="novalidate">
-                                                    @csrf
-                                                    @method('PUT')
-                                                    <div style="display: none;">
-                                                        <input type="hidden" name="_wpcf7" value="526"/>
-                                                        <input type="hidden" name="_wpcf7_version" value="5.1.7"/>
-                                                        <input type="hidden" name="_wpcf7_locale" value="en_US"/>
-                                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f526-p75-o1"/>
-                                                        <input type="hidden" name="_wpcf7_container_post" value="75"/>
+                                                <div class="wpcf7-form" novalidate="novalidate">
+                                                {!! Form::open(['route'=>'contactus.store']) !!}
+                                                </div>
+                                                <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
+                                                    <div class="required">
+                                                            {!! Form::label('Tên của bạn:',) !!}
+                                                        </div>
+                                                            {!! Form::text('name', old('name'), ['class'=>'wpcf7-form-control wpcf7-text wpcf7-validates-as-required', 'placeholder'=>'Enter Name' ,'size'=>'40','aria-required'=>'false','aria-invalid'=>'false']) !!}
+                                                            <span class="text-danger">{{ $errors->first('name') }}</span>
+                                                        </div>
+                                                        <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
+                                                            <div class="required">
+                                                            {!! Form::label('Email Của bạn:') !!}
+                                                        </div>
+                                                            {!! Form::text('email', old('email'), ['class'=>'wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email wpcf7-form-control wpcf7-text ', 'placeholder'=>'Enter Email','size'=>'40','aria-required'=>'false','aria-invalid'=>'false']) !!}
+                                                            <span class="text-danger">{{ $errors->first('email') }}</span>
                                                     </div>
-                                                    <p><label> Tên của bạn(Bắt buộc)<br/>
-                                                            <span class=""><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="false" aria-invalid="false"/></span>
-                                                        </label></p>
-                                                    <p><label> Email Của bạn (Bắt Buộc)<br/>
-                                                            <span class="">
-                                                                <input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="false" aria-invalid="false"/>
-                                                            </span>
-                                                        </label></p>
-                                                    <p><label> Tiêu Đề<br/>
-                                                            <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false"/></span> </label></p>
-                                                    <p><label> Nội Dung<br/>
-                                                            <span class="wpcf7-form-control-wrap your-message">
-                                                                <textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </label></p>
+                                                    <div class="form-group {{ $errors->has('title') ? 'has-error' : '' }}">
+                                                        <div class="required">
+                                                        {!! Form::label('Tiêu Đề:') !!}
+                                                    </div>
+                                                    <span class="wpcf7-form-control-wrap your-subject">
+                                                        {!! Form::text('title', old('title'), ['class'=>'wpcf7-form-control wpcf7-text', 'placeholder'=>'Enter Message','aria-invalid'=>'false','size'=>'40']) !!}
+                                                    </span>
+                                                        <span class="text-danger">{{ $errors->first('title') }}</span>
+                                                        </div>
+                                                        <div class="form-group {{ $errors->has('content') ? 'has-error' : '' }}">
+                                                            <div class="required">
+                                                            {!! Form::label('Nội Dung:') !!}
+                                                        </div>
+                                                        <span class="wpcf7-form-control-wrap your-messaget">
+                                                            {!! Form::textarea('content', old('content'), ['class'=>'wpcf7-form-control wpcf7-textarea', 'placeholder'=>'Enter Message','aria-invalid'=>'false','cols'=>'40','rows'=>'10']) !!}
+                                                        </span>
+                                                            <span class="text-danger">{{ $errors->first('content') }}</span>
+                                                    </div>
+
                                                     <p><input type="submit" value="Gửi" class="wpcf7-form-control wpcf7-submit"/></p>
                                                     <div class="wpcf7-response-output wpcf7-display-none"></div>
-                                                </form>
+                                                    {!! Form::close() !!}
                                             </div>
                                             <div class="vc_empty_space  vc_custom_1500448796574 height_medium" style="height: 32px">
                                                 <span class="vc_empty_space_inner"></span>
@@ -569,7 +590,7 @@
 <script type='text/javascript' src="{{asset('index/js/widget.min.js')}}"></script>
 <script type='text/javascript' src="{{asset('index/js/mouse.min.js')}}"></script>
 <script type='text/javascript' src="{{asset('index/js/draggable.min.js')}}"></script>
-<script type='text/javascript'>
+{{-- <script type='text/javascript'>
     /* <![CDATA[ */
     var wpcf7 = {
         "apiSettings": {
@@ -578,7 +599,7 @@
         }
     };
     /* ]]> */
-</script>
+</script> --}}
 <script type='text/javascript' src="{{asset('index/js/scripts.js')}}"></script>
 <script type='text/javascript' src="{{asset('index/js/datepicker.min.js')}}"></script>
 <script type='text/javascript'>
