@@ -23,6 +23,7 @@ Route::get('/', function () {
 });
     Route::get('logout',[ 'as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
     Route::get('admin', ['as' => 'admin', 'uses' => 'Auth\LoginController@getlogin1']);
+    Route::post('admin', ['as' => 'admin', 'uses' => 'Auth\LoginController@postlogin']);
     Route::get('login', ['as' => 'login', 'uses' => 'Auth\LoginController@getlogin']);
     Route::post('login', ['as' => 'login', 'uses' => 'Auth\LoginController@postlogin']);
     Route::post('store',[ 'as' => 'store', 'uses' =>  'Auth\RegisterController@store']);
