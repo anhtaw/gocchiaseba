@@ -5,31 +5,74 @@
 @include('index.review.cssforrv')
 <body class="product-template-default single single-product postid-265 theme-mendel woocommerce woocommerce-page woocommerce-no-js body_tag scheme_default blog_mode_shop body_style_wide  is_stream blog_style_excerpt sidebar_hide expand_content header_style_header-custom-21 header_position_default menu_style_top no_layout wpb-js-composer js-comp-ver-6.0.5 vc_responsive">
 <div class="body_wrap">
-   <div class="page_wrap"><header class="top_panel top_panel_custom top_panel_custom_21 top_panel_custom_header-fullwidth-simple with_bg_image mendel_inline_453670308 with_featured_image scheme_default"><div class="vc_row wpb_row vc_row-fluid vc_custom_1500893297996 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex sc_layouts_row sc_layouts_row_type_compact sc_layouts_row_fixed scheme_dark"><div class="wpb_column vc_column_container vc_col-sm-3 sc_layouts_column sc_layouts_column_align_left sc_layouts_column_icons_position_left"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space  vc_custom_1500975516958"   style="height: 0px"><span class="vc_empty_space_inner"></span></div><div class="sc_layouts_item"><a href="#" id="sc_layouts_logo_1137812937" class="sc_layouts_logo sc_layouts_logo_default"><img class="logo_image" src="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/07/logo.png" alt="" width="240" height="42"></a><!-- /.sc_layouts_logo --></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6 sc_layouts_column sc_layouts_column_align_center sc_layouts_column_icons_position_left"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="sc_layouts_item"><nav class="sc_layouts_menu sc_layouts_menu_default menu_hover_fade hide_on_mobile" id="sc_layouts_menu_794113008" data-animation-in="fadeInUpSmall" data-animation-out="fadeOutDownSmall"		><ul id="menu-main-menu" class="sc_layouts_menu_nav"><li id="menu-item-102" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-102"><a href="#"><span>Home</span></a>
-<ul class="sub-menu"><li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-90"><a href="http://mendel-antiques.ancorathemes.com/"><span>Home 1</span></a></li><li id="menu-item-478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-478"><a href="http://mendel-antiques.ancorathemes.com/home-2/"><span>Home 2</span></a></li></ul>
-</li><li id="menu-item-103" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-103"><a href="#"><span>About Us</span></a>
-<ul class="sub-menu"><li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78"><a href="http://mendel-antiques.ancorathemes.com/about-1/"><span>About 1</span></a></li><li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="http://mendel-antiques.ancorathemes.com/about-2/"><span>About 2</span></a></li></ul>
-</li><li id="menu-item-95" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95"><a href="http://mendel-antiques.ancorathemes.com/our-services/"><span>Services</span></a></li><li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-96"><a href="http://mendel-antiques.ancorathemes.com/shop/"><span>Shop</span></a></li><li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a href="http://mendel-antiques.ancorathemes.com/specials/"><span>Specials</span></a></li><li id="menu-item-104" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-104"><a href="#"><span>Features</span></a>
-<ul class="sub-menu"><li id="menu-item-105" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-105"><a href="#"><span>Pages</span></a>
-	<ul class="sub-menu"><li id="menu-item-112" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-112"><a href="#"><span>Blog</span></a>
-		<ul class="sub-menu"><li id="menu-item-106" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106"><a href="#"><span>Classic</span></a>
-			<ul class="sub-menu"><li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="http://mendel-antiques.ancorathemes.com/classic-1/"><span>Classic 1</span></a></li><li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a href="http://mendel-antiques.ancorathemes.com/classic-2/"><span>Classic 2</span></a></li><li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><a href="http://mendel-antiques.ancorathemes.com/classic-3/"><span>Classic 3</span></a></li></ul>
-</li><li id="menu-item-107" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-107"><a href="#"><span>Chess</span></a>
-			<ul class="sub-menu"><li id="menu-item-80" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80"><a href="http://mendel-antiques.ancorathemes.com/chess-2/"><span>Chess 2</span></a></li><li id="menu-item-81" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-81"><a href="http://mendel-antiques.ancorathemes.com/chess-4/"><span>Chess 4</span></a></li><li id="menu-item-82" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-82"><a href="http://mendel-antiques.ancorathemes.com/chess-6/"><span>Chess 6</span></a></li></ul>
-</li><li id="menu-item-108" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-108"><a href="#"><span>Portfolio</span></a>
-			<ul class="sub-menu"><li id="menu-item-92" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92"><a href="http://mendel-antiques.ancorathemes.com/portfolio-2/"><span>Portfolio 2</span></a></li><li id="menu-item-93" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-93"><a href="http://mendel-antiques.ancorathemes.com/portfolio-3/"><span>Portfolio 3</span></a></li><li id="menu-item-94" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"><a href="http://mendel-antiques.ancorathemes.com/portfolio-4/"><span>Portfolio 4</span></a></li></ul>
-</li></ul>
-</li><li id="menu-item-109" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-109"><a href="#"><span>Gallery</span></a>
-		<ul class="sub-menu"><li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89"><a href="http://mendel-antiques.ancorathemes.com/grid/"><span>Grid</span></a></li><li id="menu-item-91" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91"><a href="http://mendel-antiques.ancorathemes.com/masonry/"><span>Masonry</span></a></li><li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"><a href="http://mendel-antiques.ancorathemes.com/cobbles/"><span>Cobbles</span></a></li></ul>
-</li></ul>
-</li><li id="menu-item-110" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-110"><a href="#"><span>Tools</span></a>
-	<ul class="sub-menu"><li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="http://mendel-antiques.ancorathemes.com/shortcodes/"><span>Shortcodes</span></a></li><li id="menu-item-100" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100"><a href="http://mendel-antiques.ancorathemes.com/typography/"><span>Typography</span></a></li></ul>
-</li></ul>
-</li><li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"><a href="http://mendel-antiques.ancorathemes.com/contact/"><span>Contact</span></a></li></ul></nav><!-- /.sc_layouts_menu --><div class="sc_layouts_iconed_text sc_layouts_menu_mobile_button">
+   <div class="page_wrap"><header class="top_panel top_panel_custom top_panel_custom_21 top_panel_custom_header-fullwidth-simple with_bg_image mendel_inline_453670308 with_featured_image scheme_default"><div class="vc_row wpb_row vc_row-fluid vc_custom_1500893297996 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex sc_layouts_row sc_layouts_row_type_compact sc_layouts_row_fixed scheme_dark">
+       <div class="wpb_column vc_column_container vc_col-sm-3 sc_layouts_column sc_layouts_column_align_left sc_layouts_column_icons_position_left">
+           <div class="vc_column-inner">
+               <div class="wpb_wrapper">
+               <div class="vc_empty_space  vc_custom_1500975516958"   style="height: 0px">
+            <span class="vc_empty_space_inner">
+                </span>
+            </div>
+            <div class="sc_layouts_item">
+                <a href="index.html"  id="sc_layouts_logo_72816308"  class="sc_layouts_logo sc_layouts_logo_default">
+                    <img class="logo_image" src="{{ asset('img/img/logoheader.png') }}" alt="" width="240" height="42">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="wpb_column vc_column_container vc_col-sm-6 sc_layouts_column sc_layouts_column_align_center sc_layouts_column_icons_position_left">
+        <div class="vc_column-inner">
+            <div class="wpb_wrapper">
+            <div class="sc_layouts_item">
+                @include('index.header')
+           <div class="sc_layouts_iconed_text sc_layouts_menu_mobile_button">
 		<a class="sc_layouts_item_link sc_layouts_iconed_text_link" href="#">
 			<span class="sc_layouts_item_icon sc_layouts_iconed_text_icon trx_addons_icon-menu"></span>
 		</a>
-	</div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-sm vc_hidden-xs sc_layouts_column sc_layouts_column_align_right sc_layouts_column_icons_position_left"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space  vc_custom_1500893543863"   style="height: 0px"><span class="vc_empty_space_inner"></span></div><div class="sc_layouts_item"><div id="sc_layouts_iconed_text_2030462790" class="sc_layouts_iconed_text"><a href="/my-account/" class="sc_layouts_item_link sc_layouts_iconed_text_link"><span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-user"></span></a></div><!-- /.sc_layouts_iconed_text --></div><div class="sc_layouts_item"><div id="sc_layouts_cart_2089087616" class="sc_layouts_cart">
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-sm vc_hidden-xs sc_layouts_column sc_layouts_column_align_right sc_layouts_column_icons_position_left">
+    <div class="vc_column-inner">
+        <div class="wpb_wrapper">
+            <div class="vc_empty_space  vc_custom_1500893543863"   style="height: 0px">
+                <span class="vc_empty_space_inner"></span>
+            </div>
+            @if (Auth::check())
+            <div class="sc_layouts_item">
+                <nav class="sc_layouts_menu sc_layouts_menu_default menu_hover_fade hide_on_mobile" id="sc_layouts_menu_1622638574" data-animation-in="fadeInUpSmall" data-animation-out="fadeOutDownSmall">
+                    <ul id="menu-main-menu" class="sc_layouts_menu_nav">
+                        <li id="menu-item-103" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-103"><a href="#">
+                                <span> <?php print_r('Xin Chào : '.$user = Auth::user()-> name) ?></span></a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79">
+                                    <a href="{{ route('logout')}}" aria-current="page">
+                                        <span>Đăng xuất</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sc_layouts_iconed_text sc_layouts_menu_mobile_button">
+                    <a class="sc_layouts_item_link sc_layouts_iconed_text_link" href="#">
+                        <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon trx_addons_icon-menu"></span>
+                    </a>
+                </div>
+            </div>
+@else
+<div class="sc_layouts_item">
+<div id="sc_layouts_iconed_text_1992222615" class="sc_layouts_iconed_text">
+<a href="{{route('admin')}}" class="sc_layouts_item_link sc_layouts_iconed_text_link">
+        <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-user"></span>
+</a>
+</div><!-- /.sc_layouts_iconed_text -->
+</div>
+@endif
+                    <div class="sc_layouts_item">
+                        <div id="sc_layouts_cart_2089087616" class="sc_layouts_cart">
 		<span class="sc_layouts_item_icon sc_layouts_cart_icon trx_addons_icon-basket"></span>
 		<span class="sc_layouts_item_details sc_layouts_cart_details">
 						<span class="sc_layouts_item_details_line2 sc_layouts_cart_totals">
@@ -42,62 +85,79 @@
 		<div class="sc_layouts_cart_widget widget_area">
 			<span class="sc_layouts_cart_widget_close trx_addons_icon-cancel"></span>
 			<div class="widget woocommerce widget_shopping_cart"><div class="widget_shopping_cart_content"></div></div>		</div><!-- /.sc_layouts_cart_widget -->
-	</div><!-- /.sc_layouts_cart --></div><div class="sc_layouts_item"><div id="sc_layouts_iconed_text_2132007897" class="sc_layouts_iconed_text"><a href="/cdn-cgi/l/email-protection#afcad7cec2dfc3caefdbcadcdb81ccc0c2" class="sc_layouts_item_link sc_layouts_iconed_text_link"><span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-mail-1"></span></a></div><!-- /.sc_layouts_iconed_text --></div><div class="sc_layouts_item"><div id="sc_layouts_search_2026411655" class="sc_layouts_search"><div class="search_wrap search_style_fullscreen search_ajax layouts_search">
+	</div><!-- /.sc_layouts_cart --></div><div class="sc_layouts_item">
+        <div id="sc_layouts_iconed_text_2132007897" class="sc_layouts_iconed_text"><a href="/cdn-cgi/l/email-protection#afcad7cec2dfc3caefdbcadcdb81ccc0c2" class="sc_layouts_item_link sc_layouts_iconed_text_link"><span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-mail-1"></span></a></div><!-- /.sc_layouts_iconed_text --></div><div class="sc_layouts_item"><div id="sc_layouts_search_2026411655" class="sc_layouts_search"><div class="search_wrap search_style_fullscreen search_ajax layouts_search">
 	<div class="search_form_wrap">
-		<form role="search" method="get" class="search_form" action="http://mendel-antiques.ancorathemes.com/">
-			<input type="text" class="search_field" placeholder="Search" value="" name="s">
-			<button type="submit" class="search_submit trx_addons_icon-search"></button>
-							<a class="search_close trx_addons_icon-delete"></a>
-					</form>
+        <form role="search" method="POST" class="search_form"action="{{route('timkiem')}}">
+            {{ csrf_field() }}
+                <input type="text" class="search_field" placeholder="Search" value=""name="q">
+                <button type="submit" class="search_submit trx_addons_icon-search"></button>
+                <a class="search_close trx_addons_icon-delete"></a>
+            </form>
 	</div>
-	<div class="search_results widget_area"><a href="#" class="search_results_close trx_addons_icon-cancel"></a><div class="search_results_content"></div></div></div></div><!-- /.sc_layouts_search --></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1500902865228 vc_row-has-fill sc_layouts_row sc_layouts_row_type_normal sc_layouts_hide_on_frontpage scheme_dark"><div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column sc_layouts_column_align_center sc_layouts_column_icons_position_left"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="sc_content_491076395"
-		class="sc_content color_style_default sc_content_default sc_content_width_1_1 sc_float_center"><div class="sc_content_container"><div class="vc_empty_space  em_sp_top vc_custom_1568806866743 height_large"   style="height: 32px"><span class="vc_empty_space_inner"></span></div><div class="sc_layouts_item"><div id="sc_layouts_title_1914253930" class="sc_layouts_title with_content"><div class="sc_layouts_title_content"><div class="sc_layouts_title_title">							<h1 class="sc_layouts_title_caption">Antique Chair 1734</h1>
-							</div><div class="sc_layouts_title_breadcrumbs"><div class="breadcrumbs"><a class="breadcrumbs_item home" href="http://mendel-antiques.ancorathemes.com/">Home</a><span class="breadcrumbs_delimiter"></span><a href="http://mendel-antiques.ancorathemes.com/shop/">Shop</a><span class="breadcrumbs_delimiter"></span>...<span class="breadcrumbs_delimiter"></span><span class="breadcrumbs_item current">Antique Chair 1734</span></div></div></div><!-- .sc_layouts_title_content --></div><!-- /.sc_layouts_title --></div><div class="vc_empty_space  em_sp_b vc_custom_1568806854216 height_large"   style="height: 32px"><span class="vc_empty_space_inner"></span></div></div></div><!-- /.sc_content --></div></div></div></div>
+    <div class="search_results widget_area"><a href="#" class="search_results_close trx_addons_icon-cancel"></a>
+        <div class="search_results_content">
+            </div>
+        </div>
+    </div>
+</div><!-- /.sc_layouts_search -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="vc_row wpb_row vc_row-fluid vc_custom_1500902865228 vc_row-has-fill sc_layouts_row sc_layouts_row_type_normal sc_layouts_hide_on_frontpage scheme_dark">
+    <div class="wpb_column vc_column_container vc_col-sm-12 sc_layouts_column sc_layouts_column_align_center sc_layouts_column_icons_position_left">
+        <div class="vc_column-inner">
+        <div class="wpb_wrapper">
+            <div id="sc_content_491076395"class="sc_content color_style_default sc_content_default sc_content_width_1_1 sc_float_center">
+                <div class="sc_content_container"><div class="vc_empty_space  em_sp_top vc_custom_1568806866743 height_large"   style="height: 32px">
+                    <span class="vc_empty_space_inner">
+                        </span>
+                    </div>
+                    <div class="sc_layouts_item">
+                        <div id="sc_layouts_title_1914253930" class="sc_layouts_title with_content">
+                            <div class="sc_layouts_title_content">
+                                <div class="sc_layouts_title_title">
+                                    <h1 class="sc_layouts_title_caption">{{ $product1 ->name }}</h1>
+                            </div>
+                            <div class="sc_layouts_title_breadcrumbs">
+                                <div class="breadcrumbs">
+                                <a class="breadcrumbs_item home" href="{{ route('index.index')}}">Trang chủ</a>
+                                <span class="breadcrumbs_delimiter"></span><a href="">Shop</a>
+                                <span class="breadcrumbs_delimiter"></span>...<span class="breadcrumbs_delimiter">
+
+                                </span>
+                                <span class="breadcrumbs_item current">{{ $product1 ->name }}</span></div></div></div><!-- .sc_layouts_title_content --></div><!-- /.sc_layouts_title --></div><div class="vc_empty_space  em_sp_b vc_custom_1568806854216 height_large"   style="height: 32px"><span class="vc_empty_space_inner"></span></div></div></div><!-- /.sc_content --></div></div></div></div>
 </header><div class="menu_mobile_overlay"></div>
 <div class="menu_mobile menu_mobile_fullscreen scheme_dark">
 	<div class="menu_mobile_inner">
-		<a class="menu_mobile_close icon-cancel"></a><a class="sc_layouts_logo" href="http://mendel-antiques.ancorathemes.com/"><img src="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/07/logo.png"  width="240" height="42"></a><nav class="menu_mobile_nav_area"><ul id="menu_mobile-main-menu" class=""><li id="menu_mobile-item-102" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-102"><a href="#"><span>Home</span></a>
-<ul class="sub-menu"><li id="menu_mobile-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-90"><a href="http://mendel-antiques.ancorathemes.com/"><span>Home 1</span></a></li><li id="menu_mobile-item-478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-478"><a href="http://mendel-antiques.ancorathemes.com/home-2/"><span>Home 2</span></a></li></ul>
-</li><li id="menu_mobile-item-103" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-103"><a href="#"><span>About Us</span></a>
-<ul class="sub-menu"><li id="menu_mobile-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78"><a href="http://mendel-antiques.ancorathemes.com/about-1/"><span>About 1</span></a></li><li id="menu_mobile-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="http://mendel-antiques.ancorathemes.com/about-2/"><span>About 2</span></a></li></ul>
-</li><li id="menu_mobile-item-95" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95"><a href="http://mendel-antiques.ancorathemes.com/our-services/"><span>Services</span></a></li><li id="menu_mobile-item-96" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-96"><a href="http://mendel-antiques.ancorathemes.com/shop/"><span>Shop</span></a></li><li id="menu_mobile-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a href="http://mendel-antiques.ancorathemes.com/specials/"><span>Specials</span></a></li><li id="menu_mobile-item-104" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-104"><a href="#"><span>Features</span></a>
-<ul class="sub-menu"><li id="menu_mobile-item-105" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-105"><a href="#"><span>Pages</span></a>
-	<ul class="sub-menu"><li id="menu_mobile-item-112" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-112"><a href="#"><span>Blog</span></a>
-		<ul class="sub-menu"><li id="menu_mobile-item-106" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106"><a href="#"><span>Classic</span></a>
-			<ul class="sub-menu"><li id="menu_mobile-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="http://mendel-antiques.ancorathemes.com/classic-1/"><span>Classic 1</span></a></li><li id="menu_mobile-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a href="http://mendel-antiques.ancorathemes.com/classic-2/"><span>Classic 2</span></a></li><li id="menu_mobile-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><a href="http://mendel-antiques.ancorathemes.com/classic-3/"><span>Classic 3</span></a></li></ul>
-</li><li id="menu_mobile-item-107" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-107"><a href="#"><span>Chess</span></a>
-			<ul class="sub-menu"><li id="menu_mobile-item-80" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80"><a href="http://mendel-antiques.ancorathemes.com/chess-2/"><span>Chess 2</span></a></li><li id="menu_mobile-item-81" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-81"><a href="http://mendel-antiques.ancorathemes.com/chess-4/"><span>Chess 4</span></a></li><li id="menu_mobile-item-82" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-82"><a href="http://mendel-antiques.ancorathemes.com/chess-6/"><span>Chess 6</span></a></li></ul>
-</li><li id="menu_mobile-item-108" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-108"><a href="#"><span>Portfolio</span></a>
-			<ul class="sub-menu"><li id="menu_mobile-item-92" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92"><a href="http://mendel-antiques.ancorathemes.com/portfolio-2/"><span>Portfolio 2</span></a></li><li id="menu_mobile-item-93" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-93"><a href="http://mendel-antiques.ancorathemes.com/portfolio-3/"><span>Portfolio 3</span></a></li><li id="menu_mobile-item-94" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"><a href="http://mendel-antiques.ancorathemes.com/portfolio-4/"><span>Portfolio 4</span></a></li></ul>
-</li></ul>
-</li><li id="menu_mobile-item-109" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-109"><a href="#"><span>Gallery</span></a>
-		<ul class="sub-menu"><li id="menu_mobile-item-89" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89"><a href="http://mendel-antiques.ancorathemes.com/grid/"><span>Grid</span></a></li><li id="menu_mobile-item-91" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91"><a href="http://mendel-antiques.ancorathemes.com/masonry/"><span>Masonry</span></a></li><li id="menu_mobile-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"><a href="http://mendel-antiques.ancorathemes.com/cobbles/"><span>Cobbles</span></a></li></ul>
-</li></ul>
-</li><li id="menu_mobile-item-110" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-110"><a href="#"><span>Tools</span></a>
-	<ul class="sub-menu"><li id="menu_mobile-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="http://mendel-antiques.ancorathemes.com/shortcodes/"><span>Shortcodes</span></a></li><li id="menu_mobile-item-100" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100"><a href="http://mendel-antiques.ancorathemes.com/typography/"><span>Typography</span></a></li></ul>
-</li></ul>
-</li><li id="menu_mobile-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"><a href="http://mendel-antiques.ancorathemes.com/contact/"><span>Contact</span></a></li></ul></nav><div class="search_wrap search_style_normal search_mobile">
+        <a class="menu_mobile_close icon-cancel"></a>
+        <a class="sc_layouts_logo" href="http://mendel-antiques.ancorathemes.com/">
+            <img src="{{ asset('img/img/logoheader.png') }}"  width="240" height="42">
+        </a><div class="search_wrap search_style_normal search_mobile">
+            <div class="menu_mobile_inner">
+                @include('index.ad.headermobile')
+             </div>
+         </div>
 	<div class="search_form_wrap">
-		<form role="search" method="get" class="search_form" action="http://mendel-antiques.ancorathemes.com/">
-			<input type="text" class="search_field" placeholder="Search" value="" name="s">
-			<button type="submit" class="search_submit trx_addons_icon-search"></button>
-					</form>
+        <form role="search" method="POST" class="search_form"action="{{route('timkiem')}}">
+            {{ csrf_field() }}
+                <input type="text" class="search_field" placeholder="Search" value=""name="q">
+                <button type="submit" class="search_submit trx_addons_icon-search"></button>
+                <a class="search_close trx_addons_icon-delete"></a>
+            </form>
 	</div>
-	</div><div class="socials_mobile"><a target="_blank" href="https://www.facebook.com/AncoraThemes/" class="social_item social_item_style_icons social_item_type_icons"><span class="social_icon social_facebook"><span class="icon-facebook"></span></span></a><a target="_blank" href="https://www.instagram.com/ancora_themes/" class="social_item social_item_style_icons social_item_type_icons"><span class="social_icon social_instagramm"><span class="icon-instagramm"></span></span></a><a target="_blank" href="https://www.youtube.com/channel/UCdIjRh7-lPVHqTTKpaf8PLA" class="social_item social_item_style_icons social_item_type_icons"><span class="social_icon social_youtube"><span class="icon-youtube"></span></span></a><a target="_blank" href="https://dribbble.com/AncoraThemes" class="social_item social_item_style_icons social_item_type_icons"><span class="social_icon social_dribbble"><span class="icon-dribbble"></span></span></a></div>	</div>
+    </div>
+    	</div>
 </div>
 
 			<div class="page_content_wrap scheme_default">
 
 								<div class="content_wrap">
-
-
-
 					<div class="content">
-
-
 				<article class="post_item_single post_type_product">
-			<nav class="woocommerce-breadcrumb"><a href="http://mendel-antiques.ancorathemes.com">Home</a>&nbsp;&#47;&nbsp;<a href="http://mendel-antiques.ancorathemes.com/product-category/chairs/">Chairs</a>&nbsp;&#47;&nbsp;Antique Chair 1734</nav>
-
+			<nav class="woocommerce-breadcrumb"><a href="#">Home</a>&nbsp;&#47;&nbsp;<a href="http://mendel-antiques.ancorathemes.com/product-category/chairs/">Chairs</a>&nbsp;&#47;&nbsp;Antique Chair 1734</nav>
 			<div class="woocommerce-notices-wrapper"></div><div id="product-265" class="product type-product post-265 status-publish first instock product_cat-chairs product_tag-antique product_tag-chair has-post-thumbnail shipping-taxable purchasable product-type-variable">
 
 	<div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 0; transition: opacity .25s ease-in-out;">
@@ -126,7 +186,7 @@
 </div>
 
 	<div class="summary entry-summary">
-		<h1 class="product_title entry-title">Antique Chair 1734</h1>
+		<h1 class="product_title entry-title">{{ $product1 ->name }}</h1>
 
 
 			<div class="woocommerce-product-rating">
@@ -155,7 +215,7 @@
 			<div class="woocommerce-variation single_variation"></div><div class="woocommerce-variation-add-to-cart variations_button">
 
 		<div class="quantity">
-				<label class="screen-reader-text" for="quantity_5e7771e456c06">Antique Chair 1734 quantity</label>
+				<label class="screen-reader-text" for="quantity_5e7771e456c06">{{ $product1 ->name }}</label>
 		<input
 			type="number"
 			id="quantity_5e7771e456c06"
@@ -183,8 +243,7 @@
 	</form>
 
 <div class="product_meta">
-<span class="posted_in">Category: <a href="
-		http://mendel-antiques.ancorathemes.com/product-category/chairs/" rel="tag">Chairs</a></span>
+<span class="posted_in">Category: <a href="#" rel="tag">Chairs</a></span>
 
 	<span class="product_id">Product ID: <span>{{ $product1 ->id }}</span></span>
 </div>
@@ -211,7 +270,7 @@
 
 	<h2>Description</h2>
 
-<p>Elit sapien, at donec mauris nulla quis, velit ac velit maecenas magna, dapibus sed mauris, condimentum elit sociosqu magna faucibus lobortis dictum. Tortor ligula. Ultrices ultrices proin at id. Tellus neque congue orci adipiscing ad sapien, urna dapibus, id in sodales velit cursus vel eget. Amet amet nisl dui ac consequat, hendrerit dolor vitae tincidunt nec sed, sagittis adipiscing quis.</p>
+<p>{{ $product1 ->detail }}</p>
 <p><strong>Dimensions:</strong></p>
 <ul class="trx_addons_list_dot">
 <li>Erat suscipit dignissim fusce at ut pede, mauris anim pede bibendum aliquet et vitae.</li>
