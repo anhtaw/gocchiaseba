@@ -1,49 +1,7 @@
-@extends('admin.layout')
+@extends('admin.blog.layout')
 @section('active')
 @include('admin.blog.leftforblog')
-<style>
-    .ui-widget *, .ui-widget input, .ui-widget select, .ui-widget button {
-            font-family: 'Helvetica Neue Light', 'Open Sans', Helvetica;
-            font-size: 14px;
-            font-weight: 300 !important;
-        }
 
-        .details-form-field input,
-        .details-form-field select {
-            width: 250px;
-            float: right;
-        }
-
-        .details-form-field {
-            margin: 30px 0;
-        }
-
-        .details-form-field:first-child {
-            margin-top: 10px;
-        }
-
-        .details-form-field:last-child {
-            margin-bottom: 10px;
-        }
-
-        .details-form-field button {
-            display: block;
-            width: 100px;
-            margin: 0 auto;
-        }
-
-        input.error, select.error {
-            border: 1px solid #ff9999;
-            background: #ffeeee;
-        }
-
-        label.error {
-            float: right;
-            margin-left: 100px;
-            font-size: .8em;
-            color: #ff6666;
-        }
-    </style>
 
     <li class="nav-item has-treeview">
         <a href="#" class="nav-link ">
@@ -65,12 +23,20 @@
             </li>
         </ul>
     </li>
+@include('admin.blog.leftdown')
 @endsection
 @section('content')
+    <div class="col-md-12">
+        <div class="card card-outline card-info">
+            <form role="form" id="form" action="{{ route('blog.update',$blog->id) }}" method="POST">
     <div class="card card-primary">
         {{-- <div  class="card-title "> --}}
         <div class="card-header">
             <h3 class="btn btn-primary" >Sửa Blog</h3>
+            <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                    <i class="fas fa-minus"></i></button>
+            </div>
         </div>
         <!-- /.card-header -->
         <!-- form start -->
@@ -84,17 +50,23 @@
             </ul>
         </div>
     @endif
-        <form role="form" id="form" action="{{ route('blog.update',$blog->id) }}" method="POST">
+
             @csrf
             @method('PUT')
-            <div class="card-body">
+            <div class="card-body pad">
                 <div class="form-group">
                     <label >Tên Blog</label>
                     <input type="text" class="form-control form-control-lg name " value="{{ $blog->name }}"  id ="name" name ="name"  placeholder="Nhập tên Blog" required>
                 </div>
+{{--                <div class="form-group">--}}
+{{--                    <label >Nội dung</label>--}}
+{{--                    <input type="text" class="form-control form-control-lg"   name ="detail" v  placeholder="Nhập Nội dung" >--}}
+{{--                </div>--}}
                 <div class="form-group">
                     <label >Nội dung</label>
-                    <input type="text" class="form-control form-control-lg"   name ="detail" value="{{$blog->detail }}"   placeholder="Nhập Nội dung" >
+                    <textarea class="textarea" placeholder="Place some text here"   name ="detail" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">
+{{$blog->detail }}
+                </textarea>
                 </div>
             </div>
             <!-- /.card-body -->
@@ -104,7 +76,8 @@
             </div>
         </form>
     </div>
-
+</div>
+    </div>
 @endsection
 
 

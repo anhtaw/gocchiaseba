@@ -22,12 +22,12 @@
                 <p>Thêm loại sản phẩm</p>
             </a>
         </li>
-        {{-- <li class="nav-item">
-            <a href="{{ route('products.create')}}" class="nav-link">
+         <li class="nav-item">
+            <a href="{{ route('upload.create')}}" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Sửa sản phẩm</p>
+                <p>Thêm ảnh phụ sản phẩm</p>
             </a>
-        </li> --}}
+        </li>
     </ul>
 </li>
 <li class="nav-item has-treeview">

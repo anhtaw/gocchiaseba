@@ -255,13 +255,38 @@
                             <div class="vc_empty_space  vc_custom_1500893543863" style="height: 0px">
                                 <span class="vc_empty_space_inner"></span>
                             </div>
-                            <div class="sc_layouts_item">
-                                <div id="sc_layouts_iconed_text_1080812922" class="sc_layouts_iconed_text">
-                                    <a href="{{route('admin.index')}}" class="sc_layouts_item_link sc_layouts_iconed_text_link">
-                                        <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-user"></span>
-                                    </a>
-                                </div><!-- /.sc_layouts_iconed_text -->
-                            </div>
+                            @if (Auth::check())
+
+                                <div class="sc_layouts_item">
+                                    <nav class="sc_layouts_menu sc_layouts_menu_default menu_hover_fade hide_on_mobile" id="sc_layouts_menu_1622638574" data-animation-in="fadeInUpSmall" data-animation-out="fadeOutDownSmall">
+                                        <ul id="menu-main-menu" class="sc_layouts_menu_nav">
+                                            <li id="menu-item-103" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-103"><a href="#">
+                                                    <span> <?php print_r('Xin Chào : '.$user = Auth::user()->name) ?></span></a>
+                                                <ul class="sub-menu">
+                                                    <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79">
+                                                        <a href="{{ route('logout')}}" aria-current="page">
+                                                            <span>đăng xuất</span></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <div class="sc_layouts_iconed_text sc_layouts_menu_mobile_button">
+                                        <a class="sc_layouts_item_link sc_layouts_iconed_text_link" href="#">
+                                            <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon trx_addons_icon-menu"></span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            @else
+                                <div class="sc_layouts_item">
+                                    <div id="sc_layouts_iconed_text_1992222615" class="sc_layouts_iconed_text">
+                                        <a href="{{route('admin.index')}}" class="sc_layouts_item_link sc_layouts_iconed_text_link">
+                                            <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-user"></span>
+                                        </a>
+                                    </div><!-- /.sc_layouts_iconed_text -->
+                                </div>
+                            @endif
                             <div class="sc_layouts_item">
                                 <div id="sc_layouts_iconed_text_800737989" class="sc_layouts_iconed_text">
                                     <a href="/cdn-cgi/l/email-protection#26435e474b564a4366524355520845494b" class="sc_layouts_item_link sc_layouts_iconed_text_link">
@@ -344,7 +369,7 @@
                                     <div class="vc_column-inner">
                                         <div class="wpb_wrapper">
                                             <div id="sc_googlemap_2119885848_wrap" class="sc_googlemap_wrap">
-                                                <div id="sc_googlemap_2119885848" class="sc_googlemap sc_googlemap_default" style="width:100%;height:420px;" data-zoom="14" data-style="dark" data-cluster-icon="">
+                                                <div id="sc_googlemap_2119885848" class="sc_googlemap sc_googlemap_default" style="width:100%;height:420px;" data-zoom="14"  data-style="dark" data-cluster-icon="">
                                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5977088313466!2d105.82639645133784!3d21.00875719376635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac800f450807%3A0x419a49bcd94b693a!2zSOG7jWMgdmnhu4duIE5nw6JuIGjDoG5n!5e0!3m2!1svi!2s!4v1588335155723!5m2!1svi!2s" scrolling="no" marginheight="0" marginwidth="0" frameborder="0"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" aria-label="One"></iframe>
 
                                                 </div>
@@ -396,18 +421,17 @@
                                                     <div id="sc_icons_1549801093_icon-phone-1"class="sc_icons_icon sc_icon_type_ icon-phone-1"
                                                     ><span class="sc_icon_type_ icon-phone-1"></span></div>
                                                     <h4 class="sc_icons_item_title"><span>Điện Thoại</span></h4>
-                                                    <div class="sc_icons_item_description"><span>....</span>
+                                                    <div class="sc_icons_item_description"><span>00</span>
                                                     </div>
                                                     <a href="tel:0328770772" class="sc_icons_item_link"></a></div>
                                                 <div class="sc_icons_item sc_icons_item_linked">
-                                                    <div id="sc_icons_1549801093_icon-mail" class="sc_icons_icon sc_icon_type_ icon-mail"
-                                                    ><span class="sc_icon_type_ icon-mail"></span></div>
+                                                    <div id="sc_icons_1549801093_icon-mail" class="sc_icons_icon sc_icon_type_ icon-mail"><span class="sc_icon_type_ icon-mail"></span></div>
                                                     <h4 class="sc_icons_item_title"><span>Gmail</span></h4>
                                                     <div class="sc_icons_item_description">
                                                         <span>
-                                                        <a href="/cdn-cgi/l/email-protection" class="__cf_email__"data-cfemail="026b6c646d427b6d7770716b76672c616d6f">ducgets@gmail.com</a></span>
+                                                       <span>Ducgets@gmail.com</span></span>
                                                     </div>
-                                                    <a href="/cdn-cgi/l/email-protection#ec85828a83ac9583999e9f859889c28f8381"class="sc_icons_item_link"></a></div>
+                                                    <a href="#"class="sc_icons_item_link"></a></div>
                                                 <div class="sc_icons_item">
                                                     <div id="sc_icons_1549801093_icon-clock-empty"class="sc_icons_icon sc_icon_type_ icon-clock-empty"
                                                     ><span class="sc_icon_type_ icon-clock-empty"></span></div>

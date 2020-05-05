@@ -40,10 +40,38 @@
                                 <div class="vc_empty_space  vc_custom_1500893543863"   style="height: 0px">
                                     <span class="vc_empty_space_inner"></span>
                             </div>
-                        <div class="sc_layouts_item">
-                            <div id="sc_layouts_iconed_text_554767386" class="sc_layouts_iconed_text"><a href="/my-account/" class="sc_layouts_item_link sc_layouts_iconed_text_link">
-                                <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-user"></span></a>
-                            </div><!-- /.sc_layouts_iconed_text --></div>
+                                @if (Auth::check())
+
+                                    <div class="sc_layouts_item">
+                                        <nav class="sc_layouts_menu sc_layouts_menu_default menu_hover_fade hide_on_mobile" id="sc_layouts_menu_1622638574" data-animation-in="fadeInUpSmall" data-animation-out="fadeOutDownSmall">
+                                            <ul id="menu-main-menu" class="sc_layouts_menu_nav">
+                                                <li id="menu-item-103" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-103"><a href="#">
+                                                        <span> <?php print_r('Xin Chào : '.$user = Auth::user()-> name) ?></span></a>
+                                                    <ul class="sub-menu">
+                                                        <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79">
+                                                            <a href="{{ route('logout')}}" aria-current="page">
+                                                                <span>đăng xuất</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <div class="sc_layouts_iconed_text sc_layouts_menu_mobile_button">
+                                            <a class="sc_layouts_item_link sc_layouts_iconed_text_link" href="#">
+                                                <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon trx_addons_icon-menu"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                @else
+                                    <div class="sc_layouts_item">
+                                        <div id="sc_layouts_iconed_text_1992222615" class="sc_layouts_iconed_text">
+                                            <a href="{{route('admin.index')}}" class="sc_layouts_item_link sc_layouts_iconed_text_link">
+                                                <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-user"></span>
+                                            </a>
+                                        </div><!-- /.sc_layouts_iconed_text -->
+                                    </div>
+                                @endif
                             <div class="sc_layouts_item">
                                 <div id="sc_layouts_cart_401548939" class="sc_layouts_cart">
 
@@ -104,9 +132,9 @@
 
 <div class="page_content_wrap scheme_default">
 	<div class="content_wrap">
-		<div class="content">									
+		<div class="content">
 			<div class="sc_team sc_team_default">
-				
+
 				@foreach ($teacher as $a)
         				<table>
         					<tr>
@@ -151,7 +179,7 @@
 													</span>
 												</span>
 											</a>
-										</div>		
+										</div>
 										<div class="sc_team_item_button">
 											<a href="http://mendel-antiques.ancorathemes.com/team/richard-mendel/" class="sc_button sc_button_simple">Learn more
 											</a>
@@ -161,18 +189,18 @@
        						</tr>
        					</table>
 				@endforeach
-				
+
 			</div>
 		</div>
-		
+
 	</div>
-</div><!-- .trx_addons_team_columns_wrap --></div><!-- .sc_team -->				
+</div><!-- .trx_addons_team_columns_wrap --></div><!-- .sc_team -->
 					</div><!-- </.content> -->
 
 					</div><!-- </.content_wrap> -->			</div><!-- </.page_content_wrap> -->
 
-			
-		
+
+
 		@include('index.footer')
 </body>
 </html>

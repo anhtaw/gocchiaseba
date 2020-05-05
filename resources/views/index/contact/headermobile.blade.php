@@ -23,7 +23,7 @@
                 href="{{ route('ad.index')}}"><span>RAO VẶT</span></a></li>
         <li id="menu_mobile-item-104"
             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-104">
-            <a href="#"><span>TÌM ĐỒ</span></a>
+            <a href="{{ route('post.index')}}"><span>TÌM ĐỒ</span></a>
         </li>
         <li id="menu_mobile-item-87"
             class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-75 current_page_item menu-item-87">

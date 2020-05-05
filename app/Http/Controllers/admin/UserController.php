@@ -15,9 +15,9 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function __construct() {
-        $this->middleware('auth');
-    }
+//    public function __construct() {
+//        $this->middleware('auth');
+//    }
 
     // public function login()
     // {
@@ -43,7 +43,7 @@ class UserController extends Controller
 
     public function index()
     {
-        $user = User::latest()->paginate(5);
+        $user = User::sortable()->paginate(5);
         return view('admin.user.index', compact('user'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
@@ -60,15 +60,30 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'name' => 'required',
+        $this->validate($request,
+        [
+            'name' => 'required|min:5|max:255',
             'password' => 'required',
-            'email' => 'required',
-        ]);
-        User::create($request->all());
+            'email' => 'required|email|unique:users',
+        ],
+        [
+            'required' => ':attribute Không được để trống',
+            'min' => ':attribute Khôngđược nhỏ hơn :min',
+            'max' => ':attribute Không được lớn hơn :max',
+        ],
+        [
+            'name' => 'Tên',
+            'password' => 'mật khẩu',
+            'email' => 'email',
+        ]
+    );
+       User::create(request(['name', 'email', 'password']));
+
         return redirect()->route('user.index')
-                        ->with('success','user created successfully.');
+            ->with('success','user created successfully.');
     }
+
+
 
     /**
      * Display the specified resource.

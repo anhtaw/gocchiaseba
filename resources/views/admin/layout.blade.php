@@ -23,7 +23,7 @@
 <meta name="msapplication-tap-highlight" content="no">
 <link rel="stylesheet" href="<?php echo asset('css/style.css')?>" type="text/css">
 <link  href="<?php echo asset('css/main.css')?>" type="text/css" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="hold-transition sidebar-mini">
@@ -45,10 +45,10 @@
                 <!-- Sidebar user (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="{!! asset('css/dist/img/user2-160x160.jpg') !!}" class="img-circle elevation-2" alt="User Image">
+                        <img src="{!! asset('img/'.$user = Auth::user()-> image) !!}" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="{{ route('detail',$user->id) }}" class="d-block"><?php echo $user = Auth::user()-> name; ?></a>
+                        <a href="{{ route('detail',$user= Auth::user()->id) }}" class="d-block"><?php echo $user = Auth::user()-> name; ?></a>
                     </div>
                 </div>
                 <!-- Sidebar Menu -->
@@ -105,26 +105,13 @@
     <!-- Bootstrap 4 -->
     <script type="text/javascript" src="<?php echo asset('css/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
     <!-- DataTables -->
-    <script type="text/javascript" src="<?php echo asset('css/datatables/jquery.dataTables.js'); ?>"></script>
-    <script type="text/javascript" src="<?php echo asset('css/plugins/datatables-bs4/js/dataTables.bootstrap4.js'); ?>"></script>
+    {{-- <script type="text/javascript" src="<?php echo asset('css/datatables/jquery.dataTables.js'); ?>"></script> --}}
+    <script type="text/javascript" src="<?php echo asset('css/datatables-bs4/js/dataTables.bootstrap4.js'); ?>"></script>
     <!-- AdminLTE App -->
     <script type="text/javascript" src="<?php echo asset('css/dist/js/adminlte.min.js'); ?>"></script>
     <!-- AdminLTE for demo purposes -->
     <script type="text/javascript" src="<?php echo asset('css/dist/js/demo.js'); ?>"></script>
-    <!-- page script -->
-    {{-- <script>
-        $(function () {
-            $("#example1").DataTable();
-            $('#example2').DataTable({
-                "paging": true,
-                "lengthChange": false,
-                "searching": false,
-                "ordering": true,
-                "info": true,
-                "autoWidth": false,
-            });
-        });
-    </script> --}}
+
 
 </body>
 </html>

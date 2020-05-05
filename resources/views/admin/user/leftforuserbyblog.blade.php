@@ -16,12 +16,12 @@
                 <p>Thêm blog</p>
             </a>
         </li>
-        {{-- <li class="nav-item">
-            <a href="../../index3.html" class="nav-link">
+        <li class="nav-item">
+            <a href="{{ route('upload.create')}}" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Sửa blog</p>
+                <p>Thêm ảnh phụ sản phẩm</p>
             </a>
-        </li> --}}
+        </li>
     </ul>
 </li>
 <li class="nav-item has-treeview">

@@ -69,22 +69,24 @@
 @endsection
 @section('content')
     <div class="card">
+        @if(Auth::user()-> level ==1)
         <div class="card-header " >
-            <a href="{{ route('user.create')}}"> <h3 class="card-title btn btn-block btn-success alignRight" >Tạo Mới</h3></a>
+            <a href="{{route('user.create')}}"> <h3 class="card-title btn btn-block btn-success alignRight" >Tạo Mới</h3></a>
         </div>
+        @endif
         <div class="card-header">
-            <h3 class="card-title">Danh Sách User</h3>
+            <h3 class="card-title">Danh Sách user</h3>
         </div>
         <div class="card-body">
             <table id="example1" class="table table-bordered table-striped">
              <thead>
                  <tr>
-                    <th>ID</th>
-                    <th>Tên tài khoản</th>
-                    <th>Email</th>
-                    <th>Ảnh</th>
-                    <th>Level</th>
-                    <th>Trạng Thái</th>
+                    <th>@sortablelink('id','ID')</th>
+                    <th>@sortablelink('name','Tên tài khoản')</th>
+                    <th>@sortablelink('email','Email')</th>
+                    <th>@sortablelink('image','Ảnh')</th>
+                    <th>@sortablelink('level','Level')</th>
+                    <th>@sortablelink('active','Trạng Thái')</th>
                     <th>Tùy chọn</th>
                   </tr>
               </thead>
@@ -92,7 +94,7 @@
                     @foreach ($user as $users)
                 <tbody>
                     <tr>
-                        <td>{{ ++$i }}</td>
+                        <td>{{  $users ->id }}</td>
                         <td>{{ $users ->name }}</td>
                         <td>{{ $users ->email }}</td>
                         <td> <img src="{{asset('img/'.$users->image)}}"  style="width: 100px; height: 100px"  /> </td>
@@ -111,7 +113,8 @@
                 </tbody>
                 @endforeach
             </table>
-            {{ $user->links() }}
+             {!! $user->appends(\Request::except('page'))->render() !!}
+            {{-- {{ $user->links() }} --}}
         </div>
         <!-- /.card-body -->
     </div>
@@ -146,7 +149,7 @@
 @endsection
 
 </div>
-<script>
+{{-- <script>
     var product =dd($user);
 $(document).ready(function() {
     $('#example').DataTable( {
@@ -162,7 +165,7 @@ $(document).ready(function() {
         ]
     } );
 } );
-</script>
+</script> --}}
 <!-- /.card-body -->
 </div>
 

@@ -11,9 +11,13 @@ class ContactUSController extends Controller
     {
     return view('index.contact.index');
     }
+    public function contactUS1()
+    {
+    return view('contactUS');
+    }
        /** * Show the application dashboard. * * @return \Illuminate\Http\Response */
-public function contactUSPost(Request $request)
-{
+       public function contactUSPost(Request $request)
+       {
         $product = new ContactUS();
         $product->insert([
             'name' => $request->input('name'),

@@ -14,8 +14,8 @@
 <!-- Ionicons -->
 <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 <link rel="stylesheet" href="<?php echo asset('css/dist/css/adminlte.min.css')?>">
-<link rel="stylesheet" href="<?php echo asset('css/dropzone/basic.css')?>">
-<link rel="stylesheet" href="<?php echo asset('css/dropzone/dropzone.css')?>">
+{{--<link rel="stylesheet" href="<?php echo asset('css/dropzone/basic.css')?>">--}}
+{{--<link rel="stylesheet" href="<?php echo asset('css/dropzone/dropzone.css')?>">--}}
 <!-- Google Font: Source Sans Pro -->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
@@ -120,8 +120,8 @@
     <script type="text/javascript" src="<?php echo asset('css/dist/js/adminlte.min.js'); ?>"></script>
     <!-- AdminLTE for demo purposes -->
     <script type="text/javascript" src="<?php echo asset('css/dist/js/demo.js'); ?>"></script>
-    <script type="text/javascript" src="<?php echo asset('css/dropzone/dropzone.js'); ?>"></script>
-    <script type="text/javascript" src="<?php echo asset('css/dropzone/dropzone-amd-module.js'); ?>"></script>
+{{--    <script type="text/javascript" src="<?php echo asset('css/dropzone/dropzone.js'); ?>"></script>--}}
+{{--    <script type="text/javascript" src="<?php echo asset('css/dropzone/dropzone-amd-module.js'); ?>"></script>--}}
     <!-- page script -->
 
 </div>

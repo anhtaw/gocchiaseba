@@ -13,7 +13,7 @@ class Products_categoryController extends Controller
 public function index()
     {
 
-    $products_category = DB::table('products_category')->paginate(5);;
+    $products_category = Products_category::sortable()->paginate(5);
 
     return view('admin.products_category.index',['products_category' => $products_category]);
 
@@ -36,11 +36,11 @@ public function index()
     */
    public function store(Request $request)
    {
-    
+
        $products_category = new Products_category();
         $products_category->insert([
             'name_category' => $request->input('name_category'),
-            
+
         ]);
         return redirect()->route('products_category.index')
             ->with('success', 'Products_category created successfully.');
@@ -78,14 +78,14 @@ public function index()
     */
    public function update(Request $request,Products_category $products_category)
    {
-      
+
        $request->validate([
            'name_category' => 'required',
-           
+
        ]);
        $products_category->update([
            'name_category' => $request->input('name_category'),
-           
+
        ]);
        return redirect()->route('products_category.index')
            ->with('success', 'Products_category updated successfully');
@@ -112,7 +112,6 @@ public function index()
 
 
 
-    
 
-    
-    
+
+

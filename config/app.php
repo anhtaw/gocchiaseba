@@ -139,6 +139,7 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
+        Laravel\Socialite\SocialiteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
@@ -164,7 +165,10 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Botble\Assets\Providers\AssetsServiceProvider::class,
-        // Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Kyslik\ColumnSortable\ColumnSortableServiceProvider::class,
+        // Collective\Html\HtmlServiceProvider::class,
+        // Illuminate\Html\HtmlServiceProvider::class,
         /*
          * Package Service Providers...
          */
@@ -192,7 +196,7 @@ return [
     */
 
     'aliases' => [
-
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'App' => Illuminate\Support\Facades\App::class,
         'Arr' => Illuminate\Support\Arr::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
@@ -231,8 +235,10 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Assets' => Botble\Assets\Facades\AssetsFacade::class,
         'email_verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-
-
+//        'Input' => Illuminate\Support\Facades\input::class,
+        'Input' => Illuminate\Support\Facades\Request::class,
+    //     'Form' => Collective\Html\FormFacade::class,
+    //   'Html' => Collective\Html\HtmlFacade::class,
 
     'Form' => Collective\Html\FormFacade::class,
     'Html' => Collective\Html\HtmlFacade::class,

@@ -18,7 +18,7 @@ class TeacherController extends Controller
      */
     public function index()
     {
-        $teacher = Teacher::latest()->paginate(5);
+        $teacher = Teacher::sortable()->paginate(5);
         return view('admin.giaovien.index', compact('teacher'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
@@ -52,7 +52,7 @@ class TeacherController extends Controller
         'name' => $request->input('name'),
         'mon' => $request->input('mon'),
         'image' => $fileName,
-      
+
 
     ]);
     return redirect()->route('giaovien.index')
@@ -98,7 +98,7 @@ class TeacherController extends Controller
         }
         $request->validate([
             'name' => 'required',
-            
+
         ]);
         $teacher->update([
             'name' => $request->input('name'),

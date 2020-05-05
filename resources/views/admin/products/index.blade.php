@@ -68,6 +68,12 @@
                 <p>Thêm loại sản phẩm</p>
             </a>
         </li>
+        <li class="nav-item">
+            <a href="{{ route('upload.create')}}" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Thêm ảnh phụ sản phẩm</p>
+            </a>
+        </li>
     </ul>
 </li>
 @include('admin.products.leftforproduct')
@@ -81,21 +87,23 @@
         <div class="card-header">
             <h3 class="card-title">Danh Sách Sản Phẩm</h3>
         </div>
+
         <!-- /.card-header -->
         <div class="card-body">
             <table id="example" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                    <th style="width:5%;">ID</th>
-                    <th style="width:15%;">Tên sản phẩm</th>
-                    <th style="width:15%;">Loại sản phẩm</th>
-                    <th style="width:15%;"> Giá </th>
-                    <th style="width:15%;">Status</th>
-                    <th style="width:15%;">Ảnh</th>
-                    <th style="width:15%;">Tùy chọn</th>
+                    <th style="width:5%;" >@sortablelink('id','ID')</th>
+                    <th style="width:15%;">@sortablelink('name','Tên Sản Phẩm')</th>
+                    <th style="width:15%;">@sortablelink('name_category','Loại sản phẩm')</th>
+                    <th style="width:15%;"> @sortablelink('gia','Giá') </th>
+                    <th style="width:15%;">@sortablelink('status','Status')</th>
+                    <th style="width:15%;">@sortablelink('Ảnh')</th>
+                    <th style="width:15%;">@sortablelink('Tùy chọn')</th>
 
                 </tr>
             </thead>
+             @if($products->count())
             @foreach ($products as $product)
             <tbody>
                 <tr>
@@ -120,9 +128,9 @@
                 </tr>
             </tbody>
             @endforeach
+                 @endif
             </table>
-
-           {!! $products->links() !!}
+       {!! $products->appends(\Request::except('page'))->render() !!}
         </div>
         <script>
             var product =dd($product);

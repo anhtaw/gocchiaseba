@@ -79,17 +79,17 @@
             <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Tên giáo viên</th>
-                    <th>Môn</th>
-                    <th>Ảnh</th>
+                    <th>@sortablelink('id','ID')</th>
+                    <th>@sortablelink('name','Tên giáo viên')</th>
+                    <th>@sortablelink('mon','Môn')</th>
+                    <th>@sortablelink('image','Ảnh')</th>
                     <th>Tùy chọn</th>
                 </tr>
             </thead>
             @foreach ($teacher as $teachers)
             <tbody>
                 <tr>
-                    <td>{{ ++$i }}</td>
+                    <td>{{  $teachers ->id }}</td>
                     <td>{{ $teachers ->name }}</td>
                     <td style="width:50%;">{{ $teachers ->mon }}</td>
 
@@ -110,7 +110,8 @@
             </tbody>
             @endforeach
             </table>
-            {!! $teacher->links() !!}
+             {!! $teacher->appends(\Request::except('page'))->render() !!}
+            {{-- {!! $teacher->links() !!} --}}
         </div>
         <!-- /.card-body -->
     </div>

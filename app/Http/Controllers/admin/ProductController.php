@@ -1,23 +1,32 @@
 <?php
     namespace App\Http\Controllers\admin;
+    use App\model\admin\Productsimage;
     use Illuminate\Http\Request;
     use App\Http\Controllers\Controller;
     use App\model\admin\Product;
     use Illuminate\Support\Facades\DB;
+    use Symfony\Component\Console\Input;
 class ProductController extends Controller
-{
+{    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+
     public function index()
     {
-        $products = Product::join()->paginate(5);
+        // $products = Product::with('products', 'products_category')
+        //     ->select('products.*', 'products_category.name_category')->sortable()
+        // $products = Product::join()->paginate(5);
+        $products = Product::select(DB::raw('products.*, products_category.name_category'))
+        ->join('products_category', 'products_category.id', '=', 'products.loaisp')
+        ->sortable()
+        ->paginate(10);
+        // $products = Product::join()>sortable()->paginate(5);
         return view('admin.products.index',compact('products'));
     }
 
@@ -83,7 +92,8 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        return view('admin.products.edit',compact('product'));
+        $productcategory = DB::table('products_category')->get();
+        return view('admin.products.edit',['product' => $product],['productcategory' => $productcategory]);
     }
 
     /**
@@ -125,8 +135,14 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Product $product)
-    {
+    public function destroy(Product $product, Request $request)
+    { $filename =  $request->get('filename');
+        Productsimage::where('image',$filename)->delete();
+        $path=public_path().'/img/products/'.$filename;
+        if (file_exists($path)) {
+            unlink($path);
+        }
+        return $filename;
         $product->delete();
         return redirect()->route('products.index')
                         ->with('success','Product deleted successfully');

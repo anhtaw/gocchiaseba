@@ -6,7 +6,7 @@
 		<meta name="format-detection" content="telephone=no">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="http://mendel-antiques.ancorathemes.com/xmlrpc.php">
-		<title>My account &#8211; Mendel Antiques. Furniture Design and Restoration</title>
+		<title>Trang Cá Nhân</title>
 <meta name='robots' content='noindex,nofollow' />
 <link rel='dns-prefetch' href='//ajax.googleapis.com' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
@@ -124,8 +124,8 @@ var _zxcvbnSettings = {"src":"http:\/\/mendel-antiques.ancorathemes.com\/wp-incl
 <noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><style type="text/css" id="trx_addons-inline-styles-inline-css">.vc_custom_1500893297996{padding-top: 3.3em !important;padding-right: 4em !important;padding-bottom: 3.3em !important;padding-left: 4em !important;}.vc_custom_1500902865228{background: #757575 url(http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/bread.png?id=479) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1500975516958{margin-top: 0rem !important;}.vc_custom_1500893543863{margin-top: 5px !important;}.vc_custom_1568806866743{margin-bottom: 5.7rem !important;}.vc_custom_1568806854216{margin-bottom: 1.7rem !important;}.vc_custom_1500898001380{background-color: #2b2827 !important;}.vc_custom_1496062292705{background-color: #ffffff !important;}.vc_custom_1568962256003{padding-left: 3.9rem !important;}.vc_custom_1500899326660{margin-bottom: 0.4rem !important;}.vc_custom_1500899350996{margin-bottom: 1.4rem !important;}.vc_custom_1500899676381{margin-bottom: -0.7rem !important;}.vc_custom_1500965226205{margin-top: 0rem !important;}.vc_custom_1500965280278{margin-top: 0rem !important;}.vc_custom_1500899698685{margin-bottom: -0.7rem !important;}</style></head>
 <link  rel='stylesheet' href="<?php echo asset('css/login.css')?>" type='text/css' media='all'/>
 <body class="page-template-default page page-id-495 theme-mendel woocommerce-account woocommerce-page woocommerce-no-js body_tag scheme_default blog_mode_shop body_style_wide  is_stream blog_style_excerpt sidebar_hide expand_content header_style_header-custom-21 header_position_default menu_style_top no_layout wpb-js-composer js-comp-ver-6.0.5 vc_responsive">
-
-
+@if (Auth::check())
+@else
 	<div class="body_wrap">
 
 		<div class="page_wrap"><header class="top_panel top_panel_custom top_panel_custom_21 top_panel_custom_header-fullwidth-simple without_bg_image scheme_default">
@@ -214,7 +214,7 @@ var _zxcvbnSettings = {"src":"http:\/\/mendel-antiques.ancorathemes.com\/wp-incl
                             <div class="sc_layouts_title_breadcrumbs">
                                 <div class="breadcrumbs">
                                 <a class="breadcrumbs_item home" href="{{route('index.index')}}">Trang Chủ</a>
-                                    <span class="breadcrumbs_delimiter"></span><a href="{{ route('ad.index')}}">Rao Vặt</a>
+{{--                                    <span class="breadcrumbs_delimiter"></span><a href="{{ route('ad.index')}}">Rao Vặt</a>--}}
                                     <span class="breadcrumbs_delimiter"></span><span class="breadcrumbs_item current">Tài Khoản</span>
                                 </div>
                             </div>
@@ -246,37 +246,60 @@ var _zxcvbnSettings = {"src":"http:\/\/mendel-antiques.ancorathemes.com\/wp-incl
     <li id="menu_mobile-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-90">
 </div>
     </div>
+            @if ( Session::has('success') )
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <strong>{{ Session::get('success') }}</strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                </div>
+            @endif
+            <?php //Hiển thị thông báo lỗi?>
+            @if ( Session::has('error') )
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                    <strong>{{ Session::get('error') }}</strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                </div>
+            @endif
+            @if(count($errors)>0)
+                <div class="alert alert-danger">
+                    @foreach($errors ->all() as $err)
+                        {{$err}}<br>
+                    @endforeach
+                </div>
+            @endif
+            @if(session('thongbao'))
+                {{session('thongbao')}}
+            @endif
 </div>
-
 			<div class="page_content_wrap scheme_default">
-
 								<div class="content_wrap">
-
-
-
 					<div class="content">
-
-
 <article id="post-495" class="post_item_single post_type_page post-495 page type-page status-publish hentry">
-
-
 	<div class="post_content entry-content">
 		<div class="woocommerce"><div class="woocommerce-notices-wrapper"></div>
-
 		<h2>Đăng Nhập</h2>
-
-		<form class="woocommerce-form woocommerce-form-login login" method="post">
-
-
+		<form class="woocommerce-form woocommerce-form-login login" method="post" action="{{ route('admin') }}">
+{{--            @method('PUT')--}}
+            @csrf
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 				<label for="username">Tài Khoản Hoặc Gmail&nbsp;<span class="required">*</span></label>
-				<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="" />			</p>
+				<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="username" autocomplete="username" value="" />			</p>
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 				<label for="password">Mật khẩu&nbsp;<span class="required">*</span></label>
 				<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
 			</p>
 
-
+            <div
+                class="fb-like"
+                data-share="true"
+                data-width="450"
+                data-show-faces="true">
+            </div>
 			<p class="form-row">
 				<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
 					<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span>Nhớ Mật Khẩu</span>
@@ -284,8 +307,9 @@ var _zxcvbnSettings = {"src":"http:\/\/mendel-antiques.ancorathemes.com\/wp-incl
                 <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="3ce5082949" />
                 <input type="hidden" name="_wp_http_referer" value="" />
                     <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Log in">Log in</button>
-                   <a href="{{route('admin.register')}}" class="woocommerce-button button woocommerce-form-login__submit" name="login"   >Đăng Ký</a>
+
 			</p>
+<a href="{{route('admin.register')}}" class="woocommerce-button button "  >Đăng Ký</a>
 			<p class="woocommerce-LostPassword lost_password">
 				<a href="{{route('admin.reset')}}">Quên Mật Khẩu?</a>
 			</p>
@@ -474,6 +498,24 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
 <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.3.2'></script>
 <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
 <script type='text/javascript' src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.0.5'></script>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '226878978571612',
+                xfbml      : true,
+                version    : 'v6.0'
+            });
+            FB.AppEvents.logPageView();
+        };
 
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 </body>
 </html>
+@endif

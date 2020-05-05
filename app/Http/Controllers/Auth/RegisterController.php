@@ -47,6 +47,8 @@ class RegisterController extends Controller
     public function __construct()
     {
         $this->middleware('guest');
+        $this->middleware('guest:admin');
+        $this->middleware('guest:users');
 
     }
 
@@ -75,6 +77,30 @@ class RegisterController extends Controller
     public function getRegister()
     {
         return view('admin.user.register');
+    }
+    public function showUserRegisterForm()
+    {
+        return view('index.user.register');
+    }
+    protected function createAdmin(Request $request)
+    {
+        $this->validator($request->all())->validate();
+        $admin = Admin::create([
+            'name' => $request['name'],
+            'email' => $request['email'],
+            'password' => Hash::make($request['password']),
+        ]);
+        return redirect()->intended('admin/products');
+    }
+    protected function createUser(Request $request)
+    {
+        $this->validator($request->all())->validate();
+        $writer = Writer::create([
+            'name' => $request['name'],
+            'email' => $request['email'],
+            'password' => Hash::make($request['password']),
+        ]);
+        return redirect()->intended('index/index');
     }
     protected function create(array $data)
     {

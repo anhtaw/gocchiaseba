@@ -39,13 +39,52 @@
                             <div class="vc_empty_space  vc_custom_1500893543863" style="height: 0px">
                                 <span class="vc_empty_space_inner"></span>
                             </div>
+                            @if (Auth::check())
+                                            <div class="sc_layouts_item">
+                                                <nav class="sc_layouts_menu sc_layouts_menu_default menu_hover_fade hide_on_mobile" id="sc_layouts_menu_1622638574" data-animation-in="fadeInUpSmall" data-animation-out="fadeOutDownSmall">
+                                                    <ul id="menu-main-menu" class="sc_layouts_menu_nav">
+                                                        <li id="menu-item-103" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-103"><a href="#">
+                                                                <span> <?php print_r('Xin Chào : '.$user = Auth::user()-> name) ?></span></a>
+                                                            <ul class="sub-menu">
+                                                                <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79">
+                                                                    <a href="{{ route('logout')}}" aria-current="page">
+                                                                        <span>Đăng xuất</span></a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                                <div class="sc_layouts_iconed_text sc_layouts_menu_mobile_button">
+                                                    <a class="sc_layouts_item_link sc_layouts_iconed_text_link" href="#">
+                                                        <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon trx_addons_icon-menu"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                            @else
                             <div class="sc_layouts_item">
                                 <div id="sc_layouts_iconed_text_1992222615" class="sc_layouts_iconed_text">
-                                <a href="{{route('admin.index')}}" class="sc_layouts_item_link sc_layouts_iconed_text_link">
+                                <a href="{{route('admin')}}" class="sc_layouts_item_link sc_layouts_iconed_text_link">
                                         <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-user"></span>
                                 </a>
                                 </div><!-- /.sc_layouts_iconed_text -->
                             </div>
+                            @endif
+                <div class="sc_layouts_item"><div id="sc_layouts_cart_500458780" class="sc_layouts_cart">
+		<span class="sc_layouts_item_icon sc_layouts_cart_icon trx_addons_icon-basket"></span>
+		<span class="sc_layouts_item_details sc_layouts_cart_details">
+						<span class="sc_layouts_item_details_line2 sc_layouts_cart_totals">
+				<span class="sc_layouts_cart_items">0 items</span>
+				-
+				<span class="sc_layouts_cart_summa">&#36;0.00</span>
+			</span>
+		</span><!-- /.sc_layouts_cart_details -->
+		<span class="sc_layouts_cart_items_short">0</span>
+		<div class="sc_layouts_cart_widget widget_area">
+			<span class="sc_layouts_cart_widget_close trx_addons_icon-cancel"></span>
+			<div class="widget woocommerce widget_shopping_cart">
+			<div class="widget_shopping_cart_content">
+            </div></div>		</div><!-- /.sc_layouts_cart_widget -->
+	</div><!-- /.sc_layouts_cart --></div>
                             <div class="sc_layouts_item">
                                 <div id="sc_layouts_iconed_text_1482665506" class="sc_layouts_iconed_text">
                                     <a href="/cdn-cgi/l/email-protection#7b1e031a160b171e3b0f1e080f55181416" class="sc_layouts_item_link sc_layouts_iconed_text_link">
@@ -53,18 +92,28 @@
                                     </a>
                                 </div><!-- /.sc_layouts_iconed_text -->
                             </div>
+                        <form role="search" method="POST" class="search_form"action="{{route('timkiem')}}">
+                                {{ csrf_field() }}
+                                    <input type="text" class="search_field" placeholder="Search" value=""name="q">
+                                    <button type="submit" class="search_submit trx_addons_icon-search"></button>
+                                    <a class="search_close trx_addons_icon-delete"></a>
+                                </form>
                             <div class="sc_layouts_item">
                                 <div id="sc_layouts_search_176019722" class="sc_layouts_search">
                                     <div class="search_wrap search_style_fullscreen search_ajax layouts_search">
                                         <div class="search_form_wrap">
-                                            <form role="search" method="get" class="search_form"action="http://mendel-antiques.ancorathemes.com/">
+<<<<<<< HEAD
+                                            <form role="search" method="get" class="search_form"action="#">
                                                 <input type="text" class="search_field" placeholder="Search" value=""name="s">
                                                 <button type="submit" class="search_submit trx_addons_icon-search"></button>
                                                 <a class="search_close trx_addons_icon-delete"></a>
                                             </form>
+=======
+                                        
+>>>>>>> 4dc556c23f6fa0cbe5628a97862175bf09c28609
                                         </div>
                                         <div class="search_results widget_area">
-                                            <a href="#"class="search_results_close trx_addons_icon-cancel"></a>
+                                            <a href=""class="search_results_close trx_addons_icon-cancel"></a>
                                             <div class="search_results_content"></div>
                                         </div>
                                     </div>
@@ -154,7 +203,7 @@
                                             <img width="300" height="300"  src="{{asset('img/'.$a->image)}}"class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"alt="" sizes="(max-width: 300px) 100vw, 300px"/></a>
                                         <div class="mask"></div>
                                         <div class="icons">
-                                            <a rel="nofollow"href="#"aria-hidden="true" data-quantity="1" data-product_id="238"data-product_sku="" class="shop_cart icon-cart-2 button add_to_cart_button product_type_variable"></a>
+                                            <a rel="nofollow"href="{{route('chitiet',$a->id)}}"aria-hidden="true" data-quantity="1" data-product_id="238"data-product_sku="" class="shop_cart icon-cart-2 button add_to_cart_button product_type_variable"></a>
                                             <a href="#"aria-hidden="true" class="shop_link button icon-link"></a>
                                         </div>
                                     </div><!-- /.post_featured -->
@@ -179,17 +228,18 @@
                                                 <span class="woocommerce-Price-amount amount">
                                                 <span class="woocommerce-Price-currencySymbol">&#36;
                                                 </span>{{ $a ->gia }}<span class="decimals">00</span>
-                                                
-                                                
+
+
                                             </span>
                                             <a href="#"data-quantity="1" class="button product_type_variable add_to_cart_button"data-product_id="238" data-product_sku=""aria-label="Select options for &ldquo;Antique French Drawer&rdquo;"rel="nofollow">Liên Hệ</a>
                                             </div><!-- /.post_data_inner -->
-                                            
+
                                     </div><!-- /.post_data -->
-                                    
+
                                 </div><!-- /.post_item -->
-                                
+
                             </li> @endforeach
+                            {{$product->links()}}
                         </ul>
                     </div><!-- /.list_products -->
                 </div><!-- </.content> -->
@@ -199,7 +249,7 @@
                             <div class="widget_shopping_cart_content"></div>
                         </aside>
                         <aside id="woocommerce_price_filter-2" class="widget woocommerce widget_price_filter"><h5 class="widget_title">Lọc giá</h5>
-                            <form method="get" action="http://mendel-antiques.ancorathemes.com/shop/">
+                            <form method="get" action="index">
                                 <div class="price_slider_wrapper">
                                     <div class="price_slider" style="display:none;"></div>
                                     <div class="price_slider_amount" data-step="1">

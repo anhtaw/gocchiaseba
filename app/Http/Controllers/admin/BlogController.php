@@ -12,9 +12,13 @@ class BlogController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+     public function __construct()
+{
+    $this->middleware('auth');
+}
     public function index()
     {
-        $blog = Blog::latest()->paginate(5);
+        $blog = Blog::sortable()->paginate(5);
         return view('admin.blog.index', compact('blog'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }

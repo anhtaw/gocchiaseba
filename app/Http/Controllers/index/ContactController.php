@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\index;
-
+use Illuminate\Support\Facades\Session;
 use App\Http\Controllers\Controller;
 use App\model\index\Contact;
 use Illuminate\Http\Request;
@@ -21,10 +21,19 @@ class ContactController extends Controller
     public function testEmail(){
         $data = array('info'=>'xin chào bạn đây là email test');
         Mail::send('mail', $data, function($message){
-            $message->from('ducgets@gmail.com', 'Đỗ Quang Đức');
-            $message->to('ducmisba@gmail.com', 'doquangduc')->subject('ĐỨC ĐẸP TRAI');
+            $message->from('ducmisba@gmail.com', 'Đỗ Quang Đức');
+            $message->to('ducgets@gmail.com', 'doquangduc')->subject('ĐỨC ĐẸP TRAI');
         });
         return view('mail');
+    }
+    public function addFeedback(Request $request)
+    {
+        $input = $request->all();
+        Mail::send('mailfb', array('name'=>$input["name"],'email'=>$input["email"], 'content'=>$input['comment']), function($message){
+	        $message->to(' ducgets@gmail.com', 'doquangduc')->subject('ĐỨC ĐẸP TRAI');
+	    });
+        Session::flash('flash_message', 'Send message successfully!');
+        return view('form');
     }
     /**
      * Show the form for creating a new resource.

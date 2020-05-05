@@ -68,6 +68,12 @@
                     <p>Thêm loại sản phẩm</p>
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="{{ route('upload.create')}}" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Thêm ảnh phụ sản phẩm</p>
+                </a>
+            </li>
         </ul>
     </li>
     @include('admin.products.leftforproduct')

@@ -5,7 +5,7 @@
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 
 use Illuminate\Notifications\Notifiable;
-
+use Kyslik\ColumnSortable\Sortable;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Auth\Authenticatable as AuthenticableTrait;
@@ -14,15 +14,16 @@ class User  extends Model implements Authenticatable
 {
 
     use Notifiable;
-
+    protected $guard = 'users';
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
+     use Sortable;
     use AuthenticableTrait;
     protected $fillable = [
-        'name', 'email', 'password','image','level','active'
+        'name', 'email', 'password',
     ];
 
     /**

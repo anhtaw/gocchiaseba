@@ -61,6 +61,18 @@
                     <p>Thêm sản phẩm</p>
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="{{ route('products_category.index')}}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Thêm loại sản phẩm</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('upload.create')}}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Thêm ảnh phụ sản phẩm</p>
+                </a>
+            </li>
         </ul>
     </li>
     @include('admin.products.leftforproduct')
@@ -105,7 +117,16 @@
                         <div class="col-md-8 float-md-left">
                             <div class="form-group">
                                 <label for="inputStatus">Loại sản phẩm</label>
-                                <input type="text" id="inputName" name="loaisp" class="form-control" value="{{ $product->loaisp}}">
+                                <select name="loaisp" class="form-control custom-select">
+
+                                    <option selected disabled>Select one</option>
+                                    @foreach ($productcategory as $item)
+                                        <option value="{{ $item ->id }}" >{{ $item ->name_category }}</option>
+                                    @endforeach
+
+
+                                </select>
+{{--                                <input type="text" id="inputName" name="loaisp" class="form-control" value="{{ $product->loaisp}}">--}}
                             </div>
                             <div class="form-group">
                                 <label for="inputClientCompany">Giá</label>

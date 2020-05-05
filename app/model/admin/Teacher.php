@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Contracts\Auth\Authenticatable;
+use Kyslik\ColumnSortable\Sortable;
 use Illuminate\Auth\Authenticatable as AuthenticableTrait;
 class Teacher extends Model implements Authenticatable
 {
@@ -15,6 +16,7 @@ class Teacher extends Model implements Authenticatable
         'image',
 
     ];
+    use Sortable;
     public $timestamps = true;
     protected $table = 'teacher';
     protected $sluggable = array(

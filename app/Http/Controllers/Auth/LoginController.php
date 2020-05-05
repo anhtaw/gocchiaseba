@@ -42,11 +42,17 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
-
+        $this->middleware('guest:admin')->except('log');
+        // $this->middleware('guest:users')->except('logout');
     }
-    public function getLogin() {
+
+    public function getlogin() {
         return view('admin.user.login');
     }
+    public function getlogin1() {
+        return view('index.user.index');
+    }
+
     public function postLogin(Request $request) {
         // Kiểm tra dữ liệu nhập vào
         $rules = [
@@ -60,21 +66,26 @@ class LoginController extends Controller
             'password.min' => 'Mật khẩu phải chứa ít nhất 8 ký tự',
         ];
         $validator = Validator::make($request->all(), $rules, $messages);
-
-
         if ($validator->fails()) {
             // Điều kiện dữ liệu không hợp lệ sẽ chuyển về trang đăng nhập và thông báo lỗi
-            return redirect('login')->withErrors($validator)->withInput();
-        } else {
+            if (\Request::is('admin')) {
+                return redirect('admin')->withErrors($validator)->withInput();
+            } else {
+                return redirect('login')->withErrors($validator)->withInput();
+            }
+        }  else {
             // Nếu dữ liệu hợp lệ sẽ kiểm tra trong csdl
             $email = $request->input('email');
             $password = $request->input('password');
-
-            if( Auth::attempt(['email' => $email, 'password' =>$password])) {
+            if( Auth::attempt(['email' => $email, 'password' =>$password , 'role' => 1])) {
                 // Kiểm tra đúng email và mật khẩu sẽ chuyển trang
                 return redirect('admin/products')->with('thongbao','Đăng nhập thành công ');
-            } else {
-
+            } else if( Auth::attempt(['email' => $email, 'password' =>$password , 'role' => 0])){
+                return redirect('index/index')->with('thongbao','Đăng nhập thành công ');
+            }
+           else if (\Request::is('admin')) {
+            return redirect('admin')->with('thongbao','Đăng nhập không thành công ');
+        } else{
                     return redirect('login')->with('thongbao','Đăng nhập không thành công ');
 
             }
@@ -90,8 +101,30 @@ class LoginController extends Controller
         return redirect()->intended($this->redirectPath());
     }
     public function logout() {
+        if (Auth::guard('admin')->check()) {
+            Auth::logout();
+            return redirect('admin');
+        }
+        else
+        {
+            Auth::logout();
+            return redirect('admin');
+        }
+    }
+    public function log() {
+        if (Auth::guard('admin')->check()) {
+            Auth::logout();
+            return redirect('admin');
+        }
+        else
+        {
+            Auth::logout();
+            return redirect('login');
+        }
+    }
+    public function logoutindex() {
         Auth::logout();
-        return redirect('login');
+        return redirect('admin');
     }
 }
 

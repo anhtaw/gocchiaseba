@@ -87,8 +87,8 @@
             <table id="example" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                    <th style="width:5%;">ID</th>
-                    <th style="width:15%;">Tên loại sản phẩm</th>
+                    <th style="width:5%;">@sortablelink('id','ID')</th>
+                    <th style="width:15%;">@sortablelink('name_category','Tên loại sản phẩm')</th>
 
                 </tr>
             </thead>
@@ -111,8 +111,8 @@
               </tbody>
               @endforeach
             </table>
+   {!! $products_category->appends(\Request::except('page'))->render() !!}
 
-           {!! $products_category->links() !!}
         </div>
         <script>
             var products_category =dd($products_category);

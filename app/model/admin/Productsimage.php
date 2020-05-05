@@ -8,7 +8,8 @@ class Productsimage extends Model implements Authenticatable
     use AuthenticableTrait;
     protected $fillable = [
         'product_id',
-        'image'
+        'image',
+        'position'
     ];
     protected $table = 'product_images';
     public function product()

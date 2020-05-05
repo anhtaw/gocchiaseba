@@ -45,13 +45,13 @@
     @include('admin.user.leftforuser')
 
 <li class="nav-item has-treeview">
-    <a href="#" class="nav-link">
+    <a href="#" class="nav-link active">
         <i class="nav-icon fa fa-fw fa-user"></i>
         <p>Tài khoản<i class="right fas fa-angle-left"></i></p>
     </a>
     <ul class="nav nav-treeview">
         <li class="nav-item">
-            <a href="{{ route('user.index')}}" class="nav-link ">
+            <a href="{{ route('user.index')}}" class="nav-link active">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Danh sách tài khoản</p>
             </a>
@@ -152,36 +152,46 @@
                   <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">Settings</a></li>
                 </ul>
               </div> --}}
-              {{-- <!-- /.card-header -->
+              <!-- /.card-header -->
+              @if ($errors->any())
+              <div class="alert alert-danger">
+                  <strong>Whoops!</strong> There were some problems with your input.<br><br>
+                  <ul>
+                      @foreach ($errors->all() as $error)
+                          <li>{{ $error }}</li>
+                      @endforeach
+                  </ul>
+              </div>
+          @endif
               <div class="card-body">
                 <div class="tab-content">
                   <div class="active tab-pane" id="activity">
                   <div  class="tab-pane active"  >
-                    <form  role="form" id="form" action="{{ route('updatedetail',$user=Auth::user()-> id) }}" method="POST">
+                    <form  action="{{ route('updatedetail',Auth::id()) }}" method="POST" enctype="multipart/form-data ">
                         @csrf
-                        @method('put')
-                      <div class="form-group row">
+                        @method("PUT")
+                        <div class="form-group row">
                         <label for="inputName" class="col-sm-2 col-form-label" >Tên </label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputName" placeholder="Name" name="name" value="{{ $user=Auth::user()-> name }}">
+                          <input type="text" class="form-control" id="inputName" placeholder="Name" name="name" value="{{ $user = Auth::user()-> name}}">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
                         <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" value="{{ $user=Auth::user()-> email }}">
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" value="{{ $user  = Auth::user()-> email }}">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="inputName2" class="col-sm-2 col-form-label">Password</label>
                         <div class="col-sm-10">
-                          <input type="password" class="form-control" id="inputName2" name="password" placeholder="Password" value="{{ $user=Auth::user()-> password }}">
+                          <input type="password" class="form-control" id="inputName2" name="password" placeholder="Password" value="{{ $user  = Auth::user()-> password }}">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="inputimage" class="col-sm-2 col-form-label">Ảnh</label>
                         <div class="col-sm-10">
-                          <input  type="file" class="form-control" id="image" placeholder="image" value="{{ $user=Auth::user()-> image }}">
+                          <input  type="file" class="form-control" id="image" placeholder="image" value="{{ $user = Auth::user()-> image }}">
                         </div>
                       </div>
                       <div class="form-group row">
@@ -199,7 +209,7 @@
                 </div>
                 <!-- /.tab-content -->
               </div><!-- /.card-body -->
-            </div> --}}
+            </div>
             <!-- /.nav-tabs-custom -->
           </div>
           <!-- /.col -->

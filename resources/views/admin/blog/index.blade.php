@@ -84,16 +84,17 @@
             <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Tên blog</th>
-                    <th style="width:50%;">Nội dung blog</th>
+                    <th>@sortablelink('id','ID')</th>
+                    <th>@sortablelink('name','Tên blog')</th>
+                    <th style="width:50%;">@sortablelink('detail','Nội dung blog')</th>
                     <th>Tùy chọn</th>
                 </tr>
                 </thead>
+                  {{-- @if($blog->count()) --}}
                 @foreach ($blog as $a)
                 <tbody>
                 <tr>
-                    <td>{{ ++$i }}</td>
+                    <td>{{$a ->id}}</td>
                     <td style="width:20%;">{{ $a ->name }}</td>
                     <td>{{ $a ->detail }}</td>
                     <td>
@@ -109,8 +110,9 @@
                 </tbody>
 
                 @endforeach
+                 {{-- @endif --}}
             </table>
-            {{ $blog->links() }}
+          {!! $blog->appends(\Request::except('page'))->render() !!}
         </div>
         <!-- /.card-body -->
     </div>

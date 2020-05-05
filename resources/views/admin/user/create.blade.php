@@ -1,50 +1,6 @@
 @extends('admin.layout')
 @section('active')
 @include('admin.user.leftforuser')
-<style>
-    .ui-widget *, .ui-widget input, .ui-widget select, .ui-widget button {
-            font-family: 'Helvetica Neue Light', 'Open Sans', Helvetica;
-            font-size: 14px;
-            font-weight: 300 !important;
-        }
-
-        .details-form-field input,
-        .details-form-field select {
-            width: 250px;
-            float: right;
-        }
-
-        .details-form-field {
-            margin: 30px 0;
-        }
-
-        .details-form-field:first-child {
-            margin-top: 10px;
-        }
-
-        .details-form-field:last-child {
-            margin-bottom: 10px;
-        }
-
-        .details-form-field button {
-            display: block;
-            width: 100px;
-            margin: 0 auto;
-        }
-
-        input.error, select.error {
-            border: 1px solid #ff9999;
-            background: #ffeeee;
-        }
-
-        label.error {
-            float: right;
-            margin-left: 100px;
-            font-size: .8em;
-            color: #ff6666;
-        }
-    </style>
-
     <li class="nav-item has-treeview">
         <a href="#" class="nav-link active">
             <i class="nav-icon fa fa-fw fa-user"></i>
@@ -69,50 +25,62 @@
     @include('admin.user.leftforuserbyblog')
 @endsection
 @section('content')
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <strong>Whoops!</strong> There were some problems with your input.<br><br>
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+    <div class="col-md-12">
     <div class="card card-primary">
         <div class="card-header">
             <h3 class="card-title">Thêm mới tài khoản</h3>
+            <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip"
+                        title="Collapse">
+                    <i class="fas fa-minus"></i>
+                </button>
+            </div>
         </div>
-        <!-- /.card-header -->
-        <!-- form start -->
-        @if ($errors->any())
-     <div class="alert alert-danger">
-        <strong>Whoops!</strong> There were some problems with your input.<br><br>
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-     </div>
-       @endif
         <form role="form" id="form" action="{{ route('user.store') }}" method="POST">
             @csrf
             <div class="card-body">
                 <div class="form-group">
                     <label >Tên tài khoản</label>
-                    <input type="text" class="form-control form-control-lg name "  id ="name" name ="name"  placeholder="Nhập tên tài khoản" required>
+                    <input type="text" class="form-control form-control-lg name "  id ="name" name ="name"  placeholder="Nhập tên tài khoản" required onkeyup='check();'>
                 </div>
-
                 <div class="form-group">
                     <label >Mật khẩu</label>
-                    <input type="password" class="form-control form-control-lg ,$password = Hash::make('secret');"   name ="password"  placeholder="Nhập mật khẩu" required>
+                    <input type="password" class="form-control form-control-lg "  id="password"  name ="password"  placeholder="Nhập mật khẩu" required onkeyup='check();'>
                 </div>
                 <div class="form-group">
                     <label >Nhập lại mật khẩu</label>
-                    <input type="password" class="form-control form-control-lg ,$password = Hash::make('secret');"   name ="password"  placeholder="Nhập mật khẩu" required>
-                    if (Hash::needsRehash($hashed))
-                    {
-                        $hashed = Hash::make('secret');
-                    }
+                    <input type="password" class="form-control form-control-lg "   id="confirm_password" name ="confirm_password"  placeholder="Nhập mật lại khẩu" required>
+                    <span id='message'></span>
                 </div>
-
                 <div class="form-group">
                     <label >Email</label>
                     <input type="text" class="form-control form-control-lg"   name ="email"  placeholder="Nhập email" required>
                 </div>
                 <div class="form-group">
                     <label >Level</label>
-                    <input type="text" class="form-control form-control-lg"   name ="level"  placeholder="Nhập level" >
+                    <select name="loaisp" class="form-control custom-select">
+                    <option selected disabled>Select one</option>
+                        <option value="0" >Checker</option>
+                        <option value="1" >Admin</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label >role</label>
+                    <select name="role" class="form-control custom-select">
+                        <option selected disabled>Select one</option>
+                        <option value="0" >User</option>
+                        <option value="1" >Admin</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label >Active</label>
@@ -122,26 +90,21 @@
                     <strong>Ảnh :</strong>
                     <input type="file"  id="inputFile" cept="image/*" onchange="preview_image(event) "   class="form-control box-image" name="image">
                 </div>
-            </div>
-            </div>
-
-        <!-- /.card-body -->
-
         <div class="card-footer">
-            <button type="submit" class="btn btn-danger">Sửa</button>
+            <button type="submit" class="btn btn-danger" value="registration"  id="submit" disabled>Thêm</button>
             <span class="focus-input100"></span>
             <div class=" float-md-right col-md-3">
                 <img id="output_image" alt="" class="img-circle" src=""
                      style="width: 300px; height: 300px"/>
             </div>
         </div>
-            <div class="card-footer">
-                <button type="submit" class="btn btn-primary">
-                    Gửi đi</button>
-            </div>
+{{--            <div class="card-footer">--}}
+{{--                <button type="submit" class="btn btn-primary">--}}
+{{--                    Gửi đi</button></div>--}}
+{{--            </div>--}}
         </form>
     </div>
-
+    </div>
 @endsection
 
 <script type='text/javascript'>
@@ -153,5 +116,19 @@
         }
         reader.readAsDataURL(event.target.files[0]);
     }
-</script>
 
+</script>
+<script>
+    var check = function() {
+        if (document.getElementById('password').value ==
+            document.getElementById('confirm_password').value) {
+            document.getElementById('message').style.color = 'green';
+            document.getElementById('message').innerHTML = 'matching';
+            document.getElementById('submit').disabled = false;
+        } else {
+            document.getElementById('message').style.color = 'red';
+            document.getElementById('message').innerHTML = 'not matching';
+            document.getElementById('submit').disabled = true;
+        }
+    }
+</script>

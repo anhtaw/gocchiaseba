@@ -7,8 +7,10 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Auth\Authenticatable as AuthenticableTrait;
 use Illuminate\Support\Facades\DB;
+use Kyslik\ColumnSortable\Sortable;
 class Product extends Model implements Authenticatable
 {
+    use Sortable;
     use AuthenticableTrait;
     protected $fillable = [
         'name',
@@ -26,14 +28,19 @@ class Product extends Model implements Authenticatable
         'save_to'   => 'slug'   //Lưu tên đường dẫn vào trường 'slug'
     );
 
-    public static function table(string $string)
-    {
+    public $sortable = ['id',
+    'name',
+    'gia',
+    'loaisp',
+    'image',
+    'status',
+    'products_category.name_category'
+];
 
-    }
 public static function join()
 {
     return DB::table('products')->join('products_category', 'products.loaisp', '=', 'products_category.id')
-    ->select('products.*', 'products_category.name_category');
+    ->select('products.*', 'products_category.name_category')->sortable();
 
 }
     public function sluggable()
@@ -48,4 +55,6 @@ public static function join()
     {
         return $this->hasMany('App\model\admin\Products_category');
     }
+
+
 }

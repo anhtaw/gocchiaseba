@@ -53,18 +53,20 @@
                                     </a>
                                 </div><!-- /.sc_layouts_iconed_text -->
                             </div>
+
                             <div class="sc_layouts_item">
                                 <div id="sc_layouts_search_176019722" class="sc_layouts_search">
                                     <div class="search_wrap search_style_fullscreen search_ajax layouts_search">
                                         <div class="search_form_wrap">
-                                            <form role="search" method="get" class="search_form"action="http://mendel-antiques.ancorathemes.com/">
-                                                <input type="text" class="search_field" placeholder="Search" value=""name="s">
-                                                <button type="submit" class="search_submit trx_addons_icon-search"></button>
-                                                <a class="search_close trx_addons_icon-delete"></a>
-                                            </form>
+    <form role="search" method="POST" class="search_form"action="{{route('timkiem')}}">
+    {{ csrf_field() }}
+        <input type="text" class="search_field" placeholder="Search" value=""name="q">
+        <button type="submit" class="search_submit trx_addons_icon-search"></button>
+        <a class="search_close trx_addons_icon-delete"></a>
+    </form>
                                         </div>
                                         <div class="search_results widget_area">
-                                            <a href="#"class="search_results_close trx_addons_icon-cancel"></a>
+                                            <a href=""class="search_results_close trx_addons_icon-cancel"></a>
                                             <div class="search_results_content"></div>
                                         </div>
                                     </div>
@@ -154,7 +156,7 @@
                                             <img width="300" height="300"  src="{{asset('img/'.$a->image)}}"class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"alt="" sizes="(max-width: 300px) 100vw, 300px"/></a>
                                         <div class="mask"></div>
                                         <div class="icons">
-                                            <a rel="nofollow"href="#"aria-hidden="true" data-quantity="1" data-product_id="238"data-product_sku="" class="shop_cart icon-cart-2 button add_to_cart_button product_type_variable"></a>
+                                            <a rel="nofollow"href="{{route('chitiet',$a->id)}}"aria-hidden="true" data-quantity="1" data-product_id="238"data-product_sku="" class="shop_cart icon-cart-2 button add_to_cart_button product_type_variable"></a>
                                             <a href="#"aria-hidden="true" class="shop_link button icon-link"></a>
                                         </div>
                                     </div><!-- /.post_featured -->
@@ -178,18 +180,25 @@
                                             <span class="price">
                                                 <span class="woocommerce-Price-amount amount">
                                                 <span class="woocommerce-Price-currencySymbol">&#36;
+<<<<<<< HEAD
                                                 </span>{{ $a ->gia }}<span ></span>
-                                                
-                                                
+
+
+=======
+                                                </span>{{ $a ->gia }}<span class="decimals">00</span>
+
+
+>>>>>>> 4dc556c23f6fa0cbe5628a97862175bf09c28609
                                             </span>
                                             <a href="#"data-quantity="1" class="button product_type_variable add_to_cart_button"data-product_id="238" data-product_sku=""aria-label="Select options for &ldquo;Antique French Drawer&rdquo;"rel="nofollow">Liên Hệ</a>
                                             </div><!-- /.post_data_inner -->
-                                            
+
                                     </div><!-- /.post_data -->
-                                    
+
                                 </div><!-- /.post_item -->
-                                
+
                             </li> @endforeach
+
                         </ul>
                     </div><!-- /.list_products -->
                 </div><!-- </.content> -->
@@ -199,7 +208,7 @@
                             <div class="widget_shopping_cart_content"></div>
                         </aside>
                         <aside id="woocommerce_price_filter-2" class="widget woocommerce widget_price_filter"><h5 class="widget_title">Lọc giá</h5>
-                            <form method="get" action="http://mendel-antiques.ancorathemes.com/shop/">
+                            <form method="get" action="index">
                                 <div class="price_slider_wrapper">
                                     <div class="price_slider" style="display:none;"></div>
                                     <div class="price_slider_amount" data-step="1">
@@ -217,19 +226,32 @@
                         <aside id="woocommerce_product_categories-2"class="widget woocommerce widget_product_categories">
                             <h5 class="widget_title">Loại hàng</h5>
                             <ul class="product-categories">
+<<<<<<< HEAD
                                 @foreach ($doquangduc as $b)
-                                    
+
                                 @endforeach
                                 <li class="cat-item cat-item-53"><a href="{{ route('giaotrinh') }}">{{ $b ->loaisp }}</a></li>
-                                
+
+=======
+                                <li class="cat-item cat-item-53"><a href="{{ route('giaotrinh') }}">Giáo trình</a></li>
+                                <li class="cat-item cat-item-54">
+                                    <a href="{{ route('dodung') }}">Đồ dùng học tập</a></li>
+                                <li class="cat-item cat-item-55">
+                                    <a href="{{ route('doan') }}">Đồ ăn</a></li>
+                                <li class="cat-item cat-item-56"><a
+                                        href="{{ route('dodungcanhan') }}">Đồ dùng cá nhân</a></li>
+                                <li class="cat-item cat-item-57">
+                                    <a href="{{ route('quanao') }}">Quần áo</a>
+                                </li>
+>>>>>>> 4dc556c23f6fa0cbe5628a97862175bf09c28609
                             </ul>
                         </aside>
                         <aside id="woocommerce_product_tag_cloud-2" class="widget woocommerce widget_product_tag_cloud">
                             <h5 class="widget_title">Thẻ</h5>
                             <div class="tagcloud">
-                                <a href="#"class="tag-cloud-link tag-link-58 tag-link-position-1"style="font-size: 22pt;" aria-label="antique (4 products)">Tàiliệu</a>
-                                <a href="#"class="tag-cloud-link tag-link-60 tag-link-position-2" style="font-size: 14.3pt;"aria-label="armchair (2 products)">Trang chủ</a>
-                                <a href="#"class="tag-cloud-link tag-link-59 tag-link-position-3" style="font-size: 8pt;"aria-label="chair (1 product)">Giáo trình</a>
+                                <a href="http://mendel-antiques.ancorathemes.com/product-tag/antique/"class="tag-cloud-link tag-link-58 tag-link-position-1"style="font-size: 22pt;" aria-label="antique (4 products)">Tàiliệu</a>
+                                <a href="http://mendel-antiques.ancorathemes.com/product-tag/armchair/"class="tag-cloud-link tag-link-60 tag-link-position-2" style="font-size: 14.3pt;"aria-label="armchair (2 products)">Trang chủ</a>
+                                <a href="http://mendel-antiques.ancorathemes.com/product-tag/chair/"class="tag-cloud-link tag-link-59 tag-link-position-3" style="font-size: 8pt;"aria-label="chair (1 product)">Giáo trình</a>
                             </div>
                         </aside>
                     </div><!-- /.sidebar_inner -->

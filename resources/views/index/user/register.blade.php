@@ -313,7 +313,7 @@ var _zxcvbnSettings = {"src":"http:\/\/mendel-antiques.ancorathemes.com\/wp-incl
                 <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Log in">Đăng Ký</button>
 			</p>
 			<p class="woocommerce-LostPassword lost_password">
-            <a href="{{route('admin.index')}}">Đã Có Tài Khoản?</a>
+            <a href="{{route('admin')}}">Đã Có Tài Khoản?</a>
             </p>
             <div class="flex-c-m">
                 <a href="#" class="login100-social-item bg1">

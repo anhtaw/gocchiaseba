@@ -18,14 +18,11 @@
 		</button>
 	</div>
 @endif
-
 @if (Auth::check())
-
 <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
         <li class="nav-item">
-
             <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
@@ -56,8 +53,8 @@
                 @if(session('thongbao'))
                 {{session('thongbao')}}
             @endif
-<a href="{{ route('logout')}}"> <span class="badge badge-warning navbar-badge">đăng xuất</span></a>
-
+                <?php echo $user = Auth::user()-> name; ?>
+<a href="{{ route('admin.logout')}}"> <span class="badge badge-warning navbar-badge">đăng xuất</span></a>
             </a>
         </li>
         <li class="nav-item">
