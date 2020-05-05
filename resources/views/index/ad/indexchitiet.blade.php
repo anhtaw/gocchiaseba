@@ -5,7 +5,7 @@
 @include('index.review.cssforrv')
 <body class="product-template-default single single-product postid-265 theme-mendel woocommerce woocommerce-page woocommerce-no-js body_tag scheme_default blog_mode_shop body_style_wide  is_stream blog_style_excerpt sidebar_hide expand_content header_style_header-custom-21 header_position_default menu_style_top no_layout wpb-js-composer js-comp-ver-6.0.5 vc_responsive">
 <div class="body_wrap">
-   <div class="page_wrap"><header class="top_panel top_panel_custom top_panel_custom_21 top_panel_custom_header-fullwidth-simple with_bg_image mendel_inline_453670308 with_featured_image scheme_default"><div class="vc_row wpb_row vc_row-fluid vc_custom_1500893297996 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex sc_layouts_row sc_layouts_row_type_compact sc_layouts_row_fixed scheme_dark"><div class="wpb_column vc_column_container vc_col-sm-3 sc_layouts_column sc_layouts_column_align_left sc_layouts_column_icons_position_left"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space  vc_custom_1500975516958"   style="height: 0px"><span class="vc_empty_space_inner"></span></div><div class="sc_layouts_item"><a href="http://mendel-antiques.ancorathemes.com/" id="sc_layouts_logo_1137812937" class="sc_layouts_logo sc_layouts_logo_default"><img class="logo_image" src="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/07/logo.png" alt="" width="240" height="42"></a><!-- /.sc_layouts_logo --></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6 sc_layouts_column sc_layouts_column_align_center sc_layouts_column_icons_position_left"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="sc_layouts_item"><nav class="sc_layouts_menu sc_layouts_menu_default menu_hover_fade hide_on_mobile" id="sc_layouts_menu_794113008" data-animation-in="fadeInUpSmall" data-animation-out="fadeOutDownSmall"		><ul id="menu-main-menu" class="sc_layouts_menu_nav"><li id="menu-item-102" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-102"><a href="#"><span>Home</span></a>
+   <div class="page_wrap"><header class="top_panel top_panel_custom top_panel_custom_21 top_panel_custom_header-fullwidth-simple with_bg_image mendel_inline_453670308 with_featured_image scheme_default"><div class="vc_row wpb_row vc_row-fluid vc_custom_1500893297996 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex sc_layouts_row sc_layouts_row_type_compact sc_layouts_row_fixed scheme_dark"><div class="wpb_column vc_column_container vc_col-sm-3 sc_layouts_column sc_layouts_column_align_left sc_layouts_column_icons_position_left"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space  vc_custom_1500975516958"   style="height: 0px"><span class="vc_empty_space_inner"></span></div><div class="sc_layouts_item"><a href="#" id="sc_layouts_logo_1137812937" class="sc_layouts_logo sc_layouts_logo_default"><img class="logo_image" src="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/07/logo.png" alt="" width="240" height="42"></a><!-- /.sc_layouts_logo --></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6 sc_layouts_column sc_layouts_column_align_center sc_layouts_column_icons_position_left"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="sc_layouts_item"><nav class="sc_layouts_menu sc_layouts_menu_default menu_hover_fade hide_on_mobile" id="sc_layouts_menu_794113008" data-animation-in="fadeInUpSmall" data-animation-out="fadeOutDownSmall"		><ul id="menu-main-menu" class="sc_layouts_menu_nav"><li id="menu-item-102" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-102"><a href="#"><span>Home</span></a>
 <ul class="sub-menu"><li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-90"><a href="http://mendel-antiques.ancorathemes.com/"><span>Home 1</span></a></li><li id="menu-item-478" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-478"><a href="http://mendel-antiques.ancorathemes.com/home-2/"><span>Home 2</span></a></li></ul>
 </li><li id="menu-item-103" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-103"><a href="#"><span>About Us</span></a>
 <ul class="sub-menu"><li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78"><a href="http://mendel-antiques.ancorathemes.com/about-1/"><span>About 1</span></a></li><li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="http://mendel-antiques.ancorathemes.com/about-2/"><span>About 2</span></a></li></ul>
@@ -34,7 +34,7 @@
 		<span class="sc_layouts_item_details sc_layouts_cart_details">
 						<span class="sc_layouts_item_details_line2 sc_layouts_cart_totals">
 				<span class="sc_layouts_cart_items">0 items</span>
-				- 
+				-
 				<span class="sc_layouts_cart_summa">&#36;0.00</span>
 			</span>
 		</span><!-- /.sc_layouts_cart_details -->
@@ -89,46 +89,46 @@
 			<div class="page_content_wrap scheme_default">
 
 								<div class="content_wrap">
-				
-									
+
+
 
 					<div class="content">
-										
+
 
 				<article class="post_item_single post_type_product">
 			<nav class="woocommerce-breadcrumb"><a href="http://mendel-antiques.ancorathemes.com">Home</a>&nbsp;&#47;&nbsp;<a href="http://mendel-antiques.ancorathemes.com/product-category/chairs/">Chairs</a>&nbsp;&#47;&nbsp;Antique Chair 1734</nav>
-					
+
 			<div class="woocommerce-notices-wrapper"></div><div id="product-265" class="product type-product post-265 status-publish first instock product_cat-chairs product_tag-antique product_tag-chair has-post-thumbnail shipping-taxable purchasable product-type-variable">
-				
+
 	<div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 0; transition: opacity .25s ease-in-out;">
 	<figure class="woocommerce-product-gallery__wrapper">
-		
-		<div data-thumb="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-100x100.png" 
+
+		<div data-thumb="{{asset('img/'.$product1->image)}}"
 		data-thumb-alt="" class="woocommerce-product-gallery__image">
 		<a href="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6.png">
 			<img width="600" height="600"
-			 src="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-600x600.png" 
-             class="wp-post-image" alt="" title="shop-6" data-caption="" 
+			 src="{{asset('img/'.$product1->image)}}"
+             class="wp-post-image" alt="" title="shop-6" data-caption=""
              data-src="{{asset('img/'.$product1->image)}}"
-			  data-large_image="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6.png" 
+			  data-large_image="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6.png"
 			  data-large_image_width="1000" data-large_image_height="1000"
-			   srcset="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-600x600.png 600w, 
-			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-300x300.png 300w, 
-			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-100x100.png 100w, 
-			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-150x150.png 150w, 
-			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-768x768.png 768w, 
-			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-370x370.png 370w, 
-			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-90x90.png 90w, 
+			   {{-- srcset="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-600x600.png 600w,
+			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-300x300.png 300w,
+			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-100x100.png 100w,
+			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-150x150.png 150w,
+			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-768x768.png 768w,
+			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-370x370.png 370w,
+			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-90x90.png 90w,
 			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-540x540.png 540w,
-				http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-760x760.png 760w, 
-				http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6.png 1000w" 
+				http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-760x760.png 760w,
+				http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6.png 1000w" --}}
 				sizes="(max-width: 600px) 100vw, 600px" /></a></div>	</figure>
 </div>
 
 	<div class="summary entry-summary">
 		<h1 class="product_title entry-title">Antique Chair 1734</h1>
-		
-			
+
+
 			<div class="woocommerce-product-rating">
 		<div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span> customer rating</span></div>								<a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">1</span> customer review)</a>
 						</div>
@@ -140,7 +140,7 @@
 </div>
 
 <form class="variations_form cart" action="http://mendel-antiques.ancorathemes.com/product/antique-chair-1734/" method="post" enctype='multipart/form-data' data-product_id="265" data-product_variations="[{&quot;attributes&quot;:{&quot;attribute_pa_types-of-wood&quot;:&quot;mahogany&quot;},&quot;availability_html&quot;:&quot;&quot;,&quot;backorders_allowed&quot;:false,&quot;dimensions&quot;:{&quot;length&quot;:&quot;&quot;,&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;},&quot;dimensions_html&quot;:&quot;N\/A&quot;,&quot;display_price&quot;:600,&quot;display_regular_price&quot;:600,&quot;image&quot;:{&quot;title&quot;:&quot;shop-6&quot;,&quot;caption&quot;:&quot;&quot;,&quot;url&quot;:&quot;http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6.png&quot;,&quot;alt&quot;:&quot;&quot;,&quot;src&quot;:&quot;http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-600x600.png&quot;,&quot;srcset&quot;:&quot;http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-600x600.png 600w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-300x300.png 300w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-100x100.png 100w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-150x150.png 150w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-768x768.png 768w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-370x370.png 370w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-90x90.png 90w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-540x540.png 540w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-760x760.png 760w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6.png 1000w&quot;,&quot;sizes&quot;:&quot;(max-width: 600px) 100vw, 600px&quot;,&quot;full_src&quot;:&quot;http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6.png&quot;,&quot;full_src_w&quot;:1000,&quot;full_src_h&quot;:1000,&quot;gallery_thumbnail_src&quot;:&quot;http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-100x100.png&quot;,&quot;gallery_thumbnail_src_w&quot;:100,&quot;gallery_thumbnail_src_h&quot;:100,&quot;thumb_src&quot;:&quot;http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-300x300.png&quot;,&quot;thumb_src_w&quot;:300,&quot;thumb_src_h&quot;:300,&quot;src_w&quot;:600,&quot;src_h&quot;:600},&quot;image_id&quot;:&quot;268&quot;,&quot;is_downloadable&quot;:false,&quot;is_in_stock&quot;:true,&quot;is_purchasable&quot;:true,&quot;is_sold_individually&quot;:&quot;no&quot;,&quot;is_virtual&quot;:false,&quot;max_qty&quot;:&quot;&quot;,&quot;min_qty&quot;:1,&quot;price_html&quot;:&quot;&lt;span class=\&quot;price\&quot;&gt;&lt;span class=\&quot;woocommerce-Price-amount amount\&quot;&gt;&lt;span class=\&quot;woocommerce-Price-currencySymbol\&quot;&gt;&amp;#36;&lt;\/span&gt;600&lt;span class=\&quot;decimals\&quot;&gt;00&lt;\/span&gt;&lt;\/span&gt;&lt;\/span&gt;&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variation_description&quot;:&quot;&quot;,&quot;variation_id&quot;:266,&quot;variation_is_active&quot;:true,&quot;variation_is_visible&quot;:true,&quot;weight&quot;:&quot;&quot;,&quot;weight_html&quot;:&quot;N\/A&quot;},{&quot;attributes&quot;:{&quot;attribute_pa_types-of-wood&quot;:&quot;elm&quot;},&quot;availability_html&quot;:&quot;&quot;,&quot;backorders_allowed&quot;:false,&quot;dimensions&quot;:{&quot;length&quot;:&quot;&quot;,&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;},&quot;dimensions_html&quot;:&quot;N\/A&quot;,&quot;display_price&quot;:550,&quot;display_regular_price&quot;:550,&quot;image&quot;:{&quot;title&quot;:&quot;shop-6&quot;,&quot;caption&quot;:&quot;&quot;,&quot;url&quot;:&quot;http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6.png&quot;,&quot;alt&quot;:&quot;&quot;,&quot;src&quot;:&quot;http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-600x600.png&quot;,&quot;srcset&quot;:&quot;http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-600x600.png 600w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-300x300.png 300w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-100x100.png 100w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-150x150.png 150w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-768x768.png 768w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-370x370.png 370w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-90x90.png 90w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-540x540.png 540w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-760x760.png 760w, http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6.png 1000w&quot;,&quot;sizes&quot;:&quot;(max-width: 600px) 100vw, 600px&quot;,&quot;full_src&quot;:&quot;http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6.png&quot;,&quot;full_src_w&quot;:1000,&quot;full_src_h&quot;:1000,&quot;gallery_thumbnail_src&quot;:&quot;http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-100x100.png&quot;,&quot;gallery_thumbnail_src_w&quot;:100,&quot;gallery_thumbnail_src_h&quot;:100,&quot;thumb_src&quot;:&quot;http:\/\/mendel-antiques.ancorathemes.com\/wp-content\/uploads\/2017\/05\/shop-6-300x300.png&quot;,&quot;thumb_src_w&quot;:300,&quot;thumb_src_h&quot;:300,&quot;src_w&quot;:600,&quot;src_h&quot;:600},&quot;image_id&quot;:&quot;268&quot;,&quot;is_downloadable&quot;:false,&quot;is_in_stock&quot;:true,&quot;is_purchasable&quot;:true,&quot;is_sold_individually&quot;:&quot;no&quot;,&quot;is_virtual&quot;:false,&quot;max_qty&quot;:&quot;&quot;,&quot;min_qty&quot;:1,&quot;price_html&quot;:&quot;&lt;span class=\&quot;price\&quot;&gt;&lt;span class=\&quot;woocommerce-Price-amount amount\&quot;&gt;&lt;span class=\&quot;woocommerce-Price-currencySymbol\&quot;&gt;&amp;#36;&lt;\/span&gt;550&lt;span class=\&quot;decimals\&quot;&gt;00&lt;\/span&gt;&lt;\/span&gt;&lt;\/span&gt;&quot;,&quot;sku&quot;:&quot;&quot;,&quot;variation_description&quot;:&quot;&quot;,&quot;variation_id&quot;:267,&quot;variation_is_active&quot;:true,&quot;variation_is_visible&quot;:true,&quot;weight&quot;:&quot;&quot;,&quot;weight_html&quot;:&quot;N\/A&quot;}]">
-	
+
 			<table class="variations" cellspacing="0">
 			<tbody>
 									<tr>
@@ -153,7 +153,7 @@
 
 		<div class="single_variation_wrap">
 			<div class="woocommerce-variation single_variation"></div><div class="woocommerce-variation-add-to-cart variations_button">
-	
+
 		<div class="quantity">
 				<label class="screen-reader-text" for="quantity_5e7771e456c06">Antique Chair 1734 quantity</label>
 		<input
@@ -170,28 +170,28 @@
 			placeholder=""
 			inputmode="numeric" />
 			</div>
-	
+
 	<button type="submit" class="single_add_to_cart_button button alt">add to cart</button>
 
-	
+
 	<input type="hidden" name="add-to-cart" value="265" />
 	<input type="hidden" name="product_id" value="265" />
 	<input type="hidden" name="variation_id" class="variation_id" value="0" />
 </div>
 		</div>
-	
+
 	</form>
 
 <div class="product_meta">
 <span class="posted_in">Category: <a href="
 		http://mendel-antiques.ancorathemes.com/product-category/chairs/" rel="tag">Chairs</a></span>
-	
+
 	<span class="product_id">Product ID: <span>{{ $product1 ->id }}</span></span>
 </div>
 	</div>
 
 
-	
+
 	<div class="woocommerce-tabs wc-tabs-wrapper">
 		<ul class="tabs wc-tabs" role="tablist">
 							<li class="description_tab" id="tab-title-description" role="tab" aria-controls="tab-description">
@@ -208,7 +208,7 @@
 				</li>
 					</ul>
 					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description">
-				
+
 	<h2>Description</h2>
 
 <p>Elit sapien, at donec mauris nulla quis, velit ac velit maecenas magna, dapibus sed mauris, condimentum elit sociosqu magna faucibus lobortis dictum. Tortor ligula. Ultrices ultrices proin at id. Tellus neque congue orci adipiscing ad sapien, urna dapibus, id in sodales velit cursus vel eget. Amet amet nisl dui ac consequat, hendrerit dolor vitae tincidunt nec sed, sagittis adipiscing quis.</p>
@@ -219,7 +219,7 @@
 </ul>
 			</div>
 					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab" id="tab-additional_information" role="tabpanel" aria-labelledby="tab-title-additional_information">
-				
+
 	<h2>Additional information</h2>
 
 <table class="woocommerce-product-attributes shop_attributes">
@@ -265,29 +265,29 @@
 		<span id="reply-title" class="comment-reply-title">Add a review <small><a rel="nofollow" id="cancel-comment-reply-link" href="/product/antique-chair-1734/#respond" style="display:none;">Cancel reply</a></small></span><p class="must-log-in">You must be <a href="http://mendel-antiques.ancorathemes.com/my-account/">logged in</a> to post a review.</p>	</div><!-- #respond -->
 				</div>
 		</div>
-	
+
 	<div class="clear"></div>
 </div>
 			</div>
-		
+
 			</div>
 
 
 	<section class="related products">
 
 					<h2>Related products</h2>
-				
+
 		<ul class="products columns-3">
 
-			
+
 					<li class=" column-1_3 product type-product post-238 status-publish first instock product_cat-dressers product_tag-antique product_tag-drawer product_tag-french product_tag-gold product_tag-silver has-post-thumbnail shipping-taxable purchasable product-type-variable">
 			<div class="post_item post_layout_thumbs">
 			<div class="post_featured hover_shop">
 								<a href="http://mendel-antiques.ancorathemes.com/product/antique-french-drawer/">
 				<img width="300" height="300" src="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-1-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-1-300x300.png 300w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-1-100x100.png 100w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-1-600x600.png 600w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-1-150x150.png 150w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-1-768x768.png 768w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-1-370x370.png 370w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-1-90x90.png 90w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-1-540x540.png 540w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-1-760x760.png 760w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-1.png 1000w" sizes="(max-width: 300px) 100vw, 300px" /></a><div class="mask"></div>			<div class="icons">
-				<a rel="nofollow" href="http://mendel-antiques.ancorathemes.com/product/antique-french-drawer/" 
-														aria-hidden="true" 
-														data-quantity="1" 
+				<a rel="nofollow" href="http://mendel-antiques.ancorathemes.com/product/antique-french-drawer/"
+														aria-hidden="true"
+														data-quantity="1"
 														data-product_id="238"
 														data-product_sku=""
 														class="shop_cart icon-cart-2 button add_to_cart_button product_type_variable"></a><a href="http://mendel-antiques.ancorathemes.com/product/antique-french-drawer/" aria-hidden="true" class="shop_link button icon-link"></a>
@@ -297,22 +297,22 @@
 				<div class="post_data_inner">
 					<div class="post_header entry-header">
 					<div class="post_tags product_tags"><a href="http://mendel-antiques.ancorathemes.com/product-tag/antique/" rel="tag">antique</a>, <a href="http://mendel-antiques.ancorathemes.com/product-tag/drawer/" rel="tag">drawer</a>, <a href="http://mendel-antiques.ancorathemes.com/product-tag/french/" rel="tag">french</a>, <a href="http://mendel-antiques.ancorathemes.com/product-tag/gold/" rel="tag">gold</a>, <a href="http://mendel-antiques.ancorathemes.com/product-tag/silver/" rel="tag">silver</a></div><h2 class="woocommerce-loop-product__title"><a href="http://mendel-antiques.ancorathemes.com/product/antique-french-drawer/">Antique French Drawer</a></h2><div class="star-rating" role="img" aria-label="Rated 3.00 out of 5"><span style="width:60%">Rated <strong class="rating">3.00</strong> out of 5</span></div>			</div><!-- /.post_header -->
-		
+
 	<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>1,500<span class="decimals">00</span></span> &ndash; <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>2,000<span class="decimals">00</span></span></span>
 <a href="http://mendel-antiques.ancorathemes.com/product/antique-french-drawer/" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="238" data-product_sku="" aria-label="Select options for &ldquo;Antique French Drawer&rdquo;" rel="nofollow">add to cart</a>				</div><!-- /.post_data_inner -->
 			</div><!-- /.post_data -->
 		</div><!-- /.post_item -->
 		</li>
 
-			
+
 					<li class=" column-1_3 product type-product post-259 status-publish instock product_cat-chairs product_tag-antique product_tag-armchair has-post-thumbnail shipping-taxable purchasable product-type-variable">
 			<div class="post_item post_layout_thumbs">
 			<div class="post_featured hover_shop">
 								<a href="http://mendel-antiques.ancorathemes.com/product/vintage-red-armchair/">
 				<img width="300" height="300" src="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-2-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-2-300x300.png 300w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-2-100x100.png 100w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-2-600x600.png 600w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-2-150x150.png 150w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-2-768x768.png 768w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-2-370x370.png 370w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-2-90x90.png 90w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-2-540x540.png 540w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-2-760x760.png 760w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-2.png 1000w" sizes="(max-width: 300px) 100vw, 300px" /></a><div class="mask"></div>			<div class="icons">
-				<a rel="nofollow" href="http://mendel-antiques.ancorathemes.com/product/vintage-red-armchair/" 
-														aria-hidden="true" 
-														data-quantity="1" 
+				<a rel="nofollow" href="http://mendel-antiques.ancorathemes.com/product/vintage-red-armchair/"
+														aria-hidden="true"
+														data-quantity="1"
 														data-product_id="259"
 														data-product_sku=""
 														class="shop_cart icon-cart-2 button add_to_cart_button product_type_variable"></a><a href="http://mendel-antiques.ancorathemes.com/product/vintage-red-armchair/" aria-hidden="true" class="shop_link button icon-link"></a>
@@ -322,22 +322,22 @@
 				<div class="post_data_inner">
 					<div class="post_header entry-header">
 					<div class="post_tags product_tags"><a href="http://mendel-antiques.ancorathemes.com/product-tag/antique/" rel="tag">antique</a>, <a href="http://mendel-antiques.ancorathemes.com/product-tag/armchair/" rel="tag">armchair</a></div><h2 class="woocommerce-loop-product__title"><a href="http://mendel-antiques.ancorathemes.com/product/vintage-red-armchair/">Vintage Red Armchair</a></h2><div class="star-rating" role="img" aria-label="Rated 1.00 out of 5"><span style="width:20%">Rated <strong class="rating">1.00</strong> out of 5</span></div>			</div><!-- /.post_header -->
-		
+
 	<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>700<span class="decimals">00</span></span> &ndash; <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>900<span class="decimals">00</span></span></span>
 <a href="http://mendel-antiques.ancorathemes.com/product/vintage-red-armchair/" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="259" data-product_sku="" aria-label="Select options for &ldquo;Vintage Red Armchair&rdquo;" rel="nofollow">add to cart</a>				</div><!-- /.post_data_inner -->
 			</div><!-- /.post_data -->
 		</div><!-- /.post_item -->
 		</li>
 
-			
+
 					<li class=" column-1_3 product type-product post-243 status-publish last instock product_cat-chairs product_cat-leather-furniture product_tag-armchair product_tag-leather has-post-thumbnail shipping-taxable purchasable product-type-variable">
 			<div class="post_item post_layout_thumbs">
 			<div class="post_featured hover_shop">
 								<a href="http://mendel-antiques.ancorathemes.com/product/vintage-leather-chair/">
 				<img width="300" height="300" src="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-3-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-3-300x300.png 300w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-3-100x100.png 100w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-3-600x600.png 600w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-3-150x150.png 150w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-3-768x768.png 768w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-3-370x370.png 370w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-3-90x90.png 90w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-3-540x540.png 540w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-3-760x760.png 760w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-3.png 1000w" sizes="(max-width: 300px) 100vw, 300px" /></a><div class="mask"></div>			<div class="icons">
-				<a rel="nofollow" href="http://mendel-antiques.ancorathemes.com/product/vintage-leather-chair/" 
-														aria-hidden="true" 
-														data-quantity="1" 
+				<a rel="nofollow" href="http://mendel-antiques.ancorathemes.com/product/vintage-leather-chair/"
+														aria-hidden="true"
+														data-quantity="1"
 														data-product_id="243"
 														data-product_sku=""
 														class="shop_cart icon-cart-2 button add_to_cart_button product_type_variable"></a><a href="http://mendel-antiques.ancorathemes.com/product/vintage-leather-chair/" aria-hidden="true" class="shop_link button icon-link"></a>
@@ -347,25 +347,25 @@
 				<div class="post_data_inner">
 					<div class="post_header entry-header">
 					<div class="post_tags product_tags"><a href="http://mendel-antiques.ancorathemes.com/product-tag/armchair/" rel="tag">armchair</a>, <a href="http://mendel-antiques.ancorathemes.com/product-tag/leather/" rel="tag">leather</a></div><h2 class="woocommerce-loop-product__title"><a href="http://mendel-antiques.ancorathemes.com/product/vintage-leather-chair/">Vintage leather chair</a></h2><div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span style="width:80%">Rated <strong class="rating">4.00</strong> out of 5</span></div>			</div><!-- /.post_header -->
-		
+
 	<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>700<span class="decimals">00</span></span> &ndash; <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>900<span class="decimals">00</span></span></span>
 <a href="http://mendel-antiques.ancorathemes.com/product/vintage-leather-chair/" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="243" data-product_sku="" aria-label="Select options for &ldquo;Vintage leather chair&rdquo;" rel="nofollow">add to cart</a>				</div><!-- /.post_data_inner -->
 			</div><!-- /.post_data -->
 		</div><!-- /.post_item -->
 		</li>
 
-			
+
 		</ul>
 
 	</section>
 	</div>
 
 
-		
+
 				</article><!-- /.post_item_single -->
-			
-	
-				
+
+
+
 					</div><!-- </.content> -->
 
 					</div><!-- </.content_wrap> -->			</div><!-- </.page_content_wrap> -->
@@ -397,21 +397,21 @@ SHOWROOM HOURS M - F 10AM - 5PM</p>
 
 	</div><!-- /.body_wrap -->
 
-	
+
 			<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
 			var ajaxRevslider;
-			
+
 			jQuery(document).ready(function() {
 
-				
+
 				// CUSTOM AJAX CONTENT LOADING FUNCTION
 				ajaxRevslider = function(obj) {
-				
+
 					// obj.type : Post Type
 					// obj.id : ID of Content to Load
 					// obj.aspectratio : The Aspect Ratio of the Container / Media
 					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
-					
+
 					var content	= '';
 					var data	= {
 						action:			'revslider_ajax_call_front',
@@ -421,7 +421,7 @@ SHOWROOM HOURS M - F 10AM - 5PM</p>
 						id:				obj.id,
 						aspectratio:	obj.aspectratio
 					};
-					
+
 					// SYNC AJAX REQUEST
 					jQuery.ajax({
 						type:		'post',
@@ -431,34 +431,34 @@ SHOWROOM HOURS M - F 10AM - 5PM</p>
 						async:		false,
 						success:	function(ret, textStatus, XMLHttpRequest) {
 							if(ret.success == true)
-								content = ret.data;								
+								content = ret.data;
 						},
 						error:		function(e) {
 							console.log(e);
 						}
 					});
-					
+
 					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
-					 return content;						 
+					 return content;
 				};
-				
+
 				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
 				var ajaxRemoveRevslider = function(obj) {
 					return jQuery(obj.selector + ' .rev_slider').revkill();
 				};
 
 
-				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION				
-				if (jQuery.fn.tpessential !== undefined) 					
-					if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') 
-						jQuery.fn.tpessential.defaults.ajaxTypes.push({type: 'revslider', func: ajaxRevslider, killfunc: ajaxRemoveRevslider, openAnimationSpeed: 0.3});   
+				// EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+				if (jQuery.fn.tpessential !== undefined)
+					if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined')
+						jQuery.fn.tpessential.defaults.ajaxTypes.push({type: 'revslider', func: ajaxRevslider, killfunc: ajaxRemoveRevslider, openAnimationSpeed: 0.3});
 						// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
 						// func: the Function Name which is Called once the Item with the Post Type has been clicked
 						// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
 						// openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
-					
-				
-				
+
+
+
 			});
 		</script>
 		<!-- Instagram Feed JS -->
@@ -506,9 +506,9 @@ var sbiajaxurl = "http://mendel-antiques.ancorathemes.com/wp-admin/admin-ajax.ph
 		document.body.className = c;
 	</script>
 	<script type="text/template" id="tmpl-variation-template">
-	
-	
-	
+
+
+
 </script>
 <script type="text/template" id="tmpl-unavailable-variation-template">
 	<p>Sorry, this product is unavailable. Please choose a different combination.</p>
@@ -606,6 +606,6 @@ var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/?wc-ajax=%%endpoint%%","
 <a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up" title="Scroll to top"></a>			<script>
 				TRX_DEMO_STORAGE['tabs_layout'] = "		<div class=\"trx_demo_panels trx_demo_tabs_position_rc\" style=\"width:320px;\">    			<div class=\"trx_demo_tabs\">  				<a class=\"hint_left hint_big hint_slide\" href=\"https://themeforest.net/checkout/from_item/20831042?license=regular&#038;size=source\"  						 target=\"_blank\"						aria-label=\"Buy theme\"  						data-type=\"link\"  						style=\"color:#ffffff;background-color:#838a40;\"  					><i class=\"trx_demo_icon-shopping-cart\"></i></a><a class=\"hint_left hint_big hint_slide\" href=\"#panel_related-themes\"  												aria-label=\"Related themes\"  						data-type=\"products\"  						style=\"color:#ffffff;background-color:#838a40;\"  					><i class=\"trx_demo_icon-gallery\"></i></a><a class=\"hint_left hint_big hint_slide\" href=\"http://mendel-antiques.ancorathemes.com?notabs=1\"  												aria-label=\"Hide panel\"  						data-type=\"link\"  						style=\"color:#ffffff;background-color:#838a40;\"  					><i class=\"trx_demo_icon-browser\"></i></a>			</div>    			<div class=\"trx_demo_panels_wrap\">  				<div id=\"panel_related-themes\"  							class=\"trx_demo_panel  									trx_demo_panel_products									trx_demo_panel_thumbs_animation_off									trx_demo_panel_layout_1col									trx_demo_panel_style_plain\"  							style=\"\"  					><div class=\"trx_demo_panel_header\"><h5 class=\"trx_demo_panel_title\" style=\"\">Related Themes</h5></div><div class=\"trx_demo_panel_list\"><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2019/07/Geometry.jpg);\">  												<a href=\"http://demo.themerex.net/?theme=geometry\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=geometry\" target=\"_blank\">Geometry &#8211; Interior Design &amp; Furniture Shop WordPress Theme</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">Business</span></div>									</div>  								</div><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2018/08/ozisti-1.png);\">  												<a href=\"http://demo.themerex.net/?theme=ozisti\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=ozisti\" target=\"_blank\">Ozisti &#8211; Augmented Reality, AR WooCommerce WordPress Theme</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">WooCommerce</span></div>									</div>  								</div><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2018/04/palladio-1.png);\">  												<a href=\"http://demo.themerex.net/?theme=palladio\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=palladio\" target=\"_blank\">Palladio &#8211; Interior Design &amp; Architecture Theme</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">Business</span></div>									</div>  								</div><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2017/09/1-51.png);\">  												<a href=\"http://demo.themerex.net/?theme=astudio\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=astudio\" target=\"_blank\">A.Studio &#8211; Interior Design and Architecture Theme</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">Business</span></div>									</div>  								</div><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2018/03/gravity-1.png);\">  												<a href=\"http://demo.themerex.net/?theme=gravity\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=gravity\" target=\"_blank\">Gravity &#8211; Interior Design &amp; Furniture Store</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">Retail</span></div>									</div>  								</div><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2017/11/1-4.png);\">  												<a href=\"http://demo.themerex.net/?theme=green-thumb\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=green-thumb\" target=\"_blank\">Green Thumb &#8211; Gardening &amp; Landscaping Theme</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">Retail</span></div>									</div>  								</div><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2019/07/Rhodos-1.jpg);\">  												<a href=\"http://demo.themerex.net/?theme=rhodos\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=rhodos\" target=\"_blank\">Rhodos &#8211; A Colossal Multipurpose WordPress Theme for Business &amp; Portfolio</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">Business</span></div>									</div>  								</div><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2019/09/Piqes_image.jpg);\">  												<a href=\"http://demo.themerex.net/?theme=piqes\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=piqes\" target=\"_blank\">Piqes &#8211; Creative Startup &#038; Agency WordPress Theme</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">Business</span></div>									</div>  								</div><div class=\"trx_demo_panel_list_item\">  									<div class=\"trx_demo_panel_list_item_image_wrap\">  																					<div class=\"trx_demo_panel_list_item_image trx_demo_panel_list_item_image_ratio_1_1\" style=\"background-image: url(//themerex.net/wp-content/uploads/edd/2019/07/yungen-preview.jpg);\">  												<a href=\"http://demo.themerex.net/?theme=yungen\" target=\"_blank\"></a>  											</div>  											<h6 class=\"trx_demo_panel_list_item_title\">  											<a href=\"http://demo.themerex.net/?theme=yungen\" target=\"_blank\">Yungen &#8211; Modern Digital Agency Business WordPress Theme</a>  										</h6>  										<div class=\"trx_demo_panel_list_item_terms\"><span class=\"trx_demo_panel_list_item_term\">Business</span></div>									</div>  								</div></div><div class=\"trx_demo_panel_footer\"><a class=\"trx_demo_panel_button sc_button theme_button\" href=\"https://themerex.net/premium/?utm_source=demowidget&#038;utm_medium=demowidget&#038;utm_campaign=demowidget\" target=\"_blank\">View All Themes</a></div></div></div>  			<span class=\"trx_demo_button_close\"><span class=\"trx_demo_button_close_icon\"></span></span>    		</div>  		<div class=\"trx_demo_panels_mask\"></div>  		";
 			</script>
-			
+
 </body>
 </html>
