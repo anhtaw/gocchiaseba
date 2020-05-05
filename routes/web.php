@@ -49,13 +49,15 @@ Route::resource('comments', 'CommentController');
 Route::get('contact-us', 'ContactUSController@contactUS');
 Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUSController@contactUSPost']);
     Route::get('user/activation/{token}', 'Auth\RegisterController@activateUser')->name('user.activate');
+Route::get('admin.register', ['as' => 'admin.register', 'uses' => 'index\UserController@Register']);
     Route::group(['prefix' => 'index'], function () {
         Route::resource('index', 'index\IndexController');
         Route::resource('admin', 'index\UserController');
         Route::get('admin.reset', ['as' => 'admin.reset', 'uses' => 'index\UserController@Reset']);
-        Route::get('admin.register', ['as' => 'admin.register', 'uses' => 'index\UserController@Register']);
+
         Route::resource('review', 'index\ReviewController');
         Route::resource('ad', 'index\AdController');
+    Route::resource('detail', 'index\DetailController');
         Route::resource('document', 'index\DocumentController');
         Route::resource('teacher', 'index\TeacherController');
         Route::resource('contact', 'index\ContactController');
