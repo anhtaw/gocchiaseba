@@ -16,6 +16,7 @@
         "guzzlehttp/guzzle": "^6.5",
         "jakub-onderka/php-console-color": "^0.2.0",
         "jakub-onderka/php-console-highlighter": "^0.4.0",
+        "kyslik/column-sortable": "^6.3",
         "laravel/framework": "^7.0",
         "laravel/helpers": "^1.2",
         "laravel/socialite": "^4.3",
