@@ -65,8 +65,10 @@ Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUSController@
     Route::get('dodungcanhan', ['as' => 'dodungcanhan', 'uses' => 'index\AdController@getdodungcanhan']);
     Route::get('quanao', ['as' => 'quanao', 'uses' => 'index\AdController@getquanao']);
     Route::post('timkiem', ['as' => 'timkiem', 'uses' => 'index\AdController@gettimkiem']);
-        //Route::resource('review.edit', ['as' => 'review.edit', 'uses' => 'index\ReviewController@edit']);
-    });
+    Route::get('chitiet/{id}', ['as' => 'chitiet', 'uses' => 'index\AdController@getchitiet']);
+
+    //Route::resource('review.edit', ['as' => 'review.edit', 'uses' => 'index\ReviewController@edit']);
+});
     Route::get('image/upload',['as'=>'upload.create','uses'=>'ImageUploadController@fileCreate']);
     Route::post('image/upload/store','ImageUploadController@fileStore');
     Route::post('image/delete','ImageUploadController@fileDestroy');
