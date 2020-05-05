@@ -238,7 +238,7 @@
                                                         <div class="trx_addons_column-1_3">
                                                             <div class="sc_team_item">
                                                                 <div class="post_featured with_thumb hover_icon sc_team_item_thumb">
-                                                                    <img width="540" height="540"src="{{ asset('img/1.png') }}"  class="attachment-mendel-thumb-team size-mendel-thumb-team wp-post-image" alt="Richard Mendel">
+                                                                    <img width="540" height="540"src="{{ asset('img/huay.jpg') }}"  class="attachment-mendel-thumb-team size-mendel-thumb-team wp-post-image" alt="Richard Mendel">
                                                                     <div class="mask">
                                                                     </div>
                                                                     <div class="icons">
@@ -257,12 +257,12 @@
                                                                                 <span class="icon-facebook"></span>
                                                                             </span>
                                                                         </a>
-                                                                        <a target="_blank" href="https://twitter.com/ancora_themes" class="social_item social_item_style_icons social_item_type_icons">
+                                                                        <a target="_blank" href="#" class="social_item social_item_style_icons social_item_type_icons">
                                                                             <span class="social_icon social_twitter">
                                                                                 <span class="icon-twitter"></span>
                                                                             </span>
                                                                         </a>
-                                                                        <a target="_blank" href="https://www.pinterest.com/themerex0063" class="social_item social_item_style_icons social_item_type_icons">
+                                                                        <a target="_blank" href="#" class="social_item social_item_style_icons social_item_type_icons">
                                                                             <span class="social_icon social_pinterest-circled">
                                                                                 <span class="icon-pinterest-circled"></span>
                                                                             </span>
@@ -312,11 +312,10 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                         <div class="trx_addons_column-1_3">
                                                             <div class="sc_team_item">
                                                                 <div class="post_featured with_thumb hover_icon sc_team_item_thumb">
-                                                                    <img width="540" height="540" src="{{ asset('img/2.png') }}" sizes="(max-width: 540px) 100vw, 540px" />
+                                                                    <img width="540" height="540" src="{{ asset('img/2a.jpg') }}" sizes="(max-width: 540px) 100vw, 540px" />
                                                                     <div class="mask">
                                                                     </div>
                                                                     <div class="icons">
