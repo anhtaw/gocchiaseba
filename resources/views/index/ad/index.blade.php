@@ -92,25 +92,17 @@
                                     </a>
                                 </div><!-- /.sc_layouts_iconed_text -->
                             </div>
-                        <form role="search" method="POST" class="search_form"action="{{route('timkiem')}}">
-                                {{ csrf_field() }}
-                                    <input type="text" class="search_field" placeholder="Search" value=""name="q">
-                                    <button type="submit" class="search_submit trx_addons_icon-search"></button>
-                                    <a class="search_close trx_addons_icon-delete"></a>
-                                </form>
+
                             <div class="sc_layouts_item">
                                 <div id="sc_layouts_search_176019722" class="sc_layouts_search">
                                     <div class="search_wrap search_style_fullscreen search_ajax layouts_search">
                                         <div class="search_form_wrap">
-<<<<<<< HEAD
-                                            <form role="search" method="get" class="search_form"action="#">
-                                                <input type="text" class="search_field" placeholder="Search" value=""name="s">
-                                                <button type="submit" class="search_submit trx_addons_icon-search"></button>
-                                                <a class="search_close trx_addons_icon-delete"></a>
-                                            </form>
-=======
-                                        
->>>>>>> 4dc556c23f6fa0cbe5628a97862175bf09c28609
+    <form role="search" method="POST" class="search_form"action="{{route('timkiem')}}">
+    {{ csrf_field() }}
+        <input type="text" class="search_field" placeholder="Search" value=""name="q">
+        <button type="submit" class="search_submit trx_addons_icon-search"></button>
+        <a class="search_close trx_addons_icon-delete"></a>
+    </form>
                                         </div>
                                         <div class="search_results widget_area">
                                             <a href=""class="search_results_close trx_addons_icon-cancel"></a>
