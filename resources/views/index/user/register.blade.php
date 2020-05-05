@@ -256,39 +256,26 @@ var _zxcvbnSettings = {"src":"http:\/\/mendel-antiques.ancorathemes.com\/wp-incl
 <div class="menu_mobile menu_mobile_fullscreen scheme_dark">
 	<div class="menu_mobile_inner">
         <a class="menu_mobile_close icon-cancel"></a>
-        <a class="sc_layouts_logo" href="http://mendel-antiques.ancorathemes.com/">
+        <a class="sc_layouts_logo" href="{{route('index.index')}}">
             <img src="{{ asset('img/img/logoheader.png') }}"  width="240" height="42"></a>
             <nav class="menu_mobile_nav_area">
                 <ul id="menu_mobile-main-menu" class="">
                     <li id="menu_mobile-item-102" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-102">
-                        <a href="#"><span>Home</span>
+                        <a href="{{route('index.index')}}"><span>Trang chủ</span>
                         </a>
 <ul class="sub-menu">
     <li id="menu_mobile-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-90">
 </div>
     </div>
 </div>
-
 			<div class="page_content_wrap scheme_default">
-
 								<div class="content_wrap">
-
-
-
 					<div class="content">
-
-
 <article id="post-495" class="post_item_single post_type_page post-495 page type-page status-publish hentry">
-
-
 	<div class="post_content entry-content">
 		<div class="woocommerce"><div class="woocommerce-notices-wrapper"></div>
-
 		<h2>Đăng Ký</h2>
-
 		<form class="woocommerce-form woocommerce-form-login login" method="post">
-
-
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 				<label for="username">Tài Khoản&nbsp;<span class="required">*</span></label>
                 <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="" />			</p>

@@ -1,11 +1,11 @@
-<p class="section_title comments_list_title">{{ $comments->count()}} Comments</p>
+<p class="section_title comments_list_title">{{ $comments->count()}} Bình Luận</p>
 @foreach($comments as $comment)
     <div class="display-comment" @if($comment->parent_id != null) style="margin-left:40px;" @endif>
 <ul class="comments_list">
     <li id="comment-2" class="comment even thread-even depth-1 comment_item">
         <div id="comment_body-2" class="comment_body">
             <div class="comment_author_avatar">
-                <img alt='' src='{{asset('img/'.$comment->user->image)}}' srcset='http://0.gravatar.com/avatar/c53e6cf9997b676ae2b07343c9a322a8?s=180&#038;d=mm&#038;r=g 2x' class='avatar avatar-90 photo' height='90' width='90'/></div>
+                <img alt='' src='{{asset('img/'.$comment->user->image)}}' class='avatar avatar-90 photo' height='90' width='90'/></div>
             <div class="comment_content">
                 <div class="comment_info">
                     <h6 class="comment_author">{{ $comment->user->name }}</h6>
@@ -45,7 +45,7 @@
                     <input type=hidden name=parent_id value="{{ $comment->id }}" />
                 </div>
                 <div class="form-group">
-                    <input type=submit class="btn btn-warning" value="Reply" />
+                    <input type=submit class="btn btn-warning" value="Trả Lời" />
                 </div>
             </form>
                 </div>

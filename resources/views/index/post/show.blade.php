@@ -481,10 +481,9 @@
                                 <div id="sc_layouts_search_1284531463" class="sc_layouts_search">
                                     <div class="search_wrap search_style_fullscreen search_ajax layouts_search">
                                         <div class="search_form_wrap">
-                                            <form role="search" method="get" class="search_form"
-                                                  action="#">
-                                                <input type="text" class="search_field" placeholder="Search" value=""
-                                                       name="s">
+                                            <form role="search" method="POST" class="search_form"action="{{route('timkiem')}}">
+                                                {{ csrf_field() }}
+                                                <input type="text" class="search_field" placeholder="Search" value=""name="q">
                                                 <button type="submit"
                                                         class="search_submit trx_addons_icon-search"></button>
                                                 <a class="search_close trx_addons_icon-delete"></a>
@@ -550,7 +549,7 @@
                              class="post_item_single post_type_post post_format_ post-185 post type-post status-publish format-standard has-post-thumbnail hentry category-antique-furniture category-antiques-news category-collectables category-vintage-luxe category-vintage-retro tag-news tag-tips">
                         <div class="post_header entry-header">
                             <div class="post_meta">
-                            <span class="post_meta_item post_categories"><a
+                            {{-- <span class="post_meta_item post_categories"><a
                                         href="#"
                                         rel="category tag"></a>, <a
                                         href="#"
@@ -571,32 +570,22 @@
                                         class="post_counters_label">Views</span></a>
                                 <a href="#" class="post_meta_item post_counters_item post_counters_likes trx_addons_icon-heart-empty enabled" title="Like" data-postid="185" data-likes="0" data-title-like="Like" data-title-dislike="Dislike"><span
                                         class="post_counters_number">0</span><span
-                                        class="post_counters_label">Likes</span></a></div><!-- .post_meta --></div>
+                                        class="post_counters_label">Likes</span></a></div><!-- .post_meta --></div> --}}
                         <!-- .post_header -->
                         <div class="post_featured">
                             <img width="1170" height="658"
-                                 src="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-16-1170x658.jpg"
+                                 src="{{asset('img/'.$post->image)}}"
                                  class="attachment-mendel-thumb-huge size-mendel-thumb-huge wp-post-image"
-                                 alt="10 Tips for Restoring Old Furniture" itemprop="image"
-                                 srcset="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-16-1170x658.jpg 1170w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-16-270x152.jpg 270w"
-                                 sizes="(max-width: 1170px) 100vw, 1170px"/></div><!-- .post_featured -->
+                                 alt="{{ $post->title }}" itemprop="image"
+                                sizes="(max-width: 1170px) 100vw, 1170px"/></div><!-- .post_featured -->
                         <div class="post_content entry-content" itemprop="articleBody">
                             <p align="justify">{{ $post->body }}</p>
-                            <p align="justify">Mattis lacinia lectus fringilla, luctus in senectus lacinia, similique
-                                fusce vitae libero lacinia, a id lectus id mollis orci, turpis eros. Sit aliquam nunc,
-                                dapibus dapibus. Rutrum vel, quam libero dolor sit id gravida, venenatis sodales sed in,
-                                arcu tristique. Ullamcorper dui in lacinia. Adipiscing egestas dictumst nulla curabitur,
-                                placerat hendrerit molestie non, metus nulla vel tincidunt neque sodales, sed ante, sed
-                                nibh.</p>
+                            <p align="justify">{{ $post->body1}}</p>
                             <p align="justify"><img class="alignleft size-full wp-image-377"
-                                                    src="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/photo123.png"
+                                                    src="{{asset('img/'.$post->img)}}"
                                                     alt="" width="320" height="236"
-                                                    srcset="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/photo123.png 320w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/photo123-300x221.png 300w"
-                                                    sizes="(max-width: 320px) 100vw, 320px"/></p>
-                            <p align="justify">Et suspendisse vestibulum arcu wisi, cras scelerisque volutpat, placerat
-                                semper, amet consectetuer, quam et. Fringilla vel urna sed tortor faucibus bibendum. Quo
-                                vitae ut conubia adipiscing at, varius aliquam eget, tellus aenean curabitur. Sapien
-                                parturient unde, donec eros mi curae interdum eu consectetuer.</p>
+                                                 sizes="(max-width: 320px) 100vw, 320px"/></p>
+                            <p align="justify">{{ $post->body2 }}</p>
                             {{-- <div class="post_meta post_meta_single"><span class="post_meta_item post_tags">
                             <a
                                         href="http://mendel-antiques.ancorathemes.com/tag/news/" rel="tag">news</a>, <a
@@ -646,23 +635,21 @@
 
 
                     <div class="author_info author vcard" itemprop="author" itemscope
-                         itemtype="http://schema.org/Person">
+                         itemtype="#">
 
                         <div class="author_avatar" itemprop="image">
                             <img alt=''
-                                 src='http://1.gravatar.com/avatar/4859526e4f9ffb6fe0d37882a6c90c53?s=120&#038;d=mm&#038;r=g'
-                                 srcset='http://1.gravatar.com/avatar/4859526e4f9ffb6fe0d37882a6c90c53?s=240&#038;d=mm&#038;r=g 2x'
+                                 src='{{asset('img/'.$post->user->image)}}'
                                  class='avatar avatar-120 photo' height='120' width='120'/></div><!-- .author_avatar -->
 
                         <div class="author_description">
-                            <h5 class="author_title" itemprop="name">About Cindy Jefferson</h5>
+                            <h5 class="author_title" itemprop="name">{{ $post->user->name }}</h5>
 
                             <div class="author_bio" itemprop="description">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis justo eget
-                                    nulla pharetra semper. Suspendisse potenti. Integer sollicitudin elit ac sem.</p>
-                                <a class="author_link" href="http://mendel-antiques.ancorathemes.com/author/anc_admin/"
+                                <p>{{ $post->user->tieusu   }}</p>
+                                <a class="author_link" href="#"
                                    rel="author">
-                                    View all posts by <span class="author_name">Cindy Jefferson</span> </a>
+                                    <span class="author_name"></span> </a>
                                 <div class="socials_wrap"></div>
                             </div><!-- .author_bio -->
 
@@ -675,7 +662,7 @@
 
                             @include('index.post.commentsDisplay', ['comments' => $post->comments, 'post_id' => $post->id])
                             <hr/>
-                            <h4>Add comment</h4>
+                            <h4>Thêm Bình Luận</h4>
                             <form method="post" action="{{ route('comments.store') }}">
                                 @csrf
                                 <div class="form-group">
@@ -683,7 +670,7 @@
                                     <input type=hidden name=post_id value="{{ $post->id }}"/>
                                 </div>
                                 <div class="form-group">
-                                    <input type=submit class="btn btn-success" value="Add Comment"/>
+                                    <input type=submit class="btn btn-success" value="Thêm Bình Luận"/>
                                 </div>
                             </form>
                             <div class="comments_pagination"></div>
@@ -693,11 +680,9 @@
                                 <div id="respond" class="comment-respond">
                                     <h3 class="section_title comments_form_title">Leave a comment <small><a
                                                 rel="nofollow" id="cancel-comment-reply-link"
-                                                href="/2017/05/25/10-tips-for-restoring-old-furniture/#respond"
+                                                href="{{route('index.index')}}"
                                                 style="display:none;">Cancel reply</a></small></h3>
-                                    <p class="must-log-in">You must be <a
-                                            href="http://mendel-antiques.ancorathemes.com/wp-login.php?redirect_to=http%3A%2F%2Fmendel-antiques.ancorathemes.com%2F2017%2F05%2F25%2F10-tips-for-restoring-old-furniture%2F">logged
-                                            in</a> to post a comment.</p></div><!-- #respond -->
+                                  </div><!-- #respond -->
                             </div>
                         </div><!-- /.comments_form_wrap -->
                     </section><!-- /.comments_wrap -->
@@ -707,12 +692,11 @@
                 <div class="sidebar left widget_area" role="complementary">
                     <div class="sidebar_inner">
                         <aside id="search-2" class="widget widget_search">
-                            <form role="search" method="get" class="search-form"
-                                  action="http://mendel-antiques.ancorathemes.com/">
+                            <form role="search" method="post" class="search-form"    action="{{ route('searchpost') }}">
+                                {{ csrf_field() }}
                                 <label>
                                     <span class="screen-reader-text">Search for:</span>
-                                    <input type="search" class="search-field" placeholder="Search &hellip;" value=""
-                                           name="s"/>
+                                    <input type="search" class="search-field" placeholder="Search &hellip;" value=""      name="s"/>
                                 </label>
                                 <input type="submit" class="search-submit" value="Search"/>
                             </form>
@@ -745,15 +729,15 @@
                         </aside>
                         <aside id="trx_addons_widget_recent_posts-2" class="widget widget_recent_posts"><h5
                                 class="widget_title">latest blog posts</h5>
+                                @foreach($huhu as $hu)
                             <article class="post_item with_thumb">
                                 <div class="post_thumb"><a
                                         href="http://mendel-antiques.ancorathemes.com/2017/05/25/10-tips-for-restoring-old-furniture/"><img
                                             width="90" height="90"
-                                            src="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-16-90x90.jpg"
+                                            src="{{asset('img/'.$hu->image)}}"
                                             class="attachment-mendel-thumb-tiny size-mendel-thumb-tiny wp-post-image"
-                                            alt="10 Tips for Restoring Old Furniture"
-                                            srcset="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-16-90x90.jpg 90w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-16-300x300.jpg 300w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-16-100x100.jpg 100w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-16-150x150.jpg 150w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-16-540x540.jpg 540w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-16-370x370.jpg 370w"
-                                            sizes="(max-width: 90px) 100vw, 90px"/></a></div>
+                                            alt=" {{  $hu->title }}"
+                                         sizes="(max-width: 90px) 100vw, 90px"/></a></div>
                                 <div class="post_content">
                                     <div class="post_categories"><a
                                             href="#"
@@ -767,12 +751,11 @@
                                             href="#"
                                             title="View all posts in Vintage Retro"> </a></div>
                                     <h6 class="post_title"><a
-                                            href="#">10
-                                            Tips for Restoring Old Furniture</a></h6>
+                                            href="{{ route('post.show', $hu->id) }}">{{  $hu->title }}</a></h6>
                                     <div class="post_info"></div>
                                 </div>
                             </article>
-                            <article class="post_item with_thumb">
+                            {{-- <article class="post_item with_thumb">
                                 <div class="post_thumb"><a
                                         href="#"><img
                                             width="90" height="90"
@@ -792,8 +775,9 @@
                                             Guide for Buying Unfinished Wooden Furniture</a></h6>
                                     <div class="post_info"></div>
                                 </div>
-                            </article>
+                            </article> --}}
                         </aside>
+                        @endforeach
                         {{-- {!! $calendar->calendar() !!}
     {!! $calendar->script() !!} --}}
                         <aside id="trx_addons_widget_calendar-2" class="widget widget_calendar"><h5
@@ -1106,50 +1090,6 @@
 <script type='text/javascript'
         src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/trx_addons/js/magnific/jquery.magnific-popup.min.js'></script>
 <script type='text/javascript'>
-    /* <![CDATA[ */
-    var TRX_ADDONS_STORAGE = {
-        "ajax_url": "http:\/\/mendel-antiques.ancorathemes.com\/wp-admin\/admin-ajax.php",
-        "ajax_nonce": "a400a2eb80",
-        "site_url": "http:\/\/mendel-antiques.ancorathemes.com",
-        "post_id": "185",
-        "vc_edit_mode": "0",
-        "popup_engine": "magnific",
-        "animate_inner_links": "0",
-        "user_logged_in": "0",
-        "email_mask": "^([a-zA-Z0-9_\\-]+\\.)*[a-zA-Z0-9_\\-]+@[a-z0-9_\\-]+(\\.[a-z0-9_\\-]+)*\\.[a-z]{2,6}$",
-        "msg_ajax_error": "Invalid server answer!",
-        "msg_magnific_loading": "Loading image",
-        "msg_magnific_error": "Error loading image",
-        "msg_error_like": "Error saving your like! Please, try again later.",
-        "msg_field_name_empty": "The name can't be empty",
-        "msg_field_email_empty": "Too short (or empty) email address",
-        "msg_field_email_not_valid": "Invalid email address",
-        "msg_field_text_empty": "The message text can't be empty",
-        "msg_search_error": "Search error! Try again later.",
-        "msg_send_complete": "Send message complete!",
-        "msg_send_error": "Transmit failed!",
-        "ajax_views": "",
-        "menu_cache": [".menu_mobile_inner > nav > ul"],
-        "login_via_ajax": "1",
-        "msg_login_empty": "The Login field can't be empty",
-        "msg_login_long": "The Login field is too long",
-        "msg_password_empty": "The password can't be empty and shorter then 4 characters",
-        "msg_password_long": "The password is too long",
-        "msg_login_success": "Login success! The page should be reloaded in 3 sec.",
-        "msg_login_error": "Login failed!",
-        "msg_not_agree": "Please, read and check 'Terms and Conditions'",
-        "msg_email_long": "E-mail address is too long",
-        "msg_email_not_valid": "E-mail address is invalid",
-        "msg_password_not_equal": "The passwords in both fields are not equal",
-        "msg_registration_success": "Registration success! Please log in!",
-        "msg_registration_error": "Registration failed!",
-        "scroll_to_anchor": "1",
-        "update_location_from_anchor": "0",
-        "msg_sc_googlemap_not_avail": "Googlemap service is not available",
-        "msg_sc_googlemap_geocoder_error": "Error while geocode address"
-    };
-    /* ]]> */
-</script>
 <script type='text/javascript'
         src='http://mendel-antiques.ancorathemes.com/wp-content/plugins/trx_addons/js/trx_addons.js'></script>
 <script type='text/javascript'>

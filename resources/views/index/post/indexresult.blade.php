@@ -363,13 +363,13 @@
                                         <div id="sc_layouts_title_1211594931" class="sc_layouts_title with_content">
                                             <div class="sc_layouts_title_content">
                                                 <div class="sc_layouts_title_title">
-                                                    <h1 class="sc_layouts_title_caption">POST</h1>
+                                                    <h1 class="sc_layouts_title_caption">Kết Quả</h1>
                                                 </div>
                                                 <div class="sc_layouts_title_breadcrumbs">
                                                     <div class="breadcrumbs">
                                                         <a class="breadcrumbs_item home" href="{{ route('index.index')}}">Trang Chủ</a>
                                                         <span class="breadcrumbs_delimiter"></span>
-                                                        <span class="breadcrumbs_item current">POST</span>
+                                                        <span class="breadcrumbs_item current">Kết Quả</span>
                                                     </div>
                                                 </div>
                                             </div><!-- .sc_layouts_title_content -->
@@ -396,6 +396,8 @@
             <div class="content_wrap">
                 <div class="content">
                     <div class="posts_container">
+                        @if(isset($posts))
+                        <p> The Search results for your query <b> {{ $query }} </b> are :</p>
                         @foreach($posts as $post)
                         <article id="post-185" class="post_item post_layout_excerpt post_format_standard post-185 post type-post status-publish format-standard has-post-thumbnail hentry category-antique-furniture category-antiques-news category-collectables category-vintage-luxe category-vintage-retro tag-news tag-tips">
                             <div class="post_header entry-header">
@@ -408,8 +410,8 @@
                                         <a href="#" rel="category tag"></a>
                                     </span>
                                     <a href="#" class="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment">
-                                        <span class="post_counters_number"> {{ $post->comments->count()}}</span>
-                                        <span class="post_counters_label">s</span>
+                                        <span class="post_counters_number">2</span>
+                                        <span class="post_counters_label">Comments</span>
                                     </a>
                                 </div><!-- .post_meta -->
                                 <h3 class="post_title entry-title">
@@ -443,7 +445,7 @@
                                                 rel="category tag"></a></span>
                                         <a href="#"
                                            class="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment"><span
-                                                class="post_counters_number">{{ $post->comments->count()}}</span><span class="post_counters_label">Comments</span></a>
+                                                class="post_counters_number">2</span><span class="post_counters_label">Comments</span></a>
                                     </div><!-- .post_meta --><p><a class="simple-btn"
                                                                    href="{{ route('post.show', $post->id) }}">Xem Thêm</a></p></div>
                             </div><!-- .entry-content -->
@@ -451,7 +453,8 @@
 
                         @endforeach
                     </div>
- {{ $posts->links() }}
+ {{-- {{ $posts->links() }} --}}
+ @endif
                 </div><!-- </.content> -->
                 <div class="sidebar left widget_area" role="complementary">
                     <div class="sidebar_inner">

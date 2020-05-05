@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th5 05, 2020 lúc 02:36 PM
+-- Thời gian đã tạo: Th5 05, 2020 lúc 08:26 PM
 -- Phiên bản máy phục vụ: 10.3.16-MariaDB
 -- Phiên bản PHP: 7.3.6
 
@@ -99,7 +99,9 @@ INSERT INTO `comments` (`id`, `user_id`, `post_id`, `parent_id`, `body`, `create
 (11, 3, 1, 10, 'sad', '2020-05-03 03:49:56', '2020-05-03 03:49:56', NULL),
 (12, 3, 1, 10, 'duc', '2020-05-03 03:50:09', '2020-05-03 03:50:09', NULL),
 (13, 3, 1, NULL, 'áda', '2020-05-03 03:50:23', '2020-05-03 03:50:23', NULL),
-(14, 3, 1, 4, 'agvdhbsnkdmlasdkasdnaskdasndkasldnasldjaskldjasdlasjdasldjasldasjdlasjdasldlasldjkasld', '2020-05-03 03:52:48', '2020-05-03 03:52:48', NULL);
+(14, 3, 1, 4, 'agvdhbsnkdmlasdkasdnaskdasndkasldnasldjaskldjasdlasjdasldjasldasjdlasjdasldlasldjkasld', '2020-05-03 03:52:48', '2020-05-03 03:52:48', NULL),
+(15, 3, 10, NULL, 'a', '2020-05-05 08:59:59', '2020-05-05 08:59:59', NULL),
+(16, 4, 10, 15, 'a', '2020-05-05 09:03:51', '2020-05-05 09:03:51', NULL);
 
 -- --------------------------------------------------------
 
@@ -247,20 +249,28 @@ CREATE TABLE `posts` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL,
-  `user_id` int(10) UNSIGNED DEFAULT NULL
+  `user_id` int(10) UNSIGNED DEFAULT NULL,
+  `image` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `img` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `body1` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `body2` text COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `posts`
 --
 
-INSERT INTO `posts` (`id`, `title`, `body`, `created_at`, `updated_at`, `deleted_at`, `user_id`) VALUES
-(1, 'ád', 'dâd', '2020-05-01 08:54:20', '2020-05-01 08:54:20', NULL, NULL),
-(2, 'ád', '123213', '2020-05-01 09:06:33', '2020-05-01 09:06:33', NULL, NULL),
-(3, 'sa', 's', '2020-05-01 23:50:56', '2020-05-01 23:50:56', NULL, NULL),
-(4, 'gia do gia dung', 'saaaaaaaaaaaaaaaaaa', '2020-05-04 09:10:33', '2020-05-04 09:10:33', NULL, NULL),
-(5, 'aaaaaaaaaaaaaaaaaaa', 'aaaaaaaaaaaaa', '2020-05-04 09:11:49', '2020-05-04 09:11:49', NULL, NULL),
-(6, 'ads', 'aaa', '2020-05-04 09:13:57', '2020-05-04 09:13:57', NULL, 3);
+INSERT INTO `posts` (`id`, `title`, `body`, `created_at`, `updated_at`, `deleted_at`, `user_id`, `image`, `img`, `body1`, `body2`) VALUES
+(1, 'ád', 'dâd', '2020-05-01 08:54:20', '2020-05-01 08:54:20', NULL, NULL, NULL, NULL, '', ''),
+(2, 'ád', '123213', '2020-05-01 09:06:33', '2020-05-01 09:06:33', NULL, NULL, NULL, NULL, '', ''),
+(3, 'sa', 's', '2020-05-01 23:50:56', '2020-05-01 23:50:56', NULL, NULL, NULL, NULL, '', ''),
+(4, 'gia do gia dung', 'saaaaaaaaaaaaaaaaaa', '2020-05-04 09:10:33', '2020-05-04 09:10:33', NULL, NULL, NULL, NULL, '', ''),
+(5, 'aaaaaaaaaaaaaaaaaaa', 'aaaaaaaaaaaaa', '2020-05-04 09:11:49', '2020-05-04 09:11:49', NULL, NULL, NULL, NULL, '', ''),
+(6, 'ads', 'aaa', '2020-05-04 09:13:57', '2020-05-04 09:13:57', NULL, 3, NULL, NULL, '', ''),
+(7, 'aaaaaaaa', 'aaaaaaaaaaa', '2020-05-05 08:27:09', '2020-05-05 08:27:09', NULL, 3, NULL, NULL, '', ''),
+(8, 'á', 'aaa', '2020-05-05 08:28:19', '2020-05-05 08:28:19', NULL, 3, 'z1789261051546_f9ac45b9566fa3652614667df59194bb.jpg', NULL, '', ''),
+(9, 'aaaaaaaa', 'âaa', '2020-05-05 08:46:44', '2020-05-05 08:46:44', NULL, 3, 'z1789261051546_f9ac45b9566fa3652614667df59194bb.jpg', 'z1789264541741_ff7ac60c4120c06c330931517d3936e0.jpg', '', ''),
+(10, 'áda', 'aaaaaaaa', '2020-05-05 08:57:31', '2020-05-05 08:57:31', NULL, 3, 'z1789261051546_f9ac45b9566fa3652614667df59194bb.jpg', 'z1789264541741_ff7ac60c4120c06c330931517d3936e0.jpg', 'aaaaaaaaaaaa', 'aaaaaaaaa');
 
 -- --------------------------------------------------------
 
@@ -456,27 +466,28 @@ CREATE TABLE `users` (
   `avatar` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `provider` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `provider_id` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
-  `access_token` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL
+  `access_token` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `tieusu` text COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `active`, `level`, `image`, `role`, `avatar`, `provider`, `provider_id`, `access_token`) VALUES
-(1, 'duc', 'lxc150896@gmail.com', NULL, '$2y$10$RRvFDkgxcQBrXZnq7RBGSeKJDlI1Wk229gmnaDBBKdVyOzRT7QxcO', NULL, NULL, NULL, 0, NULL, NULL, '0', NULL, NULL, NULL, NULL),
-(2, 'lxc150896@gmail.com', 'lxc@gmail.com', NULL, '$2y$10$6rDjMPLmzqxv5IZHfCmgwOzlzQv/y/4mB2CXg4z7F62.1wcigpWG.', NULL, NULL, '2020-04-30 11:02:34', 0, '0', 'z1789261051546_f9ac45b9566fa3652614667df59194bb.jpg', '1', NULL, NULL, NULL, NULL),
-(3, 'admin', 'admin@gmail.com', NULL, '$2y$10$4Vc8.JRsWb3Lap2N0gwNW.6WlRPgHZWnXRjKf0PEuMmcmZx0yaFx.', NULL, NULL, '2020-04-30 03:32:30', 1, '1', 'z1789261051546_f9ac45b9566fa3652614667df59194bb.jpg', '1', NULL, NULL, NULL, NULL),
-(4, 'ducgets', 'ducgets@gmail.com', NULL, '$2y$10$CGDqItuvzlMlASmBMBy39.rWUF1xy3otBh/HNZYziMe2uPpFPRcue', NULL, '2020-03-31 21:36:26', '2020-03-31 21:36:26', 0, '0', NULL, '0', NULL, NULL, NULL, NULL),
-(5, 'doquangduc', 'doquangduc@gmail.com', NULL, '$2y$10$ukD13WFXn/MCBdyjxn/y..kBAuQyPzsr0lUBtn7Xugfg2KuLmbNDa', NULL, '2020-03-31 21:39:23', '2020-03-31 21:39:23', 0, NULL, NULL, '0', NULL, NULL, NULL, NULL),
-(6, 'quangduc', 'quangduc@gmail.com', NULL, '$2y$10$M2gou8VJYT0ceADRvnYUqOvGZPdiQSkdZRp1w54AljVuhOmLBHkDS', NULL, '2020-03-31 21:41:46', '2020-03-31 21:41:46', 0, NULL, NULL, '', NULL, NULL, NULL, NULL),
-(7, 'saaaaaaa', 'ducgg1@gmail.com', NULL, '$2y$10$0EP2U9o1mpntA5gQeyAjo.rUVP2Nh6q8FnGAVdvjxXSvgdIEA3gxa', NULL, '2020-03-31 21:47:03', '2020-04-30 09:55:37', 0, '0', 'z1789261051546_f9ac45b9566fa3652614667df59194bb.jpg', '0', NULL, NULL, NULL, NULL),
-(8, 'ducgg', 'admin1@gmail.com', NULL, '$2y$10$9k3BnjE8GFRuGmbGKH569ey8b1uBZ6r3zzr.yfrsbmYz6.vdsIttu', NULL, '2020-04-01 06:50:06', '2020-04-30 04:31:33', 0, '1', 'z1789261051546_f9ac45b9566fa3652614667df59194bb.jpg', '0', NULL, NULL, NULL, NULL),
-(10, 'qưeqweqwe', 'admin111@gmail.com', NULL, '$2y$10$GLs9jAAKjtkaTLq8X3542OTCjjcFAoutfFa2Aw12urhOaovEHgFAe', NULL, '2020-05-02 07:01:39', '2020-05-02 07:01:39', 0, '0', NULL, '0', NULL, NULL, NULL, NULL),
-(11, 'aqwqwe', 'admin11@gmail.com', NULL, '$2y$10$PuVFg47qUroMTr5APPTRHeub0m0pOfHnV07Lcyiw1nwvC49mczj.e', NULL, '2020-05-02 07:03:25', '2020-05-02 07:03:25', 0, '0', NULL, '0', NULL, NULL, NULL, NULL),
-(12, 'ádadsdas', 'admi111n@gmail.com', NULL, '$2y$10$DVRxOdbfk6DznigHQ/jymuoquTkSHYGe.4lTW27o8hl5TCUZGkqsm', NULL, '2020-05-02 07:08:48', '2020-05-02 07:08:48', 0, '0', NULL, '0', NULL, NULL, NULL, NULL),
-(13, 'sadasaaaa', 'admin1d@gmail.com', NULL, '$2y$10$oMFGVja1e6wcKr08nd1a4eeQoVSjYrOURp.Cf5beS/T2LpS2bfddC', NULL, '2020-05-02 07:16:23', '2020-05-02 07:16:23', 0, '0', NULL, '0', NULL, NULL, NULL, NULL),
-(14, 'ádadasdas', 'adminccccccccccccccc@gmail.com', NULL, '$2y$10$Px0IYL6hHzV/O0GW64IFwexu5inAHsWJKJlSYPPN3E/1Q04YbS1NW', NULL, '2020-05-02 07:17:40', '2020-05-02 07:17:40', 0, '0', NULL, '0', NULL, NULL, NULL, NULL);
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `active`, `level`, `image`, `role`, `avatar`, `provider`, `provider_id`, `access_token`, `tieusu`) VALUES
+(1, 'duc', 'lxc150896@gmail.com', NULL, '$2y$10$RRvFDkgxcQBrXZnq7RBGSeKJDlI1Wk229gmnaDBBKdVyOzRT7QxcO', NULL, NULL, NULL, 0, NULL, NULL, '0', NULL, NULL, NULL, NULL, ''),
+(2, 'lxc150896@gmail.com', 'lxc@gmail.com', NULL, '$2y$10$6rDjMPLmzqxv5IZHfCmgwOzlzQv/y/4mB2CXg4z7F62.1wcigpWG.', NULL, NULL, '2020-04-30 11:02:34', 0, '0', 'z1789261051546_f9ac45b9566fa3652614667df59194bb.jpg', '1', NULL, NULL, NULL, NULL, 'đẹp trai vô đối'),
+(3, 'admin', 'admin@gmail.com', NULL, '$2y$10$4Vc8.JRsWb3Lap2N0gwNW.6WlRPgHZWnXRjKf0PEuMmcmZx0yaFx.', NULL, NULL, '2020-04-30 03:32:30', 1, '1', 'z1789261051546_f9ac45b9566fa3652614667df59194bb.jpg', '1', NULL, NULL, NULL, NULL, 'Đức Đẹp Trai Vô Đối'),
+(4, 'ducgets', 'ducgets@gmail.com', NULL, '$2y$10$CGDqItuvzlMlASmBMBy39.rWUF1xy3otBh/HNZYziMe2uPpFPRcue', NULL, '2020-03-31 21:36:26', '2020-03-31 21:36:26', 0, '0', NULL, '0', NULL, NULL, NULL, NULL, ''),
+(5, 'doquangduc', 'doquangduc@gmail.com', NULL, '$2y$10$ukD13WFXn/MCBdyjxn/y..kBAuQyPzsr0lUBtn7Xugfg2KuLmbNDa', NULL, '2020-03-31 21:39:23', '2020-03-31 21:39:23', 0, NULL, NULL, '0', NULL, NULL, NULL, NULL, ''),
+(6, 'quangduc', 'quangduc@gmail.com', NULL, '$2y$10$M2gou8VJYT0ceADRvnYUqOvGZPdiQSkdZRp1w54AljVuhOmLBHkDS', NULL, '2020-03-31 21:41:46', '2020-03-31 21:41:46', 0, NULL, NULL, '', NULL, NULL, NULL, NULL, ''),
+(7, 'saaaaaaa', 'ducgg1@gmail.com', NULL, '$2y$10$0EP2U9o1mpntA5gQeyAjo.rUVP2Nh6q8FnGAVdvjxXSvgdIEA3gxa', NULL, '2020-03-31 21:47:03', '2020-04-30 09:55:37', 0, '0', 'z1789261051546_f9ac45b9566fa3652614667df59194bb.jpg', '0', NULL, NULL, NULL, NULL, ''),
+(8, 'ducgg', 'admin1@gmail.com', NULL, '$2y$10$9k3BnjE8GFRuGmbGKH569ey8b1uBZ6r3zzr.yfrsbmYz6.vdsIttu', NULL, '2020-04-01 06:50:06', '2020-04-30 04:31:33', 0, '1', 'z1789261051546_f9ac45b9566fa3652614667df59194bb.jpg', '0', NULL, NULL, NULL, NULL, ''),
+(10, 'qưeqweqwe', 'admin111@gmail.com', NULL, '$2y$10$GLs9jAAKjtkaTLq8X3542OTCjjcFAoutfFa2Aw12urhOaovEHgFAe', NULL, '2020-05-02 07:01:39', '2020-05-02 07:01:39', 0, '0', NULL, '0', NULL, NULL, NULL, NULL, ''),
+(11, 'aqwqwe', 'admin11@gmail.com', NULL, '$2y$10$PuVFg47qUroMTr5APPTRHeub0m0pOfHnV07Lcyiw1nwvC49mczj.e', NULL, '2020-05-02 07:03:25', '2020-05-02 07:03:25', 0, '0', NULL, '0', NULL, NULL, NULL, NULL, ''),
+(12, 'ádadsdas', 'admi111n@gmail.com', NULL, '$2y$10$DVRxOdbfk6DznigHQ/jymuoquTkSHYGe.4lTW27o8hl5TCUZGkqsm', NULL, '2020-05-02 07:08:48', '2020-05-02 07:08:48', 0, '0', NULL, '0', NULL, NULL, NULL, NULL, ''),
+(13, 'sadasaaaa', 'admin1d@gmail.com', NULL, '$2y$10$oMFGVja1e6wcKr08nd1a4eeQoVSjYrOURp.Cf5beS/T2LpS2bfddC', NULL, '2020-05-02 07:16:23', '2020-05-02 07:16:23', 0, '0', NULL, '0', NULL, NULL, NULL, NULL, ''),
+(14, 'ádadasdas', 'adminccccccccccccccc@gmail.com', NULL, '$2y$10$Px0IYL6hHzV/O0GW64IFwexu5inAHsWJKJlSYPPN3E/1Q04YbS1NW', NULL, '2020-05-02 07:17:40', '2020-05-02 07:17:40', 0, '0', NULL, '0', NULL, NULL, NULL, NULL, '');
 
 -- --------------------------------------------------------
 
@@ -601,7 +612,7 @@ ALTER TABLE `blog`
 -- AUTO_INCREMENT cho bảng `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT cho bảng `contactus`
@@ -631,7 +642,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT cho bảng `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT cho bảng `products`

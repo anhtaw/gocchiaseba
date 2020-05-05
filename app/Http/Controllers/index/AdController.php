@@ -63,11 +63,12 @@ public function getquanao()
 
 public function getchitiet(Request $req)
 {
-
+    $randomUser = DB::table('products')
+    ->inRandomOrder()
+    ->paginate(3);
     $product1 = DB::table('products')
     -> where('products.id',$req ->id)->first();
-  
-    return view('index.ad.indexchitiet',compact('product1'));
+    return view('index.ad.indexchitiet',compact('product1'))->withrandomUser($randomUser);
 }
 // protected $request;
 public function gettimkiem(Request $request)
@@ -81,7 +82,7 @@ public function gettimkiem(Request $request)
     // ->withDetails($product)
     // $product1 = DB::table('products')
     // -> where('products.id',$req ->id)->first();
-  
+
     // return view('index.ad.indextimkiem',compact('product1'));
 }
     /**

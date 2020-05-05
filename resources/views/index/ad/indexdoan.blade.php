@@ -180,15 +180,7 @@
                                             <span class="price">
                                                 <span class="woocommerce-Price-amount amount">
                                                 <span class="woocommerce-Price-currencySymbol">&#36;
-<<<<<<< HEAD
-                                                </span>{{ $a ->gia }}<span ></span>
-
-
-=======
                                                 </span>{{ $a ->gia }}<span class="decimals">00</span>
-
-
->>>>>>> 4dc556c23f6fa0cbe5628a97862175bf09c28609
                                             </span>
                                             <a href="#"data-quantity="1" class="button product_type_variable add_to_cart_button"data-product_id="238" data-product_sku=""aria-label="Select options for &ldquo;Antique French Drawer&rdquo;"rel="nofollow">Liên Hệ</a>
                                             </div><!-- /.post_data_inner -->

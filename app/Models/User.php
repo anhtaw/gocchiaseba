@@ -14,7 +14,7 @@ class User  extends Model implements Authenticatable
 {
 
     use Notifiable;
-    protected $guard = 'users';
+    // protected $guard = 'users';
     /**
      * The attributes that are mass assignable.
      *
@@ -22,7 +22,7 @@ class User  extends Model implements Authenticatable
      */
     use AuthenticableTrait;
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','tieusu',
     ];
 
     /**

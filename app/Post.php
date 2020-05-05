@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Post extends Model
 {
     use SoftDeletes;
-    protected $fillable = ['title', 'body','user_id','image'];
+    protected $fillable = ['title', 'body','user_id','image','img','body1','body2'];
     protected $dates = ['deleted_at'];
     public function user()
     {
