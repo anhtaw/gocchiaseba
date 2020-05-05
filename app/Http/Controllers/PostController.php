@@ -23,11 +23,19 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
+        $fileName = '';
+        if($request->hasFile('image')){
+            $file = $request->file('image');
+            $fileName = $file->getClientOriginalName();
+            $file->move('img/', $fileName);
+        }
     	$request->validate([
             'title'=>'required',
             'body'=>'required',
+            'image'=>'required',
         ]);
         $input = $request->all();
+        // $input = $request->input('image');
         $input['user_id'] = auth()->user()->id;
         Post::create( $input);
 
