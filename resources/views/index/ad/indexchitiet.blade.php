@@ -171,7 +171,7 @@
 			inputmode="numeric" />
 			</div>
 
-	<button type="submit" class="single_add_to_cart_button button alt">add to cart</button>
+	<button type="submit" class="single_add_to_cart_button button alt" disabled="true">add to cart</button>
 
 
 	<input type="hidden" name="add-to-cart" value="265" />
