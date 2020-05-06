@@ -25,9 +25,9 @@ class ProductController extends Controller
         $products = Product::select(DB::raw('products.*, products_category.name_category'))
         ->join('products_category', 'products_category.id', '=', 'products.loaisp')
         ->sortable()
-        ->paginate(10);
+        ->paginate(5);
         // $products = Product::join()>sortable()->paginate(5);
-        return view('admin.products.index',compact('products'));
+        return view('admin.products.index',compact('products')) ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**

@@ -110,7 +110,7 @@
             </tbody>
             @endforeach
             </table>
-             {!! $teacher->appends(\Request::except('page'))->render() !!}
+             {!! $teachers->appends(\Request::except('page'))->render() !!}
             {{-- {!! $teacher->links() !!} --}}
         </div>
         <!-- /.card-body -->
