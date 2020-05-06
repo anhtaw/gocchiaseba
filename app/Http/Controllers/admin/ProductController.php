@@ -55,10 +55,6 @@ class ProductController extends Controller
            $fileName = $file->getClientOriginalName();
            $file->move('img/', $fileName);
        }
-
-
-
-
        $product = new Product();
         $product->insert([
             'name' => $request->input('name'),

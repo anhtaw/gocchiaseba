@@ -40,7 +40,6 @@ public function index()
        $products_category = new Products_category();
         $products_category->insert([
             'name_category' => $request->input('name_category'),
-
         ]);
         return redirect()->route('products_category.index')
             ->with('success', 'Products_category created successfully.');

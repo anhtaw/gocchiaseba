@@ -178,7 +178,7 @@
                                 <a href="#" class="woocommerce_list icon-th-list" title="Show products as list"></a>
                             </form>
                         </div><!-- /.mendel_shop_mode_buttons -->
-                        <p class="woocommerce-result-count"> Có {{count ($details)}} kết quả</p>
+                        <p class="woocommerce-result-count"></p>
                         <form class="woocommerce-ordering" method="POST" action="{{route ('sort') }} ">
                             {{ csrf_field() }}
                             <select name="orderby" class="orderby" aria-label="Shop order">
