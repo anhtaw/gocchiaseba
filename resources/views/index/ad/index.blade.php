@@ -275,7 +275,7 @@
                         <aside id="woocommerce_product_tag_cloud-2" class="widget woocommerce widget_product_tag_cloud">
                             <h5 class="widget_title">Thẻ</h5>
                             <div class="tagcloud">
-                                <a href="{{ route('index.review')}}"class="tag-cloud-link tag-link-58 tag-link-position-1"style="font-size: 22pt;">Tàiliệu</a>
+                                <a href="{{ route('review')}}"class="tag-cloud-link tag-link-58 tag-link-position-1"style="font-size: 22pt;">Tàiliệu</a>
                                 <a href="{{ route('index.index')}}"class="tag-cloud-link tag-link-60 tag-link-position-2" style="font-size: 14.3pt;">Trang chủ</a>
                                 <a href="{{ route('giaotrinh') }}"class="tag-cloud-link tag-link-59 tag-link-position-3" style="font-size: 8pt;">Giáo trình</a>
                             </div>
