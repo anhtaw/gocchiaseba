@@ -229,13 +229,13 @@ var _zxcvbnSettings = {"src":"http:\/\/mendel-antiques.ancorathemes.com\/wp-incl
             <div id="sc_layouts_title_1813345137" class="sc_layouts_title with_content">
                 <div class="sc_layouts_title_content">
                     <div class="sc_layouts_title_title">
-                        <h1 class="sc_layouts_title_caption">Tài Khoản</h1>
+                        <h1 class="sc_layouts_title_caption">Đăng Nhập</h1>
                             </div>
                             <div class="sc_layouts_title_breadcrumbs">
                                 <div class="breadcrumbs">
                                 <a class="breadcrumbs_item home" href="{{route('index.index')}}">Trang Chủ</a>
 {{--                                    <span class="breadcrumbs_delimiter"></span><a href="{{ route('ad.index')}}">Rao Vặt</a>--}}
-                                    <span class="breadcrumbs_delimiter"></span><span class="breadcrumbs_item current">Tài Khoản</span>
+                                    <span class="breadcrumbs_delimiter"></span><span class="breadcrumbs_item current">Đăng Nhập</span>
                                 </div>
                             </div>
                         </div><!-- .sc_layouts_title_content -->
