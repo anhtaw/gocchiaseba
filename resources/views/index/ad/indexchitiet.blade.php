@@ -300,16 +300,16 @@
 
 	<div id="comment-10" class="comment_container">
 
-		<img alt='' src='http://1.gravatar.com/avatar/4859526e4f9ffb6fe0d37882a6c90c53?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4859526e4f9ffb6fe0d37882a6c90c53?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />
+		{{-- <img alt='' src='' srcset='http://1.gravatar.com/avatar/4859526e4f9ffb6fe0d37882a6c90c53?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /> --}}
 		<div class="comment-text">
 
 			<div class="star-rating" role="img" aria-label="Rated 5 out of 5"><span style="width:100%">Rated <strong class="rating">5</strong> out of 5</span></div>
 	<p class="meta">
-		<strong class="woocommerce-review__author">Cindy Jefferson </strong>
-				<span class="woocommerce-review__dash">&ndash;</span> <time class="woocommerce-review__published-date" datetime="2017-05-26T14:37:23+00:00">May 26, 2017</time>
+		<strong class="woocommerce-review__author"> </strong>
+				<span class="woocommerce-review__dash">&ndash;</span> <time class="woocommerce-review__published-date" datetime="2017-05-26T14:37:23+00:00"></time>
 	</p>
 
-	<div class="description"><p>Habitant orci, cras wisi cursus, vestibulum tempor, in faucibus neque amet in morbi. Mattis montes qui leo ligula suspendisse. Ac diam, elementum tincidunt, at cras dignissim eget, ac maecenas augue fusce urna pretium morbi.</p>
+	<div class="description"><p>.</p>
 </div>
 		</div>
 	</div>
