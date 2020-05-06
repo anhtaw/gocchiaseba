@@ -294,26 +294,29 @@ var _zxcvbnSettings = {"src":"http:\/\/mendel-antiques.ancorathemes.com\/wp-incl
 				<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
 			</p>
 
-            <div
-                class="fb-like"
-                data-share="true"
-                data-width="450"
-                data-show-faces="true">
-            </div>
+
 			<p class="form-row">
 				<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
-					<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span>Nhớ Mật Khẩu</span>
-				</label>
-                <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="3ce5082949" />
-                <input type="hidden" name="_wp_http_referer" value="" />
-                    <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Log in">Log in</button>
+                    <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" />
+                    <span>Nhớ Mật Khẩu</span>
+                </label>
+                   <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Log in">Đăng Nhập</button>
+
+
+                {{-- <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="3ce5082949" />
+                <input type="hidden" name="_wp_http_referer" value="" /> --}}
 
 			</p>
-<a href="{{route('admin.register')}}" class="woocommerce-button button "  >Đăng Ký</a>
+            <a href="{{route('register1')}}" class="woocommerce  "  >Đăng Ký</a>
 			<p class="woocommerce-LostPassword lost_password">
 				<a href="{{route('admin.reset')}}">Quên Mật Khẩu?</a>
 			</p>
-
+            <div
+            class="fb-like"
+            data-share="true"
+            data-width="450"
+            data-show-faces="true">
+        </div>
             <div class="flex-c-m">
                 <a href="#" class="login100-social-item bg1">
                 <img src="{{ asset('img/facebook.png') }}" alt="">

@@ -6,7 +6,7 @@
 		<meta name="format-detection" content="telephone=no">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="http://mendel-antiques.ancorathemes.com/xmlrpc.php">
-		<title>My account &#8211; Mendel Antiques. Furniture Design and Restoration</title>
+		<title>Trang Đăng Ký</title>
 <meta name='robots' content='noindex,nofollow' />
 <link rel='dns-prefetch' href='//ajax.googleapis.com' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
@@ -104,7 +104,7 @@ var _zxcvbnSettings = {"src":"http:\/\/mendel-antiques.ancorathemes.com\/wp-incl
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://mendel-antiques.ancorathemes.com/wp-includes/wlwmanifest.xml" />
 <meta name="generator" content="WordPress 5.3.2" />
 <meta name="generator" content="WooCommerce 4.0.1" />
-<link rel="canonical" href="http://mendel-antiques.ancorathemes.com/my-account/" />
+
 <link rel='shortlink' href='http://mendel-antiques.ancorathemes.com/?p=495' />
 <link rel="alternate" type="application/json+oembed" href="http://mendel-antiques.ancorathemes.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmendel-antiques.ancorathemes.com%2Fmy-account%2F" />
 <link rel="alternate" type="text/xml+oembed" href="http://mendel-antiques.ancorathemes.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmendel-antiques.ancorathemes.com%2Fmy-account%2F&#038;format=xml" />
@@ -230,13 +230,13 @@ var _zxcvbnSettings = {"src":"http:\/\/mendel-antiques.ancorathemes.com\/wp-incl
             <div id="sc_layouts_title_1813345137" class="sc_layouts_title with_content">
                 <div class="sc_layouts_title_content">
                     <div class="sc_layouts_title_title">
-                        <h1 class="sc_layouts_title_caption">Tài Khoản</h1>
+                        <h1 class="sc_layouts_title_caption">Đăng Ký</h1>
                             </div>
                             <div class="sc_layouts_title_breadcrumbs">
                                 <div class="breadcrumbs">
                                 <a class="breadcrumbs_item home" href="{{route('index.index')}}">Trang Chủ</a>
-                                    <span class="breadcrumbs_delimiter"></span><a href="{{ route('ad.index')}}">Rao Vặt</a>
-                                    <span class="breadcrumbs_delimiter"></span><span class="breadcrumbs_item current">Tài Khoản</span>
+                                    <span class="breadcrumbs_delimiter"></span><a href="{{ route('ad.index')}}">Mua bán</a>
+                                    <span class="breadcrumbs_delimiter"></span><span class="breadcrumbs_item current">Đăng Ký</span>
                                 </div>
                             </div>
                         </div><!-- .sc_layouts_title_content -->
@@ -275,16 +275,29 @@ var _zxcvbnSettings = {"src":"http:\/\/mendel-antiques.ancorathemes.com\/wp-incl
 	<div class="post_content entry-content">
 		<div class="woocommerce"><div class="woocommerce-notices-wrapper"></div>
 		<h2>Đăng Ký</h2>
-		<form class="woocommerce-form woocommerce-form-login login" method="post">
+        <form class="woocommerce-form woocommerce-form-login login"  method="POST" action="{{ route('store') }}">
+            @csrf
+            @method('Post')
+            {{ method_field("POST") }}
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 				<label for="username">Tài Khoản&nbsp;<span class="required">*</span></label>
-                <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="" />			</p>
+                <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="name" id="username" autocomplete="username" value="" />			</p>
                 <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
                     <label for="username">Gmail&nbsp;<span class="required">*</span></label>
-                    <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="" />			</p>
+                    <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="email" autocomplete="email"value="{{ old('email') }}" />
+                    @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror		</p>
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 				<label for="password">Mật Khẩu&nbsp;<span class="required">*</span></label>
-				<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
+                <input class="woocommerce-Input woocommerce-Input--text input-text  @error('password') is-invalid @enderror"  type="password" name="password" id="password" required autocomplete="new-password" autocomplete="current-password" />
+                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
 			</p>
 			<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
 				<label for="password">Nhập Lại Mật Khẩu&nbsp;<span class="required">*</span></label>
@@ -295,8 +308,6 @@ var _zxcvbnSettings = {"src":"http:\/\/mendel-antiques.ancorathemes.com\/wp-incl
 				<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
 					<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span>Nhớ Mật Khẩu</span>
 				</label>
-                <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="3ce5082949" />
-                <input type="hidden" name="_wp_http_referer" value="/my-account/" />
                 <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Log in">Đăng Ký</button>
 			</p>
 			<p class="woocommerce-LostPassword lost_password">

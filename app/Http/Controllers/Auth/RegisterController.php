@@ -29,8 +29,14 @@ class RegisterController extends Controller
     */    use RegistersUsers;
 
     use RegistersUsers;
-    protected $redirectTo = '/user';
 
+    protected function redirectTo()
+    {
+        if (auth()->user()->role == 1) {
+            return '/admin/products';
+        }
+        return '/login';
+    }
     protected $activationService;
     /**
      * Where to redirect users after registration.
@@ -48,7 +54,7 @@ class RegisterController extends Controller
     {
         $this->middleware('guest');
         $this->middleware('guest:admin');
-        $this->middleware('guest:users');
+        // $this->middleware('guest:users');
 
     }
 
@@ -67,7 +73,7 @@ class RegisterController extends Controller
         ]);
 
     }
-
+//'unique:users'
     /**
      * Create a new user instance after a valid registration.
      *
@@ -82,42 +88,24 @@ class RegisterController extends Controller
     {
         return view('index.user.register');
     }
-    protected function createAdmin(Request $request)
-    {
-        $this->validator($request->all())->validate();
-        $admin = Admin::create([
-            'name' => $request['name'],
-            'email' => $request['email'],
-            'password' => Hash::make($request['password']),
-        ]);
-        return redirect()->intended('admin/products');
-    }
-    protected function createUser(Request $request)
-    {
-        $this->validator($request->all())->validate();
-        $writer = Writer::create([
-            'name' => $request['name'],
-            'email' => $request['email'],
-            'password' => Hash::make($request['password']),
-        ]);
-        return redirect()->intended('index/index');
-    }
-    protected function create(array $data)
-    {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-            // return User::create([
-            //     'name' => $data['name'],
-            //     'email' => $data['email'],
-            //     'username' => $data['username'],
-            //     'level'=>0,
-            //     'password' => bcrypt($data['password']),
-            // ]);
 
-        ]);
-    }
+
+    // protected function create(array $data)
+    // {
+    //     return User::create([
+    //         'name' => $data['name'],
+    //         'email' => $data['email'],
+    //         'password' => Hash::make($data['password']),
+    //         // return User::create([
+    //         //     'name' => $data['name'],
+    //         //     'email' => $data['email'],
+    //         //     'username' => $data['username'],
+    //         //     'level'=>0,
+    //         //     'password' => bcrypt($data['password']),
+    //         // ]);
+
+    //     ]);
+    // }
     public function store(Request $request)
     {
 
@@ -140,7 +128,7 @@ class RegisterController extends Controller
         );
         $user = User::create(request(['name', 'email', 'password']));
         auth()->login($user);
-        return redirect()->route('admin/products')
+        return redirect()->route('index.index')
             ->with('success', 'duc created successfully.');
         }
 
