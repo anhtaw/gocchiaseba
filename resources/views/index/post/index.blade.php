@@ -321,6 +321,26 @@
                                 </div>
                             @endif
                             <div class="sc_layouts_item">
+                                <div id="sc_layouts_cart_500458780" class="sc_layouts_cart">
+                    <span class="sc_layouts_item_icon sc_layouts_cart_icon trx_addons_icon-basket"></span>
+                    <span class="sc_layouts_item_details sc_layouts_cart_details">
+                                    <span class="sc_layouts_item_details_line2 sc_layouts_cart_totals">
+                            <span class="sc_layouts_cart_items">0 items</span>
+                            -
+                            <span class="sc_layouts_cart_summa">&#36;0.00</span>
+                        </span>
+                    </span><!-- /.sc_layouts_cart_details -->
+                    <span class="sc_layouts_cart_items_short">0</span>
+                    <div class="sc_layouts_cart_widget widget_area">
+                        <span class="sc_layouts_cart_widget_close trx_addons_icon-cancel"></span>
+                        <div class="widget woocommerce widget_shopping_cart">
+                        <div class="widget_shopping_cart_content">
+                        </div>
+                    </div>
+                </div><!-- /.sc_layouts_cart_widget -->
+                </div><!-- /.sc_layouts_cart -->
+            </div>
+                            <div class="sc_layouts_item">
                                 <div id="sc_layouts_iconed_text_800737989" class="sc_layouts_iconed_text">
                                     <a href="/cdn-cgi/l/email-protection#26435e474b564a4366524355520845494b" class="sc_layouts_item_link sc_layouts_iconed_text_link">
                                         <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-mail-1"></span>

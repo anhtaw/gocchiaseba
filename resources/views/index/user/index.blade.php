@@ -170,9 +170,29 @@ var _zxcvbnSettings = {"src":"http:\/\/mendel-antiques.ancorathemes.com\/wp-incl
                         </a>
                     </div><!-- /.sc_layouts_iconed_text -->
                 </div>
+                <div class="sc_layouts_item">
+                    <div id="sc_layouts_cart_500458780" class="sc_layouts_cart">
+		<span class="sc_layouts_item_icon sc_layouts_cart_icon trx_addons_icon-basket"></span>
+		<span class="sc_layouts_item_details sc_layouts_cart_details">
+						<span class="sc_layouts_item_details_line2 sc_layouts_cart_totals">
+				<span class="sc_layouts_cart_items">0 items</span>
+				-
+				<span class="sc_layouts_cart_summa">&#36;0.00</span>
+			</span>
+		</span><!-- /.sc_layouts_cart_details -->
+		<span class="sc_layouts_cart_items_short">0</span>
+		<div class="sc_layouts_cart_widget widget_area">
+			<span class="sc_layouts_cart_widget_close trx_addons_icon-cancel"></span>
+			<div class="widget woocommerce widget_shopping_cart">
+			<div class="widget_shopping_cart_content">
+            </div>
+        </div>
+    </div><!-- /.sc_layouts_cart_widget -->
+    </div><!-- /.sc_layouts_cart -->
+</div>
 <div class="sc_layouts_item">
     <div id="sc_layouts_iconed_text_171639584" class="sc_layouts_iconed_text">
-        <a href="mailto:example@test.com" class="sc_layouts_item_link sc_layouts_iconed_text_link">
+        <a href="mailto:ducgets@gmail.com" class="sc_layouts_item_link sc_layouts_iconed_text_link">
             <span class="sc_layouts_item_icon sc_layouts_iconed_text_icon icon-mail-1"></span>
         </a>
     </div><!-- /.sc_layouts_iconed_text -->
@@ -293,16 +313,12 @@ var _zxcvbnSettings = {"src":"http:\/\/mendel-antiques.ancorathemes.com\/wp-incl
 				<label for="password">Mật khẩu&nbsp;<span class="required">*</span></label>
 				<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
 			</p>
-
-
 			<p class="form-row">
 				<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
                     <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" />
                     <span>Nhớ Mật Khẩu</span>
                 </label>
                    <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Log in">Đăng Nhập</button>
-
-
                 {{-- <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="3ce5082949" />
                 <input type="hidden" name="_wp_http_referer" value="" /> --}}
 

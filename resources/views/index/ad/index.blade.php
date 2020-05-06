@@ -84,8 +84,11 @@
 			<span class="sc_layouts_cart_widget_close trx_addons_icon-cancel"></span>
 			<div class="widget woocommerce widget_shopping_cart">
 			<div class="widget_shopping_cart_content">
-            </div></div>		</div><!-- /.sc_layouts_cart_widget -->
-	</div><!-- /.sc_layouts_cart --></div>
+            </div>
+        </div>
+    </div><!-- /.sc_layouts_cart_widget -->
+    </div><!-- /.sc_layouts_cart -->
+</div>
                             <div class="sc_layouts_item">
                                 <div id="sc_layouts_iconed_text_1482665506" class="sc_layouts_iconed_text">
                                     <a href="/cdn-cgi/l/email-protection#7b1e031a160b171e3b0f1e080f55181416" class="sc_layouts_item_link sc_layouts_iconed_text_link">
