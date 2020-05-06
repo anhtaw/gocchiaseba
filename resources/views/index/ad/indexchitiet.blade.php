@@ -190,7 +190,7 @@
 
 
 			<div class="woocommerce-product-rating">
-		<div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span> customer rating</span></div>								<a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">1</span> customer review)</a>
+		<div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span> customer rating</span></div>
 						</div>
 
 <p class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>{{ $product1 ->gia }}<span class="decimals">00</span>
@@ -384,13 +384,7 @@
 
 	</section>
 	</div>
-
-
-
 				</article><!-- /.post_item_single -->
-
-
-
 					</div><!-- </.content> -->
 
                     </div><!-- </.content_wrap> -->
