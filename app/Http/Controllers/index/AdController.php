@@ -66,9 +66,12 @@ public function getchitiet(Request $req)
     $randomUser = DB::table('products')
     ->inRandomOrder()
     ->paginate(3);
+    $products = Product::select(DB::raw('products.*, image_uploads.filename'))
+    ->join('image_uploads', 'products.id', '=', 'image_uploads.product_id')
+    ->paginate(10);
     $product1 = DB::table('products')
     -> where('products.id',$req ->id)->first();
-    return view('index.ad.indexchitiet',compact('product1'))->withrandomUser($randomUser);
+    return view('index.ad.indexchitiet',compact('product1'),compact('products'))->withrandomUser($randomUser);
 }
 
 // protected $request;

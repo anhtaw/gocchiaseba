@@ -160,29 +160,28 @@
 			<nav class="woocommerce-breadcrumb"><a href="#">Home</a>&nbsp;&#47;&nbsp;<a href="http://mendel-antiques.ancorathemes.com/product-category/chairs/">Chairs</a>&nbsp;&#47;&nbsp;Antique Chair 1734</nav>
 			<div class="woocommerce-notices-wrapper"></div><div id="product-265" class="product type-product post-265 status-publish first instock product_cat-chairs product_tag-antique product_tag-chair has-post-thumbnail shipping-taxable purchasable product-type-variable">
 
-	<div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 0; transition: opacity .25s ease-in-out;">
-	<figure class="woocommerce-product-gallery__wrapper">
+	<div class="col-12 col-sm-6 woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 0; transition: opacity .25s ease-in-out;">
+	<figure class="woocommerce-product-gallery__wrapper ">
 
 		<div data-thumb="{{asset('img/'.$product1->image)}}"
-		data-thumb-alt="" class="woocommerce-product-gallery__image">
-		<a href="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6.png">
+		data-thumb-alt="" class="woocommerce-product-gallery__image col-12">
+		<a href="{{asset('img/'.$product1->image)}}">
 			<img width="600" height="600"
 			 src="{{asset('img/'.$product1->image)}}"
              class="wp-post-image" alt="" title="shop-6" data-caption=""
              data-src="{{asset('img/'.$product1->image)}}"
-			  data-large_image="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6.png"
+			  data-large_image="{{asset('img/'.$product1->image)}}"
 			  data-large_image_width="1000" data-large_image_height="1000"
-			   {{-- srcset="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-600x600.png 600w,
-			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-300x300.png 300w,
-			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-100x100.png 100w,
-			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-150x150.png 150w,
-			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-768x768.png 768w,
-			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-370x370.png 370w,
-			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-90x90.png 90w,
-			   http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-540x540.png 540w,
-				http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6-760x760.png 760w,
-				http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/shop-6.png 1000w" --}}
-				sizes="(max-width: 600px) 100vw, 600px" /></a></div>	</figure>
+                sizes="(max-width: 600px) 100vw, 600px" /></a>
+
+            </div>
+            <div class="col-12 product-image-thumbs">
+            @foreach ($products as $p)
+            <div class="product-image-thumb" ><a href="{{asset('images/'.$p->filename)}}"><img src="{{asset('images/'. $p->filename)}}" alt="Product Image"></a></div>
+            @endforeach
+        </div>
+
+            </figure>
 </div>
 
 	<div class="summary entry-summary">
@@ -190,7 +189,7 @@
 
 
 			<div class="woocommerce-product-rating">
-		<div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span> customer rating</span></div>
+		<div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span> customer rating</span></div>								<a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">1</span> customer review)</a>
 						</div>
 
 <p class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>{{ $product1 ->gia }}<span class="decimals">00</span>
@@ -392,9 +391,14 @@
                     @include('index.footer')
 		</div><!-- /.page_wrap -->
 
-	</div><!-- /.body_wrap -->
-
-
+    </div><!-- /.body_wrap -->
+    {{-- <link rel="stylesheet" href="<?php echo asset('css/fontawesome-free/css/all.min.css')?>"> --}}
+<link rel="stylesheet" href="<?php echo asset('css/dist/css/adminlte.min.css')?>">
+<script type="text/javascript" src="<?php echo asset('css/dist/js/adminlte.min.js'); ?>"></script>
+    {{-- <script type="text/javascript" src="<?php echo asset('css/jquery/jquery.min.js'); ?>"></script> --}}
+    {{-- <script type="text/javascript" src="<?php echo asset('css/dist/js/demo.js'); ?>"></script> --}}
+    {{-- <script type="text/javascript" src="<?php echo asset('css/dist/js/demo.js'); ?>"></script> --}}
+    {{-- <script type="text/javascript" src="<?php echo asset('css/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script> --}}
 			<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
 			var ajaxRevslider;
 
