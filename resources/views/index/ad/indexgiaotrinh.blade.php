@@ -63,7 +63,7 @@
                                 <div id="sc_layouts_search_176019722" class="sc_layouts_search">
                                     <div class="search_wrap search_style_fullscreen search_ajax layouts_search">
                                         <div class="search_form_wrap">
-                                        
+
                                         </div>
                                         <div class="search_results widget_area">
                                             <a href=""class="search_results_close trx_addons_icon-cancel"></a>
@@ -89,13 +89,13 @@
                                         <div id="sc_layouts_title_1722447689" class="sc_layouts_title with_content">
                                             <div class="sc_layouts_title_content">
                                                 <div class="sc_layouts_title_title">
-                                                    <h1 class="sc_layouts_title_caption">RAO VẶT</h1>
+                                                    <h1 class="sc_layouts_title_caption">Giáo Trình</h1>
                                                 </div>
                                                 <div class="sc_layouts_title_breadcrumbs">
                                                     <div class="breadcrumbs">
                                                         <a class="breadcrumbs_item home" href="{{ route('index.index')}}">Trang Chủ</a>
                                                         <span class="breadcrumbs_delimiter"></span>
-                                                        <span class="breadcrumbs_item current">Rao Vặt</span>
+                                                        <span class="breadcrumbs_item current">Giáo Trình</span>
                                                     </div>
                                                 </div>
                                             </div><!-- .sc_layouts_title_content -->
@@ -181,18 +181,18 @@
                                                 <span class="woocommerce-Price-amount amount">
                                                 <span class="woocommerce-Price-currencySymbol">&#36;
                                                 </span>{{ $a ->gia }}<span class="decimals">00</span>
-                                                
-                                                
+
+
                                             </span>
                                             <a href="#"data-quantity="1" class="button product_type_variable add_to_cart_button"data-product_id="238" data-product_sku=""aria-label="Select options for &ldquo;Antique French Drawer&rdquo;"rel="nofollow">Liên Hệ</a>
                                             </div><!-- /.post_data_inner -->
-                                            
+
                                     </div><!-- /.post_data -->
-                                    
+
                                 </div><!-- /.post_item -->
-                                
+
                             </li> @endforeach
-                           
+
                         </ul>
                     </div><!-- /.list_products -->
                 </div><!-- </.content> -->

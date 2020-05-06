@@ -70,12 +70,38 @@ public function getchitiet(Request $req)
     -> where('products.id',$req ->id)->first();
     return view('index.ad.indexchitiet',compact('product1'))->withrandomUser($randomUser);
 }
+
 // protected $request;
 public function gettimkiem(Request $request)
 {
 
     $q = $request->input('q');
     $a = Product::where('name','LIKE','%'.$q.'%')->orWhere ( 'gia', 'LIKE', '%' . $q . '%' )->get();
+    if(count($a) > 0)
+        return view('index.ad.indextimkiem')->withDetails($a)->withQuery ( $q );
+    else return view ('index.ad.indextimkiem')->withMessage('No Details found. Try to search again !');
+    // ->withDetails($product)
+    // $product1 = DB::table('products')
+    // -> where('products.id',$req ->id)->first();
+
+    // return view('index.ad.indextimkiem',compact('product1'));
+}
+public function gettimkiem1(Request $request)
+{
+    if( $q = $request->input('orderby', 'date'))
+    $a = DB::table('products')
+    ->orderBy('id', 'desc')
+    ->get();
+    // $a = Product::where('name','LIKE','%'.$q.'%')->orWhere ( 'gia', 'LIKE', '%' . $q . '%' )->get();
+    if($q = $request->input('orderby', 'price'))
+    $a = DB::table('products')
+    ->orderBy('gia', 'asc')
+    ->get();
+    if($q = $request->input('orderby', 'price-desc'))
+    $a = DB::table('products')
+    ->orderBy('gia', 'desc')
+    ->get();
+    // $a = Product::where('name','LIKE','%'.$q.'%')->orWhere ( 'gia', 'LIKE', '%' . $q . '%' )->get();
     if(count($a) > 0)
         return view('index.ad.indextimkiem')->withDetails($a)->withQuery ( $q );
     else return view ('index.ad.indextimkiem')->withMessage('No Details found. Try to search again !');

@@ -29,11 +29,12 @@
                    @include('index.header')
                     <div class="menu_mobile menu_mobile_fullscreen scheme_dark">
                         <div class="menu_mobile_inner">
-                            <a class="menu_mobile_close icon-cancel"></a>
+                            @include('index.headermobile')
+                            {{-- <a class="menu_mobile_close icon-cancel"></a>
                             <a class="sc_layouts_logo" href="index.html">
                                 <img src="{{ asset('img/img/logoheader.png') }}" width="240" height="42">
                             </a>
-                            <nav class="menu_mobile_nav_area">
+                            {{-- <nav class="menu_mobile_nav_area">
                                 <ul id="menu_mobile-main-menu" class="">
                                     <li id="menu_mobile-item-102" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-102">
                                         <a href="#"><span>Home</span></a>
@@ -181,7 +182,7 @@
                                         <a href="#"><span>Contact</span></a>
                                     </li>
                                 </ul>
-                            </nav>
+                            </nav> --}} --}}
                             <div class="search_wrap search_style_normal search_mobile">
                                 <div class="search_form_wrap">
                                     <form role="search" method="get" class="search_form"
@@ -192,7 +193,7 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="socials_mobile">
+                            {{-- <div class="socials_mobile">
                                 <a target="_blank" href="#" class="social_item social_item_style_icons social_item_type_icons">
                                     <span class="social_icon social_facebook">
                                         <span class="icon-facebook"></span>
@@ -213,7 +214,7 @@
                                         <span class="icon-dribbble"></span>
                                     </span>
                                 </a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                     <div class="page_content_wrap scheme_default">

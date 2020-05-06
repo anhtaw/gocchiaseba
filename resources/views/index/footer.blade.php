@@ -34,20 +34,20 @@
                                                     <div class="menu-footer-menu-container">
                                                         <ul id="menu-footer-menu" class="menu">
                                                             <li id="menu-item-304"class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-304">
-                                                                <a href="http://mendel-antiques.ancorathemes.com/">Trang chủ</a></li>
+                                                                <a href="{{ route('index.index')}}">Trang chủ</a></li>
                                                             <li id="menu-item-305"class="menu-item menu-item-type-post_type menu-item-object-page menu-item-305">
-                                                                <a href="http://mendel-antiques.ancorathemes.com/about-1/">Góc
+                                                                <a href="{{ route('review.index')}}">Góc
                                                                     Review</a></li>
                                                             <li id="menu-item-308"class="menu-item menu-item-type-post_type menu-item-object-page menu-item-308">
-                                                                <a href="http://mendel-antiques.ancorathemes.com/our-services/">Tài Liệu</a>
+                                                                <a href="{{ route('document.index')}}">Tài Liệu</a>
                                                             </li>
                                                             <li id="menu-item-309" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item menu-item-309">
-                                                                <a href="http://mendel-antiques.ancorathemes.com/shop/"aria-current="page">Góc Tìm Đồ</a></li>
+                                                                <a href="{{ route('post.index')}}"aria-current="page">Chia Sẻ</a></li>
                                                             <li id="menu-item-310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-310">
-                                                                <a href="http://mendel-antiques.ancorathemes.com/specials/">Rao Vặt</a>
+                                                                <a href="{{ route('ad.index')}}">Mua Bán</a>
                                                             </li>
                                                             <li id="menu-item-306"class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306">
-                                                                <a href="http://mendel-antiques.ancorathemes.com/classic-1/">Liên Lạc</a>
+                                                                <a href="{{ route('contact.index')}}">Liên Lạc</a>
                                                             </li>
                                                             <!--                                                                    <li id="menu-item-307"-->
                                                             <!--                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-307">-->
@@ -115,7 +115,7 @@
                                                     <div class="textwidget">
                                                         <p>
                                                             <span style="color: #000000;">
-                                                        <a style="color: #000000;"href="https://themeforest.net/user/ancorathemes/portfolio"target="_blank" rel="noopener noreferrer"> Chia sẻ BA </a>
+                                                        <a style="color: #000000;"href="{{ route('index.index')}}"target="_blank" rel="noopener noreferrer"> Chia sẻ BA </a>
                                                         © 2020.Thiết kế by Đỗ Quang Đức.</span>
                                                     </p>
                                                     </div>
@@ -149,8 +149,8 @@
                                                 <div class="widget widget_text">
                                                     <div class="textwidget">
                                                         <p><span style="color: #000000;">
-                                                        <a style="color: #000000;"href="http://ancorathemes.com/about/">Điều khoản sử dụng</a>
-                                                        <a style="color: #000000;"href="http://ancorathemes.com/about/"></a>
+                                                        <a style="color: #000000;"href="#">Điều khoản sử dụng</a>
+                                                        <a style="color: #000000;"href="#"></a>
                                                         <a style="color: #000000;" href="/privacy-policy/">Chính sách bảo mật</a></span>
                                                         </p>
                                                     </div>

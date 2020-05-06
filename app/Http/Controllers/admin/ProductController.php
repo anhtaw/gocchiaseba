@@ -136,13 +136,7 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy(Product $product, Request $request)
-    { $filename =  $request->get('filename');
-        Productsimage::where('image',$filename)->delete();
-        $path=public_path().'/img/products/'.$filename;
-        if (file_exists($path)) {
-            unlink($path);
-        }
-        return $filename;
+    {
         $product->delete();
         return redirect()->route('products.index')
                         ->with('success','Product deleted successfully');

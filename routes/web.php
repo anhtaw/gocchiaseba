@@ -72,6 +72,7 @@ Route::get('admin.register', ['as' => 'admin.register', 'uses' => 'index\UserCon
     Route::post('searchpost', ['as' => 'searchpost', 'uses' => 'PostController@gettimkiem']);
     //Route::resource('review.edit', ['as' => 'review.edit', 'uses' => 'index\ReviewController@edit']);
 });
+Route::post('sort', ['as' => 'sort', 'uses' => 'index\AdController@gettimkiem1']);
     Route::get('image/upload',['as'=>'upload.create','uses'=>'ImageUploadController@fileCreate']);
     Route::post('image/upload/store','ImageUploadController@fileStore');
     Route::post('image/delete','ImageUploadController@fileDestroy');

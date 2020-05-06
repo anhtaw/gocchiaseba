@@ -13,10 +13,10 @@
             <a href="{{ route('document.index')}}"><span>TÀI LIỆU</span></a></li>
         <li id="menu-item-98"
             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98">
-            <a href="{{ route('ad.index')}}"><span>RAO VẶT</span></a></li>
+            <a href="{{ route('ad.index')}}"><span>MUA BÁN</span></a></li>
         <li id="menu-item-104"
             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-104">
-            <a href="{{ route('post.index')}}"><span>TÌM ĐỒ</span></a>
+            <a href="{{ route('post.index')}}"><span>CHIA SẺ</span></a>
         </li>
         <li id="menu-item-87"
             class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-75 current_page_item menu-item-87">

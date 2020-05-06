@@ -129,13 +129,13 @@
                                         <div id="sc_layouts_title_1722447689" class="sc_layouts_title with_content">
                                             <div class="sc_layouts_title_content">
                                                 <div class="sc_layouts_title_title">
-                                                    <h1 class="sc_layouts_title_caption">RAO VẶT</h1>
+                                                    <h1 class="sc_layouts_title_caption">MUA BÁN</h1>
                                                 </div>
                                                 <div class="sc_layouts_title_breadcrumbs">
                                                     <div class="breadcrumbs">
                                                         <a class="breadcrumbs_item home" href="{{ route('index.index')}}">Trang Chủ</a>
                                                         <span class="breadcrumbs_delimiter"></span>
-                                                        <span class="breadcrumbs_item current">Rao Vặt</span>
+                                                        <span class="breadcrumbs_item current">Mua Bán</span>
                                                     </div>
                                                 </div>
                                             </div><!-- .sc_layouts_title_content -->
@@ -176,16 +176,17 @@
                             </form>
                         </div><!-- /.mendel_shop_mode_buttons -->
                         <p class="woocommerce-result-count">Xem {{count ($product)}} kết quả</p>
-                        <form class="woocommerce-ordering" method="get">
+                        <form class="woocommerce-ordering" method="POST" action="{{route ('sort') }} ">
+                            {{ csrf_field() }}
                             <select name="orderby" class="orderby" aria-label="Shop order">
-                                <option value="popularity">Phổ biến</option>
-                                <option value="rating">Đánh giá</option>
+                                {{-- <option value="popularity">Phổ biến</option> --}}
+                                {{-- <option value="rating">Đánh giá</option> --}}
                                 <option value="date" selected='selected'>Mới Nhất</option>
                                 <option value="price">Giá thấp-cao</option>
                                 <option value="price-desc">Giá cao-thấp</option>
                             </select>
                             <input type="hidden" name="paged" value="1"/>
-                            <input type="hidden" name="q" value="/shop/"/>
+                            {{-- <input type="hidden" name="q" value="/shop/"/> --}}
                         </form>
                         <ul class="products columns-2">
                             @foreach ($product as $a)
@@ -220,17 +221,14 @@
                                             <span class="price">
                                                 <span class="woocommerce-Price-amount amount">
                                                 <span class="woocommerce-Price-currencySymbol">&#36;
-                                                </span>{{ $a ->gia }}<span class="decimals">00</span>
+                                                </span>{{ $a ->gia }}<span class="">Đ</span>
 
 
                                             </span>
                                             <a href="#"data-quantity="1" class="button product_type_variable add_to_cart_button"data-product_id="238" data-product_sku=""aria-label="Select options for &ldquo;Antique French Drawer&rdquo;"rel="nofollow">Liên Hệ</a>
                                             </div><!-- /.post_data_inner -->
-
                                     </div><!-- /.post_data -->
-
                                 </div><!-- /.post_item -->
-
                             </li> @endforeach
                             {{$product->links()}}
                         </ul>
@@ -251,7 +249,6 @@
                                         <button type="submit" class="button">Lọc</button>
                                         <div class="price_label" style="display:none;">Giá: <span class="from"></span> &mdash; <span class="to"></span>
                                         </div>
-                                        <input type="hidden" name="q" value="/shop/"/>
                                         <div class="clear"></div>
                                     </div>
                                 </div>

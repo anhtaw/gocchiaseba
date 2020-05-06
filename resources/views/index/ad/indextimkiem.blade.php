@@ -87,13 +87,13 @@
                                         <div id="sc_layouts_title_1722447689" class="sc_layouts_title with_content">
                                             <div class="sc_layouts_title_content">
                                                 <div class="sc_layouts_title_title">
-                                                    <h1 class="sc_layouts_title_caption">RAO VẶT</h1>
+                                                    <h1 class="sc_layouts_title_caption">Kết Quả</h1>
                                                 </div>
                                                 <div class="sc_layouts_title_breadcrumbs">
                                                     <div class="breadcrumbs">
                                                         <a class="breadcrumbs_item home" href="{{ route('index.index')}}">Trang Chủ</a>
                                                         <span class="breadcrumbs_delimiter"></span>
-                                                        <span class="breadcrumbs_item current">Rao Vặt</span>
+                                                        <span class="breadcrumbs_item current">Kết Quả</span>
                                                     </div>
                                                 </div>
                                             </div><!-- .sc_layouts_title_content -->
@@ -122,7 +122,7 @@
                         <div class="list_products_header">
                             <nav class="woocommerce-breadcrumb"><a href="{{ route('index.index')}}">Trang Chủ</a>&nbsp;&#47;&nbsp;Rao Vặt</nav>
                             <header class="woocommerce-products-header">
-                                <h1 class="woocommerce-products-header__title page-title">Rao Vặt</h1>
+                                <h1 class="woocommerce-products-header__title page-title">KẾT QUẢ</h1>
                             </header>
                         </div>
                         <div class="woocommerce-notices-wrapper"></div>
@@ -133,17 +133,18 @@
                                 <a href="#" class="woocommerce_list icon-th-list" title="Show products as list"></a>
                             </form>
                         </div><!-- /.mendel_shop_mode_buttons -->
-                        <p class="woocommerce-result-count">Xem kết quả</p>
-                        <form class="woocommerce-ordering" method="get">
+                        <p class="woocommerce-result-count"> Có {{count ($details)}} kết quả</p>
+                        <form class="woocommerce-ordering" method="POST" action="{{route ('sort') }} ">
+                            {{ csrf_field() }}
                             <select name="orderby" class="orderby" aria-label="Shop order">
-                                <option value="popularity">Phổ biến</option>
-                                <option value="rating">Đánh giá</option>
+                                {{-- <option value="popularity">Phổ biến</option> --}}
+                                {{-- <option value="rating">Đánh giá</option> --}}
                                 <option value="date" selected='selected'>Mới Nhất</option>
                                 <option value="price">Giá thấp-cao</option>
                                 <option value="price-desc">Giá cao-thấp</option>
                             </select>
                             <input type="hidden" name="paged" value="1"/>
-                            <input type="hidden" name="q" value="/shop/"/>
+                            {{-- <input type="hidden" name="q" value="/shop/"/> --}}
                         </form>
                         <ul class="products columns-2">
 							@if(isset($details))
@@ -180,32 +181,32 @@
                                             <span class="price">
                                                 <span class="woocommerce-Price-amount amount">
                                                 <span class="woocommerce-Price-currencySymbol">&#36;
-                                                </span>{{ $a ->gia }}<span class="decimals">00</span>
-                                                
-                                                
+                                                </span>{{ $a ->gia }}<span class="">Đ</span>
+
+
                                             </span>
                                             <a href="#"data-quantity="1" class="button product_type_variable add_to_cart_button"data-product_id="238" data-product_sku=""aria-label="Select options for &ldquo;Antique French Drawer&rdquo;"rel="nofollow">Liên Hệ</a>
                                             </div><!-- /.post_data_inner -->
-                                            
+
                                     </div><!-- /.post_data -->
-                                    
+
                                 </div><!-- /.post_item -->
-                                
+
                             </li> @endforeach
 							{{-- {{$product->links()}} --}}
-							
+
 						</ul>
 						@endif
                     </div><!-- /.list_products -->
 				</div><!-- </.content> -->
-				
+
                 <div class="sidebar left widget_area" role="complementary">
                     <div class="sidebar_inner">
                         <aside id="woocommerce_widget_cart-2" class="widget woocommerce widget_shopping_cart"><h5 class="widget_title">THÔNG TIN</h5>
                             <div class="widget_shopping_cart_content"></div>
                         </aside>
                         <aside id="woocommerce_price_filter-2" class="widget woocommerce widget_price_filter"><h5 class="widget_title">Lọc giá</h5>
-                            <form method="get" action="http://mendel-antiques.ancorathemes.com/shop/">
+                            <form method="get" action="#">
                                 <div class="price_slider_wrapper">
                                     <div class="price_slider" style="display:none;"></div>
                                     <div class="price_slider_amount" data-step="1">

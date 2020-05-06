@@ -5,24 +5,24 @@
 <nav class="menu_mobile_nav_area">
     <ul id="menu_mobile-main-menu" class="">
         <li id="menu_mobile-item-102"
-            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-102">
+            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-102 current_page_item menu-item-object-page current-menu-item">
             <a href="{{ route('index.index')}}"><span>Trang chủ</span></a>
         {{-- <li id="menu_mobile-item-103"
             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-103">
             <a href="#"><span>About Us</span></a>
         </li> --}}
         <li id="menu_mobile-item-95"
-            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95"><a
+            class="menu-item menu-item-type-post_type  menu-item-95"><a
                 href="{{ route('review.index')}}"><span>GÓC REVIEW</span></a>
         </li>
         <li id="menu_mobile-item-96"
-            class="menu-item menu-item-type-post_type   menu-item-96"><a
+            class="menu-item menu-item-type-post_type  menu-item-object-page   menu-item-96"><a
                 href="{{ route('document.index')}}"><span>TÀI LIỆU</span></a></li>
         <li id="menu_mobile-item-98"
             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a
                 href="{{ route('ad.index')}}"><span>MUA BÁN</span></a></li>
         <li id="menu_mobile-item-104"
-            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-104 current_page_item menu-item-object-page current-menu-item">
+            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-104">
             <a href="{{ route('post.index')}}"><span>CHIA SẺ</span></a>
         </li>
         <li id="menu_mobile-item-87"

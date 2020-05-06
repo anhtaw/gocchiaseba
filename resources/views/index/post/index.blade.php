@@ -444,8 +444,7 @@
                                         <a href="#"
                                            class="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment"><span
                                                 class="post_counters_number">{{ $post->comments->count()}}</span><span class="post_counters_label">Comments</span></a>
-                                    </div><!-- .post_meta --><p><a class="simple-btn"
-                                                                   href="{{ route('post.show', $post->id) }}">Xem Thêm</a></p></div>
+                                    </div><!-- .post_meta --><p><a class="simple-btn" href="{{ route('post.show', $post->id) }}">Xem Thêm</a></p></div>
                             </div><!-- .entry-content -->
                        </article>
 
