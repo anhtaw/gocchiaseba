@@ -7,7 +7,6 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="http://mendel-antiques.ancorathemes.com/xmlrpc.php">
     <title>Góc chia sẻ BA</title>
-    <title>Cindy Jefferson &#8211; Mendel Antiques. Furniture Design and Restoration</title>
     <meta name='robots' content='noindex,nofollow' />
     <link rel='dns-prefetch' href='//ajax.googleapis.com' />
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
@@ -152,14 +151,23 @@
         my_timeline_front_ajax_url="http://mendel-antiques.ancorathemes.com/wp-admin/admin-ajax.php";
     </script>
     <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style>
+    <noscript>
+        <style>.woocommerce-product-gallery {
+                opacity: 1 !important;
+            }</style>
     </noscript>
-    <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
-    <meta name="generator" content="Powered by Slider Revolution 6.1.3 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
-    <link rel="icon" href="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/07/cropped-512x512-favicon-32x32.jpg" sizes="32x32" />
-    <link rel="icon" href="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/07/cropped-512x512-favicon-192x192.jpg" sizes="192x192" />
-    <link rel="apple-touch-icon-precomposed" href="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/07/cropped-512x512-favicon-180x180.jpg" />
-    <meta name="msapplication-TileImage" content="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/07/cropped-512x512-favicon-270x270.jpg" />
+    <meta name='robots' content='noindex,nofollow'/>
+    <style type="text/css">.recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }</style>
+    <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+    <meta name="generator" content="Powered by Slider Revolution 6.1.3 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."/>
+    <link rel="icon" href="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/07/cropped-512x512-favicon-32x32.jpg" sizes="32x32"/>
+    <link rel="icon" href="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/07/cropped-512x512-favicon-192x192.jpg" sizes="192x192"/>
+    <link rel="apple-touch-icon-precomposed" href="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/07/cropped-512x512-favicon-180x180.jpg"/>
+    <meta name="msapplication-TileImage" content="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/07/cropped-512x512-favicon-270x270.jpg"/>
     <script type="text/javascript">
         function setREVStartSize(t) {
             try {
@@ -179,7 +187,9 @@
             }
         };</script>
     <noscript>
-        <style> .wpb_animate_when_almost_visible { opacity: 1; }</style>
+        <style> .wpb_animate_when_almost_visible {
+                opacity: 1;
+            }</style>
     </noscript>
     <style type="text/css" id="trx_addons-inline-styles-inline-css">.mendel_inline_2097070094 {
             background-image: url({{ asset('img/bia.jpg') }});
@@ -255,7 +265,7 @@
 <div class="body_wrap">
     <div class="page_wrap">
         <header class="top_panel top_panel_custom top_panel_custom_21 top_panel_custom_header-fullwidth-simple with_bg_image mendel_inline_2097070094 scheme_default">
-             <div
+            <div
                 class="vc_row wpb_row vc_row-fluid vc_custom_1500893297996 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex sc_layouts_row sc_layouts_row_type_compact sc_layouts_row_fixed scheme_dark">
                 <div  class="wpb_column vc_column_container vc_col-sm-3 sc_layouts_column sc_layouts_column_align_left sc_layouts_column_icons_position_left">
                     <div class="vc_column-inner">
@@ -263,8 +273,8 @@
                             <div class="vc_empty_space  vc_custom_1500975516958" style="height: 0px"><span
                                     class="vc_empty_space_inner"></span></div>
                             <div class="sc_layouts_item">   <a href="{{ route('index.index')}}" id="sc_layouts_logo_72816308" class="sc_layouts_logo sc_layouts_logo_default">
-                                        <img class="logo_image" src="{{ asset('img/img/logoheader.png') }}" alt="" width="240" height="42">
-                                    </a><!-- /.sc_layouts_logo --></div>
+                                    <img class="logo_image" src="{{ asset('img/img/logoheader.png') }}" alt="" width="240" height="42">
+                                </a><!-- /.sc_layouts_logo --></div>
                         </div>
                     </div>
                 </div>
@@ -322,24 +332,24 @@
                             @endif
                             <div class="sc_layouts_item">
                                 <div id="sc_layouts_cart_500458780" class="sc_layouts_cart">
-                    <span class="sc_layouts_item_icon sc_layouts_cart_icon trx_addons_icon-basket"></span>
-                    <span class="sc_layouts_item_details sc_layouts_cart_details">
+                                    <span class="sc_layouts_item_icon sc_layouts_cart_icon trx_addons_icon-basket"></span>
+                                    <span class="sc_layouts_item_details sc_layouts_cart_details">
                                     <span class="sc_layouts_item_details_line2 sc_layouts_cart_totals">
                             <span class="sc_layouts_cart_items">0 items</span>
                             -
                             <span class="sc_layouts_cart_summa">&#36;0.00</span>
                         </span>
                     </span><!-- /.sc_layouts_cart_details -->
-                    <span class="sc_layouts_cart_items_short">0</span>
-                    <div class="sc_layouts_cart_widget widget_area">
-                        <span class="sc_layouts_cart_widget_close trx_addons_icon-cancel"></span>
-                        <div class="widget woocommerce widget_shopping_cart">
-                        <div class="widget_shopping_cart_content">
-                        </div>
-                    </div>
-                </div><!-- /.sc_layouts_cart_widget -->
-                </div><!-- /.sc_layouts_cart -->
-            </div>
+                                    <span class="sc_layouts_cart_items_short">0</span>
+                                    <div class="sc_layouts_cart_widget widget_area">
+                                        <span class="sc_layouts_cart_widget_close trx_addons_icon-cancel"></span>
+                                        <div class="widget woocommerce widget_shopping_cart">
+                                            <div class="widget_shopping_cart_content">
+                                            </div>
+                                        </div>
+                                    </div><!-- /.sc_layouts_cart_widget -->
+                                </div><!-- /.sc_layouts_cart -->
+                            </div>
                             <div class="sc_layouts_item">
                                 <div id="sc_layouts_iconed_text_800737989" class="sc_layouts_iconed_text">
                                     <a href="/cdn-cgi/l/email-protection#26435e474b564a4366524355520845494b" class="sc_layouts_item_link sc_layouts_iconed_text_link">
@@ -417,9 +427,9 @@
                 <div class="content">
                     <div class="posts_container">
                         @foreach($posts as $post)
-                        <article id="post-185" class="post_item post_layout_excerpt post_format_standard post-185 post type-post status-publish format-standard has-post-thumbnail hentry category-antique-furniture category-antiques-news category-collectables category-vintage-luxe category-vintage-retro tag-news tag-tips">
-                            <div class="post_header entry-header">
-                                <div class="post_meta">
+                            <article id="post-185" class="post_item post_layout_excerpt post_format_standard post-185 post type-post status-publish format-standard has-post-thumbnail hentry category-antique-furniture category-antiques-news category-collectables category-vintage-luxe category-vintage-retro tag-news tag-tips">
+                                <div class="post_header entry-header">
+                                    <div class="post_meta">
                                     <span class="post_meta_item post_categories">
                                         <a href="#" rel="category tag"></a>,
                                         <a href="#" rel="category tag"></a>,
@@ -427,50 +437,50 @@
                                         <a href="#" rel="category tag"></a>,
                                         <a href="#" rel="category tag"></a>
                                     </span>
-                                    <a href="#" class="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment">
-                                        <span class="post_counters_number"> {{ $post->comments->count()}}</span>
-                                        <span class="post_counters_label">s</span>
-                                    </a>
-                                </div><!-- .post_meta -->
-                                <h3 class="post_title entry-title">
-                                    <a href="{{ route('post.show', $post->id) }}" rel="bookmark">{{ $post->title }}</a>
-                                </h3>
-                                <div class="post_featured with_thumb hover_icon">
-                                    <img width="1540" height="880" src="{{asset('img/'.$post->image)}}" class="attachment-mendel-thumb-big size-mendel-thumb-big wp-post-image" alt="{{ $post->title }}"  sizes="(max-width: 1540px) 100vw, 1540px"/>
-                                    <div class="mask"></div>
-                                    <div class="icons">
-                                        <a href="{{ route('post.show', $post->id) }}" aria-hidden="true" class="icon-search-alt">
+                                        <a href="#" class="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment">
+                                            <span class="post_counters_number"> {{ $post->comments->count()}}</span>
+                                            <span class="post_counters_label">s</span>
                                         </a>
+                                    </div><!-- .post_meta -->
+                                    <h3 class="post_title entry-title">
+                                        <a href="{{ route('post.show', $post->id) }}" rel="bookmark">{{ $post->title }}</a>
+                                    </h3>
+                                    <div class="post_featured with_thumb hover_icon">
+                                        <img width="1540" height="880" src="{{asset('img/'.$post->image)}}" class="attachment-mendel-thumb-big size-mendel-thumb-big wp-post-image" alt="{{ $post->title }}"  sizes="(max-width: 1540px) 100vw, 1540px"/>
+                                        <div class="mask"></div>
+                                        <div class="icons">
+                                            <a href="{{ route('post.show', $post->id) }}" aria-hidden="true" class="icon-search-alt">
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </div><!-- .post_header -->
-                            <div class="post_content entry-content">
-                                <div class="post_content_inner"><p>{{ $post->body }}&hellip;</p>
-                                </div>
-                                <div class="footer-post-meta">
-                                    <a class="author_link" href="#" rel="author">
-                                        <span class="author_name"> </span> </a>
-                                    <div class="post_meta"><span class="post_meta_item post_categories">
+                                </div><!-- .post_header -->
+                                <div class="post_content entry-content">
+                                    <div class="post_content_inner"><p>{{ $post->body }}&hellip;</p>
+                                    </div>
+                                    <div class="footer-post-meta">
+                                        <a class="author_link" href="#" rel="author">
+                                            <span class="author_name"> </span> </a>
+                                        <div class="post_meta"><span class="post_meta_item post_categories">
                                             <a href="#"
-                                                rel="category tag"> </a>, <a
-                                                href="#"
-                                                rel="category tag"> </a>, <a
-                                                href="#"
-                                                rel="category tag"> </a>, <a
-                                                href="#"
-                                                rel="category tag"></a>, <a
-                                                href="#/"
-                                                rel="category tag"></a></span>
-                                        <a href="#"
-                                           class="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment"><span
-                                                class="post_counters_number">{{ $post->comments->count()}}</span><span class="post_counters_label">Comments</span></a>
-                                    </div><!-- .post_meta --><p><a class="simple-btn" href="{{ route('post.show', $post->id) }}">Xem Thêm</a></p></div>
-                            </div><!-- .entry-content -->
-                       </article>
+                                               rel="category tag"> </a>, <a
+                                                    href="#"
+                                                    rel="category tag"> </a>, <a
+                                                    href="#"
+                                                    rel="category tag"> </a>, <a
+                                                    href="#"
+                                                    rel="category tag"></a>, <a
+                                                    href="#/"
+                                                    rel="category tag"></a></span>
+                                            <a href="#"
+                                               class="post_meta_item post_counters_item post_counters_comments trx_addons_icon-comment"><span
+                                                    class="post_counters_number">{{ $post->comments->count()}}</span><span class="post_counters_label">Comments</span></a>
+                                        </div><!-- .post_meta --><p><a class="simple-btn" href="{{ route('post.show', $post->id) }}">Xem Thêm</a></p></div>
+                                </div><!-- .entry-content -->
+                            </article>
 
                         @endforeach
                     </div>
- {{ $posts->links() }}
+                    {{ $posts->links() }}
                 </div><!-- </.content> -->
                 <div class="sidebar left widget_area" role="complementary">
                     <div class="sidebar_inner">
@@ -485,8 +495,8 @@
                                 <input type="submit" class="search-submit" value="Search"/>
                             </form>
                         </aside>
-                    <aside id="categories-2" class="widget widget_categories"><h5 class="widget_title">
-                               Loại Bài</h5>
+                        <aside id="categories-2" class="widget widget_categories"><h5 class="widget_title">
+                                Loại Bài</h5>
                             <ul>
                                 <li class="cat-item cat-item-21"><a
                                         href="#"> </a>
@@ -512,60 +522,60 @@
                             </ul>
                         </aside>
                         <aside id="trx_addons_widget_recent_posts-2" class="widget widget_recent_posts"><h5
-                            class="widget_title">latest blog posts</h5>
+                                class="widget_title">latest blog posts</h5>
                             @foreach($huhu as $hu)
-                        <article class="post_item with_thumb">
-                            <div class="post_thumb"><a
-                                    href="http://mendel-antiques.ancorathemes.com/2017/05/25/10-tips-for-restoring-old-furniture/"><img
-                                        width="90" height="90"
-                                        src="{{asset('img/'.$hu->image)}}"
-                                        class="attachment-mendel-thumb-tiny size-mendel-thumb-tiny wp-post-image"
-                                        alt=" {{  $hu->title }}"
-                                     sizes="(max-width: 90px) 100vw, 90px"/></a></div>
-                            <div class="post_content">
-                                <div class="post_categories"><a
-                                        href="#"
-                                        title="View all posts in Antique Furniture"> </a>, <a
-                                        href="#"
-                                        title="View all posts in Antiques News"> </a>, <a
-                                        href="#"
-                                        title="View all posts in Collectables"> </a>, <a
-                                        href="#"
-                                        title="View all posts in Vintage Luxe"> </a>, <a
-                                        href="#"
-                                        title="View all posts in Vintage Retro"> </a></div>
-                                <h6 class="post_title"><a
-                                        href="{{ route('post.show', $hu->id) }}">{{  $hu->title }}</a></h6>
-                                <div class="post_info"></div>
-                            </div>
-                        </article>
-                        {{-- <article class="post_item with_thumb">
-                            <div class="post_thumb"><a
-                                    href="#"><img
-                                        width="90" height="90"
-                                        src="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-15-90x90.jpg"
-                                        class="attachment-mendel-thumb-tiny size-mendel-thumb-tiny wp-post-image"
-                                        alt="A Guide for Buying Unfinished Wooden Furniture"
-                                        srcset="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-15-90x90.jpg 90w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-15-300x300.jpg 300w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-15-100x100.jpg 100w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-15-150x150.jpg 150w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-15-540x540.jpg 540w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-15-370x370.jpg 370w"
-                                        sizes="(max-width: 90px) 100vw, 90px"/></a></div>
-                            <div class="post_content">
-                                <div class="post_categories"><a
-                                        href="#"
-                                        title="View all posts in Antique Furniture"> </a>, <a
-                                        href="#"
-                                        title="View all posts in Antiques News"> </a></div>
-                                <h6 class="post_title"><a
-                                        href="#">A
-                                        Guide for Buying Unfinished Wooden Furniture</a></h6>
-                                <div class="post_info"></div>
-                            </div>
-                        </article> --}}
-                    </aside>
-                    @endforeach
-                    {{-- {!! $calendar->calendar() !!}
-{!! $calendar->script() !!} --}}
+                                <article class="post_item with_thumb">
+                                    <div class="post_thumb"><a
+                                            href="http://mendel-antiques.ancorathemes.com/2017/05/25/10-tips-for-restoring-old-furniture/"><img
+                                                width="90" height="90"
+                                                src="{{asset('img/'.$hu->image)}}"
+                                                class="attachment-mendel-thumb-tiny size-mendel-thumb-tiny wp-post-image"
+                                                alt=" {{  $hu->title }}"
+                                                sizes="(max-width: 90px) 100vw, 90px"/></a></div>
+                                    <div class="post_content">
+                                        <div class="post_categories"><a
+                                                href="#"
+                                                title="View all posts in Antique Furniture"> </a>, <a
+                                                href="#"
+                                                title="View all posts in Antiques News"> </a>, <a
+                                                href="#"
+                                                title="View all posts in Collectables"> </a>, <a
+                                                href="#"
+                                                title="View all posts in Vintage Luxe"> </a>, <a
+                                                href="#"
+                                                title="View all posts in Vintage Retro"> </a></div>
+                                        <h6 class="post_title"><a
+                                                href="{{ route('post.show', $hu->id) }}">{{  $hu->title }}</a></h6>
+                                        <div class="post_info"></div>
+                                    </div>
+                                </article>
+                                {{-- <article class="post_item with_thumb">
+                                    <div class="post_thumb"><a
+                                            href="#"><img
+                                                width="90" height="90"
+                                                src="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-15-90x90.jpg"
+                                                class="attachment-mendel-thumb-tiny size-mendel-thumb-tiny wp-post-image"
+                                                alt="A Guide for Buying Unfinished Wooden Furniture"
+                                                srcset="http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-15-90x90.jpg 90w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-15-300x300.jpg 300w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-15-100x100.jpg 100w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-15-150x150.jpg 150w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-15-540x540.jpg 540w, http://mendel-antiques.ancorathemes.com/wp-content/uploads/2017/05/image-15-370x370.jpg 370w"
+                                                sizes="(max-width: 90px) 100vw, 90px"/></a></div>
+                                    <div class="post_content">
+                                        <div class="post_categories"><a
+                                                href="#"
+                                                title="View all posts in Antique Furniture"> </a>, <a
+                                                href="#"
+                                                title="View all posts in Antiques News"> </a></div>
+                                        <h6 class="post_title"><a
+                                                href="#">A
+                                                Guide for Buying Unfinished Wooden Furniture</a></h6>
+                                        <div class="post_info"></div>
+                                    </div>
+                                </article> --}}
                         </aside>
-                          <aside id="trx_addons_widget_calendar-2" class="widget widget_calendar"><h5
+                        @endforeach
+                        {{-- {!! $calendar->calendar() !!}
+    {!! $calendar->script() !!} --}}
+                        </aside>
+                        <aside id="trx_addons_widget_calendar-2" class="widget widget_calendar"><h5
                                 class="widget_title">Calendar</h5>
                             <table id="wp-calendar">
                                 <caption>May 2020</caption>
@@ -636,7 +646,7 @@
                                 </tbody>
                             </table>
                         </aside>
-                     <aside id="recent-comments-2" class="widget widget_recent_comments"><h5 class="widget_title">
+                        <aside id="recent-comments-2" class="widget widget_recent_comments"><h5 class="widget_title">
                                 Số lượt comments</h5>
                             <ul id="recentcomments">
                                 <li class="recentcomments"><span class="comment-author-link"> </span>
@@ -647,7 +657,7 @@
                                         href="#"></a></li>
                             </ul>
                         </aside>
-                      <aside id="tag_cloud-2" class="widget widget_tag_cloud"><h5 class="widget_title">Tags</h5>
+                        <aside id="tag_cloud-2" class="widget widget_tag_cloud"><h5 class="widget_title">Tags</h5>
                             <div class="tagcloud"><a href="#"
                                                      class="tag-cloud-link tag-link-38 tag-link-position-1"
                                                      style="font-size: 19.511111111111pt;"
