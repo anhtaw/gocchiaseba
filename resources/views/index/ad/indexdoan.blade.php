@@ -218,13 +218,7 @@
                         <aside id="woocommerce_product_categories-2"class="widget woocommerce widget_product_categories">
                             <h5 class="widget_title">Loại hàng</h5>
                             <ul class="product-categories">
-<<<<<<< HEAD
-                                @foreach ($doquangduc as $b)
 
-                                @endforeach
-                                <li class="cat-item cat-item-53"><a href="{{ route('giaotrinh') }}">{{ $b ->loaisp }}</a></li>
-
-=======
                                 <li class="cat-item cat-item-53"><a href="{{ route('giaotrinh') }}">Giáo trình</a></li>
                                 <li class="cat-item cat-item-54">
                                     <a href="{{ route('dodung') }}">Đồ dùng học tập</a></li>
@@ -235,7 +229,7 @@
                                 <li class="cat-item cat-item-57">
                                     <a href="{{ route('quanao') }}">Quần áo</a>
                                 </li>
->>>>>>> 4dc556c23f6fa0cbe5628a97862175bf09c28609
+
                             </ul>
                         </aside>
                         <aside id="woocommerce_product_tag_cloud-2" class="widget woocommerce widget_product_tag_cloud">
